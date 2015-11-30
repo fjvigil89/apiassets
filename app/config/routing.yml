@@ -1,0 +1,11 @@
+web_service:
+    resource: "@webServiceBundle/Resources/config/routing.yml"
+    prefix:   /ws
+
+api:
+    resource: "."
+    type:     "api"
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   "/doc"

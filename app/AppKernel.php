@@ -19,9 +19,11 @@ class AppKernel extends Kernel
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             new Nelmio\CorsBundle\NelmioCorsBundle(),
             new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
+            new Realestate\MssqlBundle\RealestateMssqlBundle(),
 
             new AppBundle\AppBundle(),
             new webServiceBundle\webServiceBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'])) {

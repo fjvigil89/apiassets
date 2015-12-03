@@ -16,7 +16,7 @@
         }
     ],  
     
-    "require": {
+    "require": {        
         "php": ">=5.5.0",
         "symfony/symfony": "~2.7",
         "doctrine/orm": "~2.2,>=2.2.3,<2.5",
@@ -31,7 +31,8 @@
         "dunglas/api-bundle": "~1.0",
         "nelmio/cors-bundle": "~1.4",
         "nelmio/api-doc-bundle": "~2.9@dev",
-        "friendsofsymfony/http-cache-bundle": "~1.0"
+        "friendsofsymfony/http-cache-bundle": "~1.0",
+        "realestateconz/mssql-bundle": "master-dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",

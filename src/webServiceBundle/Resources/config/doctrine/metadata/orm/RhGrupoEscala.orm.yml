@@ -1,0 +1,94 @@
+RhGrupoEscala:
+    type: entity
+    table: RH_Grupo_Escala
+    id:
+        ngrupo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: '0'
+            id: true
+            column: NGrupo
+            generator:
+                strategy: IDENTITY
+    fields:
+        rgraduados:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: RGraduados
+        tecnicosT1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tecnicos_T1
+        tecnicosT2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tecnicos_T2
+        tecnicosT3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tecnicos_T3
+        administrativos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Administrativos
+        servicios:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Servicios
+        obreros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Obreros
+        dirigentes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dirigentes
+        msobreros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MSObreros
+        msservicios:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MSServicios
+        mstecnicos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MSTecnicos
+        msadministrativos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MSAdministrativos
+        msdirigentes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MSDirigentes
+    lifecycleCallbacks: {  }

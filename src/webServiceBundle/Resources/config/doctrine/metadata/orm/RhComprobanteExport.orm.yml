@@ -1,0 +1,69 @@
+RhComprobanteExport:
+    type: entity
+    table: RH_Comprobante_Export
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Compro
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        hechoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Hecho_Por
+        revisadoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Revisado_Por
+        observaciones:
+            type: string
+            nullable: false
+            length: 370
+            fixed: false
+            default: ''
+            column: Observaciones
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        claveTipoComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clave_Tipo_Comprobante
+        exportar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Exportar
+    lifecycleCallbacks: {  }

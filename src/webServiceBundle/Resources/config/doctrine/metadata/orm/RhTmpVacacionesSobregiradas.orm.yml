@@ -1,0 +1,30 @@
+RhTmpVacacionesSobregiradas:
+    type: entity
+    table: RH_Tmp_Vacaciones_Sobregiradas
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+            generator:
+                strategy: IDENTITY
+    fields:
+        diasAcumulado:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado
+        diasPagados:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Pagados
+    lifecycleCallbacks: {  }

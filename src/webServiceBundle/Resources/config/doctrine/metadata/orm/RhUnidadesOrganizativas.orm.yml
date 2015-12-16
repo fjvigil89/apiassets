@@ -1,0 +1,112 @@
+RhUnidadesOrganizativas:
+    type: entity
+    table: RH_Unidades_Organizativas
+    id:
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            id: true
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Direccion
+    fields:
+        descDireccion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_Direccion
+        clasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Clasificacion
+        gruponomina:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: GrupoNomina
+        grupodisciplinalab:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: GrupoDisciplinaLab
+        codgrpsendrec:
+            type: string
+            nullable: false
+            length: 7
+            fixed: false
+            default: ''
+            column: CodGrpSendRec
+        idArea:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Area
+        nivelpadre:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NivelPadre
+        idDireccionpadre:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_DireccionPadre
+        fechaAlta:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Alta
+        fechaBaja:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Baja
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+        baja:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Baja
+        idProvincia:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Provincia
+        idMunicipio:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Municipio
+    lifecycleCallbacks: {  }

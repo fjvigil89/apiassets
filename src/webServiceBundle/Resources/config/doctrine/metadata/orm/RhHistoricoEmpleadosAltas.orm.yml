@@ -1,0 +1,262 @@
+RhHistoricoEmpleadosAltas:
+    type: entity
+    table: RH_Historico_Empleados_Altas
+    id:
+        contador:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        noCi:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: No_CI
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+        idCargo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Cargo
+        anosservicio:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AnosServicio
+        fechaContratacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Contratacion
+        idCausaalta:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausaAlta
+        salarioBasico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico
+        estimulo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estimulo
+        porcientoEstimulo:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Estimulo
+        antiguedad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Antiguedad
+        otros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros
+        plus:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plus
+        salarioPorCargo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_por_Cargo
+        invalidezParcial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Invalidez_Parcial
+        exCombatientes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ex_Combatientes
+        porcientoPerfeccionamiento:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Perfeccionamiento
+        valorDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Divisa
+        porcientoPagoDivisa:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Pago_Divisa
+        estimulacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estimulacion
+        porcientoEstimulacion:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Estimulacion
+        albergamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Albergamiento
+        otrasretribuciones:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: OtrasRetribuciones
+        horarioirregular:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HorarioIrregular
+        otrasCla:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otras_CLA
+        ieterritorial:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: IETerritorial
+        etsector:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: ETSector
+        idoneidadFijo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Fijo
+        idoneidadMovil:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Movil
+        retribucionComplementaria:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Retribucion_Complementaria
+        coeficientetarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1.00'
+            column: CoeficienteTarifa
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        idCategoria:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Categoria
+        idProvincia:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Provincia
+        idMunicipio:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Municipio
+        numeroRadicacionPlaza:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Numero_Radicacion_Plaza
+        fechaTerminacionContrato:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Terminacion_Contrato
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+    lifecycleCallbacks: {  }

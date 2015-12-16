@@ -1,0 +1,43 @@
+RhNivelesEscolaridad:
+    type: entity
+    table: RH_Niveles_Escolaridad
+    id:
+        idNivelEscolaridad:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Nivel_Escolaridad
+            generator:
+                strategy: IDENTITY
+    fields:
+        descNivelEscolaridad:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Nivel_Escolaridad
+        idNivelEscolaridadClasif:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Nivel_Escolaridad_Clasif
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '4'
+            column: Nivel
+        siglas:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Siglas
+    lifecycleCallbacks: {  }

@@ -33,7 +33,7 @@ twig:
 
 # Doctrine Configuration
 doctrine:
-    dbal:
+    dbal:        
         default_connection:     default
         connections:
             default:
@@ -42,6 +42,11 @@ doctrine:
                 dbname:         %database_name%
                 user:           %database_user%
                 password:       %database_password%
+                mapping_types:
+                    timestamp:  string
+                    xml:        string
+                    sysname:    string
+                #schema_filter:  ~^(Acceso_CR)~
 #doctrine:
 #    dbal:
 #        driver:   "%database_driver%"

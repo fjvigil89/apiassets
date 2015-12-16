@@ -1,0 +1,74 @@
+RhDescuentosmasivos:
+    type: entity
+    table: RH_DescuentosMasivos
+    id:
+        nodescuento:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: NoDescuento
+            generator:
+                strategy: IDENTITY
+    fields:
+        fechaAprobada:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Aprobada
+        criterio:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Criterio
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel
+        incluirNivHijos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Incluir_Niv_Hijos
+        idUoocc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_UOoCC
+        descUoocc:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Desc_UOoCC
+        descuento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Descuento
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+    lifecycleCallbacks: {  }

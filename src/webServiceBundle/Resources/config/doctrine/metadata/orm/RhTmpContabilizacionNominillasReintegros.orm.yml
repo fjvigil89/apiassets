@@ -1,0 +1,65 @@
+RhTmpContabilizacionNominillasReintegros:
+    type: entity
+    table: RH_Tmp_Contabilizacion_Nominillas_Reintegros
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        importeReintegroSalario:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Reintegro_Salario
+        importeReintegroSubsidio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Reintegro_Subsidio
+        importeReintegroVacaciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Reintegro_Vacaciones
+        importeReintegroDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Reintegro_Divisa
+        acobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Acobrar
+        ajustecentavos:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: AjusteCentavos
+    lifecycleCallbacks: {  }

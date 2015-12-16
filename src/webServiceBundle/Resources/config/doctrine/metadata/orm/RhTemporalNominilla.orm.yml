@@ -1,0 +1,215 @@
+RhTemporalNominilla:
+    type: entity
+    table: RH_Temporal_Nominilla
+    id:
+        contador:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Clasificacion
+        salarioBasico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico
+        plus:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plus
+        antiguedad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Antiguedad
+        otros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros
+        diasAPagar:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_a_Pagar
+        devengado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado
+        acobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Acobrar
+        deducciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Deducciones
+        devengadoDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Divisa
+        devengadoTarjeta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Tarjeta
+        perfeccionamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Perfeccionamiento
+        diasAcumulado:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado
+        salarioAcumulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado
+        anoTarjeta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Tarjeta
+        mesTarjeta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes_Tarjeta
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idObra:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Obra
+        pagoDivisa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pago_Divisa
+        salarioBasicoms:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_BasicoMS
+        nominillaMov:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Nominilla_Mov
+        impresa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Impresa
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Item
+        ajustecentavos:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: AjusteCentavos
+        tarifaDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_Divisa
+        divisaFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Divisa_Factura
+        facturar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Facturar
+        impresaGrupo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Impresa_Grupo
+        diasTarjeta:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Tarjeta
+    lifecycleCallbacks: {  }

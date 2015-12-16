@@ -1,0 +1,175 @@
+RhJornadasLaborales:
+    type: entity
+    table: RH_Jornadas_Laborales
+    id:
+        idJornada:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Jornada
+            generator:
+                strategy: IDENTITY
+    fields:
+        descJornada:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Jornada
+        lunHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lun_Hora_Ini
+        lunHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lun_Hora_Fin
+        marHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Mar_Hora_Ini
+        marHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Mar_Hora_Fin
+        mieHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Mie_Hora_Ini
+        mieHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Mie_Hora_Fin
+        jueHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Jue_Hora_Ini
+        jueHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Jue_Hora_Fin
+        vieHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Vie_Hora_Ini
+        vieHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Vie_Hora_Fin
+        sabHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Sab_Hora_Ini
+        sabHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Sab_Hora_Fin
+        domHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Dom_Hora_Ini
+        domHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Dom_Hora_Fin
+        lunchLunHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Lun_Hora_Ini
+        lunchLunHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Lun_Hora_Fin
+        lunchMarHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Mar_Hora_Ini
+        lunchMarHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Mar_Hora_Fin
+        lunchMieHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Mie_Hora_Ini
+        lunchMieHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Mie_Hora_Fin
+        lunchJueHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Jue_Hora_Ini
+        lunchJueHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Jue_Hora_Fin
+        lunchVieHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Vie_Hora_Ini
+        lunchVieHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Vie_Hora_Fin
+        lunchSabHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Sab_Hora_Ini
+        lunchSabHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Sab_Hora_Fin
+        lunchDomHoraIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Dom_Hora_Ini
+        lunchDomHoraFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Lunch_Dom_Hora_Fin
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+    lifecycleCallbacks: {  }

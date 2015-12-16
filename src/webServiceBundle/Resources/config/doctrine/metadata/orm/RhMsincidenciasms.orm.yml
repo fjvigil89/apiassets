@@ -1,0 +1,63 @@
+RhMsincidenciasms:
+    type: entity
+    table: RH_MSIncidenciasMS
+    id:
+        codincidencia:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: CodIncidencia
+            generator:
+                strategy: IDENTITY
+    fields:
+        descincidencia:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: DescIncidencia
+        porcientoafectacion:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: PorcientoAfectacion
+        limiteinferior:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: LimiteInferior
+        limitesuperior:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: LimiteSuperior
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clasificacion
+        afectaantiguedad:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AfectaAntiguedad
+        afectacoeficiente:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AfectaCoeficiente
+        afectaturno:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AfectaTurno
+    lifecycleCallbacks: {  }

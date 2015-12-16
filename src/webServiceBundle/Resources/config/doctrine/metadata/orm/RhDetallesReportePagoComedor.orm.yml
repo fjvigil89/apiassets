@@ -1,0 +1,93 @@
+RhDetallesReportePagoComedor:
+    type: entity
+    table: RH_Detalles_Reporte_Pago_Comedor
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            id: true
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+    fields:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: Item
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        pagoComedorCucR:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pago_Comedor_CUC_R
+        pagoComedorCucW:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pago_Comedor_CUC_W
+        pagoComedorTarifaR:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pago_Comedor_Tarifa_R
+        pagoComedorTarifaW:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pago_Comedor_Tarifa_W
+        diasLaborables:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Laborables
+        diasAusenciasR:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Ausencias_R
+        diasAusenciasW:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Ausencias_W
+    lifecycleCallbacks: {  }

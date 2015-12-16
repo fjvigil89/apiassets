@@ -1,0 +1,62 @@
+RhVariacionesPlantilla:
+    type: entity
+    table: RH_Variaciones_Plantilla
+    id:
+        novariacion:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: NoVariacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+        descDireccion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_Direccion
+        fechaPropuesta:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Propuesta
+        fechaAprobada:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Aprobada
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+    lifecycleCallbacks: {  }

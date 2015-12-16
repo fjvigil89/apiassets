@@ -1,0 +1,248 @@
+RhDetallesReporteVinculacionOtAn:
+    type: entity
+    table: RH_Detalles_Reporte_Vinculacion_OT_AN
+    indexes:
+        IX_RH_Detalles_Reporte_Vinculacion_OT_AN:
+            columns:
+                - Contador
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        tipo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        idActividad:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Actividad
+        descActividad:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_Actividad
+        um:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: UM
+        tasa:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: Tasa
+        tipoNorma:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: P
+            column: Tipo_Norma
+        cantidadActividad:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 4
+            default: '0.0000'
+            column: Cantidad_Actividad
+        devengadoActividad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Actividad
+        horasActividad:
+            type: decimal
+            nullable: false
+            precision: 6
+            scale: 2
+            default: '0.00'
+            column: Horas_Actividad
+        devengadoOtros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Otros
+        horasMultioficio:
+            type: decimal
+            nullable: false
+            precision: 6
+            scale: 2
+            default: '0.00'
+            column: Horas_Multioficio
+        devengadoMultioficio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Multioficio
+        cumplimnorma:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '0.000000'
+            column: CumplimNorma
+        pagosobrecumplim:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 2
+            default: '0.000000'
+            column: PagoSobrecumplim
+        salarioBasico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico
+        iddeordendetrabajo:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: IddeOrdendeTrabajo
+        horasAdelantadas:
+            type: decimal
+            nullable: false
+            precision: 6
+            scale: 2
+            default: '0.00'
+            column: Horas_Adelantadas
+        horasInterrupto:
+            type: decimal
+            nullable: false
+            precision: 6
+            scale: 2
+            default: '0.00'
+            column: Horas_Interrupto
+        horasTasadas:
+            type: decimal
+            nullable: false
+            precision: 6
+            scale: 2
+            default: '0.00'
+            column: Horas_Tasadas
+        horasRealTrabajadas:
+            type: decimal
+            nullable: false
+            precision: 6
+            scale: 2
+            default: '0.00'
+            column: Horas_Real_Trabajadas
+        tarifaHorasAdelantadas:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_Horas_Adelantadas
+        tarifaHorasVinculacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_Horas_Vinculacion
+        porcientoInterrupcion:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Interrupcion
+        porcientoImporteTasado:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Importe_Tasado
+        devengadoHorasAdelantadas:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Horas_Adelantadas
+        devengadoHorasInterrupcion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Horas_Interrupcion
+        devengadoHorasTasadas:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Horas_Tasadas
+        totalDevengado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Total_Devengado
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+    lifecycleCallbacks: {  }

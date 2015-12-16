@@ -1,0 +1,417 @@
+RhTemporalSalario:
+    type: entity
+    table: RH_Temporal_Salario
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        salarioBasico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico
+        salarioBasicoMedidas:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico_Medidas
+        salarioPorCargo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_por_Cargo
+        otros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros
+        plus:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plus
+        antiguedad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Antiguedad
+        albergamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Albergamiento
+        otrasretribuciones:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: OtrasRetribuciones
+        horarioirregular:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HorarioIrregular
+        ieterritorial:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: IETerritorial
+        etsector:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: ETSector
+        condiciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Condiciones
+        idoneidadFijo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Fijo
+        idoneidadMovil:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Movil
+        retribucionComplementaria:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Retribucion_Complementaria
+        diasTrabajados:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_Trabajados
+        diasPorSubsidio:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_por_Subsidio
+        diasAPagarPorInterruptosReubicados:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_a_Pagar_por_Interruptos_Reubicados
+        diasAPagarPorInterrupcion:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_a_Pagar_por_Interrupcion
+        diasAPagarPorInterrupcion60:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_a_Pagar_por_Interrupcion60
+        diasAPagarPorInterrupcion100:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_a_Pagar_por_Interrupcion100
+        devengado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado
+        devengadoPorSubsidio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_por_Subsidio
+        devengadoPorInterrupcion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_por_Interrupcion
+        devengado60:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado60
+        devengado100:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado100
+        devengadoreubicados:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DevengadoReubicados
+        devengadoDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Divisa
+        devengadoporsombrecumplimiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DevengadoporSombrecumplimiento
+        deducciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Deducciones
+        deduccionessalario:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeduccionesSalario
+        deduccionesreubicados:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeduccionesReubicados
+        deduccionesinterrupto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeduccionesInterrupto
+        otrosdescuentosinterrupto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: OtrosDescuentosInterrupto
+        otrosdescuentosreubicados:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: OtrosDescuentosReubicados
+        otrosdescuentossalario:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: OtrosDescuentosSalario
+        recargoTotal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Recargo_Total
+        acobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Acobrar
+        perfecinterrupto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PerfecInterrupto
+        perfecreubicados:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PerfecReubicados
+        perfecsalario:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PerfecSalario
+        diasAcumuladoPago:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado_Pago
+        salarioAcumuladoPago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado_Pago
+        diasAcumulado:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado
+        salarioAcumulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado
+        perfeccionamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Perfeccionamiento
+        descuento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Descuento
+        tarifainterrupto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TarifaInterrupto
+        ajustecentavos:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: AjusteCentavos
+        contravalor:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContraValor
+        importems:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMS
+        estimulacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estimulacion
+        devengadoPorSuspension:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_por_Suspension
+        pagootros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PagoOtros
+        importemsEt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMS_ET
+        importemsEe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMS_EE
+        pagoComedorCuc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pago_Comedor_CUC
+        pagoComedorTarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pago_Comedor_Tarifa
+        pagoComedorDias:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pago_Comedor_Dias
+        pagoComedor:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pago_Comedor
+        otrosPagos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros_Pagos
+        descuentomasivo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DescuentoMasivo
+    lifecycleCallbacks: {  }

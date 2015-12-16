@@ -1,0 +1,94 @@
+RhTablasComm:
+    type: entity
+    table: RH_Tablas_Comm
+    id:
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clasificacion
+        nombreTabla:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Nombre_Tabla
+        enviar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Enviar
+        recibir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recibir
+        fechaEnvio:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Envio
+        fechaRecibo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Recibo
+        recibido:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recibido
+        fichero:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: n/a
+            column: Fichero
+        ficherodetalle:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: n/a
+            column: FicheroDetalle
+        rinner:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: n/a
+            column: Rinner
+        rwhere:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: n/a
+            column: Rwhere
+        truncarTabla:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Truncar_Tabla
+        oksend:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OKSend
+        okreceive:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OKReceive
+    lifecycleCallbacks: {  }

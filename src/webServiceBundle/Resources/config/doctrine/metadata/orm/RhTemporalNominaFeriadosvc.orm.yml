@@ -1,0 +1,40 @@
+RhTemporalNominaFeriadosvc:
+    type: entity
+    table: RH_Temporal_Nomina_FeriadosVC
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        salarioBasico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico
+    lifecycleCallbacks: {  }

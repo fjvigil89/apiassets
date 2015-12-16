@@ -1,0 +1,101 @@
+RhDetallesReporteCla:
+    type: entity
+    table: RH_Detalles_Reporte_CLA
+    indexes:
+        IX_RH_Detalles_Reporte_CLA:
+            columns:
+                - Contador
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        horas:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Horas
+        tarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.08'
+            column: Tarifa
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idObra:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Obra
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '12'
+            column: Clasificacion
+        clasificacionCategOcupac:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '12'
+            column: Clasificacion_Categ_Ocupac
+    lifecycleCallbacks: {  }

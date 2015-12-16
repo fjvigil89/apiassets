@@ -1,0 +1,23 @@
+RhAreaTrabajoActual:
+    type: entity
+    table: RH_Area_Trabajo_Actual
+    id:
+        idArea:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Area
+            generator:
+                strategy: IDENTITY
+    fields:
+        descArea:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Area
+    lifecycleCallbacks: {  }

@@ -1,0 +1,40 @@
+FzimportSource:
+    type: entity
+    table: FzImport_Source
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Id
+            generator:
+                strategy: IDENTITY
+    fields:
+        ntable:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ' collate SQL_Latin1_General_CP1_CI_AS'
+            column: nTable
+        hastrigger:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: hasTrigger
+        ordeni:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+        ordend:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+        usedel:
+            type: boolean
+            nullable: true
+            default: '0'
+    lifecycleCallbacks: {  }

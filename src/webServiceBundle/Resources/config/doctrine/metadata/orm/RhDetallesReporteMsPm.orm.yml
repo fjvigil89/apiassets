@@ -1,0 +1,193 @@
+RhDetallesReporteMsPm:
+    type: entity
+    table: RH_Detalles_Reporte_MS_PM
+    indexes:
+        IX_RH_Detalles_Reporte_MS_PM:
+            columns:
+                - Contador
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            id: true
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+    fields:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: Item
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        codincidencia1:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CodIncidencia1
+        codincidencia2:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CodIncidencia2
+        codincidencia3:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CodIncidencia3
+        codincidencia4:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CodIncidencia4
+        codincidencia5:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CodIncidencia5
+        codincidencia6:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CodIncidencia6
+        codincidencia7:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CodIncidencia7
+        ausenciasjustificadas:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: AusenciasJustificadas
+        ausenciasinjustificadas:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: AusenciasInjustificadas
+        impuntualidades:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Impuntualidades
+        mspagoantiguedad:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MSPagoAntiguedad
+        mspagocoeficiente:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MSPagoCoeficiente
+        mspagoturno:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MSPagoTurno
+        afectacionantiguedad:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: AfectacionAntiguedad
+        afectacioncoeficiente:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: AfectacionCoeficiente
+        afectacionturnos:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: AfectacionTurnos
+        pagoantiguedad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PagoAntiguedad
+        pagocoeficiente:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PagoCoeficiente
+        pagoturnos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PagoTurnos
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+    lifecycleCallbacks: {  }

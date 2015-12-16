@@ -1,0 +1,114 @@
+Sysobjectssys:
+    type: entity
+    table: SysObjectsSys
+    id:
+        name:
+            type: string
+            nullable: false
+            length: 256
+            fixed: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+        xtype:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+        uid:
+            type: smallint
+            nullable: false
+            unsigned: false
+        info:
+            type: smallint
+            nullable: false
+            unsigned: false
+        status:
+            type: integer
+            nullable: false
+            unsigned: false
+        baseSchemaVer:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: base_schema_ver
+        replinfo:
+            type: integer
+            nullable: false
+            unsigned: false
+        parentObj:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: parent_obj
+        crdate:
+            type: datetime
+            nullable: false
+        ftcatid:
+            type: smallint
+            nullable: false
+            unsigned: false
+        schemaVer:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: schema_ver
+        statsSchemaVer:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: stats_schema_ver
+        type:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+        userstat:
+            type: smallint
+            nullable: true
+            unsigned: false
+        sysstat:
+            type: smallint
+            nullable: true
+            unsigned: false
+        indexdel:
+            type: smallint
+            nullable: true
+            unsigned: false
+        refdate:
+            type: datetime
+            nullable: true
+        version:
+            type: integer
+            nullable: true
+            unsigned: false
+        deltrig:
+            type: integer
+            nullable: true
+            unsigned: false
+        instrig:
+            type: integer
+            nullable: true
+            unsigned: false
+        updtrig:
+            type: integer
+            nullable: true
+            unsigned: false
+        seltrig:
+            type: integer
+            nullable: true
+            unsigned: false
+        category:
+            type: integer
+            nullable: true
+            unsigned: false
+        cache:
+            type: smallint
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

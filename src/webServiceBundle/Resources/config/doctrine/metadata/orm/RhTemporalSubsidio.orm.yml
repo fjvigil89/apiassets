@@ -1,0 +1,135 @@
+RhTemporalSubsidio:
+    type: entity
+    table: RH_Temporal_Subsidio
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Cantidad
+        importePagado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Pagado
+        deducciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Deducciones
+        netoACobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Neto_a_Cobrar
+        perfeccionamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Perfeccionamiento
+        diasAcumuladoMes:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado_Mes
+        salarioAcumuladoMes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado_Mes
+        tipo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo
+        marca:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: 'N'
+            column: Marca
+        idClave:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clave
+        anoTarjeta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Tarjeta
+        mesTarjeta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes_Tarjeta
+        importeTarjeta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Tarjeta
+        clasificacionCategOcupac:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clasificacion_Categ_Ocupac
+        ajustecentavos:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: AjusteCentavos
+    lifecycleCallbacks: {  }

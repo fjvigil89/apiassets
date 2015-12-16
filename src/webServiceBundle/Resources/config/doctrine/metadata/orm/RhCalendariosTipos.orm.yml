@@ -1,0 +1,43 @@
+RhCalendariosTipos:
+    type: entity
+    table: RH_Calendarios_Tipos
+    id:
+        calendario:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Calendario
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCalendario:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Desc_Calendario
+        diasLaborables:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Laborables
+        fondotiempomes:
+            type: decimal
+            nullable: false
+            precision: 7
+            scale: 2
+            default: '0.00'
+            column: FondoTiempoMes
+        fondotiempodia:
+            type: decimal
+            nullable: false
+            precision: 6
+            scale: 4
+            default: '0.00'
+            column: FondoTiempoDia
+    lifecycleCallbacks: {  }

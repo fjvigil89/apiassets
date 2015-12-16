@@ -1,0 +1,88 @@
+RhTemporalNominaFeriadossf:
+    type: entity
+    table: RH_Temporal_Nomina_FeriadosSF
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        salarioBasico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico
+        salarioPorCargo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_por_Cargo
+        otros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros
+        plus:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plus
+        antiguedad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Antiguedad
+        albergamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Albergamiento
+        horarioirregular:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HorarioIrregular
+        otrasCla:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otras_CLA
+        estimulacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estimulacion
+    lifecycleCallbacks: {  }

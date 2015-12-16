@@ -1,0 +1,182 @@
+RhClavesTarjeta:
+    type: entity
+    table: RH_Claves_Tarjeta
+    id:
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_User
+            generator:
+                strategy: IDENTITY
+    fields:
+        vacaciones:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Vacaciones
+        vacacionesadelantadas:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: VacacionesAdelantadas
+        condicionesLaboralesAnormales:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Condiciones_Laborales_Anormales
+        cambioDeSalario:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Cambio_de_Salario
+        trabajadoresDeEstipendio:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Trabajadores_de_Estipendio
+        interrupcionLaboral:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Interrupcion_Laboral
+        rehabilitacionOPension:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Rehabilitacion_o_Pension
+        suspensionLaboral:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Suspension_Laboral
+        maternidad:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Maternidad
+        prestacionSocial:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Prestacion_Social
+        trabajadorMovilizado:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Trabajador_Movilizado
+        primas:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Primas
+        pagoPorRendimiento:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Pago_por_Rendimiento
+        subsidio:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Subsidio
+        horasExtra:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Horas_Extra
+        dobleTurno:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Doble_Turno
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        estimulacion:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Estimulacion
+        medidasSalariales:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Medidas_Salariales
+        albergamiento:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Albergamiento
+        idoneidad:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Idoneidad
+        iet:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: IET
+        ets:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ETS
+        retribucionComplementaria:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Retribucion_Complementaria
+    lifecycleCallbacks: {  }

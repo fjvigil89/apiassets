@@ -1,0 +1,23 @@
+RhClasificacionP2:
+    type: entity
+    table: RH_Clasificacion_P2
+    id:
+        idClasifP2:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Clasif_P2
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClasifP2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Clasif_P2
+    lifecycleCallbacks: {  }

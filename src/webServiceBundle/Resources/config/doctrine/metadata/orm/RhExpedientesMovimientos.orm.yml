@@ -1,0 +1,60 @@
+RhExpedientesMovimientos:
+    type: entity
+    table: RH_Expedientes_Movimientos
+    id:
+        nomovexped:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NoMovExped
+            generator:
+                strategy: IDENTITY
+    fields:
+        idExpedienteold:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_ExpedienteOld
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        idExpedientenew:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_ExpedienteNew
+        nota:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Nota
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+    lifecycleCallbacks: {  }

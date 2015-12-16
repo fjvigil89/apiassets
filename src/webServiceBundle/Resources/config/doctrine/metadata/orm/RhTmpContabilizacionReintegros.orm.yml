@@ -1,0 +1,88 @@
+RhTmpContabilizacionReintegros:
+    type: entity
+    table: RH_Tmp_Contabilizacion_Reintegros
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        importeReintegroSalario:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Reintegro_Salario
+        importeIndebidoSalario:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Indebido_Salario
+        importeIndebidoSalario909:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Indebido_Salario_909
+        importe909:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_909
+        importeReintegroSubsidio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Reintegro_Subsidio
+        importeIndebidoSubsidio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Indebido_Subsidio
+        importeReintegroVacaciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Reintegro_Vacaciones
+        importeIndebidoVacaciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Indebido_Vacaciones
+        importeReintegroDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Reintegro_Divisa
+        importeIndebidoDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Indebido_Divisa
+    lifecycleCallbacks: {  }

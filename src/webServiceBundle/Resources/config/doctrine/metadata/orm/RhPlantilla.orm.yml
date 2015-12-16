@@ -1,0 +1,39 @@
+RhPlantilla:
+    type: entity
+    table: RH_Plantilla
+    uniqueConstraints:
+        IX_RH_Plantilla:
+            columns:
+                - Id_Clave
+    id:
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            id: true
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Direccion
+    fields:
+        descDireccion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_Direccion
+        idClave:
+            type: string
+            nullable: false
+            length: 17
+            fixed: false
+            default: ''
+            column: Id_Clave
+    lifecycleCallbacks: {  }

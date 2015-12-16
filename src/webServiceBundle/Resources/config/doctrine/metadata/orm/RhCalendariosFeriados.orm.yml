@@ -1,0 +1,37 @@
+RhCalendariosFeriados:
+    type: entity
+    table: RH_Calendarios_Feriados
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        dia:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dia
+        laborable:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Laborable
+    lifecycleCallbacks: {  }

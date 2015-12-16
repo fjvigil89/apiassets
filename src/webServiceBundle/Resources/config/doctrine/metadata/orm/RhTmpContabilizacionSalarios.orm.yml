@@ -1,0 +1,303 @@
+RhTmpContabilizacionSalarios:
+    type: entity
+    table: RH_Tmp_Contabilizacion_Salarios
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        salarioBasico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico
+        plus:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plus
+        otrosSalarios:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros_Salarios
+        antiguedad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Antiguedad
+        salarioPorCargo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_por_Cargo
+        ieterritorial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: IETerritorial
+        etsector:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ETSector
+        horasExtra:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Horas_Extra
+        condiciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Condiciones
+        albergamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Albergamiento
+        horarioirregular:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HorarioIrregular
+        idoneidadFijo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Fijo
+        idoneidadMovil:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Movil
+        retribucionComplementaria:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Retribucion_Complementaria
+        otrasretribuciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: OtrasRetribuciones
+        otrasCla:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otras_CLA
+        devengado60:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado60
+        devengado100:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado100
+        devengadoPorSuspension:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_por_Suspension
+        devengadoreubicados:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DevengadoReubicados
+        devengadoDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Divisa
+        salarioresultado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SalarioResultado
+        salarioAcumuladoPago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado_Pago
+        importems:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMS
+        importeSobrecumplimiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Sobrecumplimiento
+        perfeccionamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Perfeccionamiento
+        estimulacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estimulacion
+        recargoTotal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Recargo_Total
+        acobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Acobrar
+        descuento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Descuento
+        ajustecentavos:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: AjusteCentavos
+        porcientoFondo:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Fondo
+        idActividadIdCcostoIdObra:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Actividad_Id_Ccosto_Id_Obra
+        decretoLey91:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Decreto_Ley_91
+        idActividad:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Actividad
+        idObra:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Obra
+        importemsEt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMS_ET
+        importemsEe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMS_EE
+        pagoComedor:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pago_Comedor
+        pagoComedorDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pago_Comedor_Divisa
+        otrosPagos1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros_Pagos1
+        otrosPagos2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros_Pagos2
+        otrosPagos3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros_Pagos3
+        otrosPagos4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros_Pagos4
+        otrosPagos5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros_Pagos5
+    lifecycleCallbacks: {  }

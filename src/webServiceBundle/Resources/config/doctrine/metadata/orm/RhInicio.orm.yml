@@ -1,0 +1,39 @@
+RhInicio:
+    type: entity
+    table: RH_Inicio
+    id:
+        tituloPago:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            id: true
+            column: Titulo_Pago
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        cerrado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado
+    lifecycleCallbacks: {  }

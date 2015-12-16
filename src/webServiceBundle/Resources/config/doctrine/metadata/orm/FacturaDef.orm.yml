@@ -1,0 +1,112 @@
+FacturaDef:
+    type: entity
+    table: Factura_Def
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Factura
+        referencia:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Referencia
+        aplicaarancel:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AplicaArancel
+        preciomb:
+            type: decimal
+            nullable: false
+            precision: 21
+            scale: 6
+            default: '0.0000'
+            column: PrecioMB
+        preciomc:
+            type: decimal
+            nullable: false
+            precision: 21
+            scale: 6
+            default: '0.0000'
+            column: PrecioMC
+        recmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: RecMB
+        recmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: RecMC
+        descmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: DescMB
+        descmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: DescMC
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMC
+        devuelto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Devuelto
+        aplicaplazocobro:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AplicaPlazoCobro
+        tributable:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Tributable
+        impordevueltomb:
+            type: decimal
+            nullable: false
+            precision: 23
+            scale: 8
+            default: '0.0000'
+            column: ImporDevueltoMB
+        impordevueltomc:
+            type: decimal
+            nullable: false
+            precision: 23
+            scale: 8
+            default: '0.0000'
+            column: ImporDevueltoMC
+    lifecycleCallbacks: {  }

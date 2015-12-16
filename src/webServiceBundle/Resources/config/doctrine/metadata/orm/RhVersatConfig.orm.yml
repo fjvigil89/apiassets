@@ -1,0 +1,115 @@
+RhVersatConfig:
+    type: entity
+    table: RH_Versat_Config
+    id:
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: CTA
+            generator:
+                strategy: IDENTITY
+    fields:
+        ctcuentaAssets:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ctCuenta_Assets
+        ctcuentaLen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ctCuenta_Len
+        ctsubCuentaAssets:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ctSub_Cuenta_Assets
+        ctsubCuentaLen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ctSub_Cuenta_Len
+        ctsubControlAssets:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ctSub_Control_Assets
+        ctsubControlLen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ctSub_Control_Len
+        ctanalisisAssets:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ctAnalisis_Assets
+        ctanalisisLen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ctAnalisis_Len
+        ctespecificoAssets:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ctEspecifico_Assets
+        ctespecificoLen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ctEspecifico_Len
+        cccapituloAssets:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ccCapitulo_Assets
+        cccapituloLen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ccCapitulo_Len
+        ccsubCapituloAssets:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ccSub_Capitulo_Assets
+        ccsubCapituloLen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ccSub_Capitulo_Len
+        ccespecificoAssets:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ccEspecifico_Assets
+        ccespecificoLen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ccEspecifico_Len
+        ccsubEspecificoAssets:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ccSub_Especifico_Assets
+        ccsubEspecificoLen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: ccSub_Especifico_Len
+        subElementoAssets:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Sub_Elemento_Assets
+        subElementoLen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Sub_Elemento_Len
+    lifecycleCallbacks: {  }

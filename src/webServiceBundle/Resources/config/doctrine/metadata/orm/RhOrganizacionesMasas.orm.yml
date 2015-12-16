@@ -1,0 +1,23 @@
+RhOrganizacionesMasas:
+    type: entity
+    table: RH_Organizaciones_Masas
+    id:
+        idOrgmasa:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_OrgMasa
+            generator:
+                strategy: IDENTITY
+    fields:
+        descOrgmasa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_OrgMasa
+    lifecycleCallbacks: {  }

@@ -1,0 +1,318 @@
+RhDesglosepagoefectivobancoporcientos:
+    type: entity
+    table: RH_DesglosePagoEfectivoBancoPorcientos
+    id:
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_User
+            generator:
+                strategy: IDENTITY
+    fields:
+        tiponomina:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: TipoNomina
+        ultimabasecalculoutilizada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: UltimaBaseCalculoUtilizada
+        porcbilletes100:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PorcBilletes100
+        porcbilletes50:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PorcBilletes50
+        porcbilletes20:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PorcBilletes20
+        porcbilletes10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PorcBilletes10
+        porcbilletes5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PorcBilletes5
+        porcbilletes3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PorcBilletes3
+        porcbilletes1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PorcBilletes1
+        porcmonedas5o3pesos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PorcMonedas5o3Pesos
+        porcmonedas1peso:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PorcMonedas1Peso
+        billetes100:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Billetes100
+        billetes50:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Billetes50
+        billetes20:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Billetes20
+        billetes10:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Billetes10
+        billetes5:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Billetes5
+        billetes3:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Billetes3
+        billetes1:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Billetes1
+        monedas5o3pesos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Monedas5o3Pesos
+        monedas1peso:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Monedas1Peso
+        basecalculoredist:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: BaseCalculoReDist
+        tipoinforme:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: TipoInforme
+        totalacobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TotalACobrar
+        cb100:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CB100
+        cb50:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CB50
+        cb20:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CB20
+        cb10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CB10
+        cb5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CB5
+        cb3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CB3
+        cb1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CB1
+        cm5o3p:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CM5o3P
+        cm1p:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CM1P
+        cm50o20c:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CM50o20C
+        cm25o5c:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CM25o5C
+        cm10o2c:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CM10o2C
+        cm5o1c:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CM5o1C
+        bb100:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BB100
+        bb50:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BB50
+        bb20:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BB20
+        bb10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BB10
+        bb5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BB5
+        bb3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BB3
+        bb1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BB1
+        bm5o3p:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BM5o3P
+        bm1p:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BM1P
+        bm50o20c:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BM50o20C
+        bm25o5c:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BM25o5C
+        bm10o2c:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BM10o2C
+        bm5o1c:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BM5o1C
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        cm1c:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CM1C
+        bm1c:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BM1C
+    lifecycleCallbacks: {  }

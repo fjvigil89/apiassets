@@ -1,0 +1,23 @@
+RhColectivos:
+    type: entity
+    table: RH_Colectivos
+    id:
+        idColectivo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Colectivo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descColectivo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Colectivo
+    lifecycleCallbacks: {  }

@@ -1,0 +1,180 @@
+RhDetallesReporteNominillasRpt:
+    type: entity
+    table: RH_Detalles_Reporte_Nominillas_Rpt
+    indexes:
+        IX_RH_Detalles_Reporte_Nominillas_Rpt:
+            columns:
+                - Contador
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Clasificacion
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idObra:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Obra
+        regimenSalarial:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Regimen_Salarial
+        tarifaHoraria:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_Horaria
+        diasAPagar:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_a_Pagar
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        pagoDivisa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pago_Divisa
+        anoTarjeta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Tarjeta
+        mesTarjeta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes_Tarjeta
+        diasAcumulado:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado
+        salarioAcumulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado
+        impresa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Impresa
+        procesada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Procesada
+        itemlink:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ItemLink
+        tarifaDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_Divisa
+        divisaFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Divisa_Factura
+        facturaConfirmada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Factura_Confirmada
+        facturar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Facturar
+        impresaGrupo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Impresa_Grupo
+        preassets:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PreAssets
+    lifecycleCallbacks: {  }

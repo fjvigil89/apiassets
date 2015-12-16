@@ -1,0 +1,19 @@
+RhRelojNodos:
+    type: entity
+    table: RH_Reloj_Nodos
+    id:
+        nodo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Nodo
+            generator:
+                strategy: IDENTITY
+    fields:
+        activo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Activo
+    lifecycleCallbacks: {  }

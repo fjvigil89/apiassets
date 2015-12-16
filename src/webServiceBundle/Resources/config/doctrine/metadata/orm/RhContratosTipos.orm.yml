@@ -1,0 +1,72 @@
+RhContratosTipos:
+    type: entity
+    table: RH_Contratos_Tipos
+    id:
+        idTipoContrato:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Tipo_Contrato
+            generator:
+                strategy: IDENTITY
+    fields:
+        descTipoContrato:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Desc_Tipo_Contrato
+        plantilla:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Plantilla
+        liquidarvacaciones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: LiquidarVacaciones
+        mspagoms:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MSPagoMS
+        msestim:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MSEstim
+        msestimecon:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MSEstimEcon
+        identificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Identificacion
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clasificacion
+        grupoContableTipoContrato:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Grupo_Contable_Tipo_Contrato
+        nopagofincontrato:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: NoPagoFinContrato
+    lifecycleCallbacks: {  }

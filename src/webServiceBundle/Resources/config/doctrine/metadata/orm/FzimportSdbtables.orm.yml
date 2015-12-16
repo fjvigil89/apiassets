@@ -1,0 +1,21 @@
+FzimportSdbtables:
+    type: entity
+    table: FzImport_SDBTables
+    id:
+        stable:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ''
+            id: true
+            column: STable
+            generator:
+                strategy: IDENTITY
+    fields:
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+    lifecycleCallbacks: {  }

@@ -1,0 +1,266 @@
+RhDetallesReporteNominillasMov:
+    type: entity
+    table: RH_Detalles_Reporte_Nominillas_Mov
+    indexes:
+        IX_RH_Detalles_Reporte_Nominillas_Mov:
+            columns:
+                - Contador
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Clasificacion
+        regimenSalarial:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Regimen_Salarial
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+        idCargo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Cargo
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idObra:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Obra
+        diasLaborables:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Laborables
+        tarifaHoraria:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_Horaria
+        salarioBasico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico
+        estimulo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estimulo
+        porcientoEstimulo:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Estimulo
+        antiguedad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Antiguedad
+        otros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros
+        plus:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plus
+        salarioPorCargo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_por_Cargo
+        estimulacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estimulacion
+        porcientoEstimulacion:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Estimulacion
+        diasAPagar:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_a_Pagar
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        anoTarjeta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Tarjeta
+        mesTarjeta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes_Tarjeta
+        diasAcumulado:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado
+        salarioAcumulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado
+        impresa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Impresa
+        procesada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Procesada
+        descCargo:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Desc_Cargo
+        fondotiempodia:
+            type: decimal
+            nullable: false
+            precision: 6
+            scale: 4
+            default: '0.00'
+            column: FondoTiempoDia
+        impresaGrupo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Impresa_Grupo
+        tarifaDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_Divisa
+        divisaFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Divisa_Factura
+        facturaConfirmada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Factura_Confirmada
+        facturar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Facturar
+        nomovimiento:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NoMovimiento
+    lifecycleCallbacks: {  }

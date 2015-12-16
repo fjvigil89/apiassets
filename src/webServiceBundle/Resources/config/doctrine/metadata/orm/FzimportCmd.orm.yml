@@ -1,0 +1,46 @@
+FzimportCmd:
+    type: entity
+    table: FzImport_Cmd
+    indexes:
+        IX_FzImport_Cmd:
+            columns:
+                - mTable
+    id:
+        contador9:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador9
+            generator:
+                strategy: IDENTITY
+    fields:
+        mtable:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            column: mTable
+        hastrigger:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: hasTrigger
+        mcmd:
+            type: string
+            nullable: false
+            length: 4000
+            fixed: false
+            column: mCmd
+        mrows:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: mRows
+        mmsg:
+            type: string
+            nullable: false
+            length: 450
+            fixed: false
+            column: mMsg
+    lifecycleCallbacks: {  }

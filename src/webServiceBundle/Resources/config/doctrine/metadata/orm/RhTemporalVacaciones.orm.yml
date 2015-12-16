@@ -1,0 +1,123 @@
+RhTemporalVacaciones:
+    type: entity
+    table: RH_Temporal_Vacaciones
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        diasSolicitados:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Solicitados
+        diasPagados:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Pagados
+        diasPagadosAdelantados:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Pagados_Adelantados
+        diasAcumulado:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado
+        salarioAcumulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado
+        importePagado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Pagado
+        importePeriodo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Periodo
+        importeAdelantado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Adelantado
+        deducciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Deducciones
+        netoACobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Neto_a_Cobrar
+        perfeccionamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Perfeccionamiento
+        anoAdelantadoTarjeta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Adelantado_Tarjeta
+        mesAdelantadoTarjeta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes_Adelantado_Tarjeta
+        ajustecentavos:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: AjusteCentavos
+    lifecycleCallbacks: {  }

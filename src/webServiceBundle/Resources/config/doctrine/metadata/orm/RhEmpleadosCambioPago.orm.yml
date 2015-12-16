@@ -1,0 +1,61 @@
+RhEmpleadosCambioPago:
+    type: entity
+    table: RH_Empleados_Cambio_Pago
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idProvincia:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Provincia
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        cambiarPago:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Cambiar_Pago
+    lifecycleCallbacks: {  }

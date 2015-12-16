@@ -1,0 +1,121 @@
+RhAjustestarjetasnc225:
+    type: entity
+    table: RH_AjustesTarjetaSNC_225
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        anoajustar:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: AnoAjustar
+        mesajustar:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: MesAjustar
+        dias:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        claves:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: Claves
+        ajustedias:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: AjusteDias
+        ajusteimporte:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AjusteImporte
+        ajusteclaves:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: AjusteClaves
+        observaciones:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Observaciones
+        procesarajuste:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ProcesarAjuste
+        procesado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Procesado
+    lifecycleCallbacks: {  }

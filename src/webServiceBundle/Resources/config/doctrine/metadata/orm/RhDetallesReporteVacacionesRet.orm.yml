@@ -1,0 +1,73 @@
+RhDetallesReporteVacacionesRet:
+    type: entity
+    table: RH_Detalles_Reporte_Vacaciones_Ret
+    indexes:
+        IX_RH_Detalles_Reporte_Vacaciones_Ret:
+            columns:
+                - Contador
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpedienteDeduccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente_Deduccion
+        valorDeduccion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Deduccion
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        delMark:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Del_Mark
+    lifecycleCallbacks: {  }

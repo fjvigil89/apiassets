@@ -1,0 +1,117 @@
+RhConversionPlazas:
+    type: entity
+    table: RH_Conversion_Plazas
+    id:
+        noconversion:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: NoConversion
+            generator:
+                strategy: IDENTITY
+    fields:
+        fechaAprobada:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Aprobada
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+        descDireccion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_Direccion
+        idCargoold:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CargoOld
+        descCargoold:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Desc_CargoOld
+        plaza:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plaza
+        vacante:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Vacante
+        idCargonew:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CargoNew
+        descCargonew:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Desc_CargoNew
+        descCategoria:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Desc_Categoria
+        descSubcategoria:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Subcategoria
+        rgrupo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: RGrupo
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+    lifecycleCallbacks: {  }

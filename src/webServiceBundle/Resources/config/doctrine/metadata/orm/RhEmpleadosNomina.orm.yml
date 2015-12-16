@@ -1,0 +1,477 @@
+RhEmpleadosNomina:
+    type: entity
+    table: RH_Empleados_Nomina
+    uniqueConstraints:
+        IX_Empleados_Nomina:
+            columns:
+                - Id_Expediente
+    id:
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Empleado
+            generator:
+                strategy: IDENTITY
+    fields:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Nombre
+        apellido1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Apellido_1
+        nomina:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Nomina
+        seleccionadoParaPago:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Seleccionado_para_Pago
+        tarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa
+        tarifaDiaria:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_Diaria
+        salarioBasico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico
+        estimulo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estimulo
+        porcientoEstimulo:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Estimulo
+        antiguedad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Antiguedad
+        otros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros
+        plus:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plus
+        salarioPorCargo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_por_Cargo
+        acumulaVacaciones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Acumula_Vacaciones
+        diasAcumulado:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado
+        salarioAcumulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado
+        diasAcumuladoTemporal:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado_Temporal
+        salarioAcumuladoTemporal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado_Temporal
+        nivelNomina:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel_Nomina
+        idDireccionNomina:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion_Nomina
+        invalidezParcial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Invalidez_Parcial
+        exCombatientes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ex_Combatientes
+        porcientoPerfeccionamiento:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Perfeccionamiento
+        valorDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Divisa
+        porcientoPagoDivisa:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Pago_Divisa
+        estimulacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estimulacion
+        porcientoEstimulacion:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Estimulacion
+        albergamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Albergamiento
+        otrasretribuciones:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: OtrasRetribuciones
+        horarioirregular:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HorarioIrregular
+        otrasCla:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otras_CLA
+        ieterritorial:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: IETerritorial
+        etsector:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: ETSector
+        coeficenteEmpresaEmpleadora:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 2
+            default: '0.00'
+            column: Coeficente_Empresa_Empleadora
+        idTipoParticipacion:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Tipo_Participacion
+        idoneidadFijo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Fijo
+        idoneidadMovil:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Movil
+        retribucionComplementaria:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Retribucion_Complementaria
+        coeficientetarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1.00'
+            column: CoeficienteTarifa
+        descuento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Descuento
+        descuentomasivo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DescuentoMasivo
+        estipendioPorEstudio:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Estipendio_por_Estudio
+        cuantiaEstipendio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cuantia_Estipendio
+        horasExtra:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Horas_Extra
+        condiciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Condiciones
+        ctaMnac:
+            type: string
+            nullable: false
+            length: 16
+            fixed: false
+            default: ''
+            column: Cta_MNac
+        ctaDivisa:
+            type: string
+            nullable: false
+            length: 16
+            fixed: false
+            default: ''
+            column: Cta_Divisa
+        nombApell:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Nomb_Apell
+        pagomsantig:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PagoMSAntig
+        pagotarjetamagnetica:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PagoTarjetaMagnetica
+        calculoPorTarifaDiaria:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Calculo_por_tarifa_diaria
+        codturno:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CodTurno
+        codmsclasifemplestim:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CodMSClasifEmplEstim
+        pagoDivisa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pago_Divisa
+        importeVacacionesAdelantadas:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Vacaciones_Adelantadas
+        importeVacacionesMes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Vacaciones_Mes
+        vacacionesDescontadas:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Vacaciones_Descontadas
+        importeDescontado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Descontado
+        diasVacacionesAdelantados:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Vacaciones_Adelantados
+        ordenSalidas:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Salidas
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        nominaseparada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: NominaSeparada
+        tarifaDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_Divisa
+        salarioDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Divisa
+        pension:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pension
+        apellido2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Apellido_2
+        cupestimuloacumvac:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CUPEstimuloAcumVac
+        idBeneficiario:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Beneficiario
+        beneficiario:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Beneficiario
+        pagotarjetamagneticacuc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PagoTarjetaMagneticaCUC
+        pagoComedorCuc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pago_Comedor_CUC
+        pagoComedorTarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pago_Comedor_Tarifa
+    lifecycleCallbacks: {  }

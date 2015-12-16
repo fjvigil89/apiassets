@@ -1,0 +1,71 @@
+RhDetallesReporteIdoneidadMovil:
+    type: entity
+    table: RH_Detalles_Reporte_Idoneidad_Movil
+    indexes:
+        IX_RH_Detalles_Reporte_Idoneidad_Movil:
+            columns:
+                - Contador
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            id: true
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+    fields:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: Item
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        puntos:
+            type: decimal
+            nullable: false
+            precision: 7
+            scale: 2
+            default: '0.00'
+            column: Puntos
+        afectacion:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Afectacion
+    lifecycleCallbacks: {  }

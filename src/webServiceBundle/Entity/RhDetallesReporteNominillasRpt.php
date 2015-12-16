@@ -211,4 +211,635 @@ class RhDetallesReporteNominillasRpt
     private $preassets;
 
 
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set clasificacion
+     *
+     * @param integer $clasificacion
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setClasificacion($clasificacion)
+    {
+        $this->clasificacion = $clasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get clasificacion
+     *
+     * @return integer 
+     */
+    public function getClasificacion()
+    {
+        return $this->clasificacion;
+    }
+
+    /**
+     * Set idCcosto
+     *
+     * @param string $idCcosto
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setIdCcosto($idCcosto)
+    {
+        $this->idCcosto = $idCcosto;
+
+        return $this;
+    }
+
+    /**
+     * Get idCcosto
+     *
+     * @return string 
+     */
+    public function getIdCcosto()
+    {
+        return $this->idCcosto;
+    }
+
+    /**
+     * Set idObra
+     *
+     * @param string $idObra
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setIdObra($idObra)
+    {
+        $this->idObra = $idObra;
+
+        return $this;
+    }
+
+    /**
+     * Get idObra
+     *
+     * @return string 
+     */
+    public function getIdObra()
+    {
+        return $this->idObra;
+    }
+
+    /**
+     * Set regimenSalarial
+     *
+     * @param integer $regimenSalarial
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setRegimenSalarial($regimenSalarial)
+    {
+        $this->regimenSalarial = $regimenSalarial;
+
+        return $this;
+    }
+
+    /**
+     * Get regimenSalarial
+     *
+     * @return integer 
+     */
+    public function getRegimenSalarial()
+    {
+        return $this->regimenSalarial;
+    }
+
+    /**
+     * Set tarifaHoraria
+     *
+     * @param integer $tarifaHoraria
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setTarifaHoraria($tarifaHoraria)
+    {
+        $this->tarifaHoraria = $tarifaHoraria;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifaHoraria
+     *
+     * @return integer 
+     */
+    public function getTarifaHoraria()
+    {
+        return $this->tarifaHoraria;
+    }
+
+    /**
+     * Set diasAPagar
+     *
+     * @param string $diasAPagar
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setDiasAPagar($diasAPagar)
+    {
+        $this->diasAPagar = $diasAPagar;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAPagar
+     *
+     * @return string 
+     */
+    public function getDiasAPagar()
+    {
+        return $this->diasAPagar;
+    }
+
+    /**
+     * Set importe
+     *
+     * @param integer $importe
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setImporte($importe)
+    {
+        $this->importe = $importe;
+
+        return $this;
+    }
+
+    /**
+     * Get importe
+     *
+     * @return integer 
+     */
+    public function getImporte()
+    {
+        return $this->importe;
+    }
+
+    /**
+     * Set pagoDivisa
+     *
+     * @param boolean $pagoDivisa
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setPagoDivisa($pagoDivisa)
+    {
+        $this->pagoDivisa = $pagoDivisa;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoDivisa
+     *
+     * @return boolean 
+     */
+    public function getPagoDivisa()
+    {
+        return $this->pagoDivisa;
+    }
+
+    /**
+     * Set anoTarjeta
+     *
+     * @param integer $anoTarjeta
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setAnoTarjeta($anoTarjeta)
+    {
+        $this->anoTarjeta = $anoTarjeta;
+
+        return $this;
+    }
+
+    /**
+     * Get anoTarjeta
+     *
+     * @return integer 
+     */
+    public function getAnoTarjeta()
+    {
+        return $this->anoTarjeta;
+    }
+
+    /**
+     * Set mesTarjeta
+     *
+     * @param integer $mesTarjeta
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setMesTarjeta($mesTarjeta)
+    {
+        $this->mesTarjeta = $mesTarjeta;
+
+        return $this;
+    }
+
+    /**
+     * Get mesTarjeta
+     *
+     * @return integer 
+     */
+    public function getMesTarjeta()
+    {
+        return $this->mesTarjeta;
+    }
+
+    /**
+     * Set diasAcumulado
+     *
+     * @param string $diasAcumulado
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setDiasAcumulado($diasAcumulado)
+    {
+        $this->diasAcumulado = $diasAcumulado;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAcumulado
+     *
+     * @return string 
+     */
+    public function getDiasAcumulado()
+    {
+        return $this->diasAcumulado;
+    }
+
+    /**
+     * Set salarioAcumulado
+     *
+     * @param integer $salarioAcumulado
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setSalarioAcumulado($salarioAcumulado)
+    {
+        $this->salarioAcumulado = $salarioAcumulado;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioAcumulado
+     *
+     * @return integer 
+     */
+    public function getSalarioAcumulado()
+    {
+        return $this->salarioAcumulado;
+    }
+
+    /**
+     * Set impresa
+     *
+     * @param boolean $impresa
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setImpresa($impresa)
+    {
+        $this->impresa = $impresa;
+
+        return $this;
+    }
+
+    /**
+     * Get impresa
+     *
+     * @return boolean 
+     */
+    public function getImpresa()
+    {
+        return $this->impresa;
+    }
+
+    /**
+     * Set procesada
+     *
+     * @param boolean $procesada
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setProcesada($procesada)
+    {
+        $this->procesada = $procesada;
+
+        return $this;
+    }
+
+    /**
+     * Get procesada
+     *
+     * @return boolean 
+     */
+    public function getProcesada()
+    {
+        return $this->procesada;
+    }
+
+    /**
+     * Set itemlink
+     *
+     * @param integer $itemlink
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setItemlink($itemlink)
+    {
+        $this->itemlink = $itemlink;
+
+        return $this;
+    }
+
+    /**
+     * Get itemlink
+     *
+     * @return integer 
+     */
+    public function getItemlink()
+    {
+        return $this->itemlink;
+    }
+
+    /**
+     * Set tarifaDivisa
+     *
+     * @param integer $tarifaDivisa
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setTarifaDivisa($tarifaDivisa)
+    {
+        $this->tarifaDivisa = $tarifaDivisa;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifaDivisa
+     *
+     * @return integer 
+     */
+    public function getTarifaDivisa()
+    {
+        return $this->tarifaDivisa;
+    }
+
+    /**
+     * Set divisaFactura
+     *
+     * @param integer $divisaFactura
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setDivisaFactura($divisaFactura)
+    {
+        $this->divisaFactura = $divisaFactura;
+
+        return $this;
+    }
+
+    /**
+     * Get divisaFactura
+     *
+     * @return integer 
+     */
+    public function getDivisaFactura()
+    {
+        return $this->divisaFactura;
+    }
+
+    /**
+     * Set facturaConfirmada
+     *
+     * @param boolean $facturaConfirmada
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setFacturaConfirmada($facturaConfirmada)
+    {
+        $this->facturaConfirmada = $facturaConfirmada;
+
+        return $this;
+    }
+
+    /**
+     * Get facturaConfirmada
+     *
+     * @return boolean 
+     */
+    public function getFacturaConfirmada()
+    {
+        return $this->facturaConfirmada;
+    }
+
+    /**
+     * Set facturar
+     *
+     * @param boolean $facturar
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setFacturar($facturar)
+    {
+        $this->facturar = $facturar;
+
+        return $this;
+    }
+
+    /**
+     * Get facturar
+     *
+     * @return boolean 
+     */
+    public function getFacturar()
+    {
+        return $this->facturar;
+    }
+
+    /**
+     * Set impresaGrupo
+     *
+     * @param integer $impresaGrupo
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setImpresaGrupo($impresaGrupo)
+    {
+        $this->impresaGrupo = $impresaGrupo;
+
+        return $this;
+    }
+
+    /**
+     * Get impresaGrupo
+     *
+     * @return integer 
+     */
+    public function getImpresaGrupo()
+    {
+        return $this->impresaGrupo;
+    }
+
+    /**
+     * Set preassets
+     *
+     * @param boolean $preassets
+     * @return RhDetallesReporteNominillasRpt
+     */
+    public function setPreassets($preassets)
+    {
+        $this->preassets = $preassets;
+
+        return $this;
+    }
+
+    /**
+     * Get preassets
+     *
+     * @return boolean 
+     */
+    public function getPreassets()
+    {
+        return $this->preassets;
+    }
 }

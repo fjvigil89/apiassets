@@ -78,4 +78,198 @@ class RhTmpContabilizacionNominillasReintegros
     private $ajustecentavos;
 
 
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set idCcosto
+     *
+     * @param string $idCcosto
+     * @return RhTmpContabilizacionNominillasReintegros
+     */
+    public function setIdCcosto($idCcosto)
+    {
+        $this->idCcosto = $idCcosto;
+
+        return $this;
+    }
+
+    /**
+     * Get idCcosto
+     *
+     * @return string 
+     */
+    public function getIdCcosto()
+    {
+        return $this->idCcosto;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhTmpContabilizacionNominillasReintegros
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set importeReintegroSalario
+     *
+     * @param integer $importeReintegroSalario
+     * @return RhTmpContabilizacionNominillasReintegros
+     */
+    public function setImporteReintegroSalario($importeReintegroSalario)
+    {
+        $this->importeReintegroSalario = $importeReintegroSalario;
+
+        return $this;
+    }
+
+    /**
+     * Get importeReintegroSalario
+     *
+     * @return integer 
+     */
+    public function getImporteReintegroSalario()
+    {
+        return $this->importeReintegroSalario;
+    }
+
+    /**
+     * Set importeReintegroSubsidio
+     *
+     * @param integer $importeReintegroSubsidio
+     * @return RhTmpContabilizacionNominillasReintegros
+     */
+    public function setImporteReintegroSubsidio($importeReintegroSubsidio)
+    {
+        $this->importeReintegroSubsidio = $importeReintegroSubsidio;
+
+        return $this;
+    }
+
+    /**
+     * Get importeReintegroSubsidio
+     *
+     * @return integer 
+     */
+    public function getImporteReintegroSubsidio()
+    {
+        return $this->importeReintegroSubsidio;
+    }
+
+    /**
+     * Set importeReintegroVacaciones
+     *
+     * @param integer $importeReintegroVacaciones
+     * @return RhTmpContabilizacionNominillasReintegros
+     */
+    public function setImporteReintegroVacaciones($importeReintegroVacaciones)
+    {
+        $this->importeReintegroVacaciones = $importeReintegroVacaciones;
+
+        return $this;
+    }
+
+    /**
+     * Get importeReintegroVacaciones
+     *
+     * @return integer 
+     */
+    public function getImporteReintegroVacaciones()
+    {
+        return $this->importeReintegroVacaciones;
+    }
+
+    /**
+     * Set importeReintegroDivisa
+     *
+     * @param integer $importeReintegroDivisa
+     * @return RhTmpContabilizacionNominillasReintegros
+     */
+    public function setImporteReintegroDivisa($importeReintegroDivisa)
+    {
+        $this->importeReintegroDivisa = $importeReintegroDivisa;
+
+        return $this;
+    }
+
+    /**
+     * Get importeReintegroDivisa
+     *
+     * @return integer 
+     */
+    public function getImporteReintegroDivisa()
+    {
+        return $this->importeReintegroDivisa;
+    }
+
+    /**
+     * Set acobrar
+     *
+     * @param integer $acobrar
+     * @return RhTmpContabilizacionNominillasReintegros
+     */
+    public function setAcobrar($acobrar)
+    {
+        $this->acobrar = $acobrar;
+
+        return $this;
+    }
+
+    /**
+     * Get acobrar
+     *
+     * @return integer 
+     */
+    public function getAcobrar()
+    {
+        return $this->acobrar;
+    }
+
+    /**
+     * Set ajustecentavos
+     *
+     * @param string $ajustecentavos
+     * @return RhTmpContabilizacionNominillasReintegros
+     */
+    public function setAjustecentavos($ajustecentavos)
+    {
+        $this->ajustecentavos = $ajustecentavos;
+
+        return $this;
+    }
+
+    /**
+     * Get ajustecentavos
+     *
+     * @return string 
+     */
+    public function getAjustecentavos()
+    {
+        return $this->ajustecentavos;
+    }
 }

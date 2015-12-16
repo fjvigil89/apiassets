@@ -43,4 +43,83 @@ class RhCausasAltas
     private $clasificacion;
 
 
+
+    /**
+     * Get idCausaalta
+     *
+     * @return string 
+     */
+    public function getIdCausaalta()
+    {
+        return $this->idCausaalta;
+    }
+
+    /**
+     * Set descCausaalta
+     *
+     * @param string $descCausaalta
+     * @return RhCausasAltas
+     */
+    public function setDescCausaalta($descCausaalta)
+    {
+        $this->descCausaalta = $descCausaalta;
+
+        return $this;
+    }
+
+    /**
+     * Get descCausaalta
+     *
+     * @return string 
+     */
+    public function getDescCausaalta()
+    {
+        return $this->descCausaalta;
+    }
+
+    /**
+     * Set descRpt
+     *
+     * @param string $descRpt
+     * @return RhCausasAltas
+     */
+    public function setDescRpt($descRpt)
+    {
+        $this->descRpt = $descRpt;
+
+        return $this;
+    }
+
+    /**
+     * Get descRpt
+     *
+     * @return string 
+     */
+    public function getDescRpt()
+    {
+        return $this->descRpt;
+    }
+
+    /**
+     * Set clasificacion
+     *
+     * @param integer $clasificacion
+     * @return RhCausasAltas
+     */
+    public function setClasificacion($clasificacion)
+    {
+        $this->clasificacion = $clasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get clasificacion
+     *
+     * @return integer 
+     */
+    public function getClasificacion()
+    {
+        return $this->clasificacion;
+    }
 }

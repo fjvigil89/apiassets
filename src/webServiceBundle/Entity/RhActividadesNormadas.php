@@ -57,4 +57,129 @@ class RhActividadesNormadas
     private $normaTiempo;
 
 
+
+    /**
+     * Get idActividad
+     *
+     * @return string 
+     */
+    public function getIdActividad()
+    {
+        return $this->idActividad;
+    }
+
+    /**
+     * Set descActividad
+     *
+     * @param string $descActividad
+     * @return RhActividadesNormadas
+     */
+    public function setDescActividad($descActividad)
+    {
+        $this->descActividad = $descActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get descActividad
+     *
+     * @return string 
+     */
+    public function getDescActividad()
+    {
+        return $this->descActividad;
+    }
+
+    /**
+     * Set um
+     *
+     * @param string $um
+     * @return RhActividadesNormadas
+     */
+    public function setUm($um)
+    {
+        $this->um = $um;
+
+        return $this;
+    }
+
+    /**
+     * Get um
+     *
+     * @return string 
+     */
+    public function getUm()
+    {
+        return $this->um;
+    }
+
+    /**
+     * Set tasa
+     *
+     * @param string $tasa
+     * @return RhActividadesNormadas
+     */
+    public function setTasa($tasa)
+    {
+        $this->tasa = $tasa;
+
+        return $this;
+    }
+
+    /**
+     * Get tasa
+     *
+     * @return string 
+     */
+    public function getTasa()
+    {
+        return $this->tasa;
+    }
+
+    /**
+     * Set tipoNorma
+     *
+     * @param string $tipoNorma
+     * @return RhActividadesNormadas
+     */
+    public function setTipoNorma($tipoNorma)
+    {
+        $this->tipoNorma = $tipoNorma;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoNorma
+     *
+     * @return string 
+     */
+    public function getTipoNorma()
+    {
+        return $this->tipoNorma;
+    }
+
+    /**
+     * Set normaTiempo
+     *
+     * @param string $normaTiempo
+     * @return RhActividadesNormadas
+     */
+    public function setNormaTiempo($normaTiempo)
+    {
+        $this->normaTiempo = $normaTiempo;
+
+        return $this;
+    }
+
+    /**
+     * Get normaTiempo
+     *
+     * @return string 
+     */
+    public function getNormaTiempo()
+    {
+        return $this->normaTiempo;
+    }
 }

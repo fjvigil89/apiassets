@@ -29,4 +29,37 @@ class RhClasificacionP2
     private $descClasifP2;
 
 
+
+    /**
+     * Get idClasifP2
+     *
+     * @return string 
+     */
+    public function getIdClasifP2()
+    {
+        return $this->idClasifP2;
+    }
+
+    /**
+     * Set descClasifP2
+     *
+     * @param string $descClasifP2
+     * @return RhClasificacionP2
+     */
+    public function setDescClasifP2($descClasifP2)
+    {
+        $this->descClasifP2 = $descClasifP2;
+
+        return $this;
+    }
+
+    /**
+     * Get descClasifP2
+     *
+     * @return string 
+     */
+    public function getDescClasifP2()
+    {
+        return $this->descClasifP2;
+    }
 }

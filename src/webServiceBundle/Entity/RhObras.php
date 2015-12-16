@@ -29,4 +29,37 @@ class RhObras
     private $descObra;
 
 
+
+    /**
+     * Get idObra
+     *
+     * @return string 
+     */
+    public function getIdObra()
+    {
+        return $this->idObra;
+    }
+
+    /**
+     * Set descObra
+     *
+     * @param string $descObra
+     * @return RhObras
+     */
+    public function setDescObra($descObra)
+    {
+        $this->descObra = $descObra;
+
+        return $this;
+    }
+
+    /**
+     * Get descObra
+     *
+     * @return string 
+     */
+    public function getDescObra()
+    {
+        return $this->descObra;
+    }
 }

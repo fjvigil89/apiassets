@@ -45,4 +45,96 @@ class RhEmpleadosCapacitacion
     private $fechaCurso;
 
 
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhEmpleadosCapacitacion
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set idCurso
+     *
+     * @param string $idCurso
+     * @return RhEmpleadosCapacitacion
+     */
+    public function setIdCurso($idCurso)
+    {
+        $this->idCurso = $idCurso;
+
+        return $this;
+    }
+
+    /**
+     * Get idCurso
+     *
+     * @return string 
+     */
+    public function getIdCurso()
+    {
+        return $this->idCurso;
+    }
+
+    /**
+     * Set descCurso
+     *
+     * @param string $descCurso
+     * @return RhEmpleadosCapacitacion
+     */
+    public function setDescCurso($descCurso)
+    {
+        $this->descCurso = $descCurso;
+
+        return $this;
+    }
+
+    /**
+     * Get descCurso
+     *
+     * @return string 
+     */
+    public function getDescCurso()
+    {
+        return $this->descCurso;
+    }
+
+    /**
+     * Set fechaCurso
+     *
+     * @param \DateTime $fechaCurso
+     * @return RhEmpleadosCapacitacion
+     */
+    public function setFechaCurso($fechaCurso)
+    {
+        $this->fechaCurso = $fechaCurso;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaCurso
+     *
+     * @return \DateTime 
+     */
+    public function getFechaCurso()
+    {
+        return $this->fechaCurso;
+    }
 }

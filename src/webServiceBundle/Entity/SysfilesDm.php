@@ -43,4 +43,83 @@ class SysfilesDm
     private $dt;
 
 
+
+    /**
+     * Get nu
+     *
+     * @return integer 
+     */
+    public function getNu()
+    {
+        return $this->nu;
+    }
+
+    /**
+     * Set sys1li
+     *
+     * @param string $sys1li
+     * @return SysfilesDm
+     */
+    public function setSys1li($sys1li)
+    {
+        $this->sys1li = $sys1li;
+
+        return $this;
+    }
+
+    /**
+     * Get sys1li
+     *
+     * @return string 
+     */
+    public function getSys1li()
+    {
+        return $this->sys1li;
+    }
+
+    /**
+     * Set sys2le
+     *
+     * @param string $sys2le
+     * @return SysfilesDm
+     */
+    public function setSys2le($sys2le)
+    {
+        $this->sys2le = $sys2le;
+
+        return $this;
+    }
+
+    /**
+     * Get sys2le
+     *
+     * @return string 
+     */
+    public function getSys2le()
+    {
+        return $this->sys2le;
+    }
+
+    /**
+     * Set dt
+     *
+     * @param \DateTime $dt
+     * @return SysfilesDm
+     */
+    public function setDt($dt)
+    {
+        $this->dt = $dt;
+
+        return $this;
+    }
+
+    /**
+     * Get dt
+     *
+     * @return \DateTime 
+     */
+    public function getDt()
+    {
+        return $this->dt;
+    }
 }

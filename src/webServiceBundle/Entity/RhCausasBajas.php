@@ -50,4 +50,106 @@ class RhCausasBajas
     private $clasificacion;
 
 
+
+    /**
+     * Get idCausabaja
+     *
+     * @return string 
+     */
+    public function getIdCausabaja()
+    {
+        return $this->idCausabaja;
+    }
+
+    /**
+     * Set descCausabaja
+     *
+     * @param string $descCausabaja
+     * @return RhCausasBajas
+     */
+    public function setDescCausabaja($descCausabaja)
+    {
+        $this->descCausabaja = $descCausabaja;
+
+        return $this;
+    }
+
+    /**
+     * Get descCausabaja
+     *
+     * @return string 
+     */
+    public function getDescCausabaja()
+    {
+        return $this->descCausabaja;
+    }
+
+    /**
+     * Set descRpt
+     *
+     * @param string $descRpt
+     * @return RhCausasBajas
+     */
+    public function setDescRpt($descRpt)
+    {
+        $this->descRpt = $descRpt;
+
+        return $this;
+    }
+
+    /**
+     * Get descRpt
+     *
+     * @return string 
+     */
+    public function getDescRpt()
+    {
+        return $this->descRpt;
+    }
+
+    /**
+     * Set fluctuacion
+     *
+     * @param boolean $fluctuacion
+     * @return RhCausasBajas
+     */
+    public function setFluctuacion($fluctuacion)
+    {
+        $this->fluctuacion = $fluctuacion;
+
+        return $this;
+    }
+
+    /**
+     * Get fluctuacion
+     *
+     * @return boolean 
+     */
+    public function getFluctuacion()
+    {
+        return $this->fluctuacion;
+    }
+
+    /**
+     * Set clasificacion
+     *
+     * @param integer $clasificacion
+     * @return RhCausasBajas
+     */
+    public function setClasificacion($clasificacion)
+    {
+        $this->clasificacion = $clasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get clasificacion
+     *
+     * @return integer 
+     */
+    public function getClasificacion()
+    {
+        return $this->clasificacion;
+    }
 }

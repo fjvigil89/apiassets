@@ -43,4 +43,83 @@ class RhCargosRmph
     private $medidasProteccionHigiene;
 
 
+
+    /**
+     * Get idCargo
+     *
+     * @return string 
+     */
+    public function getIdCargo()
+    {
+        return $this->idCargo;
+    }
+
+    /**
+     * Set descCargo
+     *
+     * @param string $descCargo
+     * @return RhCargosRmph
+     */
+    public function setDescCargo($descCargo)
+    {
+        $this->descCargo = $descCargo;
+
+        return $this;
+    }
+
+    /**
+     * Get descCargo
+     *
+     * @return string 
+     */
+    public function getDescCargo()
+    {
+        return $this->descCargo;
+    }
+
+    /**
+     * Set requisitos
+     *
+     * @param string $requisitos
+     * @return RhCargosRmph
+     */
+    public function setRequisitos($requisitos)
+    {
+        $this->requisitos = $requisitos;
+
+        return $this;
+    }
+
+    /**
+     * Get requisitos
+     *
+     * @return string 
+     */
+    public function getRequisitos()
+    {
+        return $this->requisitos;
+    }
+
+    /**
+     * Set medidasProteccionHigiene
+     *
+     * @param string $medidasProteccionHigiene
+     * @return RhCargosRmph
+     */
+    public function setMedidasProteccionHigiene($medidasProteccionHigiene)
+    {
+        $this->medidasProteccionHigiene = $medidasProteccionHigiene;
+
+        return $this;
+    }
+
+    /**
+     * Get medidasProteccionHigiene
+     *
+     * @return string 
+     */
+    public function getMedidasProteccionHigiene()
+    {
+        return $this->medidasProteccionHigiene;
+    }
 }

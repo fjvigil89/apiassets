@@ -43,4 +43,83 @@ class RhTmpContabilizacionSalariosVinculados
     private $salarioBasico;
 
 
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set idCcosto
+     *
+     * @param string $idCcosto
+     * @return RhTmpContabilizacionSalariosVinculados
+     */
+    public function setIdCcosto($idCcosto)
+    {
+        $this->idCcosto = $idCcosto;
+
+        return $this;
+    }
+
+    /**
+     * Get idCcosto
+     *
+     * @return string 
+     */
+    public function getIdCcosto()
+    {
+        return $this->idCcosto;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhTmpContabilizacionSalariosVinculados
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set salarioBasico
+     *
+     * @param integer $salarioBasico
+     * @return RhTmpContabilizacionSalariosVinculados
+     */
+    public function setSalarioBasico($salarioBasico)
+    {
+        $this->salarioBasico = $salarioBasico;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioBasico
+     *
+     * @return integer 
+     */
+    public function getSalarioBasico()
+    {
+        return $this->salarioBasico;
+    }
 }

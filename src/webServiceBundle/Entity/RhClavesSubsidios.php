@@ -57,4 +57,129 @@ class RhClavesSubsidios
     private $idClaveAusencia;
 
 
+
+    /**
+     * Get idClave
+     *
+     * @return string 
+     */
+    public function getIdClave()
+    {
+        return $this->idClave;
+    }
+
+    /**
+     * Set descClave
+     *
+     * @param string $descClave
+     * @return RhClavesSubsidios
+     */
+    public function setDescClave($descClave)
+    {
+        $this->descClave = $descClave;
+
+        return $this;
+    }
+
+    /**
+     * Get descClave
+     *
+     * @return string 
+     */
+    public function getDescClave()
+    {
+        return $this->descClave;
+    }
+
+    /**
+     * Set porciento
+     *
+     * @param string $porciento
+     * @return RhClavesSubsidios
+     */
+    public function setPorciento($porciento)
+    {
+        $this->porciento = $porciento;
+
+        return $this;
+    }
+
+    /**
+     * Get porciento
+     *
+     * @return string 
+     */
+    public function getPorciento()
+    {
+        return $this->porciento;
+    }
+
+    /**
+     * Set carencia
+     *
+     * @param boolean $carencia
+     * @return RhClavesSubsidios
+     */
+    public function setCarencia($carencia)
+    {
+        $this->carencia = $carencia;
+
+        return $this;
+    }
+
+    /**
+     * Get carencia
+     *
+     * @return boolean 
+     */
+    public function getCarencia()
+    {
+        return $this->carencia;
+    }
+
+    /**
+     * Set clasificacion
+     *
+     * @param integer $clasificacion
+     * @return RhClavesSubsidios
+     */
+    public function setClasificacion($clasificacion)
+    {
+        $this->clasificacion = $clasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get clasificacion
+     *
+     * @return integer 
+     */
+    public function getClasificacion()
+    {
+        return $this->clasificacion;
+    }
+
+    /**
+     * Set idClaveAusencia
+     *
+     * @param string $idClaveAusencia
+     * @return RhClavesSubsidios
+     */
+    public function setIdClaveAusencia($idClaveAusencia)
+    {
+        $this->idClaveAusencia = $idClaveAusencia;
+
+        return $this;
+    }
+
+    /**
+     * Get idClaveAusencia
+     *
+     * @return string 
+     */
+    public function getIdClaveAusencia()
+    {
+        return $this->idClaveAusencia;
+    }
 }

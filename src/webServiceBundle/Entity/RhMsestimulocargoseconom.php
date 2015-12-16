@@ -36,4 +36,60 @@ class RhMsestimulocargoseconom
     private $cuantia;
 
 
+
+    /**
+     * Get idCargo
+     *
+     * @return string 
+     */
+    public function getIdCargo()
+    {
+        return $this->idCargo;
+    }
+
+    /**
+     * Set descCargo
+     *
+     * @param string $descCargo
+     * @return RhMsestimulocargoseconom
+     */
+    public function setDescCargo($descCargo)
+    {
+        $this->descCargo = $descCargo;
+
+        return $this;
+    }
+
+    /**
+     * Get descCargo
+     *
+     * @return string 
+     */
+    public function getDescCargo()
+    {
+        return $this->descCargo;
+    }
+
+    /**
+     * Set cuantia
+     *
+     * @param integer $cuantia
+     * @return RhMsestimulocargoseconom
+     */
+    public function setCuantia($cuantia)
+    {
+        $this->cuantia = $cuantia;
+
+        return $this;
+    }
+
+    /**
+     * Get cuantia
+     *
+     * @return integer 
+     */
+    public function getCuantia()
+    {
+        return $this->cuantia;
+    }
 }

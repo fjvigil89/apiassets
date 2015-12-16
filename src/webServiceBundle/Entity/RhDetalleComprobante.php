@@ -211,4 +211,635 @@ class RhDetalleComprobante
     private $fechaConciliacion;
 
 
+
+    /**
+     * Get contador1
+     *
+     * @return integer 
+     */
+    public function getContador1()
+    {
+        return $this->contador1;
+    }
+
+    /**
+     * Set idCompro
+     *
+     * @param integer $idCompro
+     * @return RhDetalleComprobante
+     */
+    public function setIdCompro($idCompro)
+    {
+        $this->idCompro = $idCompro;
+
+        return $this;
+    }
+
+    /**
+     * Get idCompro
+     *
+     * @return integer 
+     */
+    public function getIdCompro()
+    {
+        return $this->idCompro;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhDetalleComprobante
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhDetalleComprobante
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoCompro
+     *
+     * @param string $tipoCompro
+     * @return RhDetalleComprobante
+     */
+    public function setTipoCompro($tipoCompro)
+    {
+        $this->tipoCompro = $tipoCompro;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoCompro
+     *
+     * @return string 
+     */
+    public function getTipoCompro()
+    {
+        return $this->tipoCompro;
+    }
+
+    /**
+     * Set idDoc
+     *
+     * @param string $idDoc
+     * @return RhDetalleComprobante
+     */
+    public function setIdDoc($idDoc)
+    {
+        $this->idDoc = $idDoc;
+
+        return $this;
+    }
+
+    /**
+     * Get idDoc
+     *
+     * @return string 
+     */
+    public function getIdDoc()
+    {
+        return $this->idDoc;
+    }
+
+    /**
+     * Set tipoDoc
+     *
+     * @param string $tipoDoc
+     * @return RhDetalleComprobante
+     */
+    public function setTipoDoc($tipoDoc)
+    {
+        $this->tipoDoc = $tipoDoc;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoDoc
+     *
+     * @return string 
+     */
+    public function getTipoDoc()
+    {
+        return $this->tipoDoc;
+    }
+
+    /**
+     * Set cta
+     *
+     * @param string $cta
+     * @return RhDetalleComprobante
+     */
+    public function setCta($cta)
+    {
+        $this->cta = $cta;
+
+        return $this;
+    }
+
+    /**
+     * Get cta
+     *
+     * @return string 
+     */
+    public function getCta()
+    {
+        return $this->cta;
+    }
+
+    /**
+     * Set subcta
+     *
+     * @param string $subcta
+     * @return RhDetalleComprobante
+     */
+    public function setSubcta($subcta)
+    {
+        $this->subcta = $subcta;
+
+        return $this;
+    }
+
+    /**
+     * Get subcta
+     *
+     * @return string 
+     */
+    public function getSubcta()
+    {
+        return $this->subcta;
+    }
+
+    /**
+     * Set analisis
+     *
+     * @param string $analisis
+     * @return RhDetalleComprobante
+     */
+    public function setAnalisis($analisis)
+    {
+        $this->analisis = $analisis;
+
+        return $this;
+    }
+
+    /**
+     * Get analisis
+     *
+     * @return string 
+     */
+    public function getAnalisis()
+    {
+        return $this->analisis;
+    }
+
+    /**
+     * Set subanalisis
+     *
+     * @param string $subanalisis
+     * @return RhDetalleComprobante
+     */
+    public function setSubanalisis($subanalisis)
+    {
+        $this->subanalisis = $subanalisis;
+
+        return $this;
+    }
+
+    /**
+     * Get subanalisis
+     *
+     * @return string 
+     */
+    public function getSubanalisis()
+    {
+        return $this->subanalisis;
+    }
+
+    /**
+     * Set epigrafe
+     *
+     * @param string $epigrafe
+     * @return RhDetalleComprobante
+     */
+    public function setEpigrafe($epigrafe)
+    {
+        $this->epigrafe = $epigrafe;
+
+        return $this;
+    }
+
+    /**
+     * Get epigrafe
+     *
+     * @return string 
+     */
+    public function getEpigrafe()
+    {
+        return $this->epigrafe;
+    }
+
+    /**
+     * Set partida
+     *
+     * @param string $partida
+     * @return RhDetalleComprobante
+     */
+    public function setPartida($partida)
+    {
+        $this->partida = $partida;
+
+        return $this;
+    }
+
+    /**
+     * Get partida
+     *
+     * @return string 
+     */
+    public function getPartida()
+    {
+        return $this->partida;
+    }
+
+    /**
+     * Set subcontrol
+     *
+     * @param string $subcontrol
+     * @return RhDetalleComprobante
+     */
+    public function setSubcontrol($subcontrol)
+    {
+        $this->subcontrol = $subcontrol;
+
+        return $this;
+    }
+
+    /**
+     * Get subcontrol
+     *
+     * @return string 
+     */
+    public function getSubcontrol()
+    {
+        return $this->subcontrol;
+    }
+
+    /**
+     * Set descripcion
+     *
+     * @param string $descripcion
+     * @return RhDetalleComprobante
+     */
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    /**
+     * Get descripcion
+     *
+     * @return string 
+     */
+    public function getDescripcion()
+    {
+        return $this->descripcion;
+    }
+
+    /**
+     * Set debe
+     *
+     * @param integer $debe
+     * @return RhDetalleComprobante
+     */
+    public function setDebe($debe)
+    {
+        $this->debe = $debe;
+
+        return $this;
+    }
+
+    /**
+     * Get debe
+     *
+     * @return integer 
+     */
+    public function getDebe()
+    {
+        return $this->debe;
+    }
+
+    /**
+     * Set haber
+     *
+     * @param integer $haber
+     * @return RhDetalleComprobante
+     */
+    public function setHaber($haber)
+    {
+        $this->haber = $haber;
+
+        return $this;
+    }
+
+    /**
+     * Get haber
+     *
+     * @return integer 
+     */
+    public function getHaber()
+    {
+        return $this->haber;
+    }
+
+    /**
+     * Set transito
+     *
+     * @param boolean $transito
+     * @return RhDetalleComprobante
+     */
+    public function setTransito($transito)
+    {
+        $this->transito = $transito;
+
+        return $this;
+    }
+
+    /**
+     * Get transito
+     *
+     * @return boolean 
+     */
+    public function getTransito()
+    {
+        return $this->transito;
+    }
+
+    /**
+     * Set clasificacion
+     *
+     * @param string $clasificacion
+     * @return RhDetalleComprobante
+     */
+    public function setClasificacion($clasificacion)
+    {
+        $this->clasificacion = $clasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get clasificacion
+     *
+     * @return string 
+     */
+    public function getClasificacion()
+    {
+        return $this->clasificacion;
+    }
+
+    /**
+     * Set natu
+     *
+     * @param boolean $natu
+     * @return RhDetalleComprobante
+     */
+    public function setNatu($natu)
+    {
+        $this->natu = $natu;
+
+        return $this;
+    }
+
+    /**
+     * Get natu
+     *
+     * @return boolean 
+     */
+    public function getNatu()
+    {
+        return $this->natu;
+    }
+
+    /**
+     * Set items
+     *
+     * @param integer $items
+     * @return RhDetalleComprobante
+     */
+    public function setItems($items)
+    {
+        $this->items = $items;
+
+        return $this;
+    }
+
+    /**
+     * Get items
+     *
+     * @return integer 
+     */
+    public function getItems()
+    {
+        return $this->items;
+    }
+
+    /**
+     * Set idComproref
+     *
+     * @param integer $idComproref
+     * @return RhDetalleComprobante
+     */
+    public function setIdComproref($idComproref)
+    {
+        $this->idComproref = $idComproref;
+
+        return $this;
+    }
+
+    /**
+     * Get idComproref
+     *
+     * @return integer 
+     */
+    public function getIdComproref()
+    {
+        return $this->idComproref;
+    }
+
+    /**
+     * Set anoref
+     *
+     * @param integer $anoref
+     * @return RhDetalleComprobante
+     */
+    public function setAnoref($anoref)
+    {
+        $this->anoref = $anoref;
+
+        return $this;
+    }
+
+    /**
+     * Get anoref
+     *
+     * @return integer 
+     */
+    public function getAnoref()
+    {
+        return $this->anoref;
+    }
+
+    /**
+     * Set mesref
+     *
+     * @param integer $mesref
+     * @return RhDetalleComprobante
+     */
+    public function setMesref($mesref)
+    {
+        $this->mesref = $mesref;
+
+        return $this;
+    }
+
+    /**
+     * Get mesref
+     *
+     * @return integer 
+     */
+    public function getMesref()
+    {
+        return $this->mesref;
+    }
+
+    /**
+     * Set idAgrupacion
+     *
+     * @param string $idAgrupacion
+     * @return RhDetalleComprobante
+     */
+    public function setIdAgrupacion($idAgrupacion)
+    {
+        $this->idAgrupacion = $idAgrupacion;
+
+        return $this;
+    }
+
+    /**
+     * Get idAgrupacion
+     *
+     * @return string 
+     */
+    public function getIdAgrupacion()
+    {
+        return $this->idAgrupacion;
+    }
+
+    /**
+     * Set idAgrupacionref
+     *
+     * @param string $idAgrupacionref
+     * @return RhDetalleComprobante
+     */
+    public function setIdAgrupacionref($idAgrupacionref)
+    {
+        $this->idAgrupacionref = $idAgrupacionref;
+
+        return $this;
+    }
+
+    /**
+     * Get idAgrupacionref
+     *
+     * @return string 
+     */
+    public function getIdAgrupacionref()
+    {
+        return $this->idAgrupacionref;
+    }
+
+    /**
+     * Set marcaConciliacion
+     *
+     * @param boolean $marcaConciliacion
+     * @return RhDetalleComprobante
+     */
+    public function setMarcaConciliacion($marcaConciliacion)
+    {
+        $this->marcaConciliacion = $marcaConciliacion;
+
+        return $this;
+    }
+
+    /**
+     * Get marcaConciliacion
+     *
+     * @return boolean 
+     */
+    public function getMarcaConciliacion()
+    {
+        return $this->marcaConciliacion;
+    }
+
+    /**
+     * Set fechaConciliacion
+     *
+     * @param \DateTime $fechaConciliacion
+     * @return RhDetalleComprobante
+     */
+    public function setFechaConciliacion($fechaConciliacion)
+    {
+        $this->fechaConciliacion = $fechaConciliacion;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaConciliacion
+     *
+     * @return \DateTime 
+     */
+    public function getFechaConciliacion()
+    {
+        return $this->fechaConciliacion;
+    }
 }

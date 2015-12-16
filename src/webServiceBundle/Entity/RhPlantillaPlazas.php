@@ -57,4 +57,129 @@ class RhPlantillaPlazas
     private $orden;
 
 
+
+    /**
+     * Get plaza
+     *
+     * @return integer 
+     */
+    public function getPlaza()
+    {
+        return $this->plaza;
+    }
+
+    /**
+     * Set nivel
+     *
+     * @param integer $nivel
+     * @return RhPlantillaPlazas
+     */
+    public function setNivel($nivel)
+    {
+        $this->nivel = $nivel;
+
+        return $this;
+    }
+
+    /**
+     * Get nivel
+     *
+     * @return integer 
+     */
+    public function getNivel()
+    {
+        return $this->nivel;
+    }
+
+    /**
+     * Set idDireccion
+     *
+     * @param string $idDireccion
+     * @return RhPlantillaPlazas
+     */
+    public function setIdDireccion($idDireccion)
+    {
+        $this->idDireccion = $idDireccion;
+
+        return $this;
+    }
+
+    /**
+     * Get idDireccion
+     *
+     * @return string 
+     */
+    public function getIdDireccion()
+    {
+        return $this->idDireccion;
+    }
+
+    /**
+     * Set idCargo
+     *
+     * @param string $idCargo
+     * @return RhPlantillaPlazas
+     */
+    public function setIdCargo($idCargo)
+    {
+        $this->idCargo = $idCargo;
+
+        return $this;
+    }
+
+    /**
+     * Get idCargo
+     *
+     * @return string 
+     */
+    public function getIdCargo()
+    {
+        return $this->idCargo;
+    }
+
+    /**
+     * Set vacante
+     *
+     * @param boolean $vacante
+     * @return RhPlantillaPlazas
+     */
+    public function setVacante($vacante)
+    {
+        $this->vacante = $vacante;
+
+        return $this;
+    }
+
+    /**
+     * Get vacante
+     *
+     * @return boolean 
+     */
+    public function getVacante()
+    {
+        return $this->vacante;
+    }
+
+    /**
+     * Set orden
+     *
+     * @param integer $orden
+     * @return RhPlantillaPlazas
+     */
+    public function setOrden($orden)
+    {
+        $this->orden = $orden;
+
+        return $this;
+    }
+
+    /**
+     * Get orden
+     *
+     * @return integer 
+     */
+    public function getOrden()
+    {
+        return $this->orden;
+    }
 }

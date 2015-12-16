@@ -85,4 +85,221 @@ class RhComprobanteExport
     private $exportar;
 
 
+
+    /**
+     * Get contador1
+     *
+     * @return integer 
+     */
+    public function getContador1()
+    {
+        return $this->contador1;
+    }
+
+    /**
+     * Set idCompro
+     *
+     * @param integer $idCompro
+     * @return RhComprobanteExport
+     */
+    public function setIdCompro($idCompro)
+    {
+        $this->idCompro = $idCompro;
+
+        return $this;
+    }
+
+    /**
+     * Get idCompro
+     *
+     * @return integer 
+     */
+    public function getIdCompro()
+    {
+        return $this->idCompro;
+    }
+
+    /**
+     * Set anoCompro
+     *
+     * @param integer $anoCompro
+     * @return RhComprobanteExport
+     */
+    public function setAnoCompro($anoCompro)
+    {
+        $this->anoCompro = $anoCompro;
+
+        return $this;
+    }
+
+    /**
+     * Get anoCompro
+     *
+     * @return integer 
+     */
+    public function getAnoCompro()
+    {
+        return $this->anoCompro;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhComprobanteExport
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set hechoPor
+     *
+     * @param string $hechoPor
+     * @return RhComprobanteExport
+     */
+    public function setHechoPor($hechoPor)
+    {
+        $this->hechoPor = $hechoPor;
+
+        return $this;
+    }
+
+    /**
+     * Get hechoPor
+     *
+     * @return string 
+     */
+    public function getHechoPor()
+    {
+        return $this->hechoPor;
+    }
+
+    /**
+     * Set revisadoPor
+     *
+     * @param string $revisadoPor
+     * @return RhComprobanteExport
+     */
+    public function setRevisadoPor($revisadoPor)
+    {
+        $this->revisadoPor = $revisadoPor;
+
+        return $this;
+    }
+
+    /**
+     * Get revisadoPor
+     *
+     * @return string 
+     */
+    public function getRevisadoPor()
+    {
+        return $this->revisadoPor;
+    }
+
+    /**
+     * Set observaciones
+     *
+     * @param string $observaciones
+     * @return RhComprobanteExport
+     */
+    public function setObservaciones($observaciones)
+    {
+        $this->observaciones = $observaciones;
+
+        return $this;
+    }
+
+    /**
+     * Get observaciones
+     *
+     * @return string 
+     */
+    public function getObservaciones()
+    {
+        return $this->observaciones;
+    }
+
+    /**
+     * Set fecha
+     *
+     * @param \DateTime $fecha
+     * @return RhComprobanteExport
+     */
+    public function setFecha($fecha)
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    /**
+     * Get fecha
+     *
+     * @return \DateTime 
+     */
+    public function getFecha()
+    {
+        return $this->fecha;
+    }
+
+    /**
+     * Set claveTipoComprobante
+     *
+     * @param integer $claveTipoComprobante
+     * @return RhComprobanteExport
+     */
+    public function setClaveTipoComprobante($claveTipoComprobante)
+    {
+        $this->claveTipoComprobante = $claveTipoComprobante;
+
+        return $this;
+    }
+
+    /**
+     * Get claveTipoComprobante
+     *
+     * @return integer 
+     */
+    public function getClaveTipoComprobante()
+    {
+        return $this->claveTipoComprobante;
+    }
+
+    /**
+     * Set exportar
+     *
+     * @param boolean $exportar
+     * @return RhComprobanteExport
+     */
+    public function setExportar($exportar)
+    {
+        $this->exportar = $exportar;
+
+        return $this;
+    }
+
+    /**
+     * Get exportar
+     *
+     * @return boolean 
+     */
+    public function getExportar()
+    {
+        return $this->exportar;
+    }
 }

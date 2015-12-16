@@ -36,4 +36,60 @@ class RhMsincidenciasestimulo
     private $porcientoafectacion;
 
 
+
+    /**
+     * Get codincidencia
+     *
+     * @return string 
+     */
+    public function getCodincidencia()
+    {
+        return $this->codincidencia;
+    }
+
+    /**
+     * Set descincidencia
+     *
+     * @param string $descincidencia
+     * @return RhMsincidenciasestimulo
+     */
+    public function setDescincidencia($descincidencia)
+    {
+        $this->descincidencia = $descincidencia;
+
+        return $this;
+    }
+
+    /**
+     * Get descincidencia
+     *
+     * @return string 
+     */
+    public function getDescincidencia()
+    {
+        return $this->descincidencia;
+    }
+
+    /**
+     * Set porcientoafectacion
+     *
+     * @param string $porcientoafectacion
+     * @return RhMsincidenciasestimulo
+     */
+    public function setPorcientoafectacion($porcientoafectacion)
+    {
+        $this->porcientoafectacion = $porcientoafectacion;
+
+        return $this;
+    }
+
+    /**
+     * Get porcientoafectacion
+     *
+     * @return string 
+     */
+    public function getPorcientoafectacion()
+    {
+        return $this->porcientoafectacion;
+    }
 }

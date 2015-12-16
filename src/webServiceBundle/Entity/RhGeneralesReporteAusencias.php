@@ -61,4 +61,142 @@ class RhGeneralesReporteAusencias
     private $fechaOp;
 
 
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhGeneralesReporteAusencias
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhGeneralesReporteAusencias
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhGeneralesReporteAusencias
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhGeneralesReporteAusencias
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idUser
+     *
+     * @param string $idUser
+     * @return RhGeneralesReporteAusencias
+     */
+    public function setIdUser($idUser)
+    {
+        $this->idUser = $idUser;
+
+        return $this;
+    }
+
+    /**
+     * Get idUser
+     *
+     * @return string 
+     */
+    public function getIdUser()
+    {
+        return $this->idUser;
+    }
+
+    /**
+     * Set fechaOp
+     *
+     * @param \DateTime $fechaOp
+     * @return RhGeneralesReporteAusencias
+     */
+    public function setFechaOp($fechaOp)
+    {
+        $this->fechaOp = $fechaOp;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaOp
+     *
+     * @return \DateTime 
+     */
+    public function getFechaOp()
+    {
+        return $this->fechaOp;
+    }
 }

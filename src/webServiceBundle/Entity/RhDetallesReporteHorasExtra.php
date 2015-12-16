@@ -120,4 +120,336 @@ class RhDetallesReporteHorasExtra
     private $importeDivisa;
 
 
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set horas
+     *
+     * @param string $horas
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setHoras($horas)
+    {
+        $this->horas = $horas;
+
+        return $this;
+    }
+
+    /**
+     * Get horas
+     *
+     * @return string 
+     */
+    public function getHoras()
+    {
+        return $this->horas;
+    }
+
+    /**
+     * Set tarifa
+     *
+     * @param integer $tarifa
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setTarifa($tarifa)
+    {
+        $this->tarifa = $tarifa;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifa
+     *
+     * @return integer 
+     */
+    public function getTarifa()
+    {
+        return $this->tarifa;
+    }
+
+    /**
+     * Set importe
+     *
+     * @param integer $importe
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setImporte($importe)
+    {
+        $this->importe = $importe;
+
+        return $this;
+    }
+
+    /**
+     * Get importe
+     *
+     * @return integer 
+     */
+    public function getImporte()
+    {
+        return $this->importe;
+    }
+
+    /**
+     * Set idCcosto
+     *
+     * @param string $idCcosto
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setIdCcosto($idCcosto)
+    {
+        $this->idCcosto = $idCcosto;
+
+        return $this;
+    }
+
+    /**
+     * Get idCcosto
+     *
+     * @return string 
+     */
+    public function getIdCcosto()
+    {
+        return $this->idCcosto;
+    }
+
+    /**
+     * Set idObra
+     *
+     * @param string $idObra
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setIdObra($idObra)
+    {
+        $this->idObra = $idObra;
+
+        return $this;
+    }
+
+    /**
+     * Get idObra
+     *
+     * @return string 
+     */
+    public function getIdObra()
+    {
+        return $this->idObra;
+    }
+
+    /**
+     * Set clasificacionCategOcupac
+     *
+     * @param integer $clasificacionCategOcupac
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setClasificacionCategOcupac($clasificacionCategOcupac)
+    {
+        $this->clasificacionCategOcupac = $clasificacionCategOcupac;
+
+        return $this;
+    }
+
+    /**
+     * Get clasificacionCategOcupac
+     *
+     * @return integer 
+     */
+    public function getClasificacionCategOcupac()
+    {
+        return $this->clasificacionCategOcupac;
+    }
+
+    /**
+     * Set tarifaDivisa
+     *
+     * @param integer $tarifaDivisa
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setTarifaDivisa($tarifaDivisa)
+    {
+        $this->tarifaDivisa = $tarifaDivisa;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifaDivisa
+     *
+     * @return integer 
+     */
+    public function getTarifaDivisa()
+    {
+        return $this->tarifaDivisa;
+    }
+
+    /**
+     * Set importeDivisa
+     *
+     * @param integer $importeDivisa
+     * @return RhDetallesReporteHorasExtra
+     */
+    public function setImporteDivisa($importeDivisa)
+    {
+        $this->importeDivisa = $importeDivisa;
+
+        return $this;
+    }
+
+    /**
+     * Get importeDivisa
+     *
+     * @return integer 
+     */
+    public function getImporteDivisa()
+    {
+        return $this->importeDivisa;
+    }
 }

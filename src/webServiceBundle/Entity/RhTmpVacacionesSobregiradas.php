@@ -36,4 +36,60 @@ class RhTmpVacacionesSobregiradas
     private $diasPagados;
 
 
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set diasAcumulado
+     *
+     * @param string $diasAcumulado
+     * @return RhTmpVacacionesSobregiradas
+     */
+    public function setDiasAcumulado($diasAcumulado)
+    {
+        $this->diasAcumulado = $diasAcumulado;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAcumulado
+     *
+     * @return string 
+     */
+    public function getDiasAcumulado()
+    {
+        return $this->diasAcumulado;
+    }
+
+    /**
+     * Set diasPagados
+     *
+     * @param string $diasPagados
+     * @return RhTmpVacacionesSobregiradas
+     */
+    public function setDiasPagados($diasPagados)
+    {
+        $this->diasPagados = $diasPagados;
+
+        return $this;
+    }
+
+    /**
+     * Get diasPagados
+     *
+     * @return string 
+     */
+    public function getDiasPagados()
+    {
+        return $this->diasPagados;
+    }
 }

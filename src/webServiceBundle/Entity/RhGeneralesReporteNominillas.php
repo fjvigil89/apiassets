@@ -61,4 +61,142 @@ class RhGeneralesReporteNominillas
     private $fechaOp;
 
 
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhGeneralesReporteNominillas
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhGeneralesReporteNominillas
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhGeneralesReporteNominillas
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhGeneralesReporteNominillas
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idUser
+     *
+     * @param string $idUser
+     * @return RhGeneralesReporteNominillas
+     */
+    public function setIdUser($idUser)
+    {
+        $this->idUser = $idUser;
+
+        return $this;
+    }
+
+    /**
+     * Get idUser
+     *
+     * @return string 
+     */
+    public function getIdUser()
+    {
+        return $this->idUser;
+    }
+
+    /**
+     * Set fechaOp
+     *
+     * @param \DateTime $fechaOp
+     * @return RhGeneralesReporteNominillas
+     */
+    public function setFechaOp($fechaOp)
+    {
+        $this->fechaOp = $fechaOp;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaOp
+     *
+     * @return \DateTime 
+     */
+    public function getFechaOp()
+    {
+        return $this->fechaOp;
+    }
 }

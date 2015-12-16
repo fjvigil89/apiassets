@@ -36,4 +36,60 @@ class RhProfesiones
     private $idEspecialidad;
 
 
+
+    /**
+     * Get idProfesion
+     *
+     * @return string 
+     */
+    public function getIdProfesion()
+    {
+        return $this->idProfesion;
+    }
+
+    /**
+     * Set descProfesion
+     *
+     * @param string $descProfesion
+     * @return RhProfesiones
+     */
+    public function setDescProfesion($descProfesion)
+    {
+        $this->descProfesion = $descProfesion;
+
+        return $this;
+    }
+
+    /**
+     * Get descProfesion
+     *
+     * @return string 
+     */
+    public function getDescProfesion()
+    {
+        return $this->descProfesion;
+    }
+
+    /**
+     * Set idEspecialidad
+     *
+     * @param string $idEspecialidad
+     * @return RhProfesiones
+     */
+    public function setIdEspecialidad($idEspecialidad)
+    {
+        $this->idEspecialidad = $idEspecialidad;
+
+        return $this;
+    }
+
+    /**
+     * Get idEspecialidad
+     *
+     * @return string 
+     */
+    public function getIdEspecialidad()
+    {
+        return $this->idEspecialidad;
+    }
 }

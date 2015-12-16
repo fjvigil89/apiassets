@@ -50,4 +50,106 @@ class RhTemporalNominaFeriadosvc
     private $salarioBasico;
 
 
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhTemporalNominaFeriadosvc
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhTemporalNominaFeriadosvc
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhTemporalNominaFeriadosvc
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set salarioBasico
+     *
+     * @param integer $salarioBasico
+     * @return RhTemporalNominaFeriadosvc
+     */
+    public function setSalarioBasico($salarioBasico)
+    {
+        $this->salarioBasico = $salarioBasico;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioBasico
+     *
+     * @return integer 
+     */
+    public function getSalarioBasico()
+    {
+        return $this->salarioBasico;
+    }
 }

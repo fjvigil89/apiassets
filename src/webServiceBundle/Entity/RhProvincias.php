@@ -36,4 +36,60 @@ class RhProvincias
     private $repmovpendular;
 
 
+
+    /**
+     * Get idProvincia
+     *
+     * @return string 
+     */
+    public function getIdProvincia()
+    {
+        return $this->idProvincia;
+    }
+
+    /**
+     * Set descProvincia
+     *
+     * @param string $descProvincia
+     * @return RhProvincias
+     */
+    public function setDescProvincia($descProvincia)
+    {
+        $this->descProvincia = $descProvincia;
+
+        return $this;
+    }
+
+    /**
+     * Get descProvincia
+     *
+     * @return string 
+     */
+    public function getDescProvincia()
+    {
+        return $this->descProvincia;
+    }
+
+    /**
+     * Set repmovpendular
+     *
+     * @param boolean $repmovpendular
+     * @return RhProvincias
+     */
+    public function setRepmovpendular($repmovpendular)
+    {
+        $this->repmovpendular = $repmovpendular;
+
+        return $this;
+    }
+
+    /**
+     * Get repmovpendular
+     *
+     * @return boolean 
+     */
+    public function getRepmovpendular()
+    {
+        return $this->repmovpendular;
+    }
 }

@@ -113,4 +113,313 @@ class RhDetallesReporteNominillasMovImp
     private $idDireccion;
 
 
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set itemlink
+     *
+     * @param integer $itemlink
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setItemlink($itemlink)
+    {
+        $this->itemlink = $itemlink;
+
+        return $this;
+    }
+
+    /**
+     * Get itemlink
+     *
+     * @return integer 
+     */
+    public function getItemlink()
+    {
+        return $this->itemlink;
+    }
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set idClave
+     *
+     * @param string $idClave
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setIdClave($idClave)
+    {
+        $this->idClave = $idClave;
+
+        return $this;
+    }
+
+    /**
+     * Get idClave
+     *
+     * @return string 
+     */
+    public function getIdClave()
+    {
+        return $this->idClave;
+    }
+
+    /**
+     * Set justificada
+     *
+     * @param boolean $justificada
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setJustificada($justificada)
+    {
+        $this->justificada = $justificada;
+
+        return $this;
+    }
+
+    /**
+     * Get justificada
+     *
+     * @return boolean 
+     */
+    public function getJustificada()
+    {
+        return $this->justificada;
+    }
+
+    /**
+     * Set cantidadImpuntualidad
+     *
+     * @param integer $cantidadImpuntualidad
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setCantidadImpuntualidad($cantidadImpuntualidad)
+    {
+        $this->cantidadImpuntualidad = $cantidadImpuntualidad;
+
+        return $this;
+    }
+
+    /**
+     * Get cantidadImpuntualidad
+     *
+     * @return integer 
+     */
+    public function getCantidadImpuntualidad()
+    {
+        return $this->cantidadImpuntualidad;
+    }
+
+    /**
+     * Set minutosImpuntualidad
+     *
+     * @param integer $minutosImpuntualidad
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setMinutosImpuntualidad($minutosImpuntualidad)
+    {
+        $this->minutosImpuntualidad = $minutosImpuntualidad;
+
+        return $this;
+    }
+
+    /**
+     * Get minutosImpuntualidad
+     *
+     * @return integer 
+     */
+    public function getMinutosImpuntualidad()
+    {
+        return $this->minutosImpuntualidad;
+    }
+
+    /**
+     * Set nivel
+     *
+     * @param integer $nivel
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setNivel($nivel)
+    {
+        $this->nivel = $nivel;
+
+        return $this;
+    }
+
+    /**
+     * Get nivel
+     *
+     * @return integer 
+     */
+    public function getNivel()
+    {
+        return $this->nivel;
+    }
+
+    /**
+     * Set idDireccion
+     *
+     * @param string $idDireccion
+     * @return RhDetallesReporteNominillasMovImp
+     */
+    public function setIdDireccion($idDireccion)
+    {
+        $this->idDireccion = $idDireccion;
+
+        return $this;
+    }
+
+    /**
+     * Get idDireccion
+     *
+     * @return string 
+     */
+    public function getIdDireccion()
+    {
+        return $this->idDireccion;
+    }
 }

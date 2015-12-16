@@ -38,4 +38,73 @@ class RhSubsidiosAdelantados
     private $diasAdelantados;
 
 
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhSubsidiosAdelantados
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set idClave
+     *
+     * @param string $idClave
+     * @return RhSubsidiosAdelantados
+     */
+    public function setIdClave($idClave)
+    {
+        $this->idClave = $idClave;
+
+        return $this;
+    }
+
+    /**
+     * Get idClave
+     *
+     * @return string 
+     */
+    public function getIdClave()
+    {
+        return $this->idClave;
+    }
+
+    /**
+     * Set diasAdelantados
+     *
+     * @param string $diasAdelantados
+     * @return RhSubsidiosAdelantados
+     */
+    public function setDiasAdelantados($diasAdelantados)
+    {
+        $this->diasAdelantados = $diasAdelantados;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAdelantados
+     *
+     * @return string 
+     */
+    public function getDiasAdelantados()
+    {
+        return $this->diasAdelantados;
+    }
 }

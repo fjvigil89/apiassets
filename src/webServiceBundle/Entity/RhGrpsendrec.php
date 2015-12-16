@@ -29,4 +29,37 @@ class RhGrpsendrec
     private $descGrpsendrec;
 
 
+
+    /**
+     * Get idGrpsendrec
+     *
+     * @return string 
+     */
+    public function getIdGrpsendrec()
+    {
+        return $this->idGrpsendrec;
+    }
+
+    /**
+     * Set descGrpsendrec
+     *
+     * @param string $descGrpsendrec
+     * @return RhGrpsendrec
+     */
+    public function setDescGrpsendrec($descGrpsendrec)
+    {
+        $this->descGrpsendrec = $descGrpsendrec;
+
+        return $this;
+    }
+
+    /**
+     * Get descGrpsendrec
+     *
+     * @return string 
+     */
+    public function getDescGrpsendrec()
+    {
+        return $this->descGrpsendrec;
+    }
 }

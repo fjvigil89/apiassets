@@ -45,4 +45,96 @@ class RhPlantilla
     private $idClave;
 
 
+
+    /**
+     * Set nivel
+     *
+     * @param integer $nivel
+     * @return RhPlantilla
+     */
+    public function setNivel($nivel)
+    {
+        $this->nivel = $nivel;
+
+        return $this;
+    }
+
+    /**
+     * Get nivel
+     *
+     * @return integer 
+     */
+    public function getNivel()
+    {
+        return $this->nivel;
+    }
+
+    /**
+     * Set idDireccion
+     *
+     * @param string $idDireccion
+     * @return RhPlantilla
+     */
+    public function setIdDireccion($idDireccion)
+    {
+        $this->idDireccion = $idDireccion;
+
+        return $this;
+    }
+
+    /**
+     * Get idDireccion
+     *
+     * @return string 
+     */
+    public function getIdDireccion()
+    {
+        return $this->idDireccion;
+    }
+
+    /**
+     * Set descDireccion
+     *
+     * @param string $descDireccion
+     * @return RhPlantilla
+     */
+    public function setDescDireccion($descDireccion)
+    {
+        $this->descDireccion = $descDireccion;
+
+        return $this;
+    }
+
+    /**
+     * Get descDireccion
+     *
+     * @return string 
+     */
+    public function getDescDireccion()
+    {
+        return $this->descDireccion;
+    }
+
+    /**
+     * Set idClave
+     *
+     * @param string $idClave
+     * @return RhPlantilla
+     */
+    public function setIdClave($idClave)
+    {
+        $this->idClave = $idClave;
+
+        return $this;
+    }
+
+    /**
+     * Get idClave
+     *
+     * @return string 
+     */
+    public function getIdClave()
+    {
+        return $this->idClave;
+    }
 }

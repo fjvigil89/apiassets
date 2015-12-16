@@ -29,4 +29,37 @@ class RhOrganizacionesMasas
     private $descOrgmasa;
 
 
+
+    /**
+     * Get idOrgmasa
+     *
+     * @return string 
+     */
+    public function getIdOrgmasa()
+    {
+        return $this->idOrgmasa;
+    }
+
+    /**
+     * Set descOrgmasa
+     *
+     * @param string $descOrgmasa
+     * @return RhOrganizacionesMasas
+     */
+    public function setDescOrgmasa($descOrgmasa)
+    {
+        $this->descOrgmasa = $descOrgmasa;
+
+        return $this;
+    }
+
+    /**
+     * Get descOrgmasa
+     *
+     * @return string 
+     */
+    public function getDescOrgmasa()
+    {
+        return $this->descOrgmasa;
+    }
 }

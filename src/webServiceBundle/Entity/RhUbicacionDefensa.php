@@ -43,4 +43,83 @@ class RhUbicacionDefensa
     private $clasificacion;
 
 
+
+    /**
+     * Get idUbicacionDefensa
+     *
+     * @return string 
+     */
+    public function getIdUbicacionDefensa()
+    {
+        return $this->idUbicacionDefensa;
+    }
+
+    /**
+     * Set descUbicacionDefensa
+     *
+     * @param string $descUbicacionDefensa
+     * @return RhUbicacionDefensa
+     */
+    public function setDescUbicacionDefensa($descUbicacionDefensa)
+    {
+        $this->descUbicacionDefensa = $descUbicacionDefensa;
+
+        return $this;
+    }
+
+    /**
+     * Get descUbicacionDefensa
+     *
+     * @return string 
+     */
+    public function getDescUbicacionDefensa()
+    {
+        return $this->descUbicacionDefensa;
+    }
+
+    /**
+     * Set siglas
+     *
+     * @param string $siglas
+     * @return RhUbicacionDefensa
+     */
+    public function setSiglas($siglas)
+    {
+        $this->siglas = $siglas;
+
+        return $this;
+    }
+
+    /**
+     * Get siglas
+     *
+     * @return string 
+     */
+    public function getSiglas()
+    {
+        return $this->siglas;
+    }
+
+    /**
+     * Set clasificacion
+     *
+     * @param integer $clasificacion
+     * @return RhUbicacionDefensa
+     */
+    public function setClasificacion($clasificacion)
+    {
+        $this->clasificacion = $clasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get clasificacion
+     *
+     * @return integer 
+     */
+    public function getClasificacion()
+    {
+        return $this->clasificacion;
+    }
 }

@@ -50,4 +50,106 @@ class RhMsantiguedad
     private $porciento;
 
 
+
+    /**
+     * Get codigo
+     *
+     * @return string 
+     */
+    public function getCodigo()
+    {
+        return $this->codigo;
+    }
+
+    /**
+     * Set descripcion
+     *
+     * @param string $descripcion
+     * @return RhMsantiguedad
+     */
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    /**
+     * Get descripcion
+     *
+     * @return string 
+     */
+    public function getDescripcion()
+    {
+        return $this->descripcion;
+    }
+
+    /**
+     * Set limiteinferior
+     *
+     * @param integer $limiteinferior
+     * @return RhMsantiguedad
+     */
+    public function setLimiteinferior($limiteinferior)
+    {
+        $this->limiteinferior = $limiteinferior;
+
+        return $this;
+    }
+
+    /**
+     * Get limiteinferior
+     *
+     * @return integer 
+     */
+    public function getLimiteinferior()
+    {
+        return $this->limiteinferior;
+    }
+
+    /**
+     * Set limitesuperior
+     *
+     * @param integer $limitesuperior
+     * @return RhMsantiguedad
+     */
+    public function setLimitesuperior($limitesuperior)
+    {
+        $this->limitesuperior = $limitesuperior;
+
+        return $this;
+    }
+
+    /**
+     * Get limitesuperior
+     *
+     * @return integer 
+     */
+    public function getLimitesuperior()
+    {
+        return $this->limitesuperior;
+    }
+
+    /**
+     * Set porciento
+     *
+     * @param integer $porciento
+     * @return RhMsantiguedad
+     */
+    public function setPorciento($porciento)
+    {
+        $this->porciento = $porciento;
+
+        return $this;
+    }
+
+    /**
+     * Get porciento
+     *
+     * @return integer 
+     */
+    public function getPorciento()
+    {
+        return $this->porciento;
+    }
 }

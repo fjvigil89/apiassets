@@ -59,4 +59,142 @@ class RhEmpleadosIdiomas
     private $escribe;
 
 
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhEmpleadosIdiomas
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set idIdioma
+     *
+     * @param string $idIdioma
+     * @return RhEmpleadosIdiomas
+     */
+    public function setIdIdioma($idIdioma)
+    {
+        $this->idIdioma = $idIdioma;
+
+        return $this;
+    }
+
+    /**
+     * Get idIdioma
+     *
+     * @return string 
+     */
+    public function getIdIdioma()
+    {
+        return $this->idIdioma;
+    }
+
+    /**
+     * Set descIdioma
+     *
+     * @param string $descIdioma
+     * @return RhEmpleadosIdiomas
+     */
+    public function setDescIdioma($descIdioma)
+    {
+        $this->descIdioma = $descIdioma;
+
+        return $this;
+    }
+
+    /**
+     * Get descIdioma
+     *
+     * @return string 
+     */
+    public function getDescIdioma()
+    {
+        return $this->descIdioma;
+    }
+
+    /**
+     * Set lee
+     *
+     * @param integer $lee
+     * @return RhEmpleadosIdiomas
+     */
+    public function setLee($lee)
+    {
+        $this->lee = $lee;
+
+        return $this;
+    }
+
+    /**
+     * Get lee
+     *
+     * @return integer 
+     */
+    public function getLee()
+    {
+        return $this->lee;
+    }
+
+    /**
+     * Set habla
+     *
+     * @param integer $habla
+     * @return RhEmpleadosIdiomas
+     */
+    public function setHabla($habla)
+    {
+        $this->habla = $habla;
+
+        return $this;
+    }
+
+    /**
+     * Get habla
+     *
+     * @return integer 
+     */
+    public function getHabla()
+    {
+        return $this->habla;
+    }
+
+    /**
+     * Set escribe
+     *
+     * @param integer $escribe
+     * @return RhEmpleadosIdiomas
+     */
+    public function setEscribe($escribe)
+    {
+        $this->escribe = $escribe;
+
+        return $this;
+    }
+
+    /**
+     * Get escribe
+     *
+     * @return integer 
+     */
+    public function getEscribe()
+    {
+        return $this->escribe;
+    }
 }

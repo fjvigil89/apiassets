@@ -84,4 +84,211 @@ class RhDetallesReporteIdoneidadMovil
     private $afectacion;
 
 
+
+    /**
+     * Set item
+     *
+     * @param integer $item
+     * @return RhDetallesReporteIdoneidadMovil
+     */
+    public function setItem($item)
+    {
+        $this->item = $item;
+
+        return $this;
+    }
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhDetallesReporteIdoneidadMovil
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhDetallesReporteIdoneidadMovil
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhDetallesReporteIdoneidadMovil
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhDetallesReporteIdoneidadMovil
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhDetallesReporteIdoneidadMovil
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return RhDetallesReporteIdoneidadMovil
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set puntos
+     *
+     * @param string $puntos
+     * @return RhDetallesReporteIdoneidadMovil
+     */
+    public function setPuntos($puntos)
+    {
+        $this->puntos = $puntos;
+
+        return $this;
+    }
+
+    /**
+     * Get puntos
+     *
+     * @return string 
+     */
+    public function getPuntos()
+    {
+        return $this->puntos;
+    }
+
+    /**
+     * Set afectacion
+     *
+     * @param string $afectacion
+     * @return RhDetallesReporteIdoneidadMovil
+     */
+    public function setAfectacion($afectacion)
+    {
+        $this->afectacion = $afectacion;
+
+        return $this;
+    }
+
+    /**
+     * Get afectacion
+     *
+     * @return string 
+     */
+    public function getAfectacion()
+    {
+        return $this->afectacion;
+    }
 }

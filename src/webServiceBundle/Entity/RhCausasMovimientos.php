@@ -29,4 +29,37 @@ class RhCausasMovimientos
     private $descCausamov;
 
 
+
+    /**
+     * Get idCausamov
+     *
+     * @return string 
+     */
+    public function getIdCausamov()
+    {
+        return $this->idCausamov;
+    }
+
+    /**
+     * Set descCausamov
+     *
+     * @param string $descCausamov
+     * @return RhCausasMovimientos
+     */
+    public function setDescCausamov($descCausamov)
+    {
+        $this->descCausamov = $descCausamov;
+
+        return $this;
+    }
+
+    /**
+     * Get descCausamov
+     *
+     * @return string 
+     */
+    public function getDescCausamov()
+    {
+        return $this->descCausamov;
+    }
 }

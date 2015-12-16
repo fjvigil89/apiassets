@@ -197,4 +197,589 @@ class RhDetallesReporteReintegros
     private $devolucionConfirmada;
 
 
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhDetallesReporteReintegros
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhDetallesReporteReintegros
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhDetallesReporteReintegros
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhDetallesReporteReintegros
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set tipoNomina
+     *
+     * @param integer $tipoNomina
+     * @return RhDetallesReporteReintegros
+     */
+    public function setTipoNomina($tipoNomina)
+    {
+        $this->tipoNomina = $tipoNomina;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoNomina
+     *
+     * @return integer 
+     */
+    public function getTipoNomina()
+    {
+        return $this->tipoNomina;
+    }
+
+    /**
+     * Set tipoReintegro
+     *
+     * @param integer $tipoReintegro
+     * @return RhDetallesReporteReintegros
+     */
+    public function setTipoReintegro($tipoReintegro)
+    {
+        $this->tipoReintegro = $tipoReintegro;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoReintegro
+     *
+     * @return integer 
+     */
+    public function getTipoReintegro()
+    {
+        return $this->tipoReintegro;
+    }
+
+    /**
+     * Set anonomina
+     *
+     * @param integer $anonomina
+     * @return RhDetallesReporteReintegros
+     */
+    public function setAnonomina($anonomina)
+    {
+        $this->anonomina = $anonomina;
+
+        return $this;
+    }
+
+    /**
+     * Get anonomina
+     *
+     * @return integer 
+     */
+    public function getAnonomina()
+    {
+        return $this->anonomina;
+    }
+
+    /**
+     * Set mesnomina
+     *
+     * @param integer $mesnomina
+     * @return RhDetallesReporteReintegros
+     */
+    public function setMesnomina($mesnomina)
+    {
+        $this->mesnomina = $mesnomina;
+
+        return $this;
+    }
+
+    /**
+     * Get mesnomina
+     *
+     * @return integer 
+     */
+    public function getMesnomina()
+    {
+        return $this->mesnomina;
+    }
+
+    /**
+     * Set tipoPagonomina
+     *
+     * @param integer $tipoPagonomina
+     * @return RhDetallesReporteReintegros
+     */
+    public function setTipoPagonomina($tipoPagonomina)
+    {
+        $this->tipoPagonomina = $tipoPagonomina;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPagonomina
+     *
+     * @return integer 
+     */
+    public function getTipoPagonomina()
+    {
+        return $this->tipoPagonomina;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhDetallesReporteReintegros
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return RhDetallesReporteReintegros
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set cantidadReintegrar
+     *
+     * @param string $cantidadReintegrar
+     * @return RhDetallesReporteReintegros
+     */
+    public function setCantidadReintegrar($cantidadReintegrar)
+    {
+        $this->cantidadReintegrar = $cantidadReintegrar;
+
+        return $this;
+    }
+
+    /**
+     * Get cantidadReintegrar
+     *
+     * @return string 
+     */
+    public function getCantidadReintegrar()
+    {
+        return $this->cantidadReintegrar;
+    }
+
+    /**
+     * Set salarioReintegrar
+     *
+     * @param integer $salarioReintegrar
+     * @return RhDetallesReporteReintegros
+     */
+    public function setSalarioReintegrar($salarioReintegrar)
+    {
+        $this->salarioReintegrar = $salarioReintegrar;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioReintegrar
+     *
+     * @return integer 
+     */
+    public function getSalarioReintegrar()
+    {
+        return $this->salarioReintegrar;
+    }
+
+    /**
+     * Set fechanomina
+     *
+     * @param \DateTime $fechanomina
+     * @return RhDetallesReporteReintegros
+     */
+    public function setFechanomina($fechanomina)
+    {
+        $this->fechanomina = $fechanomina;
+
+        return $this;
+    }
+
+    /**
+     * Get fechanomina
+     *
+     * @return \DateTime 
+     */
+    public function getFechanomina()
+    {
+        return $this->fechanomina;
+    }
+
+    /**
+     * Set cantidadNomina
+     *
+     * @param string $cantidadNomina
+     * @return RhDetallesReporteReintegros
+     */
+    public function setCantidadNomina($cantidadNomina)
+    {
+        $this->cantidadNomina = $cantidadNomina;
+
+        return $this;
+    }
+
+    /**
+     * Get cantidadNomina
+     *
+     * @return string 
+     */
+    public function getCantidadNomina()
+    {
+        return $this->cantidadNomina;
+    }
+
+    /**
+     * Set devengadoNomina
+     *
+     * @param integer $devengadoNomina
+     * @return RhDetallesReporteReintegros
+     */
+    public function setDevengadoNomina($devengadoNomina)
+    {
+        $this->devengadoNomina = $devengadoNomina;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoNomina
+     *
+     * @return integer 
+     */
+    public function getDevengadoNomina()
+    {
+        return $this->devengadoNomina;
+    }
+
+    /**
+     * Set cuentaPorCobrar
+     *
+     * @param boolean $cuentaPorCobrar
+     * @return RhDetallesReporteReintegros
+     */
+    public function setCuentaPorCobrar($cuentaPorCobrar)
+    {
+        $this->cuentaPorCobrar = $cuentaPorCobrar;
+
+        return $this;
+    }
+
+    /**
+     * Get cuentaPorCobrar
+     *
+     * @return boolean 
+     */
+    public function getCuentaPorCobrar()
+    {
+        return $this->cuentaPorCobrar;
+    }
+
+    /**
+     * Set presupuestoEstado
+     *
+     * @param boolean $presupuestoEstado
+     * @return RhDetallesReporteReintegros
+     */
+    public function setPresupuestoEstado($presupuestoEstado)
+    {
+        $this->presupuestoEstado = $presupuestoEstado;
+
+        return $this;
+    }
+
+    /**
+     * Get presupuestoEstado
+     *
+     * @return boolean 
+     */
+    public function getPresupuestoEstado()
+    {
+        return $this->presupuestoEstado;
+    }
+
+    /**
+     * Set presupuestoEstadoTmp
+     *
+     * @param boolean $presupuestoEstadoTmp
+     * @return RhDetallesReporteReintegros
+     */
+    public function setPresupuestoEstadoTmp($presupuestoEstadoTmp)
+    {
+        $this->presupuestoEstadoTmp = $presupuestoEstadoTmp;
+
+        return $this;
+    }
+
+    /**
+     * Get presupuestoEstadoTmp
+     *
+     * @return boolean 
+     */
+    public function getPresupuestoEstadoTmp()
+    {
+        return $this->presupuestoEstadoTmp;
+    }
+
+    /**
+     * Set tarjeta
+     *
+     * @param boolean $tarjeta
+     * @return RhDetallesReporteReintegros
+     */
+    public function setTarjeta($tarjeta)
+    {
+        $this->tarjeta = $tarjeta;
+
+        return $this;
+    }
+
+    /**
+     * Get tarjeta
+     *
+     * @return boolean 
+     */
+    public function getTarjeta()
+    {
+        return $this->tarjeta;
+    }
+
+    /**
+     * Set horasExtras
+     *
+     * @param string $horasExtras
+     * @return RhDetallesReporteReintegros
+     */
+    public function setHorasExtras($horasExtras)
+    {
+        $this->horasExtras = $horasExtras;
+
+        return $this;
+    }
+
+    /**
+     * Get horasExtras
+     *
+     * @return string 
+     */
+    public function getHorasExtras()
+    {
+        return $this->horasExtras;
+    }
+
+    /**
+     * Set anoFactura
+     *
+     * @param integer $anoFactura
+     * @return RhDetallesReporteReintegros
+     */
+    public function setAnoFactura($anoFactura)
+    {
+        $this->anoFactura = $anoFactura;
+
+        return $this;
+    }
+
+    /**
+     * Get anoFactura
+     *
+     * @return integer 
+     */
+    public function getAnoFactura()
+    {
+        return $this->anoFactura;
+    }
+
+    /**
+     * Set idAlmacen
+     *
+     * @param string $idAlmacen
+     * @return RhDetallesReporteReintegros
+     */
+    public function setIdAlmacen($idAlmacen)
+    {
+        $this->idAlmacen = $idAlmacen;
+
+        return $this;
+    }
+
+    /**
+     * Get idAlmacen
+     *
+     * @return string 
+     */
+    public function getIdAlmacen()
+    {
+        return $this->idAlmacen;
+    }
+
+    /**
+     * Set idFactura
+     *
+     * @param integer $idFactura
+     * @return RhDetallesReporteReintegros
+     */
+    public function setIdFactura($idFactura)
+    {
+        $this->idFactura = $idFactura;
+
+        return $this;
+    }
+
+    /**
+     * Get idFactura
+     *
+     * @return integer 
+     */
+    public function getIdFactura()
+    {
+        return $this->idFactura;
+    }
+
+    /**
+     * Set devolucionConfirmada
+     *
+     * @param boolean $devolucionConfirmada
+     * @return RhDetallesReporteReintegros
+     */
+    public function setDevolucionConfirmada($devolucionConfirmada)
+    {
+        $this->devolucionConfirmada = $devolucionConfirmada;
+
+        return $this;
+    }
+
+    /**
+     * Get devolucionConfirmada
+     *
+     * @return boolean 
+     */
+    public function getDevolucionConfirmada()
+    {
+        return $this->devolucionConfirmada;
+    }
 }

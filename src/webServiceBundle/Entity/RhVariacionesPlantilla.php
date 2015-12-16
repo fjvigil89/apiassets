@@ -78,4 +78,198 @@ class RhVariacionesPlantilla
     private $fechaOp;
 
 
+
+    /**
+     * Get novariacion
+     *
+     * @return integer 
+     */
+    public function getNovariacion()
+    {
+        return $this->novariacion;
+    }
+
+    /**
+     * Set nivel
+     *
+     * @param integer $nivel
+     * @return RhVariacionesPlantilla
+     */
+    public function setNivel($nivel)
+    {
+        $this->nivel = $nivel;
+
+        return $this;
+    }
+
+    /**
+     * Get nivel
+     *
+     * @return integer 
+     */
+    public function getNivel()
+    {
+        return $this->nivel;
+    }
+
+    /**
+     * Set idDireccion
+     *
+     * @param string $idDireccion
+     * @return RhVariacionesPlantilla
+     */
+    public function setIdDireccion($idDireccion)
+    {
+        $this->idDireccion = $idDireccion;
+
+        return $this;
+    }
+
+    /**
+     * Get idDireccion
+     *
+     * @return string 
+     */
+    public function getIdDireccion()
+    {
+        return $this->idDireccion;
+    }
+
+    /**
+     * Set descDireccion
+     *
+     * @param string $descDireccion
+     * @return RhVariacionesPlantilla
+     */
+    public function setDescDireccion($descDireccion)
+    {
+        $this->descDireccion = $descDireccion;
+
+        return $this;
+    }
+
+    /**
+     * Get descDireccion
+     *
+     * @return string 
+     */
+    public function getDescDireccion()
+    {
+        return $this->descDireccion;
+    }
+
+    /**
+     * Set fechaPropuesta
+     *
+     * @param \DateTime $fechaPropuesta
+     * @return RhVariacionesPlantilla
+     */
+    public function setFechaPropuesta($fechaPropuesta)
+    {
+        $this->fechaPropuesta = $fechaPropuesta;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaPropuesta
+     *
+     * @return \DateTime 
+     */
+    public function getFechaPropuesta()
+    {
+        return $this->fechaPropuesta;
+    }
+
+    /**
+     * Set fechaAprobada
+     *
+     * @param \DateTime $fechaAprobada
+     * @return RhVariacionesPlantilla
+     */
+    public function setFechaAprobada($fechaAprobada)
+    {
+        $this->fechaAprobada = $fechaAprobada;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaAprobada
+     *
+     * @return \DateTime 
+     */
+    public function getFechaAprobada()
+    {
+        return $this->fechaAprobada;
+    }
+
+    /**
+     * Set estado
+     *
+     * @param integer $estado
+     * @return RhVariacionesPlantilla
+     */
+    public function setEstado($estado)
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    /**
+     * Get estado
+     *
+     * @return integer 
+     */
+    public function getEstado()
+    {
+        return $this->estado;
+    }
+
+    /**
+     * Set idUser
+     *
+     * @param string $idUser
+     * @return RhVariacionesPlantilla
+     */
+    public function setIdUser($idUser)
+    {
+        $this->idUser = $idUser;
+
+        return $this;
+    }
+
+    /**
+     * Get idUser
+     *
+     * @return string 
+     */
+    public function getIdUser()
+    {
+        return $this->idUser;
+    }
+
+    /**
+     * Set fechaOp
+     *
+     * @param \DateTime $fechaOp
+     * @return RhVariacionesPlantilla
+     */
+    public function setFechaOp($fechaOp)
+    {
+        $this->fechaOp = $fechaOp;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaOp
+     *
+     * @return \DateTime 
+     */
+    public function getFechaOp()
+    {
+        return $this->fechaOp;
+    }
 }

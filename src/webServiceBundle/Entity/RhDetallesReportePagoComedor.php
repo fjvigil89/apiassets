@@ -119,4 +119,326 @@ class RhDetallesReportePagoComedor
     private $diasAusenciasW;
 
 
+
+    /**
+     * Set item
+     *
+     * @param integer $item
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setItem($item)
+    {
+        $this->item = $item;
+
+        return $this;
+    }
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set pagoComedorCucR
+     *
+     * @param boolean $pagoComedorCucR
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setPagoComedorCucR($pagoComedorCucR)
+    {
+        $this->pagoComedorCucR = $pagoComedorCucR;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorCucR
+     *
+     * @return boolean 
+     */
+    public function getPagoComedorCucR()
+    {
+        return $this->pagoComedorCucR;
+    }
+
+    /**
+     * Set pagoComedorCucW
+     *
+     * @param boolean $pagoComedorCucW
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setPagoComedorCucW($pagoComedorCucW)
+    {
+        $this->pagoComedorCucW = $pagoComedorCucW;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorCucW
+     *
+     * @return boolean 
+     */
+    public function getPagoComedorCucW()
+    {
+        return $this->pagoComedorCucW;
+    }
+
+    /**
+     * Set pagoComedorTarifaR
+     *
+     * @param integer $pagoComedorTarifaR
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setPagoComedorTarifaR($pagoComedorTarifaR)
+    {
+        $this->pagoComedorTarifaR = $pagoComedorTarifaR;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorTarifaR
+     *
+     * @return integer 
+     */
+    public function getPagoComedorTarifaR()
+    {
+        return $this->pagoComedorTarifaR;
+    }
+
+    /**
+     * Set pagoComedorTarifaW
+     *
+     * @param integer $pagoComedorTarifaW
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setPagoComedorTarifaW($pagoComedorTarifaW)
+    {
+        $this->pagoComedorTarifaW = $pagoComedorTarifaW;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorTarifaW
+     *
+     * @return integer 
+     */
+    public function getPagoComedorTarifaW()
+    {
+        return $this->pagoComedorTarifaW;
+    }
+
+    /**
+     * Set diasLaborables
+     *
+     * @param integer $diasLaborables
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setDiasLaborables($diasLaborables)
+    {
+        $this->diasLaborables = $diasLaborables;
+
+        return $this;
+    }
+
+    /**
+     * Get diasLaborables
+     *
+     * @return integer 
+     */
+    public function getDiasLaborables()
+    {
+        return $this->diasLaborables;
+    }
+
+    /**
+     * Set diasAusenciasR
+     *
+     * @param integer $diasAusenciasR
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setDiasAusenciasR($diasAusenciasR)
+    {
+        $this->diasAusenciasR = $diasAusenciasR;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAusenciasR
+     *
+     * @return integer 
+     */
+    public function getDiasAusenciasR()
+    {
+        return $this->diasAusenciasR;
+    }
+
+    /**
+     * Set diasAusenciasW
+     *
+     * @param integer $diasAusenciasW
+     * @return RhDetallesReportePagoComedor
+     */
+    public function setDiasAusenciasW($diasAusenciasW)
+    {
+        $this->diasAusenciasW = $diasAusenciasW;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAusenciasW
+     *
+     * @return integer 
+     */
+    public function getDiasAusenciasW()
+    {
+        return $this->diasAusenciasW;
+    }
 }

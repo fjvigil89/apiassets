@@ -29,4 +29,37 @@ class RhProfesionesGeneral
     private $descEspecialidad;
 
 
+
+    /**
+     * Get idEspecialidad
+     *
+     * @return string 
+     */
+    public function getIdEspecialidad()
+    {
+        return $this->idEspecialidad;
+    }
+
+    /**
+     * Set descEspecialidad
+     *
+     * @param string $descEspecialidad
+     * @return RhProfesionesGeneral
+     */
+    public function setDescEspecialidad($descEspecialidad)
+    {
+        $this->descEspecialidad = $descEspecialidad;
+
+        return $this;
+    }
+
+    /**
+     * Get descEspecialidad
+     *
+     * @return string 
+     */
+    public function getDescEspecialidad()
+    {
+        return $this->descEspecialidad;
+    }
 }

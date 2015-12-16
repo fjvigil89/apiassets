@@ -36,4 +36,60 @@ class RhIdiomas
     private $reportflag;
 
 
+
+    /**
+     * Get idIdioma
+     *
+     * @return string 
+     */
+    public function getIdIdioma()
+    {
+        return $this->idIdioma;
+    }
+
+    /**
+     * Set descIdioma
+     *
+     * @param string $descIdioma
+     * @return RhIdiomas
+     */
+    public function setDescIdioma($descIdioma)
+    {
+        $this->descIdioma = $descIdioma;
+
+        return $this;
+    }
+
+    /**
+     * Get descIdioma
+     *
+     * @return string 
+     */
+    public function getDescIdioma()
+    {
+        return $this->descIdioma;
+    }
+
+    /**
+     * Set reportflag
+     *
+     * @param boolean $reportflag
+     * @return RhIdiomas
+     */
+    public function setReportflag($reportflag)
+    {
+        $this->reportflag = $reportflag;
+
+        return $this;
+    }
+
+    /**
+     * Get reportflag
+     *
+     * @return boolean 
+     */
+    public function getReportflag()
+    {
+        return $this->reportflag;
+    }
 }

@@ -78,4 +78,198 @@ class RhMsincidenciasms
     private $afectaturno;
 
 
+
+    /**
+     * Get codincidencia
+     *
+     * @return string 
+     */
+    public function getCodincidencia()
+    {
+        return $this->codincidencia;
+    }
+
+    /**
+     * Set descincidencia
+     *
+     * @param string $descincidencia
+     * @return RhMsincidenciasms
+     */
+    public function setDescincidencia($descincidencia)
+    {
+        $this->descincidencia = $descincidencia;
+
+        return $this;
+    }
+
+    /**
+     * Get descincidencia
+     *
+     * @return string 
+     */
+    public function getDescincidencia()
+    {
+        return $this->descincidencia;
+    }
+
+    /**
+     * Set porcientoafectacion
+     *
+     * @param string $porcientoafectacion
+     * @return RhMsincidenciasms
+     */
+    public function setPorcientoafectacion($porcientoafectacion)
+    {
+        $this->porcientoafectacion = $porcientoafectacion;
+
+        return $this;
+    }
+
+    /**
+     * Get porcientoafectacion
+     *
+     * @return string 
+     */
+    public function getPorcientoafectacion()
+    {
+        return $this->porcientoafectacion;
+    }
+
+    /**
+     * Set limiteinferior
+     *
+     * @param integer $limiteinferior
+     * @return RhMsincidenciasms
+     */
+    public function setLimiteinferior($limiteinferior)
+    {
+        $this->limiteinferior = $limiteinferior;
+
+        return $this;
+    }
+
+    /**
+     * Get limiteinferior
+     *
+     * @return integer 
+     */
+    public function getLimiteinferior()
+    {
+        return $this->limiteinferior;
+    }
+
+    /**
+     * Set limitesuperior
+     *
+     * @param integer $limitesuperior
+     * @return RhMsincidenciasms
+     */
+    public function setLimitesuperior($limitesuperior)
+    {
+        $this->limitesuperior = $limitesuperior;
+
+        return $this;
+    }
+
+    /**
+     * Get limitesuperior
+     *
+     * @return integer 
+     */
+    public function getLimitesuperior()
+    {
+        return $this->limitesuperior;
+    }
+
+    /**
+     * Set clasificacion
+     *
+     * @param integer $clasificacion
+     * @return RhMsincidenciasms
+     */
+    public function setClasificacion($clasificacion)
+    {
+        $this->clasificacion = $clasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get clasificacion
+     *
+     * @return integer 
+     */
+    public function getClasificacion()
+    {
+        return $this->clasificacion;
+    }
+
+    /**
+     * Set afectaantiguedad
+     *
+     * @param boolean $afectaantiguedad
+     * @return RhMsincidenciasms
+     */
+    public function setAfectaantiguedad($afectaantiguedad)
+    {
+        $this->afectaantiguedad = $afectaantiguedad;
+
+        return $this;
+    }
+
+    /**
+     * Get afectaantiguedad
+     *
+     * @return boolean 
+     */
+    public function getAfectaantiguedad()
+    {
+        return $this->afectaantiguedad;
+    }
+
+    /**
+     * Set afectacoeficiente
+     *
+     * @param boolean $afectacoeficiente
+     * @return RhMsincidenciasms
+     */
+    public function setAfectacoeficiente($afectacoeficiente)
+    {
+        $this->afectacoeficiente = $afectacoeficiente;
+
+        return $this;
+    }
+
+    /**
+     * Get afectacoeficiente
+     *
+     * @return boolean 
+     */
+    public function getAfectacoeficiente()
+    {
+        return $this->afectacoeficiente;
+    }
+
+    /**
+     * Set afectaturno
+     *
+     * @param boolean $afectaturno
+     * @return RhMsincidenciasms
+     */
+    public function setAfectaturno($afectaturno)
+    {
+        $this->afectaturno = $afectaturno;
+
+        return $this;
+    }
+
+    /**
+     * Get afectaturno
+     *
+     * @return boolean 
+     */
+    public function getAfectaturno()
+    {
+        return $this->afectaturno;
+    }
 }

@@ -29,4 +29,37 @@ class RhGrpevaluativos
     private $descGrpevaluativo;
 
 
+
+    /**
+     * Get idGrpevaluativo
+     *
+     * @return string 
+     */
+    public function getIdGrpevaluativo()
+    {
+        return $this->idGrpevaluativo;
+    }
+
+    /**
+     * Set descGrpevaluativo
+     *
+     * @param string $descGrpevaluativo
+     * @return RhGrpevaluativos
+     */
+    public function setDescGrpevaluativo($descGrpevaluativo)
+    {
+        $this->descGrpevaluativo = $descGrpevaluativo;
+
+        return $this;
+    }
+
+    /**
+     * Get descGrpevaluativo
+     *
+     * @return string 
+     */
+    public function getDescGrpevaluativo()
+    {
+        return $this->descGrpevaluativo;
+    }
 }

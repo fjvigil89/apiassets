@@ -43,4 +43,83 @@ class RhCalendariosInicio
     private $diasfondojornaleros2q;
 
 
+
+    /**
+     * Get calendario
+     *
+     * @return string 
+     */
+    public function getCalendario()
+    {
+        return $this->calendario;
+    }
+
+    /**
+     * Set diasLaborables
+     *
+     * @param integer $diasLaborables
+     * @return RhCalendariosInicio
+     */
+    public function setDiasLaborables($diasLaborables)
+    {
+        $this->diasLaborables = $diasLaborables;
+
+        return $this;
+    }
+
+    /**
+     * Get diasLaborables
+     *
+     * @return integer 
+     */
+    public function getDiasLaborables()
+    {
+        return $this->diasLaborables;
+    }
+
+    /**
+     * Set diasfondojornaleros1q
+     *
+     * @param integer $diasfondojornaleros1q
+     * @return RhCalendariosInicio
+     */
+    public function setDiasfondojornaleros1q($diasfondojornaleros1q)
+    {
+        $this->diasfondojornaleros1q = $diasfondojornaleros1q;
+
+        return $this;
+    }
+
+    /**
+     * Get diasfondojornaleros1q
+     *
+     * @return integer 
+     */
+    public function getDiasfondojornaleros1q()
+    {
+        return $this->diasfondojornaleros1q;
+    }
+
+    /**
+     * Set diasfondojornaleros2q
+     *
+     * @param integer $diasfondojornaleros2q
+     * @return RhCalendariosInicio
+     */
+    public function setDiasfondojornaleros2q($diasfondojornaleros2q)
+    {
+        $this->diasfondojornaleros2q = $diasfondojornaleros2q;
+
+        return $this;
+    }
+
+    /**
+     * Get diasfondojornaleros2q
+     *
+     * @return integer 
+     */
+    public function getDiasfondojornaleros2q()
+    {
+        return $this->diasfondojornaleros2q;
+    }
 }

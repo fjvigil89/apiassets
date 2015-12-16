@@ -36,4 +36,60 @@ class RhMsturnostrabajo
     private $cuantia;
 
 
+
+    /**
+     * Get codturno
+     *
+     * @return string 
+     */
+    public function getCodturno()
+    {
+        return $this->codturno;
+    }
+
+    /**
+     * Set descturno
+     *
+     * @param string $descturno
+     * @return RhMsturnostrabajo
+     */
+    public function setDescturno($descturno)
+    {
+        $this->descturno = $descturno;
+
+        return $this;
+    }
+
+    /**
+     * Get descturno
+     *
+     * @return string 
+     */
+    public function getDescturno()
+    {
+        return $this->descturno;
+    }
+
+    /**
+     * Set cuantia
+     *
+     * @param integer $cuantia
+     * @return RhMsturnostrabajo
+     */
+    public function setCuantia($cuantia)
+    {
+        $this->cuantia = $cuantia;
+
+        return $this;
+    }
+
+    /**
+     * Get cuantia
+     *
+     * @return integer 
+     */
+    public function getCuantia()
+    {
+        return $this->cuantia;
+    }
 }

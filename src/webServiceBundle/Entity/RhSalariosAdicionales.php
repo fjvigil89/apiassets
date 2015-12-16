@@ -50,4 +50,106 @@ class RhSalariosAdicionales
     private $retribucionComplementaria;
 
 
+
+    /**
+     * Get idTipoParticipacion
+     *
+     * @return string 
+     */
+    public function getIdTipoParticipacion()
+    {
+        return $this->idTipoParticipacion;
+    }
+
+    /**
+     * Set descTipoParticipacion
+     *
+     * @param string $descTipoParticipacion
+     * @return RhSalariosAdicionales
+     */
+    public function setDescTipoParticipacion($descTipoParticipacion)
+    {
+        $this->descTipoParticipacion = $descTipoParticipacion;
+
+        return $this;
+    }
+
+    /**
+     * Get descTipoParticipacion
+     *
+     * @return string 
+     */
+    public function getDescTipoParticipacion()
+    {
+        return $this->descTipoParticipacion;
+    }
+
+    /**
+     * Set idoneidadFijo
+     *
+     * @param integer $idoneidadFijo
+     * @return RhSalariosAdicionales
+     */
+    public function setIdoneidadFijo($idoneidadFijo)
+    {
+        $this->idoneidadFijo = $idoneidadFijo;
+
+        return $this;
+    }
+
+    /**
+     * Get idoneidadFijo
+     *
+     * @return integer 
+     */
+    public function getIdoneidadFijo()
+    {
+        return $this->idoneidadFijo;
+    }
+
+    /**
+     * Set idoneidadMovil
+     *
+     * @param integer $idoneidadMovil
+     * @return RhSalariosAdicionales
+     */
+    public function setIdoneidadMovil($idoneidadMovil)
+    {
+        $this->idoneidadMovil = $idoneidadMovil;
+
+        return $this;
+    }
+
+    /**
+     * Get idoneidadMovil
+     *
+     * @return integer 
+     */
+    public function getIdoneidadMovil()
+    {
+        return $this->idoneidadMovil;
+    }
+
+    /**
+     * Set retribucionComplementaria
+     *
+     * @param string $retribucionComplementaria
+     * @return RhSalariosAdicionales
+     */
+    public function setRetribucionComplementaria($retribucionComplementaria)
+    {
+        $this->retribucionComplementaria = $retribucionComplementaria;
+
+        return $this;
+    }
+
+    /**
+     * Get retribucionComplementaria
+     *
+     * @return string 
+     */
+    public function getRetribucionComplementaria()
+    {
+        return $this->retribucionComplementaria;
+    }
 }

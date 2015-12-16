@@ -29,4 +29,37 @@ class RhFundamentacionAltas
     private $descFundamentacionalta;
 
 
+
+    /**
+     * Get idFundamentacionalta
+     *
+     * @return string 
+     */
+    public function getIdFundamentacionalta()
+    {
+        return $this->idFundamentacionalta;
+    }
+
+    /**
+     * Set descFundamentacionalta
+     *
+     * @param string $descFundamentacionalta
+     * @return RhFundamentacionAltas
+     */
+    public function setDescFundamentacionalta($descFundamentacionalta)
+    {
+        $this->descFundamentacionalta = $descFundamentacionalta;
+
+        return $this;
+    }
+
+    /**
+     * Get descFundamentacionalta
+     *
+     * @return string 
+     */
+    public function getDescFundamentacionalta()
+    {
+        return $this->descFundamentacionalta;
+    }
 }

@@ -43,4 +43,83 @@ class FzimportData
     private $limpiar;
 
 
+
+    /**
+     * Get contador9
+     *
+     * @return integer 
+     */
+    public function getContador9()
+    {
+        return $this->contador9;
+    }
+
+    /**
+     * Set mtable
+     *
+     * @param string $mtable
+     * @return FzimportData
+     */
+    public function setMtable($mtable)
+    {
+        $this->mtable = $mtable;
+
+        return $this;
+    }
+
+    /**
+     * Get mtable
+     *
+     * @return string 
+     */
+    public function getMtable()
+    {
+        return $this->mtable;
+    }
+
+    /**
+     * Set importar
+     *
+     * @param boolean $importar
+     * @return FzimportData
+     */
+    public function setImportar($importar)
+    {
+        $this->importar = $importar;
+
+        return $this;
+    }
+
+    /**
+     * Get importar
+     *
+     * @return boolean 
+     */
+    public function getImportar()
+    {
+        return $this->importar;
+    }
+
+    /**
+     * Set limpiar
+     *
+     * @param boolean $limpiar
+     * @return FzimportData
+     */
+    public function setLimpiar($limpiar)
+    {
+        $this->limpiar = $limpiar;
+
+        return $this;
+    }
+
+    /**
+     * Get limpiar
+     *
+     * @return boolean 
+     */
+    public function getLimpiar()
+    {
+        return $this->limpiar;
+    }
 }

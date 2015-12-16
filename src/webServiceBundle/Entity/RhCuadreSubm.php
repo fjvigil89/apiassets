@@ -85,4 +85,221 @@ class RhCuadreSubm
     private $idClasificacion;
 
 
+
+    /**
+     * Get contador1
+     *
+     * @return integer 
+     */
+    public function getContador1()
+    {
+        return $this->contador1;
+    }
+
+    /**
+     * Set cta
+     *
+     * @param string $cta
+     * @return RhCuadreSubm
+     */
+    public function setCta($cta)
+    {
+        $this->cta = $cta;
+
+        return $this;
+    }
+
+    /**
+     * Get cta
+     *
+     * @return string 
+     */
+    public function getCta()
+    {
+        return $this->cta;
+    }
+
+    /**
+     * Set deMb
+     *
+     * @param boolean $deMb
+     * @return RhCuadreSubm
+     */
+    public function setDeMb($deMb)
+    {
+        $this->deMb = $deMb;
+
+        return $this;
+    }
+
+    /**
+     * Get deMb
+     *
+     * @return boolean 
+     */
+    public function getDeMb()
+    {
+        return $this->deMb;
+    }
+
+    /**
+     * Set subcta
+     *
+     * @param string $subcta
+     * @return RhCuadreSubm
+     */
+    public function setSubcta($subcta)
+    {
+        $this->subcta = $subcta;
+
+        return $this;
+    }
+
+    /**
+     * Get subcta
+     *
+     * @return string 
+     */
+    public function getSubcta()
+    {
+        return $this->subcta;
+    }
+
+    /**
+     * Set analisis
+     *
+     * @param string $analisis
+     * @return RhCuadreSubm
+     */
+    public function setAnalisis($analisis)
+    {
+        $this->analisis = $analisis;
+
+        return $this;
+    }
+
+    /**
+     * Get analisis
+     *
+     * @return string 
+     */
+    public function getAnalisis()
+    {
+        return $this->analisis;
+    }
+
+    /**
+     * Set subanalisis
+     *
+     * @param string $subanalisis
+     * @return RhCuadreSubm
+     */
+    public function setSubanalisis($subanalisis)
+    {
+        $this->subanalisis = $subanalisis;
+
+        return $this;
+    }
+
+    /**
+     * Get subanalisis
+     *
+     * @return string 
+     */
+    public function getSubanalisis()
+    {
+        return $this->subanalisis;
+    }
+
+    /**
+     * Set epigrafe
+     *
+     * @param string $epigrafe
+     * @return RhCuadreSubm
+     */
+    public function setEpigrafe($epigrafe)
+    {
+        $this->epigrafe = $epigrafe;
+
+        return $this;
+    }
+
+    /**
+     * Get epigrafe
+     *
+     * @return string 
+     */
+    public function getEpigrafe()
+    {
+        return $this->epigrafe;
+    }
+
+    /**
+     * Set partida
+     *
+     * @param string $partida
+     * @return RhCuadreSubm
+     */
+    public function setPartida($partida)
+    {
+        $this->partida = $partida;
+
+        return $this;
+    }
+
+    /**
+     * Get partida
+     *
+     * @return string 
+     */
+    public function getPartida()
+    {
+        return $this->partida;
+    }
+
+    /**
+     * Set calcular
+     *
+     * @param boolean $calcular
+     * @return RhCuadreSubm
+     */
+    public function setCalcular($calcular)
+    {
+        $this->calcular = $calcular;
+
+        return $this;
+    }
+
+    /**
+     * Get calcular
+     *
+     * @return boolean 
+     */
+    public function getCalcular()
+    {
+        return $this->calcular;
+    }
+
+    /**
+     * Set idClasificacion
+     *
+     * @param string $idClasificacion
+     * @return RhCuadreSubm
+     */
+    public function setIdClasificacion($idClasificacion)
+    {
+        $this->idClasificacion = $idClasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get idClasificacion
+     *
+     * @return string 
+     */
+    public function getIdClasificacion()
+    {
+        return $this->idClasificacion;
+    }
 }

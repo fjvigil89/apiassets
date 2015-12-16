@@ -29,4 +29,37 @@ class RhActividades
     private $descActividad;
 
 
+
+    /**
+     * Get idActividad
+     *
+     * @return string 
+     */
+    public function getIdActividad()
+    {
+        return $this->idActividad;
+    }
+
+    /**
+     * Set descActividad
+     *
+     * @param string $descActividad
+     * @return RhActividades
+     */
+    public function setDescActividad($descActividad)
+    {
+        $this->descActividad = $descActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get descActividad
+     *
+     * @return string 
+     */
+    public function getDescActividad()
+    {
+        return $this->descActividad;
+    }
 }

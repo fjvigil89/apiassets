@@ -29,4 +29,37 @@ class RhRelojNodos
     private $activo;
 
 
+
+    /**
+     * Get nodo
+     *
+     * @return integer 
+     */
+    public function getNodo()
+    {
+        return $this->nodo;
+    }
+
+    /**
+     * Set activo
+     *
+     * @param boolean $activo
+     * @return RhRelojNodos
+     */
+    public function setActivo($activo)
+    {
+        $this->activo = $activo;
+
+        return $this;
+    }
+
+    /**
+     * Get activo
+     *
+     * @return boolean 
+     */
+    public function getActivo()
+    {
+        return $this->activo;
+    }
 }

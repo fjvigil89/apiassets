@@ -29,4 +29,37 @@ class ErroresRecibo
     private $error;
 
 
+
+    /**
+     * Get refer
+     *
+     * @return string 
+     */
+    public function getRefer()
+    {
+        return $this->refer;
+    }
+
+    /**
+     * Set error
+     *
+     * @param string $error
+     * @return ErroresRecibo
+     */
+    public function setError($error)
+    {
+        $this->error = $error;
+
+        return $this;
+    }
+
+    /**
+     * Get error
+     *
+     * @return string 
+     */
+    public function getError()
+    {
+        return $this->error;
+    }
 }

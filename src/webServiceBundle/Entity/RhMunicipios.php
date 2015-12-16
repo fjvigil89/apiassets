@@ -38,4 +38,73 @@ class RhMunicipios
     private $descMunicipio;
 
 
+
+    /**
+     * Set idProvincia
+     *
+     * @param string $idProvincia
+     * @return RhMunicipios
+     */
+    public function setIdProvincia($idProvincia)
+    {
+        $this->idProvincia = $idProvincia;
+
+        return $this;
+    }
+
+    /**
+     * Get idProvincia
+     *
+     * @return string 
+     */
+    public function getIdProvincia()
+    {
+        return $this->idProvincia;
+    }
+
+    /**
+     * Set idMunicipio
+     *
+     * @param string $idMunicipio
+     * @return RhMunicipios
+     */
+    public function setIdMunicipio($idMunicipio)
+    {
+        $this->idMunicipio = $idMunicipio;
+
+        return $this;
+    }
+
+    /**
+     * Get idMunicipio
+     *
+     * @return string 
+     */
+    public function getIdMunicipio()
+    {
+        return $this->idMunicipio;
+    }
+
+    /**
+     * Set descMunicipio
+     *
+     * @param string $descMunicipio
+     * @return RhMunicipios
+     */
+    public function setDescMunicipio($descMunicipio)
+    {
+        $this->descMunicipio = $descMunicipio;
+
+        return $this;
+    }
+
+    /**
+     * Get descMunicipio
+     *
+     * @return string 
+     */
+    public function getDescMunicipio()
+    {
+        return $this->descMunicipio;
+    }
 }

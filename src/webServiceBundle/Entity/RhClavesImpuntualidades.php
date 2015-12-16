@@ -36,4 +36,60 @@ class RhClavesImpuntualidades
     private $justificada;
 
 
+
+    /**
+     * Get idClave
+     *
+     * @return string 
+     */
+    public function getIdClave()
+    {
+        return $this->idClave;
+    }
+
+    /**
+     * Set descClave
+     *
+     * @param string $descClave
+     * @return RhClavesImpuntualidades
+     */
+    public function setDescClave($descClave)
+    {
+        $this->descClave = $descClave;
+
+        return $this;
+    }
+
+    /**
+     * Get descClave
+     *
+     * @return string 
+     */
+    public function getDescClave()
+    {
+        return $this->descClave;
+    }
+
+    /**
+     * Set justificada
+     *
+     * @param boolean $justificada
+     * @return RhClavesImpuntualidades
+     */
+    public function setJustificada($justificada)
+    {
+        $this->justificada = $justificada;
+
+        return $this;
+    }
+
+    /**
+     * Get justificada
+     *
+     * @return boolean 
+     */
+    public function getJustificada()
+    {
+        return $this->justificada;
+    }
 }

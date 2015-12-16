@@ -36,4 +36,60 @@ class ControlSystemTraceL2
     private $fld003;
 
 
+
+    /**
+     * Get fld001
+     *
+     * @return integer 
+     */
+    public function getFld001()
+    {
+        return $this->fld001;
+    }
+
+    /**
+     * Set fld002
+     *
+     * @param string $fld002
+     * @return ControlSystemTraceL2
+     */
+    public function setFld002($fld002)
+    {
+        $this->fld002 = $fld002;
+
+        return $this;
+    }
+
+    /**
+     * Get fld002
+     *
+     * @return string 
+     */
+    public function getFld002()
+    {
+        return $this->fld002;
+    }
+
+    /**
+     * Set fld003
+     *
+     * @param integer $fld003
+     * @return ControlSystemTraceL2
+     */
+    public function setFld003($fld003)
+    {
+        $this->fld003 = $fld003;
+
+        return $this;
+    }
+
+    /**
+     * Get fld003
+     *
+     * @return integer 
+     */
+    public function getFld003()
+    {
+        return $this->fld003;
+    }
 }

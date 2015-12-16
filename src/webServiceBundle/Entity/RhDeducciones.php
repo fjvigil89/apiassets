@@ -36,4 +36,60 @@ class RhDeducciones
     private $grupo;
 
 
+
+    /**
+     * Get idDeduccion
+     *
+     * @return string 
+     */
+    public function getIdDeduccion()
+    {
+        return $this->idDeduccion;
+    }
+
+    /**
+     * Set descDeduccion
+     *
+     * @param string $descDeduccion
+     * @return RhDeducciones
+     */
+    public function setDescDeduccion($descDeduccion)
+    {
+        $this->descDeduccion = $descDeduccion;
+
+        return $this;
+    }
+
+    /**
+     * Get descDeduccion
+     *
+     * @return string 
+     */
+    public function getDescDeduccion()
+    {
+        return $this->descDeduccion;
+    }
+
+    /**
+     * Set grupo
+     *
+     * @param integer $grupo
+     * @return RhDeducciones
+     */
+    public function setGrupo($grupo)
+    {
+        $this->grupo = $grupo;
+
+        return $this;
+    }
+
+    /**
+     * Get grupo
+     *
+     * @return integer 
+     */
+    public function getGrupo()
+    {
+        return $this->grupo;
+    }
 }

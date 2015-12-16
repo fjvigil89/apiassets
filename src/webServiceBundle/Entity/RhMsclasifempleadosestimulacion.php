@@ -43,4 +43,83 @@ class RhMsclasifempleadosestimulacion
     private $porcientosobrecumplimiento;
 
 
+
+    /**
+     * Get codmsclasifemplestim
+     *
+     * @return string 
+     */
+    public function getCodmsclasifemplestim()
+    {
+        return $this->codmsclasifemplestim;
+    }
+
+    /**
+     * Set descmsclasifemplestim
+     *
+     * @param string $descmsclasifemplestim
+     * @return RhMsclasifempleadosestimulacion
+     */
+    public function setDescmsclasifemplestim($descmsclasifemplestim)
+    {
+        $this->descmsclasifemplestim = $descmsclasifemplestim;
+
+        return $this;
+    }
+
+    /**
+     * Get descmsclasifemplestim
+     *
+     * @return string 
+     */
+    public function getDescmsclasifemplestim()
+    {
+        return $this->descmsclasifemplestim;
+    }
+
+    /**
+     * Set porcientocumplimiento
+     *
+     * @param string $porcientocumplimiento
+     * @return RhMsclasifempleadosestimulacion
+     */
+    public function setPorcientocumplimiento($porcientocumplimiento)
+    {
+        $this->porcientocumplimiento = $porcientocumplimiento;
+
+        return $this;
+    }
+
+    /**
+     * Get porcientocumplimiento
+     *
+     * @return string 
+     */
+    public function getPorcientocumplimiento()
+    {
+        return $this->porcientocumplimiento;
+    }
+
+    /**
+     * Set porcientosobrecumplimiento
+     *
+     * @param string $porcientosobrecumplimiento
+     * @return RhMsclasifempleadosestimulacion
+     */
+    public function setPorcientosobrecumplimiento($porcientosobrecumplimiento)
+    {
+        $this->porcientosobrecumplimiento = $porcientosobrecumplimiento;
+
+        return $this;
+    }
+
+    /**
+     * Get porcientosobrecumplimiento
+     *
+     * @return string 
+     */
+    public function getPorcientosobrecumplimiento()
+    {
+        return $this->porcientosobrecumplimiento;
+    }
 }

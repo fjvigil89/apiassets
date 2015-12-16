@@ -38,4 +38,73 @@ class RhEmpleadosOrganizacionesMasas
     private $descOrgmasa;
 
 
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhEmpleadosOrganizacionesMasas
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set idOrgmasa
+     *
+     * @param string $idOrgmasa
+     * @return RhEmpleadosOrganizacionesMasas
+     */
+    public function setIdOrgmasa($idOrgmasa)
+    {
+        $this->idOrgmasa = $idOrgmasa;
+
+        return $this;
+    }
+
+    /**
+     * Get idOrgmasa
+     *
+     * @return string 
+     */
+    public function getIdOrgmasa()
+    {
+        return $this->idOrgmasa;
+    }
+
+    /**
+     * Set descOrgmasa
+     *
+     * @param string $descOrgmasa
+     * @return RhEmpleadosOrganizacionesMasas
+     */
+    public function setDescOrgmasa($descOrgmasa)
+    {
+        $this->descOrgmasa = $descOrgmasa;
+
+        return $this;
+    }
+
+    /**
+     * Get descOrgmasa
+     *
+     * @return string 
+     */
+    public function getDescOrgmasa()
+    {
+        return $this->descOrgmasa;
+    }
 }

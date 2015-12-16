@@ -50,4 +50,106 @@ class SysfilesDml
     private $zUpdt;
 
 
+
+    /**
+     * Get vUpdt
+     *
+     * @return string 
+     */
+    public function getVUpdt()
+    {
+        return $this->vUpdt;
+    }
+
+    /**
+     * Set wUpdt
+     *
+     * @param string $wUpdt
+     * @return SysfilesDml
+     */
+    public function setWUpdt($wUpdt)
+    {
+        $this->wUpdt = $wUpdt;
+
+        return $this;
+    }
+
+    /**
+     * Get wUpdt
+     *
+     * @return string 
+     */
+    public function getWUpdt()
+    {
+        return $this->wUpdt;
+    }
+
+    /**
+     * Set xUpdt
+     *
+     * @param string $xUpdt
+     * @return SysfilesDml
+     */
+    public function setXUpdt($xUpdt)
+    {
+        $this->xUpdt = $xUpdt;
+
+        return $this;
+    }
+
+    /**
+     * Get xUpdt
+     *
+     * @return string 
+     */
+    public function getXUpdt()
+    {
+        return $this->xUpdt;
+    }
+
+    /**
+     * Set yUpdt
+     *
+     * @param string $yUpdt
+     * @return SysfilesDml
+     */
+    public function setYUpdt($yUpdt)
+    {
+        $this->yUpdt = $yUpdt;
+
+        return $this;
+    }
+
+    /**
+     * Get yUpdt
+     *
+     * @return string 
+     */
+    public function getYUpdt()
+    {
+        return $this->yUpdt;
+    }
+
+    /**
+     * Set zUpdt
+     *
+     * @param string $zUpdt
+     * @return SysfilesDml
+     */
+    public function setZUpdt($zUpdt)
+    {
+        $this->zUpdt = $zUpdt;
+
+        return $this;
+    }
+
+    /**
+     * Get zUpdt
+     *
+     * @return string 
+     */
+    public function getZUpdt()
+    {
+        return $this->zUpdt;
+    }
 }

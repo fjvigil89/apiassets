@@ -43,4 +43,83 @@ class RhTmpContabilizacionDeduccNominillasVacation
     private $valorDeduccion;
 
 
+
+    /**
+     * Set idCcosto
+     *
+     * @param string $idCcosto
+     * @return RhTmpContabilizacionDeduccNominillasVacation
+     */
+    public function setIdCcosto($idCcosto)
+    {
+        $this->idCcosto = $idCcosto;
+
+        return $this;
+    }
+
+    /**
+     * Get idCcosto
+     *
+     * @return string 
+     */
+    public function getIdCcosto()
+    {
+        return $this->idCcosto;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set idExpedienteDeduccion
+     *
+     * @param string $idExpedienteDeduccion
+     * @return RhTmpContabilizacionDeduccNominillasVacation
+     */
+    public function setIdExpedienteDeduccion($idExpedienteDeduccion)
+    {
+        $this->idExpedienteDeduccion = $idExpedienteDeduccion;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpedienteDeduccion
+     *
+     * @return string 
+     */
+    public function getIdExpedienteDeduccion()
+    {
+        return $this->idExpedienteDeduccion;
+    }
+
+    /**
+     * Set valorDeduccion
+     *
+     * @param integer $valorDeduccion
+     * @return RhTmpContabilizacionDeduccNominillasVacation
+     */
+    public function setValorDeduccion($valorDeduccion)
+    {
+        $this->valorDeduccion = $valorDeduccion;
+
+        return $this;
+    }
+
+    /**
+     * Get valorDeduccion
+     *
+     * @return integer 
+     */
+    public function getValorDeduccion()
+    {
+        return $this->valorDeduccion;
+    }
 }

@@ -29,4 +29,37 @@ class RhCapacitacion
     private $descCurso;
 
 
+
+    /**
+     * Get idCurso
+     *
+     * @return string 
+     */
+    public function getIdCurso()
+    {
+        return $this->idCurso;
+    }
+
+    /**
+     * Set descCurso
+     *
+     * @param string $descCurso
+     * @return RhCapacitacion
+     */
+    public function setDescCurso($descCurso)
+    {
+        $this->descCurso = $descCurso;
+
+        return $this;
+    }
+
+    /**
+     * Get descCurso
+     *
+     * @return string 
+     */
+    public function getDescCurso()
+    {
+        return $this->descCurso;
+    }
 }

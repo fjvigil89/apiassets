@@ -29,4 +29,37 @@ class RhNivelesEscolaridadClasif
     private $descNivelEscolaridadClasif;
 
 
+
+    /**
+     * Get idNivelEscolaridadClasif
+     *
+     * @return string 
+     */
+    public function getIdNivelEscolaridadClasif()
+    {
+        return $this->idNivelEscolaridadClasif;
+    }
+
+    /**
+     * Set descNivelEscolaridadClasif
+     *
+     * @param string $descNivelEscolaridadClasif
+     * @return RhNivelesEscolaridadClasif
+     */
+    public function setDescNivelEscolaridadClasif($descNivelEscolaridadClasif)
+    {
+        $this->descNivelEscolaridadClasif = $descNivelEscolaridadClasif;
+
+        return $this;
+    }
+
+    /**
+     * Get descNivelEscolaridadClasif
+     *
+     * @return string 
+     */
+    public function getDescNivelEscolaridadClasif()
+    {
+        return $this->descNivelEscolaridadClasif;
+    }
 }

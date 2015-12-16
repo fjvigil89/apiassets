@@ -50,4 +50,106 @@ class RhCalendariosTipos
     private $fondotiempodia;
 
 
+
+    /**
+     * Get calendario
+     *
+     * @return string 
+     */
+    public function getCalendario()
+    {
+        return $this->calendario;
+    }
+
+    /**
+     * Set descCalendario
+     *
+     * @param string $descCalendario
+     * @return RhCalendariosTipos
+     */
+    public function setDescCalendario($descCalendario)
+    {
+        $this->descCalendario = $descCalendario;
+
+        return $this;
+    }
+
+    /**
+     * Get descCalendario
+     *
+     * @return string 
+     */
+    public function getDescCalendario()
+    {
+        return $this->descCalendario;
+    }
+
+    /**
+     * Set diasLaborables
+     *
+     * @param integer $diasLaborables
+     * @return RhCalendariosTipos
+     */
+    public function setDiasLaborables($diasLaborables)
+    {
+        $this->diasLaborables = $diasLaborables;
+
+        return $this;
+    }
+
+    /**
+     * Get diasLaborables
+     *
+     * @return integer 
+     */
+    public function getDiasLaborables()
+    {
+        return $this->diasLaborables;
+    }
+
+    /**
+     * Set fondotiempomes
+     *
+     * @param string $fondotiempomes
+     * @return RhCalendariosTipos
+     */
+    public function setFondotiempomes($fondotiempomes)
+    {
+        $this->fondotiempomes = $fondotiempomes;
+
+        return $this;
+    }
+
+    /**
+     * Get fondotiempomes
+     *
+     * @return string 
+     */
+    public function getFondotiempomes()
+    {
+        return $this->fondotiempomes;
+    }
+
+    /**
+     * Set fondotiempodia
+     *
+     * @param string $fondotiempodia
+     * @return RhCalendariosTipos
+     */
+    public function setFondotiempodia($fondotiempodia)
+    {
+        $this->fondotiempodia = $fondotiempodia;
+
+        return $this;
+    }
+
+    /**
+     * Get fondotiempodia
+     *
+     * @return string 
+     */
+    public function getFondotiempodia()
+    {
+        return $this->fondotiempodia;
+    }
 }

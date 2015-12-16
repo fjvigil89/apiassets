@@ -29,4 +29,37 @@ class FzimportSourceTables
     private $stable;
 
 
+
+    /**
+     * Get contador9
+     *
+     * @return integer 
+     */
+    public function getContador9()
+    {
+        return $this->contador9;
+    }
+
+    /**
+     * Set stable
+     *
+     * @param string $stable
+     * @return FzimportSourceTables
+     */
+    public function setStable($stable)
+    {
+        $this->stable = $stable;
+
+        return $this;
+    }
+
+    /**
+     * Get stable
+     *
+     * @return string 
+     */
+    public function getStable()
+    {
+        return $this->stable;
+    }
 }

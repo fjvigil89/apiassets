@@ -120,4 +120,336 @@ class RhTablasComm
     private $okreceive;
 
 
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set clasificacion
+     *
+     * @param integer $clasificacion
+     * @return RhTablasComm
+     */
+    public function setClasificacion($clasificacion)
+    {
+        $this->clasificacion = $clasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get clasificacion
+     *
+     * @return integer 
+     */
+    public function getClasificacion()
+    {
+        return $this->clasificacion;
+    }
+
+    /**
+     * Set nombreTabla
+     *
+     * @param string $nombreTabla
+     * @return RhTablasComm
+     */
+    public function setNombreTabla($nombreTabla)
+    {
+        $this->nombreTabla = $nombreTabla;
+
+        return $this;
+    }
+
+    /**
+     * Get nombreTabla
+     *
+     * @return string 
+     */
+    public function getNombreTabla()
+    {
+        return $this->nombreTabla;
+    }
+
+    /**
+     * Set enviar
+     *
+     * @param boolean $enviar
+     * @return RhTablasComm
+     */
+    public function setEnviar($enviar)
+    {
+        $this->enviar = $enviar;
+
+        return $this;
+    }
+
+    /**
+     * Get enviar
+     *
+     * @return boolean 
+     */
+    public function getEnviar()
+    {
+        return $this->enviar;
+    }
+
+    /**
+     * Set recibir
+     *
+     * @param boolean $recibir
+     * @return RhTablasComm
+     */
+    public function setRecibir($recibir)
+    {
+        $this->recibir = $recibir;
+
+        return $this;
+    }
+
+    /**
+     * Get recibir
+     *
+     * @return boolean 
+     */
+    public function getRecibir()
+    {
+        return $this->recibir;
+    }
+
+    /**
+     * Set fechaEnvio
+     *
+     * @param \DateTime $fechaEnvio
+     * @return RhTablasComm
+     */
+    public function setFechaEnvio($fechaEnvio)
+    {
+        $this->fechaEnvio = $fechaEnvio;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaEnvio
+     *
+     * @return \DateTime 
+     */
+    public function getFechaEnvio()
+    {
+        return $this->fechaEnvio;
+    }
+
+    /**
+     * Set fechaRecibo
+     *
+     * @param \DateTime $fechaRecibo
+     * @return RhTablasComm
+     */
+    public function setFechaRecibo($fechaRecibo)
+    {
+        $this->fechaRecibo = $fechaRecibo;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaRecibo
+     *
+     * @return \DateTime 
+     */
+    public function getFechaRecibo()
+    {
+        return $this->fechaRecibo;
+    }
+
+    /**
+     * Set recibido
+     *
+     * @param boolean $recibido
+     * @return RhTablasComm
+     */
+    public function setRecibido($recibido)
+    {
+        $this->recibido = $recibido;
+
+        return $this;
+    }
+
+    /**
+     * Get recibido
+     *
+     * @return boolean 
+     */
+    public function getRecibido()
+    {
+        return $this->recibido;
+    }
+
+    /**
+     * Set fichero
+     *
+     * @param string $fichero
+     * @return RhTablasComm
+     */
+    public function setFichero($fichero)
+    {
+        $this->fichero = $fichero;
+
+        return $this;
+    }
+
+    /**
+     * Get fichero
+     *
+     * @return string 
+     */
+    public function getFichero()
+    {
+        return $this->fichero;
+    }
+
+    /**
+     * Set ficherodetalle
+     *
+     * @param string $ficherodetalle
+     * @return RhTablasComm
+     */
+    public function setFicherodetalle($ficherodetalle)
+    {
+        $this->ficherodetalle = $ficherodetalle;
+
+        return $this;
+    }
+
+    /**
+     * Get ficherodetalle
+     *
+     * @return string 
+     */
+    public function getFicherodetalle()
+    {
+        return $this->ficherodetalle;
+    }
+
+    /**
+     * Set rinner
+     *
+     * @param string $rinner
+     * @return RhTablasComm
+     */
+    public function setRinner($rinner)
+    {
+        $this->rinner = $rinner;
+
+        return $this;
+    }
+
+    /**
+     * Get rinner
+     *
+     * @return string 
+     */
+    public function getRinner()
+    {
+        return $this->rinner;
+    }
+
+    /**
+     * Set rwhere
+     *
+     * @param string $rwhere
+     * @return RhTablasComm
+     */
+    public function setRwhere($rwhere)
+    {
+        $this->rwhere = $rwhere;
+
+        return $this;
+    }
+
+    /**
+     * Get rwhere
+     *
+     * @return string 
+     */
+    public function getRwhere()
+    {
+        return $this->rwhere;
+    }
+
+    /**
+     * Set truncarTabla
+     *
+     * @param boolean $truncarTabla
+     * @return RhTablasComm
+     */
+    public function setTruncarTabla($truncarTabla)
+    {
+        $this->truncarTabla = $truncarTabla;
+
+        return $this;
+    }
+
+    /**
+     * Get truncarTabla
+     *
+     * @return boolean 
+     */
+    public function getTruncarTabla()
+    {
+        return $this->truncarTabla;
+    }
+
+    /**
+     * Set oksend
+     *
+     * @param boolean $oksend
+     * @return RhTablasComm
+     */
+    public function setOksend($oksend)
+    {
+        $this->oksend = $oksend;
+
+        return $this;
+    }
+
+    /**
+     * Get oksend
+     *
+     * @return boolean 
+     */
+    public function getOksend()
+    {
+        return $this->oksend;
+    }
+
+    /**
+     * Set okreceive
+     *
+     * @param boolean $okreceive
+     * @return RhTablasComm
+     */
+    public function setOkreceive($okreceive)
+    {
+        $this->okreceive = $okreceive;
+
+        return $this;
+    }
+
+    /**
+     * Get okreceive
+     *
+     * @return boolean 
+     */
+    public function getOkreceive()
+    {
+        return $this->okreceive;
+    }
 }

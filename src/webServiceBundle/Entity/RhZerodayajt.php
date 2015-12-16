@@ -78,4 +78,198 @@ class RhZerodayajt
     private $pagoComedorTarifaCup;
 
 
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return RhZerodayajt
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set apellido1
+     *
+     * @param string $apellido1
+     * @return RhZerodayajt
+     */
+    public function setApellido1($apellido1)
+    {
+        $this->apellido1 = $apellido1;
+
+        return $this;
+    }
+
+    /**
+     * Get apellido1
+     *
+     * @return string 
+     */
+    public function getApellido1()
+    {
+        return $this->apellido1;
+    }
+
+    /**
+     * Set apellido2
+     *
+     * @param string $apellido2
+     * @return RhZerodayajt
+     */
+    public function setApellido2($apellido2)
+    {
+        $this->apellido2 = $apellido2;
+
+        return $this;
+    }
+
+    /**
+     * Get apellido2
+     *
+     * @return string 
+     */
+    public function getApellido2()
+    {
+        return $this->apellido2;
+    }
+
+    /**
+     * Set valorDivisa
+     *
+     * @param integer $valorDivisa
+     * @return RhZerodayajt
+     */
+    public function setValorDivisa($valorDivisa)
+    {
+        $this->valorDivisa = $valorDivisa;
+
+        return $this;
+    }
+
+    /**
+     * Get valorDivisa
+     *
+     * @return integer 
+     */
+    public function getValorDivisa()
+    {
+        return $this->valorDivisa;
+    }
+
+    /**
+     * Set valorDivisaCup
+     *
+     * @param integer $valorDivisaCup
+     * @return RhZerodayajt
+     */
+    public function setValorDivisaCup($valorDivisaCup)
+    {
+        $this->valorDivisaCup = $valorDivisaCup;
+
+        return $this;
+    }
+
+    /**
+     * Get valorDivisaCup
+     *
+     * @return integer 
+     */
+    public function getValorDivisaCup()
+    {
+        return $this->valorDivisaCup;
+    }
+
+    /**
+     * Set pagoComedorCuc
+     *
+     * @param boolean $pagoComedorCuc
+     * @return RhZerodayajt
+     */
+    public function setPagoComedorCuc($pagoComedorCuc)
+    {
+        $this->pagoComedorCuc = $pagoComedorCuc;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorCuc
+     *
+     * @return boolean 
+     */
+    public function getPagoComedorCuc()
+    {
+        return $this->pagoComedorCuc;
+    }
+
+    /**
+     * Set pagoComedorTarifa
+     *
+     * @param integer $pagoComedorTarifa
+     * @return RhZerodayajt
+     */
+    public function setPagoComedorTarifa($pagoComedorTarifa)
+    {
+        $this->pagoComedorTarifa = $pagoComedorTarifa;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorTarifa
+     *
+     * @return integer 
+     */
+    public function getPagoComedorTarifa()
+    {
+        return $this->pagoComedorTarifa;
+    }
+
+    /**
+     * Set pagoComedorTarifaCup
+     *
+     * @param integer $pagoComedorTarifaCup
+     * @return RhZerodayajt
+     */
+    public function setPagoComedorTarifaCup($pagoComedorTarifaCup)
+    {
+        $this->pagoComedorTarifaCup = $pagoComedorTarifaCup;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorTarifaCup
+     *
+     * @return integer 
+     */
+    public function getPagoComedorTarifaCup()
+    {
+        return $this->pagoComedorTarifaCup;
+    }
 }

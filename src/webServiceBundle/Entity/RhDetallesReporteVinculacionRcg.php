@@ -93,4 +93,234 @@ class RhDetallesReporteVinculacionRcg
     private $cantidadActividad;
 
 
+
+    /**
+     * Set item
+     *
+     * @param integer $item
+     * @return RhDetallesReporteVinculacionRcg
+     */
+    public function setItem($item)
+    {
+        $this->item = $item;
+
+        return $this;
+    }
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhDetallesReporteVinculacionRcg
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhDetallesReporteVinculacionRcg
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhDetallesReporteVinculacionRcg
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhDetallesReporteVinculacionRcg
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idColectivo
+     *
+     * @param string $idColectivo
+     * @return RhDetallesReporteVinculacionRcg
+     */
+    public function setIdColectivo($idColectivo)
+    {
+        $this->idColectivo = $idColectivo;
+
+        return $this;
+    }
+
+    /**
+     * Get idColectivo
+     *
+     * @return string 
+     */
+    public function getIdColectivo()
+    {
+        return $this->idColectivo;
+    }
+
+    /**
+     * Set idActividad
+     *
+     * @param string $idActividad
+     * @return RhDetallesReporteVinculacionRcg
+     */
+    public function setIdActividad($idActividad)
+    {
+        $this->idActividad = $idActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get idActividad
+     *
+     * @return string 
+     */
+    public function getIdActividad()
+    {
+        return $this->idActividad;
+    }
+
+    /**
+     * Set descActividad
+     *
+     * @param string $descActividad
+     * @return RhDetallesReporteVinculacionRcg
+     */
+    public function setDescActividad($descActividad)
+    {
+        $this->descActividad = $descActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get descActividad
+     *
+     * @return string 
+     */
+    public function getDescActividad()
+    {
+        return $this->descActividad;
+    }
+
+    /**
+     * Set tasa
+     *
+     * @param string $tasa
+     * @return RhDetallesReporteVinculacionRcg
+     */
+    public function setTasa($tasa)
+    {
+        $this->tasa = $tasa;
+
+        return $this;
+    }
+
+    /**
+     * Get tasa
+     *
+     * @return string 
+     */
+    public function getTasa()
+    {
+        return $this->tasa;
+    }
+
+    /**
+     * Set cantidadActividad
+     *
+     * @param string $cantidadActividad
+     * @return RhDetallesReporteVinculacionRcg
+     */
+    public function setCantidadActividad($cantidadActividad)
+    {
+        $this->cantidadActividad = $cantidadActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get cantidadActividad
+     *
+     * @return string 
+     */
+    public function getCantidadActividad()
+    {
+        return $this->cantidadActividad;
+    }
 }

@@ -29,4 +29,37 @@ class RhAreaTrabajoActual
     private $descArea;
 
 
+
+    /**
+     * Get idArea
+     *
+     * @return string 
+     */
+    public function getIdArea()
+    {
+        return $this->idArea;
+    }
+
+    /**
+     * Set descArea
+     *
+     * @param string $descArea
+     * @return RhAreaTrabajoActual
+     */
+    public function setDescArea($descArea)
+    {
+        $this->descArea = $descArea;
+
+        return $this;
+    }
+
+    /**
+     * Get descArea
+     *
+     * @return string 
+     */
+    public function getDescArea()
+    {
+        return $this->descArea;
+    }
 }

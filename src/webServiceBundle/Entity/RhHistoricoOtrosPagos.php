@@ -78,4 +78,198 @@ class RhHistoricoOtrosPagos
     private $salarioAcumulado;
 
 
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhHistoricoOtrosPagos
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhHistoricoOtrosPagos
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhHistoricoOtrosPagos
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhHistoricoOtrosPagos
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set idOtroPago
+     *
+     * @param string $idOtroPago
+     * @return RhHistoricoOtrosPagos
+     */
+    public function setIdOtroPago($idOtroPago)
+    {
+        $this->idOtroPago = $idOtroPago;
+
+        return $this;
+    }
+
+    /**
+     * Get idOtroPago
+     *
+     * @return string 
+     */
+    public function getIdOtroPago()
+    {
+        return $this->idOtroPago;
+    }
+
+    /**
+     * Set valorOtroPago
+     *
+     * @param integer $valorOtroPago
+     * @return RhHistoricoOtrosPagos
+     */
+    public function setValorOtroPago($valorOtroPago)
+    {
+        $this->valorOtroPago = $valorOtroPago;
+
+        return $this;
+    }
+
+    /**
+     * Get valorOtroPago
+     *
+     * @return integer 
+     */
+    public function getValorOtroPago()
+    {
+        return $this->valorOtroPago;
+    }
+
+    /**
+     * Set importeOtroPago
+     *
+     * @param integer $importeOtroPago
+     * @return RhHistoricoOtrosPagos
+     */
+    public function setImporteOtroPago($importeOtroPago)
+    {
+        $this->importeOtroPago = $importeOtroPago;
+
+        return $this;
+    }
+
+    /**
+     * Get importeOtroPago
+     *
+     * @return integer 
+     */
+    public function getImporteOtroPago()
+    {
+        return $this->importeOtroPago;
+    }
+
+    /**
+     * Set salarioAcumulado
+     *
+     * @param integer $salarioAcumulado
+     * @return RhHistoricoOtrosPagos
+     */
+    public function setSalarioAcumulado($salarioAcumulado)
+    {
+        $this->salarioAcumulado = $salarioAcumulado;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioAcumulado
+     *
+     * @return integer 
+     */
+    public function getSalarioAcumulado()
+    {
+        return $this->salarioAcumulado;
+    }
 }

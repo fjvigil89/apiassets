@@ -316,4 +316,980 @@ class RhTmpContabilizacionNominillasSalario
     private $turnosNocturnos;
 
 
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set idCcosto
+     *
+     * @param string $idCcosto
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setIdCcosto($idCcosto)
+    {
+        $this->idCcosto = $idCcosto;
+
+        return $this;
+    }
+
+    /**
+     * Get idCcosto
+     *
+     * @return string 
+     */
+    public function getIdCcosto()
+    {
+        return $this->idCcosto;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set salarioBasico
+     *
+     * @param integer $salarioBasico
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setSalarioBasico($salarioBasico)
+    {
+        $this->salarioBasico = $salarioBasico;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioBasico
+     *
+     * @return integer 
+     */
+    public function getSalarioBasico()
+    {
+        return $this->salarioBasico;
+    }
+
+    /**
+     * Set plus
+     *
+     * @param integer $plus
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setPlus($plus)
+    {
+        $this->plus = $plus;
+
+        return $this;
+    }
+
+    /**
+     * Get plus
+     *
+     * @return integer 
+     */
+    public function getPlus()
+    {
+        return $this->plus;
+    }
+
+    /**
+     * Set otrosSalarios
+     *
+     * @param integer $otrosSalarios
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setOtrosSalarios($otrosSalarios)
+    {
+        $this->otrosSalarios = $otrosSalarios;
+
+        return $this;
+    }
+
+    /**
+     * Get otrosSalarios
+     *
+     * @return integer 
+     */
+    public function getOtrosSalarios()
+    {
+        return $this->otrosSalarios;
+    }
+
+    /**
+     * Set antiguedad
+     *
+     * @param integer $antiguedad
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setAntiguedad($antiguedad)
+    {
+        $this->antiguedad = $antiguedad;
+
+        return $this;
+    }
+
+    /**
+     * Get antiguedad
+     *
+     * @return integer 
+     */
+    public function getAntiguedad()
+    {
+        return $this->antiguedad;
+    }
+
+    /**
+     * Set salarioPorCargo
+     *
+     * @param integer $salarioPorCargo
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setSalarioPorCargo($salarioPorCargo)
+    {
+        $this->salarioPorCargo = $salarioPorCargo;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioPorCargo
+     *
+     * @return integer 
+     */
+    public function getSalarioPorCargo()
+    {
+        return $this->salarioPorCargo;
+    }
+
+    /**
+     * Set ieterritorial
+     *
+     * @param integer $ieterritorial
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setIeterritorial($ieterritorial)
+    {
+        $this->ieterritorial = $ieterritorial;
+
+        return $this;
+    }
+
+    /**
+     * Get ieterritorial
+     *
+     * @return integer 
+     */
+    public function getIeterritorial()
+    {
+        return $this->ieterritorial;
+    }
+
+    /**
+     * Set etsector
+     *
+     * @param integer $etsector
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setEtsector($etsector)
+    {
+        $this->etsector = $etsector;
+
+        return $this;
+    }
+
+    /**
+     * Get etsector
+     *
+     * @return integer 
+     */
+    public function getEtsector()
+    {
+        return $this->etsector;
+    }
+
+    /**
+     * Set horasExtra
+     *
+     * @param integer $horasExtra
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setHorasExtra($horasExtra)
+    {
+        $this->horasExtra = $horasExtra;
+
+        return $this;
+    }
+
+    /**
+     * Get horasExtra
+     *
+     * @return integer 
+     */
+    public function getHorasExtra()
+    {
+        return $this->horasExtra;
+    }
+
+    /**
+     * Set condiciones
+     *
+     * @param integer $condiciones
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setCondiciones($condiciones)
+    {
+        $this->condiciones = $condiciones;
+
+        return $this;
+    }
+
+    /**
+     * Get condiciones
+     *
+     * @return integer 
+     */
+    public function getCondiciones()
+    {
+        return $this->condiciones;
+    }
+
+    /**
+     * Set albergamiento
+     *
+     * @param integer $albergamiento
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setAlbergamiento($albergamiento)
+    {
+        $this->albergamiento = $albergamiento;
+
+        return $this;
+    }
+
+    /**
+     * Get albergamiento
+     *
+     * @return integer 
+     */
+    public function getAlbergamiento()
+    {
+        return $this->albergamiento;
+    }
+
+    /**
+     * Set horarioirregular
+     *
+     * @param integer $horarioirregular
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setHorarioirregular($horarioirregular)
+    {
+        $this->horarioirregular = $horarioirregular;
+
+        return $this;
+    }
+
+    /**
+     * Get horarioirregular
+     *
+     * @return integer 
+     */
+    public function getHorarioirregular()
+    {
+        return $this->horarioirregular;
+    }
+
+    /**
+     * Set idoneidadFijo
+     *
+     * @param integer $idoneidadFijo
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setIdoneidadFijo($idoneidadFijo)
+    {
+        $this->idoneidadFijo = $idoneidadFijo;
+
+        return $this;
+    }
+
+    /**
+     * Get idoneidadFijo
+     *
+     * @return integer 
+     */
+    public function getIdoneidadFijo()
+    {
+        return $this->idoneidadFijo;
+    }
+
+    /**
+     * Set idoneidadMovil
+     *
+     * @param integer $idoneidadMovil
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setIdoneidadMovil($idoneidadMovil)
+    {
+        $this->idoneidadMovil = $idoneidadMovil;
+
+        return $this;
+    }
+
+    /**
+     * Get idoneidadMovil
+     *
+     * @return integer 
+     */
+    public function getIdoneidadMovil()
+    {
+        return $this->idoneidadMovil;
+    }
+
+    /**
+     * Set retribucionComplementaria
+     *
+     * @param integer $retribucionComplementaria
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setRetribucionComplementaria($retribucionComplementaria)
+    {
+        $this->retribucionComplementaria = $retribucionComplementaria;
+
+        return $this;
+    }
+
+    /**
+     * Get retribucionComplementaria
+     *
+     * @return integer 
+     */
+    public function getRetribucionComplementaria()
+    {
+        return $this->retribucionComplementaria;
+    }
+
+    /**
+     * Set devengado60
+     *
+     * @param integer $devengado60
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setDevengado60($devengado60)
+    {
+        $this->devengado60 = $devengado60;
+
+        return $this;
+    }
+
+    /**
+     * Get devengado60
+     *
+     * @return integer 
+     */
+    public function getDevengado60()
+    {
+        return $this->devengado60;
+    }
+
+    /**
+     * Set devengado100
+     *
+     * @param integer $devengado100
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setDevengado100($devengado100)
+    {
+        $this->devengado100 = $devengado100;
+
+        return $this;
+    }
+
+    /**
+     * Get devengado100
+     *
+     * @return integer 
+     */
+    public function getDevengado100()
+    {
+        return $this->devengado100;
+    }
+
+    /**
+     * Set devengadoPorSuspension
+     *
+     * @param integer $devengadoPorSuspension
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setDevengadoPorSuspension($devengadoPorSuspension)
+    {
+        $this->devengadoPorSuspension = $devengadoPorSuspension;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoPorSuspension
+     *
+     * @return integer 
+     */
+    public function getDevengadoPorSuspension()
+    {
+        return $this->devengadoPorSuspension;
+    }
+
+    /**
+     * Set devengadoreubicados
+     *
+     * @param integer $devengadoreubicados
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setDevengadoreubicados($devengadoreubicados)
+    {
+        $this->devengadoreubicados = $devengadoreubicados;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoreubicados
+     *
+     * @return integer 
+     */
+    public function getDevengadoreubicados()
+    {
+        return $this->devengadoreubicados;
+    }
+
+    /**
+     * Set devengadoDivisa
+     *
+     * @param integer $devengadoDivisa
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setDevengadoDivisa($devengadoDivisa)
+    {
+        $this->devengadoDivisa = $devengadoDivisa;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoDivisa
+     *
+     * @return integer 
+     */
+    public function getDevengadoDivisa()
+    {
+        return $this->devengadoDivisa;
+    }
+
+    /**
+     * Set salarioAcumuladoPago
+     *
+     * @param integer $salarioAcumuladoPago
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setSalarioAcumuladoPago($salarioAcumuladoPago)
+    {
+        $this->salarioAcumuladoPago = $salarioAcumuladoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioAcumuladoPago
+     *
+     * @return integer 
+     */
+    public function getSalarioAcumuladoPago()
+    {
+        return $this->salarioAcumuladoPago;
+    }
+
+    /**
+     * Set importems
+     *
+     * @param integer $importems
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setImportems($importems)
+    {
+        $this->importems = $importems;
+
+        return $this;
+    }
+
+    /**
+     * Get importems
+     *
+     * @return integer 
+     */
+    public function getImportems()
+    {
+        return $this->importems;
+    }
+
+    /**
+     * Set importeSobrecumplimiento
+     *
+     * @param integer $importeSobrecumplimiento
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setImporteSobrecumplimiento($importeSobrecumplimiento)
+    {
+        $this->importeSobrecumplimiento = $importeSobrecumplimiento;
+
+        return $this;
+    }
+
+    /**
+     * Get importeSobrecumplimiento
+     *
+     * @return integer 
+     */
+    public function getImporteSobrecumplimiento()
+    {
+        return $this->importeSobrecumplimiento;
+    }
+
+    /**
+     * Set perfeccionamiento
+     *
+     * @param integer $perfeccionamiento
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setPerfeccionamiento($perfeccionamiento)
+    {
+        $this->perfeccionamiento = $perfeccionamiento;
+
+        return $this;
+    }
+
+    /**
+     * Get perfeccionamiento
+     *
+     * @return integer 
+     */
+    public function getPerfeccionamiento()
+    {
+        return $this->perfeccionamiento;
+    }
+
+    /**
+     * Set estimulacion
+     *
+     * @param integer $estimulacion
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setEstimulacion($estimulacion)
+    {
+        $this->estimulacion = $estimulacion;
+
+        return $this;
+    }
+
+    /**
+     * Get estimulacion
+     *
+     * @return integer 
+     */
+    public function getEstimulacion()
+    {
+        return $this->estimulacion;
+    }
+
+    /**
+     * Set acobrar
+     *
+     * @param integer $acobrar
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setAcobrar($acobrar)
+    {
+        $this->acobrar = $acobrar;
+
+        return $this;
+    }
+
+    /**
+     * Get acobrar
+     *
+     * @return integer 
+     */
+    public function getAcobrar()
+    {
+        return $this->acobrar;
+    }
+
+    /**
+     * Set disponibles60
+     *
+     * @param integer $disponibles60
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setDisponibles60($disponibles60)
+    {
+        $this->disponibles60 = $disponibles60;
+
+        return $this;
+    }
+
+    /**
+     * Get disponibles60
+     *
+     * @return integer 
+     */
+    public function getDisponibles60()
+    {
+        return $this->disponibles60;
+    }
+
+    /**
+     * Set disponibles100
+     *
+     * @param integer $disponibles100
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setDisponibles100($disponibles100)
+    {
+        $this->disponibles100 = $disponibles100;
+
+        return $this;
+    }
+
+    /**
+     * Get disponibles100
+     *
+     * @return integer 
+     */
+    public function getDisponibles100()
+    {
+        return $this->disponibles100;
+    }
+
+    /**
+     * Set importeDevolucionRetenciones
+     *
+     * @param integer $importeDevolucionRetenciones
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setImporteDevolucionRetenciones($importeDevolucionRetenciones)
+    {
+        $this->importeDevolucionRetenciones = $importeDevolucionRetenciones;
+
+        return $this;
+    }
+
+    /**
+     * Get importeDevolucionRetenciones
+     *
+     * @return integer 
+     */
+    public function getImporteDevolucionRetenciones()
+    {
+        return $this->importeDevolucionRetenciones;
+    }
+
+    /**
+     * Set ajustecentavos
+     *
+     * @param string $ajustecentavos
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setAjustecentavos($ajustecentavos)
+    {
+        $this->ajustecentavos = $ajustecentavos;
+
+        return $this;
+    }
+
+    /**
+     * Get ajustecentavos
+     *
+     * @return string 
+     */
+    public function getAjustecentavos()
+    {
+        return $this->ajustecentavos;
+    }
+
+    /**
+     * Set idActividadIdCcostoIdObra
+     *
+     * @param string $idActividadIdCcostoIdObra
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setIdActividadIdCcostoIdObra($idActividadIdCcostoIdObra)
+    {
+        $this->idActividadIdCcostoIdObra = $idActividadIdCcostoIdObra;
+
+        return $this;
+    }
+
+    /**
+     * Get idActividadIdCcostoIdObra
+     *
+     * @return string 
+     */
+    public function getIdActividadIdCcostoIdObra()
+    {
+        return $this->idActividadIdCcostoIdObra;
+    }
+
+    /**
+     * Set decretoLey91
+     *
+     * @param integer $decretoLey91
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setDecretoLey91($decretoLey91)
+    {
+        $this->decretoLey91 = $decretoLey91;
+
+        return $this;
+    }
+
+    /**
+     * Get decretoLey91
+     *
+     * @return integer 
+     */
+    public function getDecretoLey91()
+    {
+        return $this->decretoLey91;
+    }
+
+    /**
+     * Set idActividad
+     *
+     * @param string $idActividad
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setIdActividad($idActividad)
+    {
+        $this->idActividad = $idActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get idActividad
+     *
+     * @return string 
+     */
+    public function getIdActividad()
+    {
+        return $this->idActividad;
+    }
+
+    /**
+     * Set idObra
+     *
+     * @param string $idObra
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setIdObra($idObra)
+    {
+        $this->idObra = $idObra;
+
+        return $this;
+    }
+
+    /**
+     * Get idObra
+     *
+     * @return string 
+     */
+    public function getIdObra()
+    {
+        return $this->idObra;
+    }
+
+    /**
+     * Set indemnizacionConFactura
+     *
+     * @param integer $indemnizacionConFactura
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setIndemnizacionConFactura($indemnizacionConFactura)
+    {
+        $this->indemnizacionConFactura = $indemnizacionConFactura;
+
+        return $this;
+    }
+
+    /**
+     * Get indemnizacionConFactura
+     *
+     * @return integer 
+     */
+    public function getIndemnizacionConFactura()
+    {
+        return $this->indemnizacionConFactura;
+    }
+
+    /**
+     * Set indemnizacionSinFactura
+     *
+     * @param integer $indemnizacionSinFactura
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setIndemnizacionSinFactura($indemnizacionSinFactura)
+    {
+        $this->indemnizacionSinFactura = $indemnizacionSinFactura;
+
+        return $this;
+    }
+
+    /**
+     * Get indemnizacionSinFactura
+     *
+     * @return integer 
+     */
+    public function getIndemnizacionSinFactura()
+    {
+        return $this->indemnizacionSinFactura;
+    }
+
+    /**
+     * Set importemsEt
+     *
+     * @param integer $importemsEt
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setImportemsEt($importemsEt)
+    {
+        $this->importemsEt = $importemsEt;
+
+        return $this;
+    }
+
+    /**
+     * Get importemsEt
+     *
+     * @return integer 
+     */
+    public function getImportemsEt()
+    {
+        return $this->importemsEt;
+    }
+
+    /**
+     * Set importemsEe
+     *
+     * @param integer $importemsEe
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setImportemsEe($importemsEe)
+    {
+        $this->importemsEe = $importemsEe;
+
+        return $this;
+    }
+
+    /**
+     * Get importemsEe
+     *
+     * @return integer 
+     */
+    public function getImportemsEe()
+    {
+        return $this->importemsEe;
+    }
+
+    /**
+     * Set pagoComedor
+     *
+     * @param integer $pagoComedor
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setPagoComedor($pagoComedor)
+    {
+        $this->pagoComedor = $pagoComedor;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedor
+     *
+     * @return integer 
+     */
+    public function getPagoComedor()
+    {
+        return $this->pagoComedor;
+    }
+
+    /**
+     * Set pagoComedorDivisa
+     *
+     * @param integer $pagoComedorDivisa
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setPagoComedorDivisa($pagoComedorDivisa)
+    {
+        $this->pagoComedorDivisa = $pagoComedorDivisa;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorDivisa
+     *
+     * @return integer 
+     */
+    public function getPagoComedorDivisa()
+    {
+        return $this->pagoComedorDivisa;
+    }
+
+    /**
+     * Set turnosNocturnos
+     *
+     * @param integer $turnosNocturnos
+     * @return RhTmpContabilizacionNominillasSalario
+     */
+    public function setTurnosNocturnos($turnosNocturnos)
+    {
+        $this->turnosNocturnos = $turnosNocturnos;
+
+        return $this;
+    }
+
+    /**
+     * Get turnosNocturnos
+     *
+     * @return integer 
+     */
+    public function getTurnosNocturnos()
+    {
+        return $this->turnosNocturnos;
+    }
 }

@@ -38,4 +38,73 @@ class RhEmpleadosOtrosPagos
     private $valorOtroPago;
 
 
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhEmpleadosOtrosPagos
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set idOtroPago
+     *
+     * @param string $idOtroPago
+     * @return RhEmpleadosOtrosPagos
+     */
+    public function setIdOtroPago($idOtroPago)
+    {
+        $this->idOtroPago = $idOtroPago;
+
+        return $this;
+    }
+
+    /**
+     * Get idOtroPago
+     *
+     * @return string 
+     */
+    public function getIdOtroPago()
+    {
+        return $this->idOtroPago;
+    }
+
+    /**
+     * Set valorOtroPago
+     *
+     * @param integer $valorOtroPago
+     * @return RhEmpleadosOtrosPagos
+     */
+    public function setValorOtroPago($valorOtroPago)
+    {
+        $this->valorOtroPago = $valorOtroPago;
+
+        return $this;
+    }
+
+    /**
+     * Get valorOtroPago
+     *
+     * @return integer 
+     */
+    public function getValorOtroPago()
+    {
+        return $this->valorOtroPago;
+    }
 }

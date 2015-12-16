@@ -36,4 +36,60 @@ class FzimportTarget
     private $hastrigger;
 
 
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set ntable
+     *
+     * @param string $ntable
+     * @return FzimportTarget
+     */
+    public function setNtable($ntable)
+    {
+        $this->ntable = $ntable;
+
+        return $this;
+    }
+
+    /**
+     * Get ntable
+     *
+     * @return string 
+     */
+    public function getNtable()
+    {
+        return $this->ntable;
+    }
+
+    /**
+     * Set hastrigger
+     *
+     * @param boolean $hastrigger
+     * @return FzimportTarget
+     */
+    public function setHastrigger($hastrigger)
+    {
+        $this->hastrigger = $hastrigger;
+
+        return $this;
+    }
+
+    /**
+     * Get hastrigger
+     *
+     * @return boolean 
+     */
+    public function getHastrigger()
+    {
+        return $this->hastrigger;
+    }
 }

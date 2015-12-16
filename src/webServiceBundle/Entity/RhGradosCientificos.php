@@ -36,4 +36,60 @@ class RhGradosCientificos
     private $identificacion;
 
 
+
+    /**
+     * Get idGradoCientifico
+     *
+     * @return string 
+     */
+    public function getIdGradoCientifico()
+    {
+        return $this->idGradoCientifico;
+    }
+
+    /**
+     * Set descGradoCientifico
+     *
+     * @param string $descGradoCientifico
+     * @return RhGradosCientificos
+     */
+    public function setDescGradoCientifico($descGradoCientifico)
+    {
+        $this->descGradoCientifico = $descGradoCientifico;
+
+        return $this;
+    }
+
+    /**
+     * Get descGradoCientifico
+     *
+     * @return string 
+     */
+    public function getDescGradoCientifico()
+    {
+        return $this->descGradoCientifico;
+    }
+
+    /**
+     * Set identificacion
+     *
+     * @param string $identificacion
+     * @return RhGradosCientificos
+     */
+    public function setIdentificacion($identificacion)
+    {
+        $this->identificacion = $identificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get identificacion
+     *
+     * @return string 
+     */
+    public function getIdentificacion()
+    {
+        return $this->identificacion;
+    }
 }

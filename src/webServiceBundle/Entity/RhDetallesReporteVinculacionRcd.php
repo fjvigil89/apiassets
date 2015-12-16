@@ -106,4 +106,290 @@ class RhDetallesReporteVinculacionRcd
     private $tarifa;
 
 
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idColectivo
+     *
+     * @param string $idColectivo
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setIdColectivo($idColectivo)
+    {
+        $this->idColectivo = $idColectivo;
+
+        return $this;
+    }
+
+    /**
+     * Get idColectivo
+     *
+     * @return string 
+     */
+    public function getIdColectivo()
+    {
+        return $this->idColectivo;
+    }
+
+    /**
+     * Set idActividad
+     *
+     * @param string $idActividad
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setIdActividad($idActividad)
+    {
+        $this->idActividad = $idActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get idActividad
+     *
+     * @return string 
+     */
+    public function getIdActividad()
+    {
+        return $this->idActividad;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set horasActividad
+     *
+     * @param string $horasActividad
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setHorasActividad($horasActividad)
+    {
+        $this->horasActividad = $horasActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get horasActividad
+     *
+     * @return string 
+     */
+    public function getHorasActividad()
+    {
+        return $this->horasActividad;
+    }
+
+    /**
+     * Set cantidadActividad
+     *
+     * @param string $cantidadActividad
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setCantidadActividad($cantidadActividad)
+    {
+        $this->cantidadActividad = $cantidadActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get cantidadActividad
+     *
+     * @return string 
+     */
+    public function getCantidadActividad()
+    {
+        return $this->cantidadActividad;
+    }
+
+    /**
+     * Set idCcosto
+     *
+     * @param string $idCcosto
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setIdCcosto($idCcosto)
+    {
+        $this->idCcosto = $idCcosto;
+
+        return $this;
+    }
+
+    /**
+     * Get idCcosto
+     *
+     * @return string 
+     */
+    public function getIdCcosto()
+    {
+        return $this->idCcosto;
+    }
+
+    /**
+     * Set tarifa
+     *
+     * @param integer $tarifa
+     * @return RhDetallesReporteVinculacionRcd
+     */
+    public function setTarifa($tarifa)
+    {
+        $this->tarifa = $tarifa;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifa
+     *
+     * @return integer 
+     */
+    public function getTarifa()
+    {
+        return $this->tarifa;
+    }
 }

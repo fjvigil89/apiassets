@@ -29,4 +29,37 @@ class RhColectivos
     private $descColectivo;
 
 
+
+    /**
+     * Get idColectivo
+     *
+     * @return string 
+     */
+    public function getIdColectivo()
+    {
+        return $this->idColectivo;
+    }
+
+    /**
+     * Set descColectivo
+     *
+     * @param string $descColectivo
+     * @return RhColectivos
+     */
+    public function setDescColectivo($descColectivo)
+    {
+        $this->descColectivo = $descColectivo;
+
+        return $this;
+    }
+
+    /**
+     * Get descColectivo
+     *
+     * @return string 
+     */
+    public function getDescColectivo()
+    {
+        return $this->descColectivo;
+    }
 }

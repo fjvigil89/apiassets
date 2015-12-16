@@ -505,4 +505,1601 @@ class RhTemporalNominaVinculados
     private $descuentomasivo;
 
 
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhTemporalNominaVinculados
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhTemporalNominaVinculados
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhTemporalNominaVinculados
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set salarioBasico
+     *
+     * @param integer $salarioBasico
+     * @return RhTemporalNominaVinculados
+     */
+    public function setSalarioBasico($salarioBasico)
+    {
+        $this->salarioBasico = $salarioBasico;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioBasico
+     *
+     * @return integer 
+     */
+    public function getSalarioBasico()
+    {
+        return $this->salarioBasico;
+    }
+
+    /**
+     * Set salarioBasicoMedidas
+     *
+     * @param integer $salarioBasicoMedidas
+     * @return RhTemporalNominaVinculados
+     */
+    public function setSalarioBasicoMedidas($salarioBasicoMedidas)
+    {
+        $this->salarioBasicoMedidas = $salarioBasicoMedidas;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioBasicoMedidas
+     *
+     * @return integer 
+     */
+    public function getSalarioBasicoMedidas()
+    {
+        return $this->salarioBasicoMedidas;
+    }
+
+    /**
+     * Set estimulo
+     *
+     * @param integer $estimulo
+     * @return RhTemporalNominaVinculados
+     */
+    public function setEstimulo($estimulo)
+    {
+        $this->estimulo = $estimulo;
+
+        return $this;
+    }
+
+    /**
+     * Get estimulo
+     *
+     * @return integer 
+     */
+    public function getEstimulo()
+    {
+        return $this->estimulo;
+    }
+
+    /**
+     * Set plus
+     *
+     * @param integer $plus
+     * @return RhTemporalNominaVinculados
+     */
+    public function setPlus($plus)
+    {
+        $this->plus = $plus;
+
+        return $this;
+    }
+
+    /**
+     * Get plus
+     *
+     * @return integer 
+     */
+    public function getPlus()
+    {
+        return $this->plus;
+    }
+
+    /**
+     * Set horasExtra
+     *
+     * @param integer $horasExtra
+     * @return RhTemporalNominaVinculados
+     */
+    public function setHorasExtra($horasExtra)
+    {
+        $this->horasExtra = $horasExtra;
+
+        return $this;
+    }
+
+    /**
+     * Get horasExtra
+     *
+     * @return integer 
+     */
+    public function getHorasExtra()
+    {
+        return $this->horasExtra;
+    }
+
+    /**
+     * Set condiciones
+     *
+     * @param integer $condiciones
+     * @return RhTemporalNominaVinculados
+     */
+    public function setCondiciones($condiciones)
+    {
+        $this->condiciones = $condiciones;
+
+        return $this;
+    }
+
+    /**
+     * Get condiciones
+     *
+     * @return integer 
+     */
+    public function getCondiciones()
+    {
+        return $this->condiciones;
+    }
+
+    /**
+     * Set salarioPorCargo
+     *
+     * @param integer $salarioPorCargo
+     * @return RhTemporalNominaVinculados
+     */
+    public function setSalarioPorCargo($salarioPorCargo)
+    {
+        $this->salarioPorCargo = $salarioPorCargo;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioPorCargo
+     *
+     * @return integer 
+     */
+    public function getSalarioPorCargo()
+    {
+        return $this->salarioPorCargo;
+    }
+
+    /**
+     * Set antiguedad
+     *
+     * @param integer $antiguedad
+     * @return RhTemporalNominaVinculados
+     */
+    public function setAntiguedad($antiguedad)
+    {
+        $this->antiguedad = $antiguedad;
+
+        return $this;
+    }
+
+    /**
+     * Get antiguedad
+     *
+     * @return integer 
+     */
+    public function getAntiguedad()
+    {
+        return $this->antiguedad;
+    }
+
+    /**
+     * Set estimulacion
+     *
+     * @param integer $estimulacion
+     * @return RhTemporalNominaVinculados
+     */
+    public function setEstimulacion($estimulacion)
+    {
+        $this->estimulacion = $estimulacion;
+
+        return $this;
+    }
+
+    /**
+     * Get estimulacion
+     *
+     * @return integer 
+     */
+    public function getEstimulacion()
+    {
+        return $this->estimulacion;
+    }
+
+    /**
+     * Set otros
+     *
+     * @param integer $otros
+     * @return RhTemporalNominaVinculados
+     */
+    public function setOtros($otros)
+    {
+        $this->otros = $otros;
+
+        return $this;
+    }
+
+    /**
+     * Get otros
+     *
+     * @return integer 
+     */
+    public function getOtros()
+    {
+        return $this->otros;
+    }
+
+    /**
+     * Set tarifainterrupto
+     *
+     * @param integer $tarifainterrupto
+     * @return RhTemporalNominaVinculados
+     */
+    public function setTarifainterrupto($tarifainterrupto)
+    {
+        $this->tarifainterrupto = $tarifainterrupto;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifainterrupto
+     *
+     * @return integer 
+     */
+    public function getTarifainterrupto()
+    {
+        return $this->tarifainterrupto;
+    }
+
+    /**
+     * Set horasTrabajadas
+     *
+     * @param string $horasTrabajadas
+     * @return RhTemporalNominaVinculados
+     */
+    public function setHorasTrabajadas($horasTrabajadas)
+    {
+        $this->horasTrabajadas = $horasTrabajadas;
+
+        return $this;
+    }
+
+    /**
+     * Get horasTrabajadas
+     *
+     * @return string 
+     */
+    public function getHorasTrabajadas()
+    {
+        return $this->horasTrabajadas;
+    }
+
+    /**
+     * Set horasInterrupto
+     *
+     * @param string $horasInterrupto
+     * @return RhTemporalNominaVinculados
+     */
+    public function setHorasInterrupto($horasInterrupto)
+    {
+        $this->horasInterrupto = $horasInterrupto;
+
+        return $this;
+    }
+
+    /**
+     * Get horasInterrupto
+     *
+     * @return string 
+     */
+    public function getHorasInterrupto()
+    {
+        return $this->horasInterrupto;
+    }
+
+    /**
+     * Set horasActividad
+     *
+     * @param string $horasActividad
+     * @return RhTemporalNominaVinculados
+     */
+    public function setHorasActividad($horasActividad)
+    {
+        $this->horasActividad = $horasActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get horasActividad
+     *
+     * @return string 
+     */
+    public function getHorasActividad()
+    {
+        return $this->horasActividad;
+    }
+
+    /**
+     * Set horasRealTrabajadas
+     *
+     * @param string $horasRealTrabajadas
+     * @return RhTemporalNominaVinculados
+     */
+    public function setHorasRealTrabajadas($horasRealTrabajadas)
+    {
+        $this->horasRealTrabajadas = $horasRealTrabajadas;
+
+        return $this;
+    }
+
+    /**
+     * Get horasRealTrabajadas
+     *
+     * @return string 
+     */
+    public function getHorasRealTrabajadas()
+    {
+        return $this->horasRealTrabajadas;
+    }
+
+    /**
+     * Set horasAdelantadas
+     *
+     * @param string $horasAdelantadas
+     * @return RhTemporalNominaVinculados
+     */
+    public function setHorasAdelantadas($horasAdelantadas)
+    {
+        $this->horasAdelantadas = $horasAdelantadas;
+
+        return $this;
+    }
+
+    /**
+     * Get horasAdelantadas
+     *
+     * @return string 
+     */
+    public function getHorasAdelantadas()
+    {
+        return $this->horasAdelantadas;
+    }
+
+    /**
+     * Set diasAPagarPorSubsidioSinReporte
+     *
+     * @param string $diasAPagarPorSubsidioSinReporte
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDiasAPagarPorSubsidioSinReporte($diasAPagarPorSubsidioSinReporte)
+    {
+        $this->diasAPagarPorSubsidioSinReporte = $diasAPagarPorSubsidioSinReporte;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAPagarPorSubsidioSinReporte
+     *
+     * @return string 
+     */
+    public function getDiasAPagarPorSubsidioSinReporte()
+    {
+        return $this->diasAPagarPorSubsidioSinReporte;
+    }
+
+    /**
+     * Set diasAPagarPorInterruptosReubicados
+     *
+     * @param string $diasAPagarPorInterruptosReubicados
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDiasAPagarPorInterruptosReubicados($diasAPagarPorInterruptosReubicados)
+    {
+        $this->diasAPagarPorInterruptosReubicados = $diasAPagarPorInterruptosReubicados;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAPagarPorInterruptosReubicados
+     *
+     * @return string 
+     */
+    public function getDiasAPagarPorInterruptosReubicados()
+    {
+        return $this->diasAPagarPorInterruptosReubicados;
+    }
+
+    /**
+     * Set diasAPagarPorInterrupcion
+     *
+     * @param string $diasAPagarPorInterrupcion
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDiasAPagarPorInterrupcion($diasAPagarPorInterrupcion)
+    {
+        $this->diasAPagarPorInterrupcion = $diasAPagarPorInterrupcion;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAPagarPorInterrupcion
+     *
+     * @return string 
+     */
+    public function getDiasAPagarPorInterrupcion()
+    {
+        return $this->diasAPagarPorInterrupcion;
+    }
+
+    /**
+     * Set diasAPagarPorSuspension
+     *
+     * @param string $diasAPagarPorSuspension
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDiasAPagarPorSuspension($diasAPagarPorSuspension)
+    {
+        $this->diasAPagarPorSuspension = $diasAPagarPorSuspension;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAPagarPorSuspension
+     *
+     * @return string 
+     */
+    public function getDiasAPagarPorSuspension()
+    {
+        return $this->diasAPagarPorSuspension;
+    }
+
+    /**
+     * Set diasAPagarPorInterrupcion60
+     *
+     * @param string $diasAPagarPorInterrupcion60
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDiasAPagarPorInterrupcion60($diasAPagarPorInterrupcion60)
+    {
+        $this->diasAPagarPorInterrupcion60 = $diasAPagarPorInterrupcion60;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAPagarPorInterrupcion60
+     *
+     * @return string 
+     */
+    public function getDiasAPagarPorInterrupcion60()
+    {
+        return $this->diasAPagarPorInterrupcion60;
+    }
+
+    /**
+     * Set diasAPagarPorInterrupcion100
+     *
+     * @param string $diasAPagarPorInterrupcion100
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDiasAPagarPorInterrupcion100($diasAPagarPorInterrupcion100)
+    {
+        $this->diasAPagarPorInterrupcion100 = $diasAPagarPorInterrupcion100;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAPagarPorInterrupcion100
+     *
+     * @return string 
+     */
+    public function getDiasAPagarPorInterrupcion100()
+    {
+        return $this->diasAPagarPorInterrupcion100;
+    }
+
+    /**
+     * Set devengado
+     *
+     * @param integer $devengado
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengado($devengado)
+    {
+        $this->devengado = $devengado;
+
+        return $this;
+    }
+
+    /**
+     * Get devengado
+     *
+     * @return integer 
+     */
+    public function getDevengado()
+    {
+        return $this->devengado;
+    }
+
+    /**
+     * Set devengadoTarjeta
+     *
+     * @param integer $devengadoTarjeta
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoTarjeta($devengadoTarjeta)
+    {
+        $this->devengadoTarjeta = $devengadoTarjeta;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoTarjeta
+     *
+     * @return integer 
+     */
+    public function getDevengadoTarjeta()
+    {
+        return $this->devengadoTarjeta;
+    }
+
+    /**
+     * Set devengadoporsombrecumplimiento
+     *
+     * @param integer $devengadoporsombrecumplimiento
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoporsombrecumplimiento($devengadoporsombrecumplimiento)
+    {
+        $this->devengadoporsombrecumplimiento = $devengadoporsombrecumplimiento;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoporsombrecumplimiento
+     *
+     * @return integer 
+     */
+    public function getDevengadoporsombrecumplimiento()
+    {
+        return $this->devengadoporsombrecumplimiento;
+    }
+
+    /**
+     * Set devengadoHorasInterrupcion
+     *
+     * @param integer $devengadoHorasInterrupcion
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoHorasInterrupcion($devengadoHorasInterrupcion)
+    {
+        $this->devengadoHorasInterrupcion = $devengadoHorasInterrupcion;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoHorasInterrupcion
+     *
+     * @return integer 
+     */
+    public function getDevengadoHorasInterrupcion()
+    {
+        return $this->devengadoHorasInterrupcion;
+    }
+
+    /**
+     * Set devengadoHorasTasadas
+     *
+     * @param integer $devengadoHorasTasadas
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoHorasTasadas($devengadoHorasTasadas)
+    {
+        $this->devengadoHorasTasadas = $devengadoHorasTasadas;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoHorasTasadas
+     *
+     * @return integer 
+     */
+    public function getDevengadoHorasTasadas()
+    {
+        return $this->devengadoHorasTasadas;
+    }
+
+    /**
+     * Set devengadoHorasAdelantadas
+     *
+     * @param integer $devengadoHorasAdelantadas
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoHorasAdelantadas($devengadoHorasAdelantadas)
+    {
+        $this->devengadoHorasAdelantadas = $devengadoHorasAdelantadas;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoHorasAdelantadas
+     *
+     * @return integer 
+     */
+    public function getDevengadoHorasAdelantadas()
+    {
+        return $this->devengadoHorasAdelantadas;
+    }
+
+    /**
+     * Set devengadoActividad
+     *
+     * @param integer $devengadoActividad
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoActividad($devengadoActividad)
+    {
+        $this->devengadoActividad = $devengadoActividad;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoActividad
+     *
+     * @return integer 
+     */
+    public function getDevengadoActividad()
+    {
+        return $this->devengadoActividad;
+    }
+
+    /**
+     * Set devengado60
+     *
+     * @param integer $devengado60
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengado60($devengado60)
+    {
+        $this->devengado60 = $devengado60;
+
+        return $this;
+    }
+
+    /**
+     * Get devengado60
+     *
+     * @return integer 
+     */
+    public function getDevengado60()
+    {
+        return $this->devengado60;
+    }
+
+    /**
+     * Set devengado100
+     *
+     * @param integer $devengado100
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengado100($devengado100)
+    {
+        $this->devengado100 = $devengado100;
+
+        return $this;
+    }
+
+    /**
+     * Get devengado100
+     *
+     * @return integer 
+     */
+    public function getDevengado100()
+    {
+        return $this->devengado100;
+    }
+
+    /**
+     * Set devengadoreubicados
+     *
+     * @param integer $devengadoreubicados
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoreubicados($devengadoreubicados)
+    {
+        $this->devengadoreubicados = $devengadoreubicados;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoreubicados
+     *
+     * @return integer 
+     */
+    public function getDevengadoreubicados()
+    {
+        return $this->devengadoreubicados;
+    }
+
+    /**
+     * Set devengadoPorInterrupcion
+     *
+     * @param integer $devengadoPorInterrupcion
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoPorInterrupcion($devengadoPorInterrupcion)
+    {
+        $this->devengadoPorInterrupcion = $devengadoPorInterrupcion;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoPorInterrupcion
+     *
+     * @return integer 
+     */
+    public function getDevengadoPorInterrupcion()
+    {
+        return $this->devengadoPorInterrupcion;
+    }
+
+    /**
+     * Set devengadoPorSuspension
+     *
+     * @param integer $devengadoPorSuspension
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoPorSuspension($devengadoPorSuspension)
+    {
+        $this->devengadoPorSuspension = $devengadoPorSuspension;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoPorSuspension
+     *
+     * @return integer 
+     */
+    public function getDevengadoPorSuspension()
+    {
+        return $this->devengadoPorSuspension;
+    }
+
+    /**
+     * Set devengadoPorSubsidioSinReporte
+     *
+     * @param integer $devengadoPorSubsidioSinReporte
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoPorSubsidioSinReporte($devengadoPorSubsidioSinReporte)
+    {
+        $this->devengadoPorSubsidioSinReporte = $devengadoPorSubsidioSinReporte;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoPorSubsidioSinReporte
+     *
+     * @return integer 
+     */
+    public function getDevengadoPorSubsidioSinReporte()
+    {
+        return $this->devengadoPorSubsidioSinReporte;
+    }
+
+    /**
+     * Set devengadoDivisa
+     *
+     * @param integer $devengadoDivisa
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDevengadoDivisa($devengadoDivisa)
+    {
+        $this->devengadoDivisa = $devengadoDivisa;
+
+        return $this;
+    }
+
+    /**
+     * Get devengadoDivisa
+     *
+     * @return integer 
+     */
+    public function getDevengadoDivisa()
+    {
+        return $this->devengadoDivisa;
+    }
+
+    /**
+     * Set deducciones
+     *
+     * @param integer $deducciones
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDeducciones($deducciones)
+    {
+        $this->deducciones = $deducciones;
+
+        return $this;
+    }
+
+    /**
+     * Get deducciones
+     *
+     * @return integer 
+     */
+    public function getDeducciones()
+    {
+        return $this->deducciones;
+    }
+
+    /**
+     * Set deduccionessalario
+     *
+     * @param integer $deduccionessalario
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDeduccionessalario($deduccionessalario)
+    {
+        $this->deduccionessalario = $deduccionessalario;
+
+        return $this;
+    }
+
+    /**
+     * Get deduccionessalario
+     *
+     * @return integer 
+     */
+    public function getDeduccionessalario()
+    {
+        return $this->deduccionessalario;
+    }
+
+    /**
+     * Set deduccionesreubicados
+     *
+     * @param integer $deduccionesreubicados
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDeduccionesreubicados($deduccionesreubicados)
+    {
+        $this->deduccionesreubicados = $deduccionesreubicados;
+
+        return $this;
+    }
+
+    /**
+     * Get deduccionesreubicados
+     *
+     * @return integer 
+     */
+    public function getDeduccionesreubicados()
+    {
+        return $this->deduccionesreubicados;
+    }
+
+    /**
+     * Set deduccionesinterrupto
+     *
+     * @param integer $deduccionesinterrupto
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDeduccionesinterrupto($deduccionesinterrupto)
+    {
+        $this->deduccionesinterrupto = $deduccionesinterrupto;
+
+        return $this;
+    }
+
+    /**
+     * Get deduccionesinterrupto
+     *
+     * @return integer 
+     */
+    public function getDeduccionesinterrupto()
+    {
+        return $this->deduccionesinterrupto;
+    }
+
+    /**
+     * Set otrosdescuentosinterrupto
+     *
+     * @param integer $otrosdescuentosinterrupto
+     * @return RhTemporalNominaVinculados
+     */
+    public function setOtrosdescuentosinterrupto($otrosdescuentosinterrupto)
+    {
+        $this->otrosdescuentosinterrupto = $otrosdescuentosinterrupto;
+
+        return $this;
+    }
+
+    /**
+     * Get otrosdescuentosinterrupto
+     *
+     * @return integer 
+     */
+    public function getOtrosdescuentosinterrupto()
+    {
+        return $this->otrosdescuentosinterrupto;
+    }
+
+    /**
+     * Set otrosdescuentosreubicados
+     *
+     * @param integer $otrosdescuentosreubicados
+     * @return RhTemporalNominaVinculados
+     */
+    public function setOtrosdescuentosreubicados($otrosdescuentosreubicados)
+    {
+        $this->otrosdescuentosreubicados = $otrosdescuentosreubicados;
+
+        return $this;
+    }
+
+    /**
+     * Get otrosdescuentosreubicados
+     *
+     * @return integer 
+     */
+    public function getOtrosdescuentosreubicados()
+    {
+        return $this->otrosdescuentosreubicados;
+    }
+
+    /**
+     * Set otrosdescuentossalario
+     *
+     * @param integer $otrosdescuentossalario
+     * @return RhTemporalNominaVinculados
+     */
+    public function setOtrosdescuentossalario($otrosdescuentossalario)
+    {
+        $this->otrosdescuentossalario = $otrosdescuentossalario;
+
+        return $this;
+    }
+
+    /**
+     * Get otrosdescuentossalario
+     *
+     * @return integer 
+     */
+    public function getOtrosdescuentossalario()
+    {
+        return $this->otrosdescuentossalario;
+    }
+
+    /**
+     * Set recargoTotal
+     *
+     * @param integer $recargoTotal
+     * @return RhTemporalNominaVinculados
+     */
+    public function setRecargoTotal($recargoTotal)
+    {
+        $this->recargoTotal = $recargoTotal;
+
+        return $this;
+    }
+
+    /**
+     * Get recargoTotal
+     *
+     * @return integer 
+     */
+    public function getRecargoTotal()
+    {
+        return $this->recargoTotal;
+    }
+
+    /**
+     * Set acobrar
+     *
+     * @param integer $acobrar
+     * @return RhTemporalNominaVinculados
+     */
+    public function setAcobrar($acobrar)
+    {
+        $this->acobrar = $acobrar;
+
+        return $this;
+    }
+
+    /**
+     * Get acobrar
+     *
+     * @return integer 
+     */
+    public function getAcobrar()
+    {
+        return $this->acobrar;
+    }
+
+    /**
+     * Set perfecinterrupto
+     *
+     * @param integer $perfecinterrupto
+     * @return RhTemporalNominaVinculados
+     */
+    public function setPerfecinterrupto($perfecinterrupto)
+    {
+        $this->perfecinterrupto = $perfecinterrupto;
+
+        return $this;
+    }
+
+    /**
+     * Get perfecinterrupto
+     *
+     * @return integer 
+     */
+    public function getPerfecinterrupto()
+    {
+        return $this->perfecinterrupto;
+    }
+
+    /**
+     * Set perfecreubicados
+     *
+     * @param integer $perfecreubicados
+     * @return RhTemporalNominaVinculados
+     */
+    public function setPerfecreubicados($perfecreubicados)
+    {
+        $this->perfecreubicados = $perfecreubicados;
+
+        return $this;
+    }
+
+    /**
+     * Get perfecreubicados
+     *
+     * @return integer 
+     */
+    public function getPerfecreubicados()
+    {
+        return $this->perfecreubicados;
+    }
+
+    /**
+     * Set perfecsalario
+     *
+     * @param integer $perfecsalario
+     * @return RhTemporalNominaVinculados
+     */
+    public function setPerfecsalario($perfecsalario)
+    {
+        $this->perfecsalario = $perfecsalario;
+
+        return $this;
+    }
+
+    /**
+     * Get perfecsalario
+     *
+     * @return integer 
+     */
+    public function getPerfecsalario()
+    {
+        return $this->perfecsalario;
+    }
+
+    /**
+     * Set importeAdelantadoRebajado
+     *
+     * @param integer $importeAdelantadoRebajado
+     * @return RhTemporalNominaVinculados
+     */
+    public function setImporteAdelantadoRebajado($importeAdelantadoRebajado)
+    {
+        $this->importeAdelantadoRebajado = $importeAdelantadoRebajado;
+
+        return $this;
+    }
+
+    /**
+     * Get importeAdelantadoRebajado
+     *
+     * @return integer 
+     */
+    public function getImporteAdelantadoRebajado()
+    {
+        return $this->importeAdelantadoRebajado;
+    }
+
+    /**
+     * Set diasAcumuladoPago
+     *
+     * @param string $diasAcumuladoPago
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDiasAcumuladoPago($diasAcumuladoPago)
+    {
+        $this->diasAcumuladoPago = $diasAcumuladoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAcumuladoPago
+     *
+     * @return string 
+     */
+    public function getDiasAcumuladoPago()
+    {
+        return $this->diasAcumuladoPago;
+    }
+
+    /**
+     * Set salarioAcumuladoPago
+     *
+     * @param integer $salarioAcumuladoPago
+     * @return RhTemporalNominaVinculados
+     */
+    public function setSalarioAcumuladoPago($salarioAcumuladoPago)
+    {
+        $this->salarioAcumuladoPago = $salarioAcumuladoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioAcumuladoPago
+     *
+     * @return integer 
+     */
+    public function getSalarioAcumuladoPago()
+    {
+        return $this->salarioAcumuladoPago;
+    }
+
+    /**
+     * Set diasAcumulado
+     *
+     * @param string $diasAcumulado
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDiasAcumulado($diasAcumulado)
+    {
+        $this->diasAcumulado = $diasAcumulado;
+
+        return $this;
+    }
+
+    /**
+     * Get diasAcumulado
+     *
+     * @return string 
+     */
+    public function getDiasAcumulado()
+    {
+        return $this->diasAcumulado;
+    }
+
+    /**
+     * Set salarioAcumulado
+     *
+     * @param integer $salarioAcumulado
+     * @return RhTemporalNominaVinculados
+     */
+    public function setSalarioAcumulado($salarioAcumulado)
+    {
+        $this->salarioAcumulado = $salarioAcumulado;
+
+        return $this;
+    }
+
+    /**
+     * Get salarioAcumulado
+     *
+     * @return integer 
+     */
+    public function getSalarioAcumulado()
+    {
+        return $this->salarioAcumulado;
+    }
+
+    /**
+     * Set descuento
+     *
+     * @param integer $descuento
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDescuento($descuento)
+    {
+        $this->descuento = $descuento;
+
+        return $this;
+    }
+
+    /**
+     * Get descuento
+     *
+     * @return integer 
+     */
+    public function getDescuento()
+    {
+        return $this->descuento;
+    }
+
+    /**
+     * Set perfeccionamiento
+     *
+     * @param integer $perfeccionamiento
+     * @return RhTemporalNominaVinculados
+     */
+    public function setPerfeccionamiento($perfeccionamiento)
+    {
+        $this->perfeccionamiento = $perfeccionamiento;
+
+        return $this;
+    }
+
+    /**
+     * Get perfeccionamiento
+     *
+     * @return integer 
+     */
+    public function getPerfeccionamiento()
+    {
+        return $this->perfeccionamiento;
+    }
+
+    /**
+     * Set ajustecentavos
+     *
+     * @param string $ajustecentavos
+     * @return RhTemporalNominaVinculados
+     */
+    public function setAjustecentavos($ajustecentavos)
+    {
+        $this->ajustecentavos = $ajustecentavos;
+
+        return $this;
+    }
+
+    /**
+     * Get ajustecentavos
+     *
+     * @return string 
+     */
+    public function getAjustecentavos()
+    {
+        return $this->ajustecentavos;
+    }
+
+    /**
+     * Set importems
+     *
+     * @param integer $importems
+     * @return RhTemporalNominaVinculados
+     */
+    public function setImportems($importems)
+    {
+        $this->importems = $importems;
+
+        return $this;
+    }
+
+    /**
+     * Get importems
+     *
+     * @return integer 
+     */
+    public function getImportems()
+    {
+        return $this->importems;
+    }
+
+    /**
+     * Set contravalor
+     *
+     * @param integer $contravalor
+     * @return RhTemporalNominaVinculados
+     */
+    public function setContravalor($contravalor)
+    {
+        $this->contravalor = $contravalor;
+
+        return $this;
+    }
+
+    /**
+     * Get contravalor
+     *
+     * @return integer 
+     */
+    public function getContravalor()
+    {
+        return $this->contravalor;
+    }
+
+    /**
+     * Set importemsEt
+     *
+     * @param integer $importemsEt
+     * @return RhTemporalNominaVinculados
+     */
+    public function setImportemsEt($importemsEt)
+    {
+        $this->importemsEt = $importemsEt;
+
+        return $this;
+    }
+
+    /**
+     * Get importemsEt
+     *
+     * @return integer 
+     */
+    public function getImportemsEt()
+    {
+        return $this->importemsEt;
+    }
+
+    /**
+     * Set importemsEe
+     *
+     * @param integer $importemsEe
+     * @return RhTemporalNominaVinculados
+     */
+    public function setImportemsEe($importemsEe)
+    {
+        $this->importemsEe = $importemsEe;
+
+        return $this;
+    }
+
+    /**
+     * Get importemsEe
+     *
+     * @return integer 
+     */
+    public function getImportemsEe()
+    {
+        return $this->importemsEe;
+    }
+
+    /**
+     * Set pagoComedorCuc
+     *
+     * @param boolean $pagoComedorCuc
+     * @return RhTemporalNominaVinculados
+     */
+    public function setPagoComedorCuc($pagoComedorCuc)
+    {
+        $this->pagoComedorCuc = $pagoComedorCuc;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorCuc
+     *
+     * @return boolean 
+     */
+    public function getPagoComedorCuc()
+    {
+        return $this->pagoComedorCuc;
+    }
+
+    /**
+     * Set pagoComedorTarifa
+     *
+     * @param integer $pagoComedorTarifa
+     * @return RhTemporalNominaVinculados
+     */
+    public function setPagoComedorTarifa($pagoComedorTarifa)
+    {
+        $this->pagoComedorTarifa = $pagoComedorTarifa;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorTarifa
+     *
+     * @return integer 
+     */
+    public function getPagoComedorTarifa()
+    {
+        return $this->pagoComedorTarifa;
+    }
+
+    /**
+     * Set pagoComedorDias
+     *
+     * @param integer $pagoComedorDias
+     * @return RhTemporalNominaVinculados
+     */
+    public function setPagoComedorDias($pagoComedorDias)
+    {
+        $this->pagoComedorDias = $pagoComedorDias;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedorDias
+     *
+     * @return integer 
+     */
+    public function getPagoComedorDias()
+    {
+        return $this->pagoComedorDias;
+    }
+
+    /**
+     * Set pagoComedor
+     *
+     * @param integer $pagoComedor
+     * @return RhTemporalNominaVinculados
+     */
+    public function setPagoComedor($pagoComedor)
+    {
+        $this->pagoComedor = $pagoComedor;
+
+        return $this;
+    }
+
+    /**
+     * Get pagoComedor
+     *
+     * @return integer 
+     */
+    public function getPagoComedor()
+    {
+        return $this->pagoComedor;
+    }
+
+    /**
+     * Set otrosPagos
+     *
+     * @param integer $otrosPagos
+     * @return RhTemporalNominaVinculados
+     */
+    public function setOtrosPagos($otrosPagos)
+    {
+        $this->otrosPagos = $otrosPagos;
+
+        return $this;
+    }
+
+    /**
+     * Get otrosPagos
+     *
+     * @return integer 
+     */
+    public function getOtrosPagos()
+    {
+        return $this->otrosPagos;
+    }
+
+    /**
+     * Set descuentomasivo
+     *
+     * @param integer $descuentomasivo
+     * @return RhTemporalNominaVinculados
+     */
+    public function setDescuentomasivo($descuentomasivo)
+    {
+        $this->descuentomasivo = $descuentomasivo;
+
+        return $this;
+    }
+
+    /**
+     * Get descuentomasivo
+     *
+     * @return integer 
+     */
+    public function getDescuentomasivo()
+    {
+        return $this->descuentomasivo;
+    }
 }

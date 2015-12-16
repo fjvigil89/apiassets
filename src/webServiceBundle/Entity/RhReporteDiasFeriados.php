@@ -36,4 +36,60 @@ class RhReporteDiasFeriados
     private $reportar;
 
 
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return RhReporteDiasFeriados
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set reportar
+     *
+     * @param boolean $reportar
+     * @return RhReporteDiasFeriados
+     */
+    public function setReportar($reportar)
+    {
+        $this->reportar = $reportar;
+
+        return $this;
+    }
+
+    /**
+     * Get reportar
+     *
+     * @return boolean 
+     */
+    public function getReportar()
+    {
+        return $this->reportar;
+    }
 }

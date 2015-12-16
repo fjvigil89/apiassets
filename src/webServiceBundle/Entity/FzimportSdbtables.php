@@ -29,4 +29,37 @@ class FzimportSdbtables
     private $stable;
 
 
+
+    /**
+     * Set item
+     *
+     * @param integer $item
+     * @return FzimportSdbtables
+     */
+    public function setItem($item)
+    {
+        $this->item = $item;
+
+        return $this;
+    }
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Get stable
+     *
+     * @return string 
+     */
+    public function getStable()
+    {
+        return $this->stable;
+    }
 }

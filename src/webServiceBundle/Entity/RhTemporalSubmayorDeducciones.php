@@ -134,4 +134,382 @@ class RhTemporalSubmayorDeducciones
     private $idDireccion;
 
 
+
+    /**
+     * Get idExpedienteDeduccion
+     *
+     * @return string 
+     */
+    public function getIdExpedienteDeduccion()
+    {
+        return $this->idExpedienteDeduccion;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set idDeduccion
+     *
+     * @param string $idDeduccion
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setIdDeduccion($idDeduccion)
+    {
+        $this->idDeduccion = $idDeduccion;
+
+        return $this;
+    }
+
+    /**
+     * Get idDeduccion
+     *
+     * @return string 
+     */
+    public function getIdDeduccion()
+    {
+        return $this->idDeduccion;
+    }
+
+    /**
+     * Set restasaldo
+     *
+     * @param boolean $restasaldo
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setRestasaldo($restasaldo)
+    {
+        $this->restasaldo = $restasaldo;
+
+        return $this;
+    }
+
+    /**
+     * Get restasaldo
+     *
+     * @return boolean 
+     */
+    public function getRestasaldo()
+    {
+        return $this->restasaldo;
+    }
+
+    /**
+     * Set cuota
+     *
+     * @param integer $cuota
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setCuota($cuota)
+    {
+        $this->cuota = $cuota;
+
+        return $this;
+    }
+
+    /**
+     * Get cuota
+     *
+     * @return integer 
+     */
+    public function getCuota()
+    {
+        return $this->cuota;
+    }
+
+    /**
+     * Set ajuste
+     *
+     * @param integer $ajuste
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setAjuste($ajuste)
+    {
+        $this->ajuste = $ajuste;
+
+        return $this;
+    }
+
+    /**
+     * Get ajuste
+     *
+     * @return integer 
+     */
+    public function getAjuste()
+    {
+        return $this->ajuste;
+    }
+
+    /**
+     * Set saldoinicial
+     *
+     * @param integer $saldoinicial
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setSaldoinicial($saldoinicial)
+    {
+        $this->saldoinicial = $saldoinicial;
+
+        return $this;
+    }
+
+    /**
+     * Get saldoinicial
+     *
+     * @return integer 
+     */
+    public function getSaldoinicial()
+    {
+        return $this->saldoinicial;
+    }
+
+    /**
+     * Set saldofinal
+     *
+     * @param integer $saldofinal
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setSaldofinal($saldofinal)
+    {
+        $this->saldofinal = $saldofinal;
+
+        return $this;
+    }
+
+    /**
+     * Get saldofinal
+     *
+     * @return integer 
+     */
+    public function getSaldofinal()
+    {
+        return $this->saldofinal;
+    }
+
+    /**
+     * Set deduccionesporsalario
+     *
+     * @param integer $deduccionesporsalario
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setDeduccionesporsalario($deduccionesporsalario)
+    {
+        $this->deduccionesporsalario = $deduccionesporsalario;
+
+        return $this;
+    }
+
+    /**
+     * Get deduccionesporsalario
+     *
+     * @return integer 
+     */
+    public function getDeduccionesporsalario()
+    {
+        return $this->deduccionesporsalario;
+    }
+
+    /**
+     * Set deduccionesporvacaciones
+     *
+     * @param integer $deduccionesporvacaciones
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setDeduccionesporvacaciones($deduccionesporvacaciones)
+    {
+        $this->deduccionesporvacaciones = $deduccionesporvacaciones;
+
+        return $this;
+    }
+
+    /**
+     * Get deduccionesporvacaciones
+     *
+     * @return integer 
+     */
+    public function getDeduccionesporvacaciones()
+    {
+        return $this->deduccionesporvacaciones;
+    }
+
+    /**
+     * Set deduccionesporsubsidios
+     *
+     * @param integer $deduccionesporsubsidios
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setDeduccionesporsubsidios($deduccionesporsubsidios)
+    {
+        $this->deduccionesporsubsidios = $deduccionesporsubsidios;
+
+        return $this;
+    }
+
+    /**
+     * Get deduccionesporsubsidios
+     *
+     * @return integer 
+     */
+    public function getDeduccionesporsubsidios()
+    {
+        return $this->deduccionesporsubsidios;
+    }
+
+    /**
+     * Set deduccionesporestipendio
+     *
+     * @param integer $deduccionesporestipendio
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setDeduccionesporestipendio($deduccionesporestipendio)
+    {
+        $this->deduccionesporestipendio = $deduccionesporestipendio;
+
+        return $this;
+    }
+
+    /**
+     * Get deduccionesporestipendio
+     *
+     * @return integer 
+     */
+    public function getDeduccionesporestipendio()
+    {
+        return $this->deduccionesporestipendio;
+    }
+
+    /**
+     * Set nivel
+     *
+     * @param integer $nivel
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setNivel($nivel)
+    {
+        $this->nivel = $nivel;
+
+        return $this;
+    }
+
+    /**
+     * Get nivel
+     *
+     * @return integer 
+     */
+    public function getNivel()
+    {
+        return $this->nivel;
+    }
+
+    /**
+     * Set idDireccion
+     *
+     * @param string $idDireccion
+     * @return RhTemporalSubmayorDeducciones
+     */
+    public function setIdDireccion($idDireccion)
+    {
+        $this->idDireccion = $idDireccion;
+
+        return $this;
+    }
+
+    /**
+     * Get idDireccion
+     *
+     * @return string 
+     */
+    public function getIdDireccion()
+    {
+        return $this->idDireccion;
+    }
 }

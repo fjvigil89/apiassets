@@ -281,4 +281,865 @@ class RhDevolucion
     private $devolucionNominas;
 
 
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set confirmada
+     *
+     * @param integer $confirmada
+     * @return RhDevolucion
+     */
+    public function setConfirmada($confirmada)
+    {
+        $this->confirmada = $confirmada;
+
+        return $this;
+    }
+
+    /**
+     * Get confirmada
+     *
+     * @return integer 
+     */
+    public function getConfirmada()
+    {
+        return $this->confirmada;
+    }
+
+    /**
+     * Set idDevolucion
+     *
+     * @param integer $idDevolucion
+     * @return RhDevolucion
+     */
+    public function setIdDevolucion($idDevolucion)
+    {
+        $this->idDevolucion = $idDevolucion;
+
+        return $this;
+    }
+
+    /**
+     * Get idDevolucion
+     *
+     * @return integer 
+     */
+    public function getIdDevolucion()
+    {
+        return $this->idDevolucion;
+    }
+
+    /**
+     * Set idAlmacen
+     *
+     * @param string $idAlmacen
+     * @return RhDevolucion
+     */
+    public function setIdAlmacen($idAlmacen)
+    {
+        $this->idAlmacen = $idAlmacen;
+
+        return $this;
+    }
+
+    /**
+     * Get idAlmacen
+     *
+     * @return string 
+     */
+    public function getIdAlmacen()
+    {
+        return $this->idAlmacen;
+    }
+
+    /**
+     * Set anoDevolucion
+     *
+     * @param integer $anoDevolucion
+     * @return RhDevolucion
+     */
+    public function setAnoDevolucion($anoDevolucion)
+    {
+        $this->anoDevolucion = $anoDevolucion;
+
+        return $this;
+    }
+
+    /**
+     * Get anoDevolucion
+     *
+     * @return integer 
+     */
+    public function getAnoDevolucion()
+    {
+        return $this->anoDevolucion;
+    }
+
+    /**
+     * Set fechaConfirmacion
+     *
+     * @param \DateTime $fechaConfirmacion
+     * @return RhDevolucion
+     */
+    public function setFechaConfirmacion($fechaConfirmacion)
+    {
+        $this->fechaConfirmacion = $fechaConfirmacion;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaConfirmacion
+     *
+     * @return \DateTime 
+     */
+    public function getFechaConfirmacion()
+    {
+        return $this->fechaConfirmacion;
+    }
+
+    /**
+     * Set fechaDevolucion
+     *
+     * @param \DateTime $fechaDevolucion
+     * @return RhDevolucion
+     */
+    public function setFechaDevolucion($fechaDevolucion)
+    {
+        $this->fechaDevolucion = $fechaDevolucion;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaDevolucion
+     *
+     * @return \DateTime 
+     */
+    public function getFechaDevolucion()
+    {
+        return $this->fechaDevolucion;
+    }
+
+    /**
+     * Set idEmpleado
+     *
+     * @param string $idEmpleado
+     * @return RhDevolucion
+     */
+    public function setIdEmpleado($idEmpleado)
+    {
+        $this->idEmpleado = $idEmpleado;
+
+        return $this;
+    }
+
+    /**
+     * Get idEmpleado
+     *
+     * @return string 
+     */
+    public function getIdEmpleado()
+    {
+        return $this->idEmpleado;
+    }
+
+    /**
+     * Set descEmpleado
+     *
+     * @param string $descEmpleado
+     * @return RhDevolucion
+     */
+    public function setDescEmpleado($descEmpleado)
+    {
+        $this->descEmpleado = $descEmpleado;
+
+        return $this;
+    }
+
+    /**
+     * Get descEmpleado
+     *
+     * @return string 
+     */
+    public function getDescEmpleado()
+    {
+        return $this->descEmpleado;
+    }
+
+    /**
+     * Set idCliente
+     *
+     * @param string $idCliente
+     * @return RhDevolucion
+     */
+    public function setIdCliente($idCliente)
+    {
+        $this->idCliente = $idCliente;
+
+        return $this;
+    }
+
+    /**
+     * Get idCliente
+     *
+     * @return string 
+     */
+    public function getIdCliente()
+    {
+        return $this->idCliente;
+    }
+
+    /**
+     * Set descCliente
+     *
+     * @param string $descCliente
+     * @return RhDevolucion
+     */
+    public function setDescCliente($descCliente)
+    {
+        $this->descCliente = $descCliente;
+
+        return $this;
+    }
+
+    /**
+     * Get descCliente
+     *
+     * @return string 
+     */
+    public function getDescCliente()
+    {
+        return $this->descCliente;
+    }
+
+    /**
+     * Set idReferencia
+     *
+     * @param integer $idReferencia
+     * @return RhDevolucion
+     */
+    public function setIdReferencia($idReferencia)
+    {
+        $this->idReferencia = $idReferencia;
+
+        return $this;
+    }
+
+    /**
+     * Get idReferencia
+     *
+     * @return integer 
+     */
+    public function getIdReferencia()
+    {
+        return $this->idReferencia;
+    }
+
+    /**
+     * Set añoReferencia
+     *
+     * @param integer $añoReferencia
+     * @return RhDevolucion
+     */
+    public function setAñoReferencia($añoReferencia)
+    {
+        $this->añoReferencia = $añoReferencia;
+
+        return $this;
+    }
+
+    /**
+     * Get añoReferencia
+     *
+     * @return integer 
+     */
+    public function getAñoReferencia()
+    {
+        return $this->añoReferencia;
+    }
+
+    /**
+     * Set tipoDevolucion
+     *
+     * @param integer $tipoDevolucion
+     * @return RhDevolucion
+     */
+    public function setTipoDevolucion($tipoDevolucion)
+    {
+        $this->tipoDevolucion = $tipoDevolucion;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoDevolucion
+     *
+     * @return integer 
+     */
+    public function getTipoDevolucion()
+    {
+        return $this->tipoDevolucion;
+    }
+
+    /**
+     * Set devuelveOcancela
+     *
+     * @param integer $devuelveOcancela
+     * @return RhDevolucion
+     */
+    public function setDevuelveOcancela($devuelveOcancela)
+    {
+        $this->devuelveOcancela = $devuelveOcancela;
+
+        return $this;
+    }
+
+    /**
+     * Get devuelveOcancela
+     *
+     * @return integer 
+     */
+    public function getDevuelveOcancela()
+    {
+        return $this->devuelveOcancela;
+    }
+
+    /**
+     * Set cantidadOvalor
+     *
+     * @param integer $cantidadOvalor
+     * @return RhDevolucion
+     */
+    public function setCantidadOvalor($cantidadOvalor)
+    {
+        $this->cantidadOvalor = $cantidadOvalor;
+
+        return $this;
+    }
+
+    /**
+     * Get cantidadOvalor
+     *
+     * @return integer 
+     */
+    public function getCantidadOvalor()
+    {
+        return $this->cantidadOvalor;
+    }
+
+    /**
+     * Set importetotalmb
+     *
+     * @param integer $importetotalmb
+     * @return RhDevolucion
+     */
+    public function setImportetotalmb($importetotalmb)
+    {
+        $this->importetotalmb = $importetotalmb;
+
+        return $this;
+    }
+
+    /**
+     * Get importetotalmb
+     *
+     * @return integer 
+     */
+    public function getImportetotalmb()
+    {
+        return $this->importetotalmb;
+    }
+
+    /**
+     * Set importetotalmc
+     *
+     * @param integer $importetotalmc
+     * @return RhDevolucion
+     */
+    public function setImportetotalmc($importetotalmc)
+    {
+        $this->importetotalmc = $importetotalmc;
+
+        return $this;
+    }
+
+    /**
+     * Get importetotalmc
+     *
+     * @return integer 
+     */
+    public function getImportetotalmc()
+    {
+        return $this->importetotalmc;
+    }
+
+    /**
+     * Set idCompro
+     *
+     * @param integer $idCompro
+     * @return RhDevolucion
+     */
+    public function setIdCompro($idCompro)
+    {
+        $this->idCompro = $idCompro;
+
+        return $this;
+    }
+
+    /**
+     * Get idCompro
+     *
+     * @return integer 
+     */
+    public function getIdCompro()
+    {
+        return $this->idCompro;
+    }
+
+    /**
+     * Set mesCompro
+     *
+     * @param integer $mesCompro
+     * @return RhDevolucion
+     */
+    public function setMesCompro($mesCompro)
+    {
+        $this->mesCompro = $mesCompro;
+
+        return $this;
+    }
+
+    /**
+     * Get mesCompro
+     *
+     * @return integer 
+     */
+    public function getMesCompro()
+    {
+        return $this->mesCompro;
+    }
+
+    /**
+     * Set anoCompro
+     *
+     * @param integer $anoCompro
+     * @return RhDevolucion
+     */
+    public function setAnoCompro($anoCompro)
+    {
+        $this->anoCompro = $anoCompro;
+
+        return $this;
+    }
+
+    /**
+     * Get anoCompro
+     *
+     * @return integer 
+     */
+    public function getAnoCompro()
+    {
+        return $this->anoCompro;
+    }
+
+    /**
+     * Set nota
+     *
+     * @param string $nota
+     * @return RhDevolucion
+     */
+    public function setNota($nota)
+    {
+        $this->nota = $nota;
+
+        return $this;
+    }
+
+    /**
+     * Get nota
+     *
+     * @return string 
+     */
+    public function getNota()
+    {
+        return $this->nota;
+    }
+
+    /**
+     * Set contabilizado
+     *
+     * @param boolean $contabilizado
+     * @return RhDevolucion
+     */
+    public function setContabilizado($contabilizado)
+    {
+        $this->contabilizado = $contabilizado;
+
+        return $this;
+    }
+
+    /**
+     * Get contabilizado
+     *
+     * @return boolean 
+     */
+    public function getContabilizado()
+    {
+        return $this->contabilizado;
+    }
+
+    /**
+     * Set marcaConteo
+     *
+     * @param boolean $marcaConteo
+     * @return RhDevolucion
+     */
+    public function setMarcaConteo($marcaConteo)
+    {
+        $this->marcaConteo = $marcaConteo;
+
+        return $this;
+    }
+
+    /**
+     * Get marcaConteo
+     *
+     * @return boolean 
+     */
+    public function getMarcaConteo()
+    {
+        return $this->marcaConteo;
+    }
+
+    /**
+     * Set tipoDocumento
+     *
+     * @param integer $tipoDocumento
+     * @return RhDevolucion
+     */
+    public function setTipoDocumento($tipoDocumento)
+    {
+        $this->tipoDocumento = $tipoDocumento;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoDocumento
+     *
+     * @return integer 
+     */
+    public function getTipoDocumento()
+    {
+        return $this->tipoDocumento;
+    }
+
+    /**
+     * Set xtrans
+     *
+     * @param boolean $xtrans
+     * @return RhDevolucion
+     */
+    public function setXtrans($xtrans)
+    {
+        $this->xtrans = $xtrans;
+
+        return $this;
+    }
+
+    /**
+     * Get xtrans
+     *
+     * @return boolean 
+     */
+    public function getXtrans()
+    {
+        return $this->xtrans;
+    }
+
+    /**
+     * Set impuestoTotal
+     *
+     * @param integer $impuestoTotal
+     * @return RhDevolucion
+     */
+    public function setImpuestoTotal($impuestoTotal)
+    {
+        $this->impuestoTotal = $impuestoTotal;
+
+        return $this;
+    }
+
+    /**
+     * Get impuestoTotal
+     *
+     * @return integer 
+     */
+    public function getImpuestoTotal()
+    {
+        return $this->impuestoTotal;
+    }
+
+    /**
+     * Set comisionTotal
+     *
+     * @param integer $comisionTotal
+     * @return RhDevolucion
+     */
+    public function setComisionTotal($comisionTotal)
+    {
+        $this->comisionTotal = $comisionTotal;
+
+        return $this;
+    }
+
+    /**
+     * Get comisionTotal
+     *
+     * @return integer 
+     */
+    public function getComisionTotal()
+    {
+        return $this->comisionTotal;
+    }
+
+    /**
+     * Set descAlmacen
+     *
+     * @param string $descAlmacen
+     * @return RhDevolucion
+     */
+    public function setDescAlmacen($descAlmacen)
+    {
+        $this->descAlmacen = $descAlmacen;
+
+        return $this;
+    }
+
+    /**
+     * Get descAlmacen
+     *
+     * @return string 
+     */
+    public function getDescAlmacen()
+    {
+        return $this->descAlmacen;
+    }
+
+    /**
+     * Set idUser
+     *
+     * @param string $idUser
+     * @return RhDevolucion
+     */
+    public function setIdUser($idUser)
+    {
+        $this->idUser = $idUser;
+
+        return $this;
+    }
+
+    /**
+     * Get idUser
+     *
+     * @return string 
+     */
+    public function getIdUser()
+    {
+        return $this->idUser;
+    }
+
+    /**
+     * Set fechaOp
+     *
+     * @param \DateTime $fechaOp
+     * @return RhDevolucion
+     */
+    public function setFechaOp($fechaOp)
+    {
+        $this->fechaOp = $fechaOp;
+
+        return $this;
+    }
+
+    /**
+     * Get fechaOp
+     *
+     * @return \DateTime 
+     */
+    public function getFechaOp()
+    {
+        return $this->fechaOp;
+    }
+
+    /**
+     * Set docPrimario
+     *
+     * @param string $docPrimario
+     * @return RhDevolucion
+     */
+    public function setDocPrimario($docPrimario)
+    {
+        $this->docPrimario = $docPrimario;
+
+        return $this;
+    }
+
+    /**
+     * Get docPrimario
+     *
+     * @return string 
+     */
+    public function getDocPrimario()
+    {
+        return $this->docPrimario;
+    }
+
+    /**
+     * Set noPrelacion
+     *
+     * @param integer $noPrelacion
+     * @return RhDevolucion
+     */
+    public function setNoPrelacion($noPrelacion)
+    {
+        $this->noPrelacion = $noPrelacion;
+
+        return $this;
+    }
+
+    /**
+     * Get noPrelacion
+     *
+     * @return integer 
+     */
+    public function getNoPrelacion()
+    {
+        return $this->noPrelacion;
+    }
+
+    /**
+     * Set impuestoprove
+     *
+     * @param integer $impuestoprove
+     * @return RhDevolucion
+     */
+    public function setImpuestoprove($impuestoprove)
+    {
+        $this->impuestoprove = $impuestoprove;
+
+        return $this;
+    }
+
+    /**
+     * Get impuestoprove
+     *
+     * @return integer 
+     */
+    public function getImpuestoprove()
+    {
+        return $this->impuestoprove;
+    }
+
+    /**
+     * Set impuestoreten
+     *
+     * @param integer $impuestoreten
+     * @return RhDevolucion
+     */
+    public function setImpuestoreten($impuestoreten)
+    {
+        $this->impuestoreten = $impuestoreten;
+
+        return $this;
+    }
+
+    /**
+     * Get impuestoreten
+     *
+     * @return integer 
+     */
+    public function getImpuestoreten()
+    {
+        return $this->impuestoreten;
+    }
+
+    /**
+     * Set iddocpago
+     *
+     * @param string $iddocpago
+     * @return RhDevolucion
+     */
+    public function setIddocpago($iddocpago)
+    {
+        $this->iddocpago = $iddocpago;
+
+        return $this;
+    }
+
+    /**
+     * Get iddocpago
+     *
+     * @return string 
+     */
+    public function getIddocpago()
+    {
+        return $this->iddocpago;
+    }
+
+    /**
+     * Set descfp
+     *
+     * @param string $descfp
+     * @return RhDevolucion
+     */
+    public function setDescfp($descfp)
+    {
+        $this->descfp = $descfp;
+
+        return $this;
+    }
+
+    /**
+     * Get descfp
+     *
+     * @return string 
+     */
+    public function getDescfp()
+    {
+        return $this->descfp;
+    }
+
+    /**
+     * Set devolucionNominas
+     *
+     * @param integer $devolucionNominas
+     * @return RhDevolucion
+     */
+    public function setDevolucionNominas($devolucionNominas)
+    {
+        $this->devolucionNominas = $devolucionNominas;
+
+        return $this;
+    }
+
+    /**
+     * Get devolucionNominas
+     *
+     * @return integer 
+     */
+    public function getDevolucionNominas()
+    {
+        return $this->devolucionNominas;
+    }
 }

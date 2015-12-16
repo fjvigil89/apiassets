@@ -92,4 +92,244 @@ class RhDetallesReporteNominillasRetRpt
     private $delMark;
 
 
+
+    /**
+     * Get item
+     *
+     * @return integer 
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    /**
+     * Set itemlink
+     *
+     * @param integer $itemlink
+     * @return RhDetallesReporteNominillasRetRpt
+     */
+    public function setItemlink($itemlink)
+    {
+        $this->itemlink = $itemlink;
+
+        return $this;
+    }
+
+    /**
+     * Get itemlink
+     *
+     * @return integer 
+     */
+    public function getItemlink()
+    {
+        return $this->itemlink;
+    }
+
+    /**
+     * Set contador
+     *
+     * @param integer $contador
+     * @return RhDetallesReporteNominillasRetRpt
+     */
+    public function setContador($contador)
+    {
+        $this->contador = $contador;
+
+        return $this;
+    }
+
+    /**
+     * Get contador
+     *
+     * @return integer 
+     */
+    public function getContador()
+    {
+        return $this->contador;
+    }
+
+    /**
+     * Set ano
+     *
+     * @param integer $ano
+     * @return RhDetallesReporteNominillasRetRpt
+     */
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+
+        return $this;
+    }
+
+    /**
+     * Get ano
+     *
+     * @return integer 
+     */
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    /**
+     * Set mes
+     *
+     * @param integer $mes
+     * @return RhDetallesReporteNominillasRetRpt
+     */
+    public function setMes($mes)
+    {
+        $this->mes = $mes;
+
+        return $this;
+    }
+
+    /**
+     * Get mes
+     *
+     * @return integer 
+     */
+    public function getMes()
+    {
+        return $this->mes;
+    }
+
+    /**
+     * Set tipoPago
+     *
+     * @param integer $tipoPago
+     * @return RhDetallesReporteNominillasRetRpt
+     */
+    public function setTipoPago($tipoPago)
+    {
+        $this->tipoPago = $tipoPago;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoPago
+     *
+     * @return integer 
+     */
+    public function getTipoPago()
+    {
+        return $this->tipoPago;
+    }
+
+    /**
+     * Set idExpedienteDeduccion
+     *
+     * @param string $idExpedienteDeduccion
+     * @return RhDetallesReporteNominillasRetRpt
+     */
+    public function setIdExpedienteDeduccion($idExpedienteDeduccion)
+    {
+        $this->idExpedienteDeduccion = $idExpedienteDeduccion;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpedienteDeduccion
+     *
+     * @return string 
+     */
+    public function getIdExpedienteDeduccion()
+    {
+        return $this->idExpedienteDeduccion;
+    }
+
+    /**
+     * Set valorDeduccion
+     *
+     * @param integer $valorDeduccion
+     * @return RhDetallesReporteNominillasRetRpt
+     */
+    public function setValorDeduccion($valorDeduccion)
+    {
+        $this->valorDeduccion = $valorDeduccion;
+
+        return $this;
+    }
+
+    /**
+     * Get valorDeduccion
+     *
+     * @return integer 
+     */
+    public function getValorDeduccion()
+    {
+        return $this->valorDeduccion;
+    }
+
+    /**
+     * Set idExpediente
+     *
+     * @param string $idExpediente
+     * @return RhDetallesReporteNominillasRetRpt
+     */
+    public function setIdExpediente($idExpediente)
+    {
+        $this->idExpediente = $idExpediente;
+
+        return $this;
+    }
+
+    /**
+     * Get idExpediente
+     *
+     * @return string 
+     */
+    public function getIdExpediente()
+    {
+        return $this->idExpediente;
+    }
+
+    /**
+     * Set estado
+     *
+     * @param integer $estado
+     * @return RhDetallesReporteNominillasRetRpt
+     */
+    public function setEstado($estado)
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    /**
+     * Get estado
+     *
+     * @return integer 
+     */
+    public function getEstado()
+    {
+        return $this->estado;
+    }
+
+    /**
+     * Set delMark
+     *
+     * @param boolean $delMark
+     * @return RhDetallesReporteNominillasRetRpt
+     */
+    public function setDelMark($delMark)
+    {
+        $this->delMark = $delMark;
+
+        return $this;
+    }
+
+    /**
+     * Get delMark
+     *
+     * @return boolean 
+     */
+    public function getDelMark()
+    {
+        return $this->delMark;
+    }
 }

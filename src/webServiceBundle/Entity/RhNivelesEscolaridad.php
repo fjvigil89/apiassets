@@ -50,4 +50,106 @@ class RhNivelesEscolaridad
     private $siglas;
 
 
+
+    /**
+     * Get idNivelEscolaridad
+     *
+     * @return string 
+     */
+    public function getIdNivelEscolaridad()
+    {
+        return $this->idNivelEscolaridad;
+    }
+
+    /**
+     * Set descNivelEscolaridad
+     *
+     * @param string $descNivelEscolaridad
+     * @return RhNivelesEscolaridad
+     */
+    public function setDescNivelEscolaridad($descNivelEscolaridad)
+    {
+        $this->descNivelEscolaridad = $descNivelEscolaridad;
+
+        return $this;
+    }
+
+    /**
+     * Get descNivelEscolaridad
+     *
+     * @return string 
+     */
+    public function getDescNivelEscolaridad()
+    {
+        return $this->descNivelEscolaridad;
+    }
+
+    /**
+     * Set idNivelEscolaridadClasif
+     *
+     * @param string $idNivelEscolaridadClasif
+     * @return RhNivelesEscolaridad
+     */
+    public function setIdNivelEscolaridadClasif($idNivelEscolaridadClasif)
+    {
+        $this->idNivelEscolaridadClasif = $idNivelEscolaridadClasif;
+
+        return $this;
+    }
+
+    /**
+     * Get idNivelEscolaridadClasif
+     *
+     * @return string 
+     */
+    public function getIdNivelEscolaridadClasif()
+    {
+        return $this->idNivelEscolaridadClasif;
+    }
+
+    /**
+     * Set nivel
+     *
+     * @param integer $nivel
+     * @return RhNivelesEscolaridad
+     */
+    public function setNivel($nivel)
+    {
+        $this->nivel = $nivel;
+
+        return $this;
+    }
+
+    /**
+     * Get nivel
+     *
+     * @return integer 
+     */
+    public function getNivel()
+    {
+        return $this->nivel;
+    }
+
+    /**
+     * Set siglas
+     *
+     * @param string $siglas
+     * @return RhNivelesEscolaridad
+     */
+    public function setSiglas($siglas)
+    {
+        $this->siglas = $siglas;
+
+        return $this;
+    }
+
+    /**
+     * Get siglas
+     *
+     * @return string 
+     */
+    public function getSiglas()
+    {
+        return $this->siglas;
+    }
 }

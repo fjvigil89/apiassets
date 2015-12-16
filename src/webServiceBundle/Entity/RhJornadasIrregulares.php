@@ -29,4 +29,37 @@ class RhJornadasIrregulares
     private $descJornada;
 
 
+
+    /**
+     * Get idJornada
+     *
+     * @return string 
+     */
+    public function getIdJornada()
+    {
+        return $this->idJornada;
+    }
+
+    /**
+     * Set descJornada
+     *
+     * @param string $descJornada
+     * @return RhJornadasIrregulares
+     */
+    public function setDescJornada($descJornada)
+    {
+        $this->descJornada = $descJornada;
+
+        return $this;
+    }
+
+    /**
+     * Get descJornada
+     *
+     * @return string 
+     */
+    public function getDescJornada()
+    {
+        return $this->descJornada;
+    }
 }

@@ -20,8 +20,13 @@ class DefaultController extends Controller
     public function empleadosAction()
     {
 
+		$em = $this->getDoctrine()->getManager();
+    	$extractedDoc = $this->get('assets.EmpleadosGral')->findAll(000001,$em);
+
+        return new Response($extractedDoc->getNombre());
+
     	//$empleados= $this->get('assets.EmpleadosGral');
-    	return new Response("peticiones para api assets");
+    	//return new Response("peticiones para api assets");
     	 
     }
 }

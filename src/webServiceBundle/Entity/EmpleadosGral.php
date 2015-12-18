@@ -4,11 +4,14 @@ namespace webServiceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+
 /**
  * EmpleadosGral
  *
  * @ORM\Table(name="Empleados_Gral", uniqueConstraints={@ORM\UniqueConstraint(name="IX_Empleados_Gral", columns={"Id_Expediente"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="webServiceBundle\Entity\EmpleadosGralRepository")
+ * 
+ * 
  */
 class EmpleadosGral
 {
@@ -856,6 +859,23 @@ class EmpleadosGral
 
 
     
+    /**
+     * 
+     * @return EmpleadosGral
+     */
+    public function findAll($idEmpleado, $em)
+    {
+        //$em = $this->getEntityManager();
+        $consulta = $em->createQuery("
+            SELECT o
+            FROM webServiceBundle:EmpleadosGral o
+            WHERE o.idEmpleado = :id
+            ");
+        //$consulta->setParameter('fecha', new \DateTime('now'));
+        $consulta->setParameter('id', $idEmpleado);
+        $consulta->setMaxResults(1);
+        return $consulta->getSingleResult();
+    }
 
     /**
      * Get idEmpleado

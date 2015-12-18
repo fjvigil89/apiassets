@@ -76,3 +76,33 @@ services:
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhEmpleadosNomina" ]
         tags:       [ { name: "api.resource" } ]
+
+    assets.RhMunicipios:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhMunicipios" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhNivelesEscolaridad:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhNivelesEscolaridad" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhProfesiones:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhProfesiones" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhProfesionesGeneral:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhProfesionesGeneral" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhProvincias:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhProvincias" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhUnidadesOrganizativas:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhUnidadesOrganizativas" ]
+        tags:       [ { name: "api.resource" } ]

@@ -7,28 +7,72 @@ services:
 
 # Examples of API resource mapping, learn more at
 # https://github.com/dunglas/DunglasApiBundle
-    resource.book:
-        parent:    "api.resource"
-        arguments: [ "AppBundle\\Entity\\Book" ]
-        tags:      [ { name: "api.resource" } ]
+#    resource.book:
+#        parent:    "api.resource"
+#        arguments: [ "AppBundle\\Entity\\Book" ]
+#        tags:      [ { name: "api.resource" } ]
 
-    resource.person:
-        parent:    "api.resource"
-        arguments: [ "AppBundle\\Entity\\Person" ]
-        tags:      [ { name: "api.resource" } ]
+#    resource.person:
+#        parent:    "api.resource"
+#        arguments: [ "AppBundle\\Entity\\Person" ]
+#        tags:      [ { name: "api.resource" } ]
 
-    resource.organization:
-        parent:    "api.resource"
-        arguments: [ "AppBundle\\Entity\\Organization" ]
-        calls:
-            -      [ "initFilters", [ [ "@resource.organization.filter" ] ] ]
-        tags:      [ { name: "api.resource" } ]
+#    resource.organization:
+#        parent:    "api.resource"
+#        arguments: [ "AppBundle\\Entity\\Organization" ]
+#        calls:
+#            -      [ "initFilters", [ [ "@resource.organization.filter" ] ] ]
+#        tags:      [ { name: "api.resource" } ]
 
-    resource.organization.filter:
-        parent:    "api.doctrine.orm.search_filter"
-        arguments: [ { "name": "exact", "url": "partial" } ]
+#    resource.organization.filter:
+#        parent:    "api.doctrine.orm.search_filter"
+#        arguments: [ { "name": "exact", "url": "partial" } ]
 
 # A typical service
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    assets.EmpleadosGral: 
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\EmpleadosGral" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhAreaTrabajoActual:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhAreaTrabajoActual" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhCargos:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhCargos" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhCategoriasDocenteInvest:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhCategoriasDocenteInvest" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhCategoriasOcupacionales:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhCategoriasOcupacionales" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhGradosCientificos:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhGradosCientificos" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhCausasAltas:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhCausasAltas" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhCausasBajas:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhCausasBajas" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.RhEmpleadosNomina:        
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhEmpleadosNomina" ]
+        tags:       [ { name: "api.resource" } ]

@@ -855,6 +855,7 @@ class EmpleadosGral
     private $fechaCategoriaDocente;
 
 
+    
 
     /**
      * Get idEmpleado
@@ -3601,5 +3602,10 @@ class EmpleadosGral
     public function getFechaCategoriaDocente()
     {
         return $this->fechaCategoriaDocente;
+    }
+
+    public function __toString()
+    {
+        return $this->getNombre.' '.$this->getApellido1.' '.$this->getApellido2 ;
     }
 }

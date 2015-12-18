@@ -21,7 +21,7 @@ class AppKernel extends Kernel
             new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
             new Realestate\MssqlBundle\RealestateMssqlBundle(),
 
-            //new AppBundle\AppBundle(),
+            new AppBundle\AppBundle(),
             new webServiceBundle\webServiceBundle(),
 
         ];

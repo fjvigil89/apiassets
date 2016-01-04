@@ -858,25 +858,7 @@ class EmpleadosGral
     private $fechaCategoriaDocente;
 
 
-    
-    /**
-     * 
-     * @return EmpleadosGral
-     */
-    public function findAll($idEmpleado, $em)
-    {
-        //$em = $this->getEntityManager();
-        $consulta = $em->createQuery("
-            SELECT o
-            FROM webServiceBundle:EmpleadosGral o
-            WHERE o.idEmpleado = :id
-            ");
-        //$consulta->setParameter('fecha', new \DateTime('now'));
-        $consulta->setParameter('id', $idEmpleado);
-        $consulta->setMaxResults(1);
-        return $consulta->getSingleResult();
-    }
-
+   
     /**
      * Get idEmpleado
      *

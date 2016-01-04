@@ -21,12 +21,11 @@ class DefaultController extends Controller
     {
 
 		$em = $this->getDoctrine()->getManager();
-    	$extractedDoc = $this->get('assets.EmpleadosGral')->findAll(000001,$em);
+        //return new Response($extractedDoc);
 
-        return new Response($extractedDoc->getNombre());
-
-    	//$empleados= $this->get('assets.EmpleadosGral');
-    	//return new Response("peticiones para api assets");
+    	$empleados= $this->get('assets.empleadosgral.collection_operation.get');
+    	return new Response(count($empleados));
+        //return $this->render('webServiceBundle:Default:empleados.html.twig', array('empleados' => $empleados));
     	 
     }
 }

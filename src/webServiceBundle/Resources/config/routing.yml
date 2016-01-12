@@ -1,5 +1,5 @@
 web_service_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: webServiceBundle:Default:index }
 
 web_service_empleados:

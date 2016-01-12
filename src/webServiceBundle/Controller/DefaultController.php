@@ -12,9 +12,9 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function indexAction()
     {
-        return $this->render('webServiceBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('webServiceBundle:Default:index.html.twig', array('name' => "Api Assets"));
     }
 
     public function empleadosAction()

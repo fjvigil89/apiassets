@@ -1,1 +1,27 @@
-Hello {{ name }}!
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API assets UPR </title>
+
+	<script>	
+		$('.pruebaa').live('click', function () {
+		var url1 = "http://localhost/jquery/web/app_dev.php/web/pruebita";;
+		alert(url1);
+		$.ajax({
+			type: "POST",
+			url: url1,
+			data: {nombre: "pepe"}
+			}).done(function() {
+				alert( "Datos grabados");}
+		})
+        
+</script>
+</head>
+<body>
+	Hello {{ name }}!
+
+	Ejemplo!!
+	
+</body>
+</html>

@@ -1,6 +1,6 @@
 web_service:
     resource: "@webServiceBundle/Resources/config/routing.yml"
-    prefix:   /ws
+    prefix:   /
 
 api:
     resource: "."

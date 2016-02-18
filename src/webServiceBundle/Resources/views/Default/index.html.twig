@@ -1,27 +1,66 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>API assets UPR </title>
-
-	<script>	
-		$('.pruebaa').live('click', function () {
-		var url1 = "http://localhost/jquery/web/app_dev.php/web/pruebita";;
-		alert(url1);
-		$.ajax({
-			type: "POST",
-			url: url1,
-			data: {nombre: "pepe"}
-			}).done(function() {
-				alert( "Datos grabados");}
-		})
-        
-</script>
-</head>
-<body>
+{% extends '::base.html.twig' %}
+{% block body%}
 	Hello {{ name }}!
 
-	Ejemplo!!
-	
-</body>
-</html>
+
+<div  ng-controller="apiAppCtrl as vm">
+  <h1>Pruebo Ajax</h1>
+  <p>
+      Selecciona:
+      <select ng-model="vm.url" ng-change="vm.buscaEnRegion()">
+       <option value="http://serviceweb.lo/app.php/empleados_grals">EmpleadosGral</option>
+       <option value="http://serviceweb.lo/app.php/empleados_grals/09205?_format=json">EmpleadosGral2</option>
+             
+      </select>
+
+  </p>
+  
+  {% verbatim %}
+  		<ul>
+  		<li ng-repeat="emp in vm.EmpleadosGral"> <span>{[{emp.nombre }]}</span> {[{emp.noCi }]}</li>
+        
+        </ul>
+       
+  {% endverbatim %}
+      
+  
+
+
+</div>
+{% block javascripts %}
+    
+    <script>
+
+     angular
+        .module('apiApp', [])
+        .config(function($interpolateProvider){
+    	   $interpolateProvider.startSymbol("{[{").endSymbol("}]}");})
+        .controller('apiAppCtrl', ['$http', controladorPrincipal]);
+
+    function controladorPrincipal($http){
+        var vm=this;
+        
+        vm.buscaEnRegion = function(){
+            $http.get(vm.url).success(function(respuesta) {
+                //console.log("res:", respuesta["hydra:member"]);
+                vm.EmpleadosGral= respuesta["hydra:member"];
+
+            });
+        }
+
+        vm.buscaPorID = function(){
+            $http.get(vm.url).success(function(respuesta) {
+                //console.log("res:", respuesta["hydra:member"]);
+                vm.EmpleadosGral= respuesta.EmpleadosGral;
+            });
+        }
+    }
+
+    </script>
+
+
+{% endblock %}
+    
+{% endblock%}
+

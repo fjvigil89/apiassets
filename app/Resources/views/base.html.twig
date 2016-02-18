@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html lang="en" ng-app="apiApp">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}API Assets|| Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <!--
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha512.js"></script>
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/components/enc-base64-min.js"></script>
+        -->
+        <!--
+        <script src="{{ asset('bundles/angular/lib/angular/angular.js') }}"></script>        
+        <script src="{{ asset('bundles/angular/lib/angular/angular-cookies.js') }}"></script>
+        <script src="{{ asset('bundles/angular/lib/angular/angular-resource.js') }}"></script>
+
+        <script src="{{ asset('bundles/angular/js/app.js') }}"></script>        
+        <script src="{{ asset('bundles/angular/js/services.js') }}"></script>
+        <script src="{{ asset('bundles/angular/js/controllers.js') }}"></script>
+        <script src="{{ asset('bundles/angular/js/filters.js') }}"></script>
+        <script src="{{ asset('bundles/angular/js/directives.js') }}"></script>
+
+         -->
+         <script src="{{ asset('bundles/angular/js/angular.min.js') }}"></script>
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        
+        {% block javascripts %}
+        {% endblock %}
+    </body>
+</html>

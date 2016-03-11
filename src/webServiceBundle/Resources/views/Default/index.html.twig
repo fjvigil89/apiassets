@@ -1,11 +1,11 @@
 
-{% extends '::base.html.twig' %}
+{% extends 'webServiceBundle::layout.html.twig' %}
 {% block body%}
 	Hello {{ name }}!
 
 
 <div  ng-controller="apiAppCtrl as vm">
-  <h1>Pruebo Ajax</h1>
+  <h1>Pruebo API</h1>
   <p>
       Selecciona:
       <select ng-model="vm.url" ng-change="vm.buscaEnRegion()">
@@ -13,6 +13,9 @@
        <option value="http://serviceweb.lo/app.php/empleados_grals/09205?_format=json">EmpleadosGral2</option>
              
       </select>
+
+      <input ng-model="vm.buscar" type="button" value="Haz Clic" ng-click="buscaPorID()">
+      <a href="#/empleado" ng-model="vm.a" ng-click="procesarClic()">click here</a>
 
   </p>
   
@@ -50,7 +53,7 @@
         }
 
         vm.buscaPorID = function(){
-            $http.get(vm.url).success(function(respuesta) {
+            $http.get(vm.buscar).success(function(respuesta) {
                 //console.log("res:", respuesta["hydra:member"]);
                 vm.EmpleadosGral= respuesta.EmpleadosGral;
             });

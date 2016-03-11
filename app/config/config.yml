@@ -48,6 +48,13 @@ doctrine:
                     xml:        string
                     sysname:    string
                 #schema_filter:  ~^(Acceso_CR)~
+            assets:
+                driver_class:   Realestate\MssqlBundle\Driver\PDODblib\Driver
+                host:           "%database_host2%"                
+                dbname:         "%database_name2%"
+                user:           "%database_user2%"
+                password:       "%database_password2%"
+                charset:        UTF8
 #doctrine:
 #    dbal:
 #        driver:   "%database_driver%"
@@ -67,7 +74,20 @@ doctrine:
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
+        #auto_mapping: true        
+        default_entity_manager: default
+        #auto_mapping: true
+        entity_managers:
+            default:
+                connection: default
+                #auto_mapping: true
+                mappings:
+                    webServiceBundle: ~
+            assets:
+                #auto_mapping: true
+                connection:  assets                                
+                mappings: 
+                    webServiceBundle: ~
 
 # Swiftmailer Configuration
 swiftmailer:

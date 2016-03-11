@@ -32,7 +32,8 @@
         "nelmio/cors-bundle": "~1.4",
         "nelmio/api-doc-bundle": "~2.9@dev",
         "friendsofsymfony/http-cache-bundle": "~1.0",
-        "realestateconz/mssql-bundle": "master-dev"
+        "realestateconz/mssql-bundle": "master-dev",
+        
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",

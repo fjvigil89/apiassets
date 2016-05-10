@@ -33,6 +33,8 @@
         "nelmio/api-doc-bundle": "~2.9@dev",
         "friendsofsymfony/http-cache-bundle": "~1.0",
         "realestateconz/mssql-bundle": "master-dev",
+        "imag/ldap-bundle": "dev-master",
+        "twbs/bootstrap": "dev-master"
         
     },
     "require-dev": {

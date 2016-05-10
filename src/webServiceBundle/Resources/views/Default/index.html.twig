@@ -1,69 +1,19 @@
 
-{% extends 'webServiceBundle::layout.html.twig' %}
-{% block body%}
-	Hello {{ name }}!
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sin Symfony</title>
+</head>
+<body>
+        <script src="{{ asset('Bootstrap/js/bootstrap.js') }}"></script>
+        <script src="{{ asset('Bootstrap/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('Bootstrap/js/npm.js') }}"></script>
+        <script src="{{ asset('Bootstrap/js/jquery-2.1.3.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('Bootstrap/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap-theme.css') }}">
+        <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap-theme.min.css') }}">
 
-
-<div  ng-controller="apiAppCtrl as vm">
-  <h1>Pruebo API</h1>
-  <p>
-      Selecciona:
-      <select ng-model="vm.url" ng-change="vm.buscaEnRegion()">
-       <option value="http://serviceweb.lo/app.php/empleados_grals">EmpleadosGral</option>
-       <option value="http://serviceweb.lo/app.php/empleados_grals/09205?_format=json">EmpleadosGral2</option>
-             
-      </select>
-
-      <input ng-model="vm.buscar" type="button" value="Haz Clic" ng-click="buscaPorID()">
-      <a href="#/empleado" ng-model="vm.a" ng-click="procesarClic()">click here</a>
-
-  </p>
-  
-  {% verbatim %}
-  		<ul>
-  		<li ng-repeat="emp in vm.EmpleadosGral"> <span>{[{emp.nombre }]}</span> {[{emp.noCi }]}</li>
-        
-        </ul>
-       
-  {% endverbatim %}
-      
-  
-
-
-</div>
-{% block javascripts %}
-    
-    <script>
-
-     angular
-        .module('apiApp', [])
-        .config(function($interpolateProvider){
-    	   $interpolateProvider.startSymbol("{[{").endSymbol("}]}");})
-        .controller('apiAppCtrl', ['$http', controladorPrincipal]);
-
-    function controladorPrincipal($http){
-        var vm=this;
-        
-        vm.buscaEnRegion = function(){
-            $http.get(vm.url).success(function(respuesta) {
-                //console.log("res:", respuesta["hydra:member"]);
-                vm.EmpleadosGral= respuesta["hydra:member"];
-
-            });
-        }
-
-        vm.buscaPorID = function(){
-            $http.get(vm.buscar).success(function(respuesta) {
-                //console.log("res:", respuesta["hydra:member"]);
-                vm.EmpleadosGral= respuesta.EmpleadosGral;
-            });
-        }
-    }
-
-    </script>
-
-
-{% endblock %}
-    
-{% endblock%}
-
+   <div class=".col-xs-1"> probar     </div>
+</body>
+</html>

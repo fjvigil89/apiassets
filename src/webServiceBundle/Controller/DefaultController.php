@@ -15,6 +15,7 @@ class DefaultController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
+        $emAssets = $this->getDoctrine()->getManager('assets');
 
         
         return $this->render('webServiceBundle:Default:index.html.twig', array('name' => "Api Assets"));

@@ -1,0 +1,53 @@
+SystemTraceL2:
+    type: entity
+    table: System_Trace_L2
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        tablename:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: TableName
+        action:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: Action
+        actiondate:
+            type: datetime
+            nullable: true
+            column: ActionDate
+        username:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: UserName
+        appname:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: AppName
+        hostname:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: HostName
+        notificado:
+            type: boolean
+            nullable: true
+            default: '0'
+            column: Notificado
+    lifecycleCallbacks: {  }

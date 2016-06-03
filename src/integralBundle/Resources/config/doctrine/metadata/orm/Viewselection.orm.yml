@@ -1,0 +1,46 @@
+Viewselection:
+    type: entity
+    table: ViewSelection
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: UM_Almacen
+        priorizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Priorizado
+        idClave:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Clave
+    lifecycleCallbacks: {  }

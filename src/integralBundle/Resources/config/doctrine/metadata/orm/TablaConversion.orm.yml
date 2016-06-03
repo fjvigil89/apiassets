@@ -1,0 +1,29 @@
+TablaConversion:
+    type: entity
+    table: Tabla_Conversion
+    id:
+        deUm:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: De_Um
+            generator:
+                strategy: IDENTITY
+    fields:
+        aUm:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: UNO
+            column: A_Um
+        factorConversion:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '1'
+            column: Factor_Conversion
+    lifecycleCallbacks: {  }

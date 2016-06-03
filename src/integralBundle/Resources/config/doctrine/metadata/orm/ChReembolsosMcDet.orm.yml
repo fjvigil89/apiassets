@@ -1,0 +1,155 @@
+ChReembolsosMcDet:
+    type: entity
+    table: CH_Reembolsos_MC_Det
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        idDoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Doc
+        contadorPago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Pago
+        idPago:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: ID_Pago
+        anoDoc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Doc
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Estado
+        fechaPago:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Pago
+        fechaVence:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Vence
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        tipoCobro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Cobro
+        idProveedor:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: Importe
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        estadoReembolsado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado_Reembolsado
+        fechaReembolsado:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Reembolsado
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+        idFpago:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_FPago
+        docAreembolsar:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Doc_AReembolsar
+        ordenImpresion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Impresion
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        idReferenciakk:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Id_ReferenciaKK
+    lifecycleCallbacks: {  }

@@ -1,0 +1,27 @@
+CausasAjusteInventario:
+    type: entity
+    table: Causas_Ajuste_Inventario
+    id:
+        idCausasajuste:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_CausasAjuste
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCausasajuste:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_CausasAjuste
+        aumentaInventario:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Aumenta_Inventario
+    lifecycleCallbacks: {  }

@@ -1,0 +1,34 @@
+FzRximported:
+    type: entity
+    table: Fz_RXImported
+    id:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Agrupacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        idModulo:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_Modulo
+        tipoImport:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Import
+        lastUpdate:
+            type: datetime
+            nullable: false
+            default: (1)/(1))/(2000
+            column: Last_Update
+    lifecycleCallbacks: {  }

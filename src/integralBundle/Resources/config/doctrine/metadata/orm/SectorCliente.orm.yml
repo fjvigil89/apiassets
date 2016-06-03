@@ -1,0 +1,21 @@
+SectorCliente:
+    type: entity
+    table: Sector_Cliente
+    id:
+        descSector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: Desc_Sector
+            generator:
+                strategy: IDENTITY
+    fields:
+        idSector:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: Id_Sector
+    lifecycleCallbacks: {  }

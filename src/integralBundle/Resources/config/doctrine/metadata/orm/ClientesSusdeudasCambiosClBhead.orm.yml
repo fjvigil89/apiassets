@@ -1,0 +1,126 @@
+ClientesSusdeudasCambiosClBhead:
+    type: entity
+    table: Clientes_SusDeudas_Cambios_Cl_BHead
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Doc
+        anoDoc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Doc
+        idReferencia:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            column: Id_Referencia
+        fecha:
+            type: datetime
+            nullable: false
+            column: Fecha
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Estado
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Cliente
+        idClasifFaIni:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Clasif_Fa_Ini
+        idClasifFaFin:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Clasif_Fa_Fin
+        fechaIni:
+            type: datetime
+            nullable: false
+            column: Fecha_Ini
+        fechaFin:
+            type: datetime
+            nullable: false
+            column: Fecha_Fin
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Agrupacion
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Compro
+        pcName:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            column: PC_NAME
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            column: Fecha_Op
+        notas:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Notas
+        hechoPor:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Hecho_Por
+        aprobadoPor:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Aprobado_Por
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Doc_Primario
+    lifecycleCallbacks: {  }

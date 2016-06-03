@@ -1,0 +1,213 @@
+DetalleAjusteclasi:
+    type: entity
+    table: Detalle_AjusteClasi
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAjuste:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Ajuste
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoAjuste:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Ajuste
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        idLote:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: Id_Lote
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Almacen
+        idCausasajuste:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausasAjuste
+        aumenta:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Aumenta
+        cantidadAjuste:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '0.000000'
+            column: Cantidad_Ajuste
+        saldoExistencia:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Saldo_Existencia
+        costoNuevomb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Costo_NuevoMB
+        precioCostoumalmacenmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoUmAlmacenMB
+        costoNuevomc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Costo_NuevoMC
+        precioCostoumalmacenmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoUmAlmacenMC
+        importeaMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteA_MB
+        importedMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteD_MB
+        importeaMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteA_MC
+        importedMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteD_MC
+        importecostoMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteCosto_MB
+        importecostoMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteCosto_MC
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+        productoOservicioC:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Producto_oServicio_c
+        idElemgasto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_ElemGasto
+        idSubelemgasto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_SubElemGasto
+        idElemgastomc:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_ElemGastoMC
+        idSubelemgastomc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_SubElemGastoMC
+        empaque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Empaque
+        newclasi:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: NewClasi
+        factorempaque:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 4
+            default: '0.00'
+            column: FactorEmpaque
+    lifecycleCallbacks: {  }

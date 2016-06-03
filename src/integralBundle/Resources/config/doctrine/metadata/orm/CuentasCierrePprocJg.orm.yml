@@ -1,0 +1,47 @@
+CuentasCierrePprocJg:
+    type: entity
+    table: Cuentas_Cierre_PProc_JG
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCuentaCredito:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta_Credito
+        descCuentaCredito:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta_Credito
+        idCuentaDebito:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta_Debito
+        descCuentaDebito:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta_Debito
+        usarEncierre:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Usar_EnCierre
+    lifecycleCallbacks: {  }

@@ -1,0 +1,23 @@
+InsumoDestino:
+    type: entity
+    table: Insumo_Destino
+    id:
+        idDestino:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Destino
+            generator:
+                strategy: IDENTITY
+    fields:
+        descDestino:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Desc_Destino
+    lifecycleCallbacks: {  }

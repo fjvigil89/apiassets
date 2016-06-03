@@ -1,0 +1,259 @@
+PreOrden:
+    type: entity
+    table: Pre_Orden
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        idOtrabajo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Otrabajo
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoOtrabajo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Otrabajo
+        fechaApertura:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Apertura
+        fechaCierre:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Cierre
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Desc_Cliente
+        idComercial:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: '0'
+            column: Id_Comercial
+        descComercial:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Comercial
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ccosto
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        idFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Factura
+        anoFactura:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Factura
+        referencia:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Referencia
+        atte:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Atte
+        generarFactura:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Generar_Factura
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMC
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        despachadoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Despachado_Por
+        nota:
+            type: string
+            nullable: false
+            length: 2000
+            fixed: false
+            default: ''
+            column: Nota
+        contafactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContaFactura
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        idEquipo:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Equipo
+        descEquipo:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Desc_Equipo
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        idServicio:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Servicio
+        descServicio:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Desc_Servicio
+        horaEntrega:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Hora_Entrega
+        nota2:
+            type: string
+            nullable: false
+            length: 500
+            fixed: false
+            default: ''
+            column: Nota2
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_primario
+        enviadoA:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Enviado_A
+    lifecycleCallbacks: {  }

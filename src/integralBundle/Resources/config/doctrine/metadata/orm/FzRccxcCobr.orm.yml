@@ -1,0 +1,117 @@
+FzRccxcCobr:
+    type: entity
+    table: Fz_RCCxC_Cobr
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Organismo
+        organismo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Organismo
+        sector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Sector
+        cPago:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: C_Pago
+        descCpago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cpago
+        fechaMy:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_MY
+        impFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Factura
+        impCobro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Cobro
+        descCobro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Desc_Cobro
+        recCobro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Rec_Cobro
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+    lifecycleCallbacks: {  }

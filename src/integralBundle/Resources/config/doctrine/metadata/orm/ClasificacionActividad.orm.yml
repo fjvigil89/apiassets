@@ -1,0 +1,47 @@
+ClasificacionActividad:
+    type: entity
+    table: Clasificacion_Actividad
+    id:
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Clasificacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClasificacion:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Clasificacion
+        costomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMB
+        costomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMC
+        horasplan:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: HorasPlan
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+    lifecycleCallbacks: {  }

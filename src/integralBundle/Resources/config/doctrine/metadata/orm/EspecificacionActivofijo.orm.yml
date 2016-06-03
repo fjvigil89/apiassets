@@ -1,0 +1,22 @@
+EspecificacionActivofijo:
+    type: entity
+    table: Especificacion_ActivoFijo
+    id:
+        codEspecActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Cod_Espec_ActivoFijo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descEspecActivofijo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Espec_ActivoFijo
+    lifecycleCallbacks: {  }

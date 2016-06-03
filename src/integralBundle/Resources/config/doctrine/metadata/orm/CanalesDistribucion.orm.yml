@@ -1,0 +1,22 @@
+CanalesDistribucion:
+    type: entity
+    table: Canales_Distribucion
+    id:
+        codcanaldist:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodCanalDist
+            generator:
+                strategy: IDENTITY
+    fields:
+        desccanaldist:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: DescCanalDist
+    lifecycleCallbacks: {  }

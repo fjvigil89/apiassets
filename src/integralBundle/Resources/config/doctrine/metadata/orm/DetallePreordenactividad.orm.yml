@@ -1,0 +1,52 @@
+DetallePreordenactividad:
+    type: entity
+    table: Detalle_PreOrdenActividad
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idActividad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Actividad
+        descActividad:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Desc_Actividad
+        horasplan:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: HorasPlan
+        facturarreal:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FacturarReal
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+        horasreal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: HorasReal
+    lifecycleCallbacks: {  }

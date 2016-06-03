@@ -1,0 +1,252 @@
+Tranferventas:
+    type: entity
+    table: TranferVentas
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Items
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        idLote:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: Id_Lote
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Almacen
+        cantidadFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Cantidad_Factura
+        saldoDisponible:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Saldo_Disponible
+        saldoExistencia:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Saldo_Existencia
+        precioVentamb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0.0000'
+            column: Precio_VentaMB
+        precioVentamc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0.0000'
+            column: Precio_VentaMC
+        precioVentatotalmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0.0000'
+            column: Precio_VentaTotalMB
+        precioVentatotalmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0.0000'
+            column: Precio_VentaTotalMC
+        descuentomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: DescuentoMB
+        descuentomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: DescuentoMC
+        recargomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: RecargoMB
+        recargomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: RecargoMC
+        tiporecargomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoRecargoMB
+        tiporecargomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: TipoRecargoMC
+        tipodescuentomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoDescuentoMB
+        tipodescuentomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: TipoDescuentoMC
+        encatalogo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: EnCatalogo
+        precioVentaOriginal:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0.0000'
+            column: Precio_Venta_Original
+        paquete:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '1'
+            column: Paquete
+        productoOservicio:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Producto_oServicio
+        descProductoCaja:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Desc_Producto_Caja
+        ean13:
+            type: string
+            nullable: false
+            length: 13
+            fixed: false
+            default: ''
+            column: Ean13
+        descEan13:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_Ean13
+        idespec:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IdEspec
+        descespec:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: DescEspec
+        idmarca:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IdMarca
+        descmarca:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: DescMarca
+        itemscomp:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ItemsComp
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe
+        listaPrecio:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Lista_Precio
+    lifecycleCallbacks: {  }

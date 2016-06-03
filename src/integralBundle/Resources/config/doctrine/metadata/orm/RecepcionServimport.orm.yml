@@ -1,0 +1,70 @@
+RecepcionServimport:
+    type: entity
+    table: Recepcion_ServImport
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Almacen
+        valormb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ValorMB
+        valormc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ValorMC
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ImporteMC
+        aplicarcomo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AplicarComo
+        inccosto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: IncCosto
+    lifecycleCallbacks: {  }

@@ -1,0 +1,429 @@
+FacturasPoractualizar:
+    type: entity
+    table: Facturas_PorActualizar
+    uniqueConstraints:
+        PK_FactPor_Actualizar:
+            columns:
+                - Ano_Factura
+                - Id_Factura
+    id:
+        descEmpleado:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            id: true
+            column: Desc_Empleado
+            generator:
+                strategy: IDENTITY
+    fields:
+        anoFactura:
+            type: string
+            nullable: true
+            length: 4
+            fixed: false
+            column: Ano_Factura
+        idFactura:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Factura
+        idCliente:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Desc_Cliente
+        idEmpleado:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Empleado
+        idPedido:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Pedido
+        tipoFactura:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Tipo_Factura
+        tipofactura:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Tipofactura
+        fechFactura:
+            type: datetime
+            nullable: true
+            column: Fech_Factura
+        idProveedor:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Proveedor
+        descProveedor:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Desc_Proveedor
+        fechaDespacho:
+            type: datetime
+            nullable: true
+            column: Fecha_Despacho
+        enviadoA:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Enviado_A
+        enviadoMediante:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Enviado_Mediante
+        importe:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Importe
+        recargos:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Recargos
+        descuentos:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+        nota:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: Nota
+        confirmada:
+            type: boolean
+            nullable: true
+            column: Confirmada
+        bandera:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: Bandera
+        anulada:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: Anulada
+        anoOferta:
+            type: string
+            nullable: true
+            length: 4
+            fixed: false
+            column: Ano_Oferta
+        idOrganismo:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: Id_Organismo
+        despachado:
+            type: boolean
+            nullable: true
+            column: Despachado
+        fechaFacturado:
+            type: datetime
+            nullable: true
+            column: Fecha_Facturado
+        referencia:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Referencia
+        idAlmacen:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        cambio:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Cambio
+        credito:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Credito
+        atte:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Atte
+        importeDevuelto:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Importe_Devuelto
+        importeCobrado:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Importe_Cobrado
+        cobrada:
+            type: boolean
+            nullable: true
+            column: Cobrada
+        impuestoDevuelto:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Impuesto_Devuelto
+        idFormapago:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: Id_FormaPago
+        periodoAnterior:
+            type: boolean
+            nullable: true
+            column: Periodo_Anterior
+        moneda:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Moneda
+        arancel:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Arancel
+        tipoTerminoCobro:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Tipo_Termino_Cobro
+        dias1:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Dias1
+        valor1:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor1
+        dias2:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Dias2
+        valor2:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor2
+        dias3:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Dias3
+        valor3:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor3
+        dias4:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Dias4
+        valor4:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor4
+        dias5:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Dias5
+        valor5:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor5
+        dias6:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Dias6
+        valor6:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor6
+        dias7:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Dias7
+        valor7:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor7
+        dias8:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Dias8
+        valor8:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor8
+        dias9:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Dias9
+        valor9:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor9
+        idCompro:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Compro
+        mes:
+            type: string
+            nullable: true
+            length: 4
+            fixed: false
+            column: Mes
+        anoCompro:
+            type: string
+            nullable: true
+            length: 4
+            fixed: false
+            column: Ano_Compro
+        conduce:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Conduce
+        monedaFactura:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Moneda_Factura
+        valor1Moneda:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor1_moneda
+        valor2Moneda8:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor2_moneda8
+        valor3Moneda7:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor3_moneda7
+        valor4Moneda6:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor4_moneda6
+        valor5Moneda5:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor5_moneda5
+        valor6Moneda4:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor6_moneda4
+        valor7Moneda3:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor7_moneda3
+        valor8Moneda2:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor8_moneda2
+        valor9Moneda1:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Valor9_moneda1
+        importeDevueltomn:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Importe_DevueltoMn
+        tro:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Tro
+        gavinete:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Gavinete
+        tramo:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Tramo
+        despachadopor:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Despachadopor
+        marcaConteo:
+            type: boolean
+            nullable: true
+            column: Marca_Conteo
+    lifecycleCallbacks: {  }

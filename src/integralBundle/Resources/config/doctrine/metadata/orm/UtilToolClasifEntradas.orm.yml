@@ -1,0 +1,27 @@
+UtilToolClasifEntradas:
+    type: entity
+    table: Util_Tool_Clasif_Entradas
+    id:
+        idClasifEntradaUh:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            id: true
+            column: Id_Clasif_Entrada_UH
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClasifEntradaUh:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Clasif_Entrada_UH
+        contabiliza:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabiliza
+    lifecycleCallbacks: {  }

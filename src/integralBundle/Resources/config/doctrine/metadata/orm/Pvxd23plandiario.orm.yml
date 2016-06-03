@@ -1,0 +1,112 @@
+Pvxd23plandiario:
+    type: entity
+    table: PVXD_23PlanDiario
+    id:
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            id: true
+            column: Fecha
+            generator:
+                strategy: IDENTITY
+    fields:
+        idVuelo:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Id_Vuelo
+        idEquipo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Equipo
+        idRuta:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Id_Ruta
+        horasalida:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: HoraSalida
+        horaarribo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: HoraArribo
+        econida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EconIda
+        econreg:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EconReg
+        tropida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TropIda
+        tropreg:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TropReg
+        tripida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TripIda
+        tripreg:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TripReg
+        prog:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Prog
+        solic:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Solic
+        contadorsoli:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorSoli
+        contadornorma:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorNorma
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+    lifecycleCallbacks: {  }

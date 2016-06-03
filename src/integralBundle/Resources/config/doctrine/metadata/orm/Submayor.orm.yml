@@ -1,0 +1,151 @@
+Submayor:
+    type: entity
+    table: Submayor
+    indexes:
+        Clu_SubMayor:
+            columns:
+                - Id_Agrupacion
+                - Cta
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+            generator:
+                strategy: IDENTITY
+    fields:
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        tipoDoc:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Tipo_Doc
+        idDoc:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Doc
+        detalle:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Detalle
+        debe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Debe
+        haber:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Haber
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Saldo
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        tipoCompro:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Tipo_Compro
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Descripcion
+        calculo:
+            type: decimal
+            nullable: false
+            precision: 15
+            scale: 5
+            default: '0'
+            column: Calculo
+        natu:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Natu
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+    lifecycleCallbacks: {  }

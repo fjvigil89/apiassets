@@ -1,0 +1,71 @@
+Sysindexessys:
+    type: entity
+    table: SysIndexesSys
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: true
+            length: 256
+            fixed: false
+        type:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+        info:
+            type: smallint
+            nullable: true
+            unsigned: false
+        indid:
+            type: smallint
+            nullable: true
+            unsigned: false
+        minlen:
+            type: smallint
+            nullable: true
+            unsigned: false
+        rowmodctrBck:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: rowmodctr_Bck
+        rows:
+            type: integer
+            nullable: true
+            unsigned: false
+        schemaVer:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: schema_ver
+        deltrig:
+            type: integer
+            nullable: true
+            unsigned: false
+        instrig:
+            type: integer
+            nullable: true
+            unsigned: false
+        updtrig:
+            type: integer
+            nullable: true
+            unsigned: false
+        seltrig:
+            type: integer
+            nullable: true
+            unsigned: false
+        operacion:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Operacion
+    lifecycleCallbacks: {  }

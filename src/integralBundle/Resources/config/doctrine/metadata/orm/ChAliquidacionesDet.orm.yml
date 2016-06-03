@@ -1,0 +1,115 @@
+ChAliquidacionesDet:
+    type: entity
+    table: CH_ALiquidaciones_Det
+    indexes:
+        Ix1_DetLiquidac:
+            columns:
+                - Contador1
+        ix2_DetLiquidac:
+            columns:
+                - Id_Liquidacion
+                - Id_Agrupacion
+                - Ano
+    id:
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+        idLiquidacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Liquidacion
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Agrupacion
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano
+        marcadoLiquidar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marcado_Liquidar
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        descEmpleado:
+            type: string
+            nullable: false
+            length: 65
+            fixed: false
+            default: ''
+            column: Desc_Empleado
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe
+        importeGastado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_Gastado
+        importeDevuelto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_Devuelto
+        importeExtraEntregado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_Extra_Entregado
+        observaciones:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Observaciones
+        itemAnticipo:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item_Anticipo
+    lifecycleCallbacks: {  }

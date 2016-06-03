@@ -1,0 +1,121 @@
+ProductoProveedor:
+    type: entity
+    table: Producto_Proveedor
+    id:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Proveedor
+    fields:
+        idProductoproveedor:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: Id_ProductoProveedor
+        descProductoproveedor:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_ProductoProveedor
+        umProveedor:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Um_Proveedor
+        factorConversion:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '1'
+            column: Factor_Conversion
+        cantidadMinima:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0.0000'
+            column: Cantidad_Minima
+        habitual:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Habitual
+        precioCostomb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000000'
+            column: Precio_CostoMB
+        precioCostomc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000000'
+            column: Precio_CostoMC
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        suspendido:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Suspendido
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        diasReabastecer:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Reabastecer
+        porcMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Porc_MB
+        porcMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Porc_MC
+        costoimport:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoImport
+        monedaimport:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: MonedaImport
+    lifecycleCallbacks: {  }

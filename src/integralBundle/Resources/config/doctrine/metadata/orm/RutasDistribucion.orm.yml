@@ -1,0 +1,22 @@
+RutasDistribucion:
+    type: entity
+    table: Rutas_Distribucion
+    id:
+        codrutadist:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodRutaDist
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrutadist:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: DescRutaDist
+    lifecycleCallbacks: {  }

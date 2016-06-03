@@ -1,0 +1,74 @@
+DetalleRegistroprecio:
+    type: entity
+    table: Detalle_RegistroPrecio
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: UM_Almacen
+        precioVentaumalmacenmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: Precio_VentaUMAlmacenMB
+        precioVentaumalmacenmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: Precio_VentaUmAlmacenMC
+        preoriginalmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: PreOriginalMB
+        preoriginalmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: PreOriginalMC
+        preciocostocalculomb:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 8
+            default: '0.00000000'
+            column: PrecioCostoCalculoMB
+        preciocostocalculomc:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 8
+            default: '0.00000000'
+            column: PrecioCostoCalculoMC
+    lifecycleCallbacks: {  }

@@ -1,0 +1,247 @@
+AnalisisInventario:
+    type: entity
+    table: Analisis_Inventario
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        existenciaActual:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: Existencia_Actual
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMC
+        minimo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: Minimo
+        maximo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: Maximo
+        ptoReorder:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0'
+            column: Pto_Reorder
+        ptoSeguridad:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0'
+            column: Pto_Seguridad
+        ventaPromedio:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0'
+            column: Venta_Promedio
+        abcPorimporte:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ABC_PorImporte
+        abcPorimportevalor:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 6
+            default: '0'
+            column: ABC_PorImporteValor
+        abcPorconsumoprom:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ABC_PorConsumoProm
+        abcPorimpconsumoprom:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 6
+            default: '0'
+            column: ABC_PorImpConsumoProm
+        abcPorventaum:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ABC_PorVentaUM
+        abcPorimpventaum:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 6
+            default: '0'
+            column: ABC_PorImpVentaUM
+        abcPorrota:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ABC_PorRota
+        abcPorimprota:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 6
+            default: '0'
+            column: ABC_PorImpRota
+        abcPorimportecostoventa:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ABC_PorImporteCostoVenta
+        abcPorimportecostoventavalor:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 6
+            default: '0'
+            column: ABC_PorImporteCostoVentaValor
+        descProveedor:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Proveedor
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        diasReabastecer:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: dias_reabastecer
+        minimoCalculo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: minimo_calculo
+        ventaCalculado:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0'
+            column: venta_calculado
+        ssCubierto:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: ss_cubierto
+        ssReal:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: ss_real
+        ssVar:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: ss_var
+        reorderCalculado:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0'
+            column: reorder_calculado
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: UM_Almacen
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        precioCostomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Precio_CostoMB
+        provehabitual:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ProveHabitual
+        maximoCalculo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '1'
+            column: maximo_calculo
+    lifecycleCallbacks: {  }

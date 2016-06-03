@@ -1,0 +1,87 @@
+Alquilercierres:
+    type: entity
+    table: AlquilerCierres
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        fechaCierreini:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_CierreIni
+        fechaCierrefin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_CierreFin
+        idAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Alquiler
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Alquiler
+        contadorfactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorFactura
+        idFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Factura
+        idAlmacenfactura:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AlmacenFactura
+        anoFactura:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Factura
+        idComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Comprobante
+        anoComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Comprobante
+        mesComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Comprobante
+    lifecycleCallbacks: {  }

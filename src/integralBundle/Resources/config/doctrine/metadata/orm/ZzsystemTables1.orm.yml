@@ -1,0 +1,24 @@
+ZzsystemTables1:
+    type: entity
+    table: ZZSystem_Tables1
+    id:
+        contador9:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador9
+            generator:
+                strategy: IDENTITY
+    fields:
+        mtable:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: mTable
+        limpiar:
+            type: boolean
+            nullable: false
+            column: LIMPIAR
+    lifecycleCallbacks: {  }

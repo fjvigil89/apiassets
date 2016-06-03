@@ -1,0 +1,33 @@
+Marca:
+    type: entity
+    table: Marca
+    id:
+        idMarca:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Marca
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Nombre
+        descripcion:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Descripcion
+        ilustracion:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: Ilustracion
+    lifecycleCallbacks: {  }

@@ -1,0 +1,154 @@
+PresupuestoEjec:
+    type: entity
+    table: Presupuesto_Ejec
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCuenta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Descripcion
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes
+        planMes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Mes
+        realMes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Real_Mes
+        porcientoMes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Porciento_Mes
+        planAcum:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Acum
+        realAcum:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Real_Acum
+        porcientoAcum:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Porciento_Acum
+        elemento:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Elemento
+        subelemento:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: SubElemento
+        cCosto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: C_Costo
+        descElemento:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Elemento
+        descSubelemento:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Subelemento
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ccosto
+    lifecycleCallbacks: {  }

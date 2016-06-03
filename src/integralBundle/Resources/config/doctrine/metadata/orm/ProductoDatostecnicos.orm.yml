@@ -1,0 +1,28 @@
+ProductoDatostecnicos:
+    type: entity
+    table: Producto_DatosTecnicos
+    id:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+        descDato:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definido ***'
+            id: true
+            column: Desc_Dato
+    fields:
+        valorDato:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: '*** No definido ***'
+            column: Valor_Dato
+    lifecycleCallbacks: {  }

@@ -1,0 +1,192 @@
+DetalleGeneraajuste:
+    type: entity
+    table: Detalle_GeneraAjuste
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        idLote:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: Id_Lote
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Almacen
+        idProductonew:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_ProductoNew
+        idCausasajuste:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausasAjuste
+        aumenta:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Aumenta
+        saldoExistencia:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Saldo_Existencia
+        productoOservicioC:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Producto_oServicio_c
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        idClasificacionnew:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Id_ClasificacionNew
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Cantidad
+        idPartida:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Partida
+        idParnew:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_ParNew
+        pais:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Pais
+        paisnew:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: PaisNew
+        descNew:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_New
+        umNew:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_New
+        factorconver:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 4
+            default: '0.00'
+            column: FactorConver
+        pesobruto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PesoBruto
+        pesobnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PesoBNew
+        pesoneto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PesoNeto
+        pesonnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PesoNNew
+        subgrupo:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: SubGrupo
+        subgnew:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: SubGNew
+    lifecycleCallbacks: {  }

@@ -1,0 +1,61 @@
+Pvxd24proganexo:
+    type: entity
+    table: PVXD_24ProgAnexo
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        anexos:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Anexos
+        econida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EconIda
+        econreg:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EconReg
+        tropida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TropIda
+        tropreg:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TropReg
+        tripida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TripIda
+        tripreg:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TripReg
+        cerrado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado
+    lifecycleCallbacks: {  }

@@ -1,0 +1,107 @@
+ActivoFijoModulos:
+    type: entity
+    table: Activo_Fijo_Modulos
+    id:
+        idModulo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Modulo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descModulo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Modulo
+        idEspecificacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion
+        fechaEstadoactual:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_EstadoActual
+        alquilado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Alquilado
+        idEstado:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        codum:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: CodUM
+        tarifaMbdflt:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tarifa_MBDflt
+        tarifaMbmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MBMin
+        tarifaMbmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MBMed
+        tarifaMbmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MBMax
+        tarifaMcdflt:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tarifa_MCDflt
+        tarifaMcmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MCMin
+        tarifaMcmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MCMed
+        tarifaMcmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MCMax
+    lifecycleCallbacks: {  }

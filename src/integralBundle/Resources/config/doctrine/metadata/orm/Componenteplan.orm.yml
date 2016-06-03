@@ -1,0 +1,162 @@
+Componenteplan:
+    type: entity
+    table: ComponentePlan
+    id:
+        idPeriodo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Id_Periodo
+        idProductopadre:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_ProductoPadre
+        idProductohijo:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_ProductoHijo
+    fields:
+        descProductohijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_ProductoHijo
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0.0000'
+            column: Cantidad
+        umProductohijo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_ProductoHijo
+        costofijomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFijoMB
+        costofijomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFijoMC
+        cantidadsp:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0.0000'
+            column: CantidadSP
+        porcperdida:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: PorcPerdida
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ImporteMC
+        costofjmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFJMB
+        costompmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMPMB
+        costoemmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoEMMB
+        costodpmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoDPMB
+        costofjmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFJMC
+        costompmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMPMC
+        costoemmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoEMMC
+        costodpmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoDPMC
+        gastofjmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoFJMB
+        gastovrmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoVRMB
+        gastofjmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoFJMC
+        gastovrmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoVRMC
+        descontinuado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Descontinuado
+    lifecycleCallbacks: {  }

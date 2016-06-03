@@ -1,0 +1,44 @@
+ActivoFijoServfact:
+    type: entity
+    table: Activo_Fijo_ServFact
+    id:
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_ActivoFijo
+        idServicio:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Servicio
+    fields:
+        descServicio:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_Servicio
+        facturar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Facturar
+        tarifaMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MB
+        tarifaMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MC
+    lifecycleCallbacks: {  }

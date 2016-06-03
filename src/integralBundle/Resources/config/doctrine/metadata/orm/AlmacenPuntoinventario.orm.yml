@@ -1,0 +1,41 @@
+AlmacenPuntoinventario:
+    type: entity
+    table: Almacen_PuntoInventario
+    id:
+        idAlmacenpadre:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_AlmacenPadre
+        idAlmacenpuntoinvertario:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_AlmacenPuntoInvertario
+    fields:
+        idCategoria:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Categoria
+        descCategoria:
+            type: string
+            nullable: false
+            length: 45
+            fixed: false
+            default: ''
+            column: Desc_Categoria
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+    lifecycleCallbacks: {  }

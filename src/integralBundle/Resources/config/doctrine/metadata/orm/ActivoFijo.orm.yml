@@ -1,0 +1,258 @@
+ActivoFijo:
+    type: entity
+    table: Activo_Fijo
+    indexes:
+        IX_Id_Rotulo:
+            columns:
+                - Id_Rotulo
+    id:
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_ActivoFijo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descActivofijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_ActivoFijo
+        idRotulo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Rotulo
+        idTipoactivofijo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_TipoActivoFijo
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        idSubclasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Subclasificacion
+        idEspecificacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion
+        fechaAlta:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Alta
+        valorInicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Inicial
+        valorInicialmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_InicialMC
+        valorResidual:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Residual
+        valorResidualmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_ResidualMC
+        tasaDepreciacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa_Depreciacion
+        depreciacionAcumulada:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Depreciacion_Acumulada
+        depreciacionAcumuladamc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Depreciacion_AcumuladaMC
+        depreciacionMensual:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Depreciacion_Mensual
+        depreciacionMensualmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Depreciacion_MensualMC
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idArearesp:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: ID_AreaResp
+        fechaEstadoactual:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_EstadoActual
+        cnmb:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CNMB
+        fechaConteo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Conteo
+        marca:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca
+        marcaConteo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca_Conteo
+        activo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Activo
+        alquilado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Alquilado
+        idEstadoActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado_Activo
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        codum:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: CodUM
+        tarifaMbdflt:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tarifa_MBDflt
+        tarifaMbmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MBMin
+        tarifaMbmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MBMed
+        tarifaMbmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MBMax
+        tarifaMcdflt:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tarifa_MCDflt
+        tarifaMcmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MCMin
+        tarifaMcmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MCMed
+        tarifaMcmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MCMax
+        disponible:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Disponible
+        numeroSerie:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Numero_Serie
+    lifecycleCallbacks: {  }

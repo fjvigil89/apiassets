@@ -1,0 +1,45 @@
+CnmbActivofijo:
+    type: entity
+    table: CNMB_ActivoFijo
+    id:
+        cnmb:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            id: true
+            column: CNMB
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCnmb:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_CNMB
+        tasaDepreciacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa_Depreciacion
+        tasaRep:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa_Rep
+        tasaCap:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa_Cap
+        depreciaMensual:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Deprecia_Mensual
+    lifecycleCallbacks: {  }

@@ -50,11 +50,15 @@ doctrine:
                 #schema_filter:  ~^(Acceso_CR)~
             assets:
                 driver_class:   Realestate\MssqlBundle\Driver\PDODblib\Driver
-                host:           %database_host%                
+                host:           %database_host2%                
                 dbname:         %database_name2%
-                user:           %database_user%
-                password:       %database_password%
+                user:           %database_user2%
+                password:       %database_password2%
                 charset:        UTF8
+                mapping_types:
+                    timestamp:  string
+                    xml:        string
+                    sysname:    string
 #doctrine:
 #    dbal:
 #        driver:   "%database_driver%"
@@ -83,11 +87,13 @@ doctrine:
                 #auto_mapping: true
                 mappings:
                     webServiceBundle: ~
+                    integralBundle: ~
             assets:
                 #auto_mapping: true
                 connection:  assets                                
                 mappings: 
                     webServiceBundle: ~
+                    integralBundle: ~
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -105,7 +111,7 @@ dunglas_api:
     enable_fos_user: false                              # Enable the FOSUserBundle integration.
     collection:
         filter_name:
-            order:   "assets"                            # Keyword used for the order filter
+            order:   "order"                            # Keyword used for the order filter
         order:       null                               # The default order of results. (supported by Doctrine: ASC and DESC)
         pagination:
             page_parameter_name:       page             # The name of the parameter handling the page number.

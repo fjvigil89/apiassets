@@ -1,0 +1,106 @@
+Transferprecio:
+    type: entity
+    table: TransferPrecio
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: UM_Almacen
+        precioVentaumalmacenmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: Precio_VentaUMAlmacenMB
+        precioVentaumalmacenmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: Precio_VentaUmAlmacenMC
+        preoriginalmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: PreOriginalMB
+        preoriginalmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: PreOriginalMC
+        preciocostocalculomb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: PrecioCostoCalculoMB
+        preciocostocalculomc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: PrecioCostoCalculoMC
+        costoArancelcalculomb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Costo_ArancelCalculoMB
+        costoArancelcalculomc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Costo_ArancelCalculoMC
+        seleccionado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Seleccionado
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0.0000'
+            column: Cantidad
+        padre:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Padre
+    lifecycleCallbacks: {  }

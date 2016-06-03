@@ -1,0 +1,15 @@
+OSiscDelSubctas:
+    type: entity
+    table: O_SISC_Del_SubCtas
+    id:
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            id: true
+            column: Cta
+            generator:
+                strategy: IDENTITY
+    lifecycleCallbacks: {  }

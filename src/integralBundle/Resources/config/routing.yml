@@ -1,0 +1,3 @@
+integral_homepage:
+    path:     /
+    defaults: { _controller: integralBundle:Default:index }

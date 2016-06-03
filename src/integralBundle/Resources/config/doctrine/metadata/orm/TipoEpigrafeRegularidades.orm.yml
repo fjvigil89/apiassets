@@ -1,0 +1,38 @@
+TipoEpigrafeRegularidades:
+    type: entity
+    table: Tipo_Epigrafe_Regularidades
+    indexes:
+        Ix1_Tipo_Epi:
+            columns:
+                - Documento
+    id:
+        idTipoEpigrafe:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_Tipo_Epigrafe
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoEpigrafe:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Tipo_Epigrafe
+        documento:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Documento
+        esdeMc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: EsDe_MC
+    lifecycleCallbacks: {  }

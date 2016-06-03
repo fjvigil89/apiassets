@@ -1,0 +1,374 @@
+DocumentoPago:
+    type: entity
+    table: Documento_Pago
+    indexes:
+        Ix1_Doc_Pago:
+            columns:
+                - ID_Doc
+                - Ano_Doc
+                - Id_Cliente
+        Ix2_Doc_Pago:
+            columns:
+                - Agrupacion
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDoc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: ID_Doc
+        anoDoc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Doc
+        marca:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        idDocquepaga:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_DocQuePaga
+        anoFactura:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Factura
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        fechaEmision:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Emision
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        porcRecargo:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: Porc_Recargo
+        porcDescuento:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: Porc_Descuento
+        recargo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Recargo
+        descuento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        impTotal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Total
+        maxApagar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Max_APagar
+        fechaDespacho:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Despacho
+        diasCredito:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Credito
+        fechaVence:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Vence
+        tipoFactura:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Factura
+        tasaCambiomf:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '1'
+            column: Tasa_CambioMF
+        tasaCambiomb:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '1'
+            column: Tasa_CambioMB
+        importeMoneda:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Moneda
+        conduce:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Conduce
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        financiamiento:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Financiamiento
+        cancelacionAnticipo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cancelacion_Anticipo
+        agrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Agrupacion
+        formaPago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Forma_Pago
+        captarQuepaga:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Captar_QuePaga
+        quePaga:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Que_Paga
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Items
+        idFacturaprovee:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_FacturaProvee
+        faPreassets:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Fa_PreAssets
+        contadorAccess:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Contador_ACCESS
+        importeImpuesto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Impuesto
+        contadorFa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Fa
+        comisionTotal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Comision_Total
+        rentaAdelantada:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Renta_Adelantada
+        acobrarSinrEnitbis:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ACobrar_SinR_EnITBIS
+        acobrarConrEnitbis:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ACobrar_ConR_EnITBIS
+        contrato:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Contrato
+        deudaDir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Deuda_Dir
+        importeMfa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_MFa
+        recargoMp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Recargo_MP
+        descuentoMp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Descuento_MP
+        impTotalMp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Total_MP
+        impTotalMf:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Total_MF
+        sobrepagombXtc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SobrePagoMB_xTC
+        tCambioActualmbMf:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: T_Cambio_ActualMB_MF
+        monedaFa:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda_Fa
+        idClasifFa:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Fa
+        tCambioInimbMp:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: T_Cambio_IniMB_MP
+        tCambioActualmbMp:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: T_Cambio_ActualMB_MP
+        porcOtrasRet:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Porc_Otras_Ret
+        impOtrasRet:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Otras_Ret
+        porcOtrosItbisRet:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Porc_Otros_ITBIS_Ret
+        impOtrosItbisRet:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Otros_ITBIS_Ret
+    lifecycleCallbacks: {  }

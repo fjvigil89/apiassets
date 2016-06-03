@@ -1,0 +1,35 @@
+services:
+#    integral.example:
+#        class: integralBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+    resource.collection_operation.get:
+        class:     "Dunglas\ApiBundle\Api\Operation\Operation"
+        public:    false
+        factory:   [ "@api.operation_factory", "createCollectionOperation" ]
+        arguments: [ "@resource.Acceso", "GET" ]
+
+    resource.ActivoFijo:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\ActivoFijo" ]
+        tags:       [ { name: "api.resource" } ]
+    resource.CentroCosto:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\CentroCosto" ]
+        tags:       [ { name: "api.resource" } ]
+    resource.CentroCostoGrupos:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\CentroCostoGrupos" ]
+        tags:       [ { name: "api.resource" } ]
+    resource.Departamentos:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\Departamentos" ]
+        tags:       [ { name: "api.resource" } ]
+    resource.EmpleadosGral:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\EmpleadosGral" ]
+        tags:       [ { name: "api.resource" } ]
+    resource.AreasResponsabilidad:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\AreasResponsabilidad" ]
+        tags:       [ { name: "api.resource" } ]

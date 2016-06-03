@@ -1,0 +1,261 @@
+Proveedores:
+    type: entity
+    table: Proveedores
+    indexes:
+        Org_Proveedor:
+            columns:
+                - Id_Organismo
+    id:
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Proveedor
+            generator:
+                strategy: IDENTITY
+    fields:
+        descProveedor:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Proveedor
+        nombreContacto:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Nombre_Contacto
+        cargoContacto:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Cargo_Contacto
+        direccion:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ''
+            column: Direccion
+        ciudad:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Ciudad
+        region:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Region
+        zipCode:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Zip_Code
+        pais:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Pais
+        telefono:
+            type: string
+            nullable: false
+            length: 24
+            fixed: false
+            default: ''
+            column: Telefono
+        fax:
+            type: string
+            nullable: false
+            length: 24
+            fixed: false
+            default: ''
+            column: Fax
+        eMail:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: E_mail
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Organismo
+        nacionalOextranjero:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Nacional_oExtranjero
+        ruc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Ruc
+        credito:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Credito
+        descuentomb:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0'
+            column: DescuentoMB
+        descuentomc:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0'
+            column: DescuentoMC
+        recargomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: RecargoMB
+        recargomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: RecargoMC
+        limiteCredito:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Limite_Credito
+        valorLimite:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Limite
+        descontinuado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Descontinuado
+        idCpago:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CPago
+        financiamiento:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Financiamiento
+        idComercial:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Comercial
+        idClasirecep:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasirecep
+        prefijooc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: PrefijoOC
+        contadoroc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorOC
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        beneficiario:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Beneficiario
+        generarncf:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: GenerarNCF
+        generarncfPdir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: GenerarNCF_PDir
+        nosucursal:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: NoSucursal
+        noctas:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: NoCtas
+        exentoncf:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ExentoNCF
+        vip:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: VIP
+    lifecycleCallbacks: {  }

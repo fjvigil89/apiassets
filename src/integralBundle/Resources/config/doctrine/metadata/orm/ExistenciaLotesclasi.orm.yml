@@ -1,0 +1,224 @@
+ExistenciaLotesclasi:
+    type: entity
+    table: Existencia_LotesClasi
+    id:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Almacen
+        idLote:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            id: true
+            column: Id_Lote
+    fields:
+        referencia:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Referencia
+        fechaEntrada:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Entrada
+        fechaVence:
+            type: datetime
+            nullable: false
+            default: (1)/(1))/(9000
+            column: Fecha_Vence
+        saldoExistencia:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Saldo_Existencia
+        reservadas:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Reservadas
+        disponibles:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Disponibles
+        seccion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Seccion
+        estante:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Estante
+        casilla:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Casilla
+        precioCostomb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoMB
+        precioCostomc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoMC
+        costoArancelmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Costo_ArancelMB
+        costoArancelmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Costo_ArancelMC
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMC
+        fechaInicio:
+            type: datetime
+            nullable: false
+            default: (1)/(1))/(1900
+            column: Fecha_Inicio
+        existenciaInicio:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Existencia_Inicio
+        precioIniciomc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_InicioMC
+        precioIniciomb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_InicioMB
+        importeIniciomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe_InicioMB
+        importeIniciomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe_InicioMC
+        zona:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Zona
+        conteo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Conteo
+        fechaConteo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Conteo
+        marca:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca
+        fechaLastmov:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_LastMov
+        documto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Documto
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        empaque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Empaque
+        empaqueInicio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Empaque_Inicio
+        invfisico:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: InvFisico
+    lifecycleCallbacks: {  }

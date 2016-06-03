@@ -1,0 +1,90 @@
+CosteoPecuarioDet:
+    type: entity
+    table: Costeo_Pecuario_Det
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo
+        prodTerminada:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Prod_Terminada
+        prodProceso:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Prod_Proceso
+        total:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Total
+        costoXlibra:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 6
+            default: '0'
+            column: Costo_xLibra
+        costoVenta:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 6
+            default: '0'
+            column: Costo_Venta
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Items
+        contadorLinkConfig:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Link_Config
+        saldoAnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_ANT
+        saldoAntAusar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_ANT_aUsar
+    lifecycleCallbacks: {  }

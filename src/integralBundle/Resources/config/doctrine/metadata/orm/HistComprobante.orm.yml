@@ -1,0 +1,126 @@
+HistComprobante:
+    type: entity
+    table: Hist_Comprobante
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes
+        tipoComp:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Tipo_Comp
+        hechoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Hecho_Por
+        revisadoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Revisado_Por
+        observaciones:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Observaciones
+        vistoBueno:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Visto_Bueno
+        mayorizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Mayorizado
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        modificado:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Modificado
+        cuadrado:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Cuadrado
+        incompleto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Incompleto
+        idComproref:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_ComproRef
+        anoref:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AnoRef
+        mesref:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MesRef
+        idAgrupacionref:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AgrupacionRef
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+    lifecycleCallbacks: {  }

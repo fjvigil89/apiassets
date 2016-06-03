@@ -1,0 +1,417 @@
+Producto23:
+    type: entity
+    table: Producto23
+    id:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+            generator:
+                strategy: IDENTITY
+    fields:
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        fechaEntrada:
+            type: datetime
+            nullable: false
+            column: Fecha_Entrada
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: UM_Almacen
+        umVenta:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: UM_Venta
+        productoOservicio:
+            type: boolean
+            nullable: false
+            column: Producto_oServicio
+        idCategoria:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Categoria
+        idSubcategoria:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_SubCategoria
+        idMarca:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Marca
+        comision:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            column: Comision
+        impuestomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            column: ImpuestoMB
+        paquete:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 4
+            column: Paquete
+        idPartida:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Partida
+        precioVentaumalmacenmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Precio_VentaUMAlmacenMB
+        precioVentaumalmacenmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Precio_VentaUmAlmacenMC
+        precioCostoserviciomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Precio_CostoServicioMB
+        precioCostoserviciomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Precio_CostoServicioMC
+        asterisco:
+            type: boolean
+            nullable: false
+            column: Asterisco
+        suspendido:
+            type: boolean
+            nullable: false
+            column: Suspendido
+        productoTerminado:
+            type: boolean
+            nullable: false
+            column: Producto_Terminado
+        activofijo:
+            type: boolean
+            nullable: false
+            column: ActivoFijo
+        util:
+            type: boolean
+            nullable: false
+            column: Util
+        recargomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: RecargoMB
+        descuentomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: DescuentoMB
+        recargomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: RecargoMC
+        descuentomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: DescuentoMC
+        tiporecargomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: TipoRecargoMB
+        tiporecargomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: TipoRecargoMC
+        tipodescuentomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: TipoDescuentoMB
+        tipodescuentomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: TipoDescuentoMC
+        preciovenmbl1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMBL1
+        preciovenmbl2:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMBL2
+        preciovenmbl3:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMBL3
+        preciovenmbl4:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMBL4
+        preciovenmbl5:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMBL5
+        preciovenmcl1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMCL1
+        preciovenmcl2:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMCL2
+        preciovenmcl3:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMCL3
+        preciovenmcl4:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMCL4
+        preciovenmcl5:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMCL5
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Nota
+        encabezado:
+            type: boolean
+            nullable: false
+            column: Encabezado
+        preciocostocalculomb:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 8
+            column: PrecioCostoCalculoMB
+        preciocostocalculomc:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 8
+            column: PrecioCostoCalculoMC
+        costoArancelcalculomb:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 8
+            column: Costo_ArancelCalculoMB
+        costoArancelcalculomc:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 8
+            column: Costo_ArancelCalculoMC
+        seleccionado:
+            type: boolean
+            nullable: false
+            column: Seleccionado
+        datostecnicos:
+            type: string
+            nullable: false
+            length: 3500
+            fixed: false
+            column: DatosTecnicos
+        incluirenventas:
+            type: boolean
+            nullable: false
+            column: IncluirenVentas
+        unidadesporreceta:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: UnidadesporReceta
+        factorConversionav:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            column: Factor_ConversionAV
+        coddestino:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: CodDestino
+        idProductoCaja:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto_Caja
+        descProductoCaja:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: Desc_Producto_Caja
+        productoSemielaborado:
+            type: boolean
+            nullable: false
+            column: Producto_Semielaborado
+        preciovenmbl6:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMBL6
+        preciovenmbl7:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMBL7
+        preciovenmbl8:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMBL8
+        preciovenmbl9:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMBL9
+        preciovenmbl10:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMBL10
+        preciovenmcl6:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMCL6
+        preciovenmcl7:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMCL7
+        preciovenmcl8:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMCL8
+        preciovenmcl9:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMCL9
+        preciovenmcl10:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PrecioVenMCL10
+        pais:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Pais
+        certificaOrigen:
+            type: boolean
+            nullable: false
+            column: Certifica_Origen
+        simulaprecioCostoserviciomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: SimulaPrecio_CostoServicioMB
+        simulaprecioCostoserviciomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: SimulaPrecio_CostoServicioMC
+        simulaunidadesporreceta:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: SimulaUnidadesporReceta
+        tipoCosto:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Costo
+        productoExcipiente:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Producto_Excipiente
+        gastoComun:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: gasto_comun
+        servimport:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ServImport
+        aplicarcomo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AplicarComo
+        predmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PredMB
+        predmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PredMC
+        inccosto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: IncCosto
+    lifecycleCallbacks: {  }

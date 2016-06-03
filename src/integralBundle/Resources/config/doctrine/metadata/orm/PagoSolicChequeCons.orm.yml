@@ -1,0 +1,26 @@
+PagoSolicChequeCons:
+    type: entity
+    table: Pago_Solic_Cheque_Cons
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+            generator:
+                strategy: IDENTITY
+    fields:
+        consecSolicCheque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Solic_Cheque
+        cerrado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado
+    lifecycleCallbacks: {  }

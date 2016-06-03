@@ -1,0 +1,34 @@
+UtilToolZerodayajtHead:
+    type: entity
+    table: Util_Tool_ZeroDayAjt_Head
+    id:
+        fechaOperacion:
+            type: datetime
+            nullable: false
+            id: true
+            column: Fecha_Operacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        idComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Comprobante
+        anoComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Ano_Comprobante
+        mesComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Mes_Comprobante
+    lifecycleCallbacks: {  }

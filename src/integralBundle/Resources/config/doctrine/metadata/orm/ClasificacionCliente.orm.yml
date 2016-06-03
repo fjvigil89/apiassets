@@ -1,0 +1,23 @@
+ClasificacionCliente:
+    type: entity
+    table: Clasificacion_Cliente
+    id:
+        idClasificacionCliente:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Clasificacion_Cliente
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClasificacionCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Clasificacion_Cliente
+    lifecycleCallbacks: {  }

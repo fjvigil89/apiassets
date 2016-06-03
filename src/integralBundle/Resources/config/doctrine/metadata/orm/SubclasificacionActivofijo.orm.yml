@@ -1,0 +1,29 @@
+SubclasificacionActivofijo:
+    type: entity
+    table: SubClasificacion_ActivoFijo
+    id:
+        idSubclasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Subclasificacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        descSubclasificacion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Subclasificacion
+        idManipactivofijo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_ManipActivoFijo
+    lifecycleCallbacks: {  }

@@ -1,0 +1,39 @@
+Organismo:
+    type: entity
+    table: Organismo
+    id:
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Organismo
+            generator:
+                strategy: IDENTITY
+    fields:
+        organismo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Organismo
+        sector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Sector
+        requiereDesc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Requiere_Desc
+        vip:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: VIP
+    lifecycleCallbacks: {  }

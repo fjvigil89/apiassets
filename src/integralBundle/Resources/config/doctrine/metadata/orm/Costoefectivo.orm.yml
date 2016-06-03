@@ -1,0 +1,64 @@
+Costoefectivo:
+    type: entity
+    table: CostoEfectivo
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        fechainicial:
+            type: datetime
+            nullable: false
+            column: FechaInicial
+        fechafinal:
+            type: datetime
+            nullable: false
+            column: FechaFinal
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        noOrden:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: No_Orden
+        almacenOrden:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Almacen_Orden
+        anoOrden:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Orden
+        contadorOrden:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Orden
+        porperiodo:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: PorPeriodo
+        tipoProd:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_prod
+    lifecycleCallbacks: {  }

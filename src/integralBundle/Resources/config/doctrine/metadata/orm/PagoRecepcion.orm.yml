@@ -1,0 +1,74 @@
+PagoRecepcion:
+    type: entity
+    table: Pago_Recepcion
+    id:
+        idFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_Factura
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Almacen
+        anoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano_Pago
+    fields:
+        cobrada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cobrada
+        importeCobrado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Cobrado
+        cobradamc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CobradaMC
+        importeCobradomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_CobradoMC
+        importerecMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteRec_MB
+        importerecMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteRec_MC
+        importedesMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteDes_MB
+        importedesMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteDes_MC
+    lifecycleCallbacks: {  }

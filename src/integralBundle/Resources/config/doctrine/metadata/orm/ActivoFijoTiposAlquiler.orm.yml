@@ -1,0 +1,22 @@
+ActivoFijoTiposAlquiler:
+    type: entity
+    table: Activo_Fijo_Tipos_Alquiler
+    id:
+        idTipoAlquiler:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Tipo_Alquiler
+            generator:
+                strategy: IDENTITY
+    fields:
+        descTipoAlquiler:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Tipo_Alquiler
+    lifecycleCallbacks: {  }

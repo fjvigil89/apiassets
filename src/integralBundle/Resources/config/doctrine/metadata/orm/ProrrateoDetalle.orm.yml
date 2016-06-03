@@ -1,0 +1,174 @@
+ProrrateoDetalle:
+    type: entity
+    table: Prorrateo_Detalle
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCuenta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Id_Cuenta
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: CTA
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Partida
+        descCuenta:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            column: Desc_Cuenta
+        idCuentaTrasp:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Id_Cuenta_Trasp
+        ctaTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: CTA_Trasp
+        subctaTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: SubCta_Trasp
+        analisisTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Analisis_Trasp
+        subanalisisTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: SubAnalisis_Trasp
+        epigrafeTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Epigrafe_Trasp
+        partidaTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Partida_Trasp
+        descCuentaTrasp:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            column: Desc_Cuenta_Trasp
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Saldo
+        coeficiente:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 12
+            column: Coeficiente
+        idCuentaDistr:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Id_Cuenta_Distr
+        ctaDistr:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: CTA_Distr
+        subctaDistr:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: SubCta_Distr
+        analisisDistr:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Analisis_Distr
+        subanalisisDistr:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: SubAnalisis_Distr
+        epigrafeDistr:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Epigrafe_Distr
+        partidaDistr:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Partida_Distr
+        contadorAccess:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: CONTADOR_ACCESS
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+    lifecycleCallbacks: {  }

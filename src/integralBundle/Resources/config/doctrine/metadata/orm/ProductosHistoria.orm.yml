@@ -1,0 +1,25 @@
+ProductosHistoria:
+    type: entity
+    table: Productos_Historia
+    id:
+        fld001:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        fld002:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+        ggg:
+            type: integer
+            nullable: false
+            unsigned: false
+    lifecycleCallbacks: {  }

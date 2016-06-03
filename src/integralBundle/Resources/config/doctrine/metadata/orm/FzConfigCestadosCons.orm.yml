@@ -1,0 +1,80 @@
+FzConfigCestadosCons:
+    type: entity
+    table: Fz_Config_CEstados_Cons
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        documento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: ''
+            column: Documento
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: 'No'
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        posicOrganismo:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Posic_Organismo
+        posicCpago:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Posic_CPago
+        posicCliente:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Posic_Cliente
+        calcular:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Calcular
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+    lifecycleCallbacks: {  }

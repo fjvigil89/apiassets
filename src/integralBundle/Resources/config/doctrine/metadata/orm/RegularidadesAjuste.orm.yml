@@ -1,0 +1,166 @@
+RegularidadesAjuste:
+    type: entity
+    table: Regularidades_Ajuste
+    indexes:
+        Ix1_Ajuste:
+            columns:
+                - Clasif_Cont_Prod
+                - Id_Almacen
+                - Tipo_Ajuste
+    uniqueConstraints:
+        Pk_Ajuste:
+            columns:
+                - Items
+    id:
+        subcontrol:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Subcontrol
+            generator:
+                strategy: IDENTITY
+    fields:
+        clasifContProd:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Clasif_Cont_Prod
+        tipoAjuste:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Ajuste
+        causaAjuste:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Causa_Ajuste
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        operacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Operacion
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        tipoSubcta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_SubCta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        tipoAnalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Analisis
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        tipoSubanalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Subanalisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        tipoEpigrafe:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Epigrafe
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        tipoPartida:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Partida
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        afecta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Afecta
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Items
+        idDocumento:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_Documento
+        clasificacion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Clasificacion
+        copiar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Copiar
+        porciento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '100'
+            column: PORCIENTO
+    lifecycleCallbacks: {  }

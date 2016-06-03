@@ -1,0 +1,263 @@
+CaracterizacionFinanzas:
+    type: entity
+    table: Caracterizacion_Finanzas
+    id:
+        validarImpDocpago:
+            type: boolean
+            nullable: false
+            default: '1'
+            id: true
+            column: Validar_Imp_DocPago
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAlmacenPropio:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen_PROPIO
+        generaComprobanteXdeudaCliente:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Genera_Comprobante_xDeuda_Cliente
+        generaComprobanteXdeudaProveedor:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Genera_Comprobante_xDeuda_Proveedor
+        localidadSolicCheque:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Localidad_Solic_Cheque
+        incluirNotaEstcuentaBank:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Incluir_Nota_EstCuenta_Bank
+        diasChequeVence:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '90'
+            column: Dias_Cheque_Vence
+        usarFechaProveedorEnppend:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_Fecha_Proveedor_enPPend
+        usarDatosTecnotex:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_Datos_Tecnotex
+        usarPorcRetencion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_Porc_Retencion
+        forzarEntrarConcepto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Forzar_Entrar_Concepto
+        usarEnchDefaultMb:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_enCH_Default_MB
+        pasarAutomaticoCobrosAch:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pasar_Automatico_Cobros_aCH
+        entrarEnchMovimFondoConc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Entrar_enCH_Movim_Fondo_Conc
+        consecIniReembolso:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Reembolso
+        consecIniReembolsoMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Reembolso_MC
+        consecIniMovimiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Movimiento
+        consecIniMovimientoMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Movimiento_MC
+        consecIniLiquidaciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Liquidaciones
+        consecIniLiquidacionesMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Liquidaciones_MC
+        consecIniArqueos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Arqueos
+        consecIniArqueosMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Arqueos_MC
+        forzarCierreFin:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Forzar_Cierre_Fin
+        forzarLiquidarCompleto:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Forzar_Liquidar_Completo
+        ch1soloAnticipoXempleado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: CH_1Solo_Anticipo_xEmpleado
+        consecIniDepositos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Depositos
+        consecIniDepositosMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Depositos_MC
+        aperturaCerradaFin:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Apertura_Cerrada_Fin
+        usarFinCentralizadas:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_Fin_Centralizadas
+        trBankVisib11:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Tr_Bank_Visib11
+        incluirClientEstcuentaBank:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Incluir_Client_EstCuenta_Bank
+        generarCoXdevolucion:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Generar_Co_xDevolucion
+        nuevoReciboFin:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Nuevo_Recibo_Fin
+        afectarFondoCoXmp:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afectar_Fondo_Co_xMP
+        usarMultimoneda:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_MultiMoneda
+        idFpago:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_FPago
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        comproDeudaClienteConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Compro_Deuda_Cliente_Confirmado
+        comproDeudaProveeConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Compro_Deuda_Provee_Confirmado
+        usarPpto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_PPto
+        bki:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: BKI
+        generarPaXdevolucion:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Generar_Pa_xDevolucion
+        consecCambioClFa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Cambio_Cl_Fa
+        consecCambioClRx:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Cambio_Cl_Rx
+        consecCambioClDeucli:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Cambio_Cl_DeuCli
+        consecCambioClDeupro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Cambio_Cl_DeuPro
+    lifecycleCallbacks: {  }

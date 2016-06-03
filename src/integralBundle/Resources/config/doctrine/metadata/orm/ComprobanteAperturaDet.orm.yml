@@ -1,0 +1,125 @@
+ComprobanteAperturaDet:
+    type: entity
+    table: Comprobante_Apertura_Det
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDoc:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Doc
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Descripcion
+        saldoIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Ini
+        debe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEBE
+        haber:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HABER
+        saldoFin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Fin
+        clasificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Clasificacion
+        natu:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Natu
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Items
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        idAgrupacionref:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AgrupacionRef
+    lifecycleCallbacks: {  }

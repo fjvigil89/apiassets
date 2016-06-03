@@ -1,0 +1,32 @@
+Patc:
+    type: entity
+    table: PaTC
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Moneda
+        tasaCambioub:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: Tasa_CambioUB
+        fecha:
+            type: datetime
+            nullable: false
+            default: 01/01/2000
+            column: Fecha
+    lifecycleCallbacks: {  }

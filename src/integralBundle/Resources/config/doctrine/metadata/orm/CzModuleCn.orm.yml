@@ -1,0 +1,15 @@
+CzModuleCn:
+    type: entity
+    table: Cz_Module_CN
+    id:
+        cn:
+            type: blob
+            nullable: false
+            length: null
+            fixed: false
+            default: '0'
+            id: true
+            column: CN
+            generator:
+                strategy: IDENTITY
+    lifecycleCallbacks: {  }

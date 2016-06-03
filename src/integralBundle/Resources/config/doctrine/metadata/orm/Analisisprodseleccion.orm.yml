@@ -1,0 +1,38 @@
+Analisisprodseleccion:
+    type: entity
+    table: AnalisisProdSeleccion
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idClave:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Clave
+        idConcepto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        fechaInicio:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Inicio
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Fin
+    lifecycleCallbacks: {  }

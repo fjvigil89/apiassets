@@ -1,0 +1,47 @@
+OtrabajoEstadosorden:
+    type: entity
+    table: Otrabajo_EstadosOrden
+    indexes:
+        IX_Otrabajo_EstadosOrden:
+            columns:
+                - Contador
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Id
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        idEstado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Estado
+        fechaIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Ini
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Fin
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+    lifecycleCallbacks: {  }

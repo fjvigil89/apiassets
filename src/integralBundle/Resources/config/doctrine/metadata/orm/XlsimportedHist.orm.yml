@@ -1,0 +1,46 @@
+XlsimportedHist:
+    type: entity
+    table: XLSImported_Hist
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        fecha:
+            type: datetime
+            nullable: false
+            default: '1 / 1 / 1960'
+            column: Fecha
+        xlsFilename:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: XLS_FileName
+        totalRows:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Total_Rows
+        idUser:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_User
+        nota:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Nota
+    lifecycleCallbacks: {  }

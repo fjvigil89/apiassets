@@ -1,0 +1,101 @@
+FormasPago:
+    type: entity
+    table: Formas_Pago
+    id:
+        idFormapago:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Id_FormaPago
+            generator:
+                strategy: IDENTITY
+    fields:
+        descFormapago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_FormaPago
+        dcCtacod:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: DC_CTACOD
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '4'
+            column: Clasificacion
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ' '
+            column: Moneda
+        chequeFolioUpdt:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cheque_Folio_Updt
+        cajaChica:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Caja_Chica
+        tipo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo
+        idFondoCobro:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo_Cobro
+        idFondoPago:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo_Pago
+        requiereDesc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Requiere_Desc
+        efectivoPventa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Efectivo_PVenta
+        requiereClave:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Requiere_Clave
+        consecEfectivo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Efectivo
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+    lifecycleCallbacks: {  }

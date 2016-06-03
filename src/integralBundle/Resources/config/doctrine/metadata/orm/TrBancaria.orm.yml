@@ -1,0 +1,282 @@
+TrBancaria:
+    type: entity
+    table: Tr_Bancaria
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idTransferencia:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Transferencia
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idReferencia:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Id_Referencia
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        fechaVence:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Vence
+        fechaCancelacion:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Cancelacion
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        notas:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Notas
+        recibidoPor:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Recibido_Por
+        entregadoPor:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Entregado_Por
+        aprobadoPor:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Aprobado_Por
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        anuladoContabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Anulado_Contabilizado
+        idAgrupacionCobro:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion_Cobro
+        contadorCobro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Cobro
+        idDocCobro:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Doc_Cobro
+        idCliente:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        idFpagoCobro:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_FPago_Cobro
+        idConceptoCobro:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto_Cobro
+        cbankCobro:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: CBank_Cobro
+        idFondoCobro:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo_Cobro
+        txAcajaChica:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tx_ACaja_Chica
+        idAgrupacionPago:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion_Pago
+        contadorPago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Pago
+        idDocPago:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Doc_Pago
+        idProveedor:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        idFpagoPago:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_FPago_Pago
+        idConceptoPago:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto_Pago
+        cbankPago:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: CBank_Pago
+        idFondoPago:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo_Pago
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+        res:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: Re
+            column: Res
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: XTrans
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        beneficiario:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Beneficiario
+        recibidoBanco:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recibido_Banco
+        contadorAccess:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_ACCESS
+        preassets:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PreAssets
+    lifecycleCallbacks: {  }

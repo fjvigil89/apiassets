@@ -1,0 +1,29 @@
+UnidadesMedida:
+    type: entity
+    table: Unidades_Medida
+    id:
+        idUm:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Um
+            generator:
+                strategy: IDENTITY
+    fields:
+        descUm:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Um
+        codUm:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Cod_Um
+    lifecycleCallbacks: {  }

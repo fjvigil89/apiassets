@@ -1,0 +1,66 @@
+ClientesProvPlazosCobro:
+    type: entity
+    table: Clientes_Prov_Plazos_Cobro
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoDoc:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Tipo_Doc
+        dias:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias
+        porcientomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: PorcientoMB
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMB
+        saldomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: SaldoMB
+        porcientomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: PorcientoMC
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMC
+        saldomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: SaldoMC
+    lifecycleCallbacks: {  }

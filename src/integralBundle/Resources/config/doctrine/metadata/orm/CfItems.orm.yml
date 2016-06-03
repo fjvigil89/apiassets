@@ -1,0 +1,54 @@
+CfItems:
+    type: entity
+    table: CF_Items
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idItem:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Item
+        descItem:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: Desc_Item
+        aumentaCaja:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Aumenta_Caja
+        relacionadoCon:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: Relacionado_Con
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Activo
+        idCuentazz:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuentazz
+    lifecycleCallbacks: {  }

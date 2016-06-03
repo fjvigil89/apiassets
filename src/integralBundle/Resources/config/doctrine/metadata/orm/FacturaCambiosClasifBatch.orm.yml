@@ -1,0 +1,142 @@
+FacturaCambiosClasifBatch:
+    type: entity
+    table: Factura_Cambios_Clasif_Batch
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+        pcName:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            id: true
+            column: PC_NAME
+    fields:
+        contadorFa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Fa
+        idFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Factura
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        idClasifFaIni:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Fa_Ini
+        idClasifFaFin:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Fa_Fin
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        observaciones:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Observaciones
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        contadorCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Compro
+        preAssets:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pre_Assets
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        aContabilizar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: A_Contabilizar
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+    lifecycleCallbacks: {  }

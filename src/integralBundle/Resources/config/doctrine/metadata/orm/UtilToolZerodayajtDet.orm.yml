@@ -1,0 +1,77 @@
+UtilToolZerodayajtDet:
+    type: entity
+    table: Util_Tool_ZeroDayAjt_Det
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idUh:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_UH
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Ccosto
+        idArearesponsabilidad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_AreaResponsabilidad
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Empleado
+        descUh:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_UH
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Desc_Ccosto
+        descArearesponsabilidad:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Desc_AreaResponsabilidad
+        descEmpleado:
+            type: string
+            nullable: false
+            length: 61
+            fixed: false
+            column: Desc_Empleado
+        valorInicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_Inicial
+        valorInicialmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_InicialMC
+        valorInicialcup:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_InicialCUP
+    lifecycleCallbacks: {  }

@@ -1,0 +1,260 @@
+OrdenProduccion:
+    type: entity
+    table: Orden_Produccion
+    uniqueConstraints:
+        IX_Orden_Produccion:
+            columns:
+                - Contador
+    id:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Confirmada
+        idOproduccion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_OProduccion
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Almacen
+        anoOproduccion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano_OProduccion
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        fechaApertura:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Apertura
+        fechaCierre:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Cierre
+        idComercial:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: '0'
+            column: Id_Comercial
+        descComercial:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Comercial
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ccosto
+        idRecepcion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Recepcion
+        anoRecepcion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Recepcion
+        generarRecepcion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Generar_Recepcion
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMC
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        nota:
+            type: string
+            nullable: false
+            length: 2000
+            fixed: false
+            default: ''
+            column: Nota
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            column: Desc_Producto
+        cantidadPlan:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0.0000'
+            column: Cantidad_Plan
+        cantidadReal:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0.0000'
+            column: Cantidad_Real
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: UM_Almacen
+        contarecep:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContaRecep
+        referencia:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Referencia
+        fechaVence:
+            type: datetime
+            nullable: false
+            default: (1)/(1))/(9000
+            column: Fecha_Vence
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        idAlmacen2:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen2
+        descAlmacen2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen2
+        costoefmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoEFMB
+        costoefmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoEFMC
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_primario
+        pesobruto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PesoBruto
+        pesoneto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PesoNeto
+    lifecycleCallbacks: {  }

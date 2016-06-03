@@ -1,0 +1,105 @@
+ControlActivofijo:
+    type: entity
+    table: Control_ActivoFijo
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano
+        iddealmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: IddeAlmacen
+    fields:
+        entrada:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Entrada
+        movimiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Movimiento
+        baja:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Baja
+        alquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Alquiler
+        entradasUtiles:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Entradas_Utiles
+        trasladosUtiles:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Traslados_Utiles
+        salidasUtiles:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salidas_Utiles
+        alquilermov:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AlquilerMov
+        mesCerrado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Cerrado
+        mesCerradoUh:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Cerrado_UH
+        movimientoMasivo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Movimiento_Masivo
+        bajaMasiva:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Baja_Masiva
+        movMasivoUtiles:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mov_Masivo_Utiles
+        movimientoMasivoVal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Movimiento_Masivo_Val
+    lifecycleCallbacks: {  }

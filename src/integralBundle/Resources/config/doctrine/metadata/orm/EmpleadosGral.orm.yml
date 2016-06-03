@@ -1,0 +1,114 @@
+EmpleadosGral:
+    type: entity
+    table: Empleados_Gral
+    id:
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Empleado
+            generator:
+                strategy: IDENTITY
+    fields:
+        noCi:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: No_CI
+        nombre:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Nombre
+        apellidos:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Apellidos
+        direccion:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Direccion
+        ciudad:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Ciudad
+        region:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Region
+        codigoPostal:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Codigo_Postal
+        pais:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Pais
+        exttelef:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Exttelef
+        telefonoParticular:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Telefono_Particular
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        fechaNacimiento:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Nacimiento
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+        baja:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Baja
+        alta:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Alta
+    lifecycleCallbacks: {  }

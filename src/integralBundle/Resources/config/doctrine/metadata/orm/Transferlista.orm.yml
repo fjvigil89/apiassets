@@ -1,0 +1,372 @@
+Transferlista:
+    type: entity
+    table: TransferLista
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: UM_Almacen
+        preciovenmbl1:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL1
+        preciovenmbl2:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL2
+        preciovenmbl3:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL3
+        preciovenmbl4:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL4
+        preciovenmbl5:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL5
+        preciovenmcl1:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL1
+        preciovenmcl2:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL2
+        preciovenmcl3:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL3
+        preciovenmcl4:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL4
+        preciovenmcl5:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL5
+        preciovenmbl6:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL6
+        preciovenmbl7:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL7
+        preciovenmbl8:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL8
+        preciovenmbl9:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL9
+        preciovenmbl10:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL10
+        preciovenmcl6:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL6
+        preciovenmcl7:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL7
+        preciovenmcl8:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL8
+        preciovenmcl9:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL9
+        preciovenmcl10:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL10
+        preciovenmbl11:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL11
+        preciovenmbl21:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL21
+        preciovenmbl31:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL31
+        preciovenmbl41:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL41
+        preciovenmbl51:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL51
+        preciovenmcl11:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL11
+        preciovenmcl21:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL21
+        preciovenmcl31:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL31
+        preciovenmcl41:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL41
+        preciovenmcl51:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL51
+        preciovenmbl61:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL61
+        preciovenmbl71:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL71
+        preciovenmbl81:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL81
+        preciovenmbl91:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL91
+        preciovenmbl101:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMBL101
+        preciovenmcl61:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL61
+        preciovenmcl71:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL71
+        preciovenmcl81:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL81
+        preciovenmcl91:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL91
+        preciovenmcl101:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000'
+            column: PrecioVenMCL101
+        calcular:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Calcular
+        preciocostocalculomb:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 8
+            default: '0.00000000'
+            column: PrecioCostoCalculoMB
+        preciocostocalculomc:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 8
+            default: '0.00000000'
+            column: PrecioCostoCalculoMC
+        precioVentaumalmacenmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: Precio_VentaUMAlmacenMB
+        precioVentaumalmacenmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: Precio_VentaUmAlmacenMC
+        productoOservicio:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Producto_oServicio
+        listamodif:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: '0000000000'
+            column: ListaModif
+        listamodifmc:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: '0000000000'
+            column: ListaModifMC
+        idCategoria:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Categoria
+    lifecycleCallbacks: {  }

@@ -1,0 +1,23 @@
+ProductoDatostecnicoscat:
+    type: entity
+    table: Producto_DatosTecnicosCat
+    id:
+        descDato:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definido ***'
+            id: true
+            column: Desc_Dato
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoDato:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: S
+            column: Tipo_Dato
+    lifecycleCallbacks: {  }

@@ -1,0 +1,46 @@
+ActivoFijoCfgzeroday:
+    type: entity
+    table: Activo_Fijo_CfgZeroDay
+    id:
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_ActivoFijo
+            generator:
+                strategy: IDENTITY
+    fields:
+        idRotulo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Rotulo
+        descActivofijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_ActivoFijo
+        tcoirpm:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: TCoIRPM
+        tc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: TC
+        irpm:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: IRPM
+        configurar:
+            type: boolean
+            nullable: false
+            column: Configurar
+    lifecycleCallbacks: {  }

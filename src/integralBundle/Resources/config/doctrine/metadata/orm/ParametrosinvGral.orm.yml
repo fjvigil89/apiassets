@@ -1,0 +1,285 @@
+ParametrosinvGral:
+    type: entity
+    table: ParametrosInv_Gral
+    id:
+        anoCerrado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano_Cerrado
+            generator:
+                strategy: IDENTITY
+    fields:
+        mesCerrado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Cerrado
+        noDevvale:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: No_DevVale
+        otValiequipo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OT_ValiEquipo
+        otRecargos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OT_Recargos
+        otValiempleado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OT_ValiEmpleado
+        irValioc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: IR_ValiOc
+        dvValimpuesto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: DV_ValImpuesto
+        workloteestado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: WorkLoteEstado
+        cotizaReserva:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cotiza_Reserva
+        deudasConsigna:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Deudas_Consigna
+        serviDeudas:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Servi_Deudas
+        ptoventaParcial:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Ptoventa_Parcial
+        ofertaComisiones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Oferta_Comisiones
+        imporconfirmado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ImporConfirmado
+        alertaCobro:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Alerta_Cobro
+        alertaPago:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Alerta_Pago
+        ptocliente:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PtoCliente
+        oconaprobacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OConAprobacion
+        faconcierre:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FaConCierre
+        preciomenos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PrecioMenos
+        almacenfact:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: AlmacenFact
+        irPrecventa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: IR_PrecVenta
+        doblexist:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Doblexist
+        itemporhoja:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ItemporHoja
+        idCausasajusteaum:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausasAjusteAum
+        idCausasajustedec:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausasAjusteDec
+        siscont:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Siscont
+        gaPedidos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: GA_Pedidos
+        deudasConsignatran:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Deudas_ConsignaTran
+        sgestman:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: SgestMan
+        validadepo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ValidaDepo
+        idCausaajtaumcod:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausaAjtAumCod
+        idCausaajtdeccod:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausaAjtDecCod
+        idCausaajtaumclas:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausaAjtAumClas
+        idCausaajtdecclas:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausaAjtDecClas
+        costoprecioventa:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CostoPrecioVenta
+        facturaralcosto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FacturaralCosto
+        noworklote:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: NoWorkLote
+        faNoconfirsiref:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FA_NoConfirSiRef
+        scNoconfirsiref:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: SC_NoConfirSiRef
+        dvNoconfirsinota:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: DV_NoConfirSiNota
+        dvDocwhitref:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: DV_DocWhitRef
+        faLotesindispo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FA_LoteSinDispo
+        faNoconfirlimite:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FA_NoconfirLimite
+        faValidlimite:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FA_ValidLimite
+        faFactcontrato:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FA_FactContrato
+        faAcumulasaldo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FA_AcumulaSaldo
+        irMoneda:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: IR_Moneda
+        irPlazosmo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: IR_PlazosMO
+        faFinanciayear:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FA_FinanciaYear
+    lifecycleCallbacks: {  }

@@ -1,0 +1,23 @@
+Pvxd02ruta:
+    type: entity
+    table: PVXD_02Ruta
+    id:
+        idRuta:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Ruta
+            generator:
+                strategy: IDENTITY
+    fields:
+        descRuta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ruta
+    lifecycleCallbacks: {  }

@@ -1,0 +1,174 @@
+CuentasCosteoAgricola:
+    type: entity
+    table: Cuentas_Costeo_Agricola
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCuentaFiere:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta_fiere
+        ctaFiere:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta_fiere
+        subctaFiere:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta_fiere
+        analisisFiere:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis_fiere
+        subanalisisFiere:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis_fiere
+        epigrafeFiere:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe_fiere
+        partidaFiere:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida_fiere
+        descCuentaFiere:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta_fiere
+        ctaCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: CTA_Credito
+        subctaCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta_Credito
+        analisisCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis_Credito
+        subanalisisCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis_Credito
+        epigrafeCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe_Credito
+        partidaCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida_Credito
+        idCuentaDebito:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta_Debito
+        ctaDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: CTA_Debito
+        subctaDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta_Debito
+        analisisDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis_Debito
+        subanalisisDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis_Debito
+        epigrafeDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe_Debito
+        partidaDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida_Debito
+        descCuentaDebito:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta_Debito
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Items
+    lifecycleCallbacks: {  }

@@ -1,0 +1,93 @@
+On1monedaConfigCont:
+    type: entity
+    table: ON_1Moneda_Config_Cont
+    id:
+        fila:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Fila
+            generator:
+                strategy: IDENTITY
+    fields:
+        aplicarA:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Aplicar_a
+        ctaI:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_I
+        ctaF:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_F
+        descripcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion
+        ctaContrap:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_Contrap
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        tipoCalculo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Calculo
+        coeficiente:
+            type: decimal
+            nullable: false
+            precision: 17
+            scale: 7
+            default: '1.0'
+            column: Coeficiente
+        irpm:
+            type: decimal
+            nullable: false
+            precision: 17
+            scale: 7
+            default: '1.0'
+            column: IRPM
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        incluir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Incluir
+    lifecycleCallbacks: {  }

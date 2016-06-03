@@ -1,0 +1,48 @@
+NivelGrupo:
+    type: entity
+    table: Nivel_Grupo
+    id:
+        idGrupo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Grupo
+            generator:
+                strategy: IDENTITY
+    fields:
+        grupo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Grupo
+        contabilizar:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Contabilizar
+        nivelPadre:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel_Padre
+        idPadre:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Padre
+        descPadre:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Padre
+    lifecycleCallbacks: {  }

@@ -1,0 +1,61 @@
+ClienteProductos:
+    type: entity
+    table: Cliente_Productos
+    indexes:
+        Ix_Cliente_Prod1:
+            columns:
+                - Id_Cliente
+                - Id_Producto
+    id:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cliente
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        descripcion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Descripcion
+        idCategoria:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Categoria
+        umVenta:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: UM_Venta
+        frecuenciaCompra:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Frecuencia_Compra
+        cantidad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cantidad
+    lifecycleCallbacks: {  }

@@ -1,0 +1,140 @@
+Generaajuste:
+    type: entity
+    table: GeneraAjuste
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        fechaAjuste:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Ajuste
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        nombre:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Nombre
+        tipoajuste:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoAjuste
+        nota:
+            type: string
+            nullable: false
+            length: 500
+            fixed: false
+            default: ''
+            column: Nota
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        idDocref:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_DocRef
+        anoDocref:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_DocRef
+        ajusteContador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ajuste_Contador
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: UM_Almacen
+        cantidad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Cantidad
+        idLote:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Lote
+        tipoaduana:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoAduana
+    lifecycleCallbacks: {  }

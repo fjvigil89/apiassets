@@ -1,0 +1,202 @@
+DetalleComprobante:
+    type: entity
+    table: Detalle_Comprobante
+    indexes:
+        IX_Compro:
+            columns:
+                - Cta
+                - SubCta
+                - Analisis
+                - SubAnalisis
+                - Epigrafe
+                - Partida
+                - Id_AgrupacionRef
+        Ix_Det_Compro:
+            columns:
+                - Id_Compro
+                - Ano
+                - Mes
+                - Id_Agrupacion
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoCompro:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Tipo_Compro
+        idDoc:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Doc
+        tipoDoc:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Tipo_Doc
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Descripcion
+        debe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEBE
+        haber:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HABER
+        transito:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Transito
+        clasificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Clasificacion
+        natu:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Natu
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Items
+        idComproref:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_ComproRef
+        anoref:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AnoRef
+        mesref:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MesRef
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        idAgrupacionref:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AgrupacionRef
+        subcontrol:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: SubControl
+        marcaConciliacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca_Conciliacion
+        fechaConciliacion:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Conciliacion
+    lifecycleCallbacks: {  }

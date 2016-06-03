@@ -1,0 +1,164 @@
+PagoSolicitudCheque:
+    type: entity
+    table: Pago_Solicitud_Cheque
+    indexes:
+        PSCH2:
+            columns:
+                - Fecha
+    uniqueConstraints:
+        PSCH1:
+            columns:
+                - Contador1
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        localidad:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Localidad
+        tipoSolicitud:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Solicitud
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        beneficiario:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Beneficiario
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe
+        observaciones:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: ''
+            column: Observaciones
+        idConcepto:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        solicitadoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Solicitado_Por
+        revisadoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Revisado_Por
+        autorizadoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Autorizado_Por
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        idDocref:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: ID_DocRef
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        igMenores:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IG_Menores
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        pagoYagenerado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pago_YaGenerado
+        contador1Pago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador1_Pago
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+        nroDoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nro_Doc
+    lifecycleCallbacks: {  }

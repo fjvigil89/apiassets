@@ -1,0 +1,163 @@
+FzRzo1estadoRes:
+    type: entity
+    table: Fz_RZo1Estado_Res
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAgrupacionCalc:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion_CALC
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: subCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Descripcion
+        clasificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Clasificacion
+        subclasific:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: SubClasific
+        natu:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Natu
+        reguladora:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Reguladora
+        ctaMb:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Cta_MB
+        fechaMy:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_MY
+        saldoIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_INI
+        saldoPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Per
+        saldoCta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Cta
+        saldoSubcta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_SubCta
+        saldoAnalisis:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Analisis
+        saldoSubanalisis:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_SubAnalisis
+        saldoEpigrafe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Epigrafe
+        saldoPartida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Partida
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+    lifecycleCallbacks: {  }

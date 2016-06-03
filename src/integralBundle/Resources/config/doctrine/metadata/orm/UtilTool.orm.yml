@@ -1,0 +1,39 @@
+UtilTool:
+    type: entity
+    table: Util_Tool
+    id:
+        idUh:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_UH
+            generator:
+                strategy: IDENTITY
+    fields:
+        descUh:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_UH
+        idClasifUh:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Clasif_UH
+        fechaAlta:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Alta
+        activo:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Activo
+    lifecycleCallbacks: {  }

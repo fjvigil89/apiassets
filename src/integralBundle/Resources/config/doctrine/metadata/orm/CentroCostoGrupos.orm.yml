@@ -1,0 +1,22 @@
+CentroCostoGrupos:
+    type: entity
+    table: Centro_Costo_Grupos
+    id:
+        idGrupoccosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_GrupoCcosto
+            generator:
+                strategy: IDENTITY
+    fields:
+        descGrupoccosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_GrupoCcosto
+    lifecycleCallbacks: {  }

@@ -1,0 +1,28 @@
+CrmCatSolicTipos:
+    type: entity
+    table: CRM_Cat_Solic_Tipos
+    id:
+        idTipo:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Tipo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Descripcion
+        activa:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Activa
+    lifecycleCallbacks: {  }

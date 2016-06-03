@@ -1,0 +1,40 @@
+CfRelacion:
+    type: entity
+    table: CF_Relacion
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idRelacion:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Relacion
+        descRelacion:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: Desc_Relacion
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Activo
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Clasificacion
+    lifecycleCallbacks: {  }

@@ -1,0 +1,107 @@
+AlquilerPrefactura:
+    type: entity
+    table: Alquiler_PreFactura
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        fechaCierreini:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_CierreIni
+        fechaFactura:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Factura
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMC
+        idAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Alquiler
+        anoAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Alquiler
+        contadoralquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorAlquiler
+        imprimir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Imprimir
+        idTipoAlquiler:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Tipo_Alquiler
+        descTipoAlquiler:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Tipo_Alquiler
+        inTot:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: In_Tot
+        outTot:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Out_Tot
+    lifecycleCallbacks: {  }

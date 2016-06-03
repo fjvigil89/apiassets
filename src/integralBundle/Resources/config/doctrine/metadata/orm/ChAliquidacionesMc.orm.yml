@@ -1,0 +1,210 @@
+ChAliquidacionesMc:
+    type: entity
+    table: CH_ALiquidaciones_MC
+    indexes:
+        Ix3_Liquid_MC:
+            columns:
+                - Id_Liquidacion
+                - Id_Agrupacion
+                - Ano
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Estado
+    fields:
+        idLiquidacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Liquidacion
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Agrupacion
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        fechaLiquidacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Liquidacion
+        fechaCancelacion:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Cancelacion
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        idReferencia:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Id_Referencia
+        importeTotal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe_Total
+        observaciones:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Observaciones
+        recibidoPorLiq:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Recibido_Por_LIQ
+        entregadoPorLiq:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Entregado_Por_LIQ
+        aprobadoPorLiq:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Aprobado_Por_LIQ
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        idComproAnulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro_Anulado
+        mesAnulado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Anulado
+        anoAnulado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Anulado
+        idAnticipo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Anticipo
+        anoAnticipo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Anticipo
+        idAgrupacionAnticipo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Agrupacion_Anticipo
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+        idFondo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo
+        reembolsado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Reembolsado
+        contabilizado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contabilizado
+    lifecycleCallbacks: {  }

@@ -1,0 +1,62 @@
+CrmCatClientePot:
+    type: entity
+    table: CRM_Cat_Cliente_Pot
+    id:
+        idClientePot:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cliente_Pot
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClientePot:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente_Pot
+        nombreContacto:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Nombre_Contacto
+        cargo:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Cargo
+        direccion:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ''
+            column: Direccion
+        telefono:
+            type: string
+            nullable: false
+            length: 24
+            fixed: false
+            default: ''
+            column: Telefono
+        email:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+    lifecycleCallbacks: {  }

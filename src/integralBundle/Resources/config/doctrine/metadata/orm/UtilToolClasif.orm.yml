@@ -1,0 +1,22 @@
+UtilToolClasif:
+    type: entity
+    table: Util_Tool_Clasif
+    id:
+        idClasifUh:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            id: true
+            column: Id_Clasif_UH
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClasifUh:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Clasif_UH
+    lifecycleCallbacks: {  }

@@ -1,0 +1,97 @@
+DepreciaTemp:
+    type: entity
+    table: DEPRECIA_TEMP
+    id:
+        ano:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Ano
+            generator:
+                strategy: IDENTITY
+    fields:
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_ActivoFijo
+        valorini12:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ValorIni12
+        tasa12:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tasa12
+        deprecacum12:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: DeprecAcum12
+        deprecmes12:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: DeprecMes12
+        valorini12mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ValorIni12MC
+        deprecacum12mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: DeprecAcum12MC
+        deprecmes12mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: DeprecMes12MC
+        idEstado12:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            column: Id_Estado12
+        idAgrup12:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Agrup12
+        idCcosto12:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Ccosto12
+        idArearesp12:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_AreaResp12
+        idEmpleado12:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Empleado12
+        idClasificacion12:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Clasificacion12
+        idEspecificacion12:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Especificacion12
+    lifecycleCallbacks: {  }

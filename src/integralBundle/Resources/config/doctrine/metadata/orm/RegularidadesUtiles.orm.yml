@@ -1,0 +1,154 @@
+RegularidadesUtiles:
+    type: entity
+    table: Regularidades_Utiles
+    indexes:
+        Ix1_Reg_Util:
+            columns:
+                - Clasif_Util
+                - Actividad
+                - Movimiento
+    uniqueConstraints:
+        Pk_Reg_Util:
+            columns:
+                - Items
+    id:
+        subcontrol:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Subcontrol
+            generator:
+                strategy: IDENTITY
+    fields:
+        actividad:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Actividad
+        movimiento:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: Movimiento
+        clasifUtil:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Clasif_Util
+        operacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Operacion
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        tipoSubcta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_SubCta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        tipoAnalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Analisis
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        tipoSubanalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Subanalisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        tipoEpigrafe:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Epigrafe
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        tipoPartida:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Partida
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        porciento:
+            type: decimal
+            nullable: false
+            precision: 7
+            scale: 4
+            default: '0'
+            column: Porciento
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Items
+        gpoCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Gpo_CCosto
+        afecta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Afecta
+        copiar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Copiar
+    lifecycleCallbacks: {  }

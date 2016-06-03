@@ -1,0 +1,23 @@
+Pvxd03zona:
+    type: entity
+    table: PVXD_03Zona
+    id:
+        idZona:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Zona
+            generator:
+                strategy: IDENTITY
+    fields:
+        descZona:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Zona
+    lifecycleCallbacks: {  }

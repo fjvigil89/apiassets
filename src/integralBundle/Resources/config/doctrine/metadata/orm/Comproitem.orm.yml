@@ -1,0 +1,62 @@
+Comproitem:
+    type: entity
+    table: ComproItem
+    id:
+        compnumero:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: CompNumero
+            generator:
+                strategy: IDENTITY
+    fields:
+        partcuenta:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: PartCuenta
+        partsubcuenta:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: PartSubCuenta
+        partsubcontrol:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: PartSubControl
+        partanalisis:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: PartAnalisis
+        partimporte:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PartImporte
+        partdebito:
+            type: boolean
+            nullable: true
+            column: PartDebito
+        partoc:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PartOC
+        partfijo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PartFijo
+        partcb:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: PartCB
+    lifecycleCallbacks: {  }

@@ -1,0 +1,137 @@
+BajaActivofijoMasivaDet:
+    type: entity
+    table: Baja_ActivoFijo_Masiva_Det
+    indexes:
+        IX_Baja_ActivoFijo_Masiva_Det:
+            columns:
+                - Contador
+    id:
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Empleado
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_ActivoFijo
+        idRotulo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Rotulo
+        descActivofijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_ActivoFijo
+        valorInicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Valor_Inicial
+        valorInicialmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Valor_InicialMC
+        valorResidual:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Valor_Residual
+        valorResidualmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Valor_ResidualMC
+        depreciacionAcumulada:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Depreciacion_Acumulada
+        depreciacionAcumuladamc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Depreciacion_AcumuladaMC
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idArearesp:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: ID_AreaResp
+        idBaja:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Baja
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoBaja:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Baja
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        idSubclasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Subclasificacion
+        idEspecificacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion
+    lifecycleCallbacks: {  }

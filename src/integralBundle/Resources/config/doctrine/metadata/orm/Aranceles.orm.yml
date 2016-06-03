@@ -1,0 +1,47 @@
+Aranceles:
+    type: entity
+    table: Aranceles
+    id:
+        idPartida:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Partida
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: Nombre
+        descPartida:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Partida
+        tg:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: TG
+        tnf:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: TNF
+        moneda:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: MC
+            column: Moneda
+    lifecycleCallbacks: {  }

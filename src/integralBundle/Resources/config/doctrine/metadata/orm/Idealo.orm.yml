@@ -1,0 +1,78 @@
+Idealo:
+    type: entity
+    table: IdealO
+    indexes:
+        Ix_Offi:
+            columns:
+                - Id_Producto
+                - Es_Producto
+                - Contador1
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Producto
+        esProducto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Es_Producto
+        clave:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: Clave
+        um:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: UM
+        col001:
+            type: string
+            nullable: false
+            length: 225
+            fixed: false
+            column: Col001
+        precio1:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: '0'
+            column: Precio1
+        precio2:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: '0'
+            column: Precio2
+        precio3:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: '0'
+            column: Precio3
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+    lifecycleCallbacks: {  }

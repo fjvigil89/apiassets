@@ -1,0 +1,280 @@
+FormatoEstadoResultado3:
+    type: entity
+    table: Formato_Estado_Resultado3
+    id:
+        fila:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Fila
+            generator:
+                strategy: IDENTITY
+    fields:
+        ordenListado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Listado
+        ctaI:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_I
+        ctaF:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_F
+        descripcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion
+        operacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Operacion
+        filaInicio:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Inicio
+        filaFinal:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Final
+        tipoValor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Tipo_Valor
+        saldoIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: Saldo_INI
+        saldoPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: Saldo_PER
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo
+        filaPorciento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Porciento
+        saldoListado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Listado
+        saldoAimprimir:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_AImprimir
+        descripcionAlterna:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion_Alterna
+        columnTouse:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '2'
+            column: Column_ToUse
+        saldoFin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_FIN
+        saldoxIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoX_INI
+        saldoxPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoX_PER
+        saldoxFin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoX_FIN
+        operadorCondicion:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: Operador_Condicion
+        valorCondicion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Condicion
+        imprimir:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Imprimir
+        operacion1:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Operacion1
+        filaI1:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_i1
+        filaF1:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_F1
+        valor1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor1
+        saldoAusar1:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Saldo_AUsar1
+        resultado1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Resultado1
+        operacion2:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Operacion2
+        filaI2:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_i2
+        filaF2:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_F2
+        valor2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor2
+        saldoAusar2:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Saldo_AUsar2
+        resultado2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Resultado2
+        operacion3:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Operacion3
+        filaI3:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_i3
+        filaF3:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_F3
+        valor3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor3
+        saldoAusar3:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Saldo_AUsar3
+        resultado3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Resultado3
+        formula:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: ''
+            column: Formula
+    lifecycleCallbacks: {  }

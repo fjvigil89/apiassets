@@ -1,0 +1,20 @@
+ImportTables:
+    type: entity
+    table: Import_Tables
+    id:
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        stable:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            column: STable
+    lifecycleCallbacks: {  }

@@ -1,0 +1,60 @@
+SystemTrace:
+    type: entity
+    table: System_Trace
+    id:
+        contador:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        idModulo:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_Modulo
+        idOpcion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Opcion
+        traceDate:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Trace_Date
+        traceCode:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Trace_Code
+        traceDesc:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Trace_Desc
+        computername:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: ComputerName
+    lifecycleCallbacks: {  }

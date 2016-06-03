@@ -1,0 +1,109 @@
+Porcionamiento:
+    type: entity
+    table: Porcionamiento
+    uniqueConstraints:
+        PK_Porcionamiento:
+            columns:
+                - Ano_Porcionam
+                - Id_Porcionamiento
+    id:
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Empleado
+            generator:
+                strategy: IDENTITY
+    fields:
+        anoPorcionam:
+            type: string
+            nullable: true
+            length: 4
+            fixed: false
+            column: Ano_Porcionam
+        idPorcionamiento:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Porcionamiento
+        descEmpleado:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Desc_Empleado
+        fecha:
+            type: datetime
+            nullable: true
+            column: Fecha
+        fechaConfirmacion:
+            type: datetime
+            nullable: true
+            column: Fecha_Confirmacion
+        nota:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: Nota
+        confirmada:
+            type: boolean
+            nullable: true
+            column: Confirmada
+        anulada:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: Anulada
+        idAlmacen:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        idProducto:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        um:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Um
+        cantidad:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Cantidad
+        idCompr:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Compr
+        mes:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Mes
+        anoCompro:
+            type: string
+            nullable: true
+            length: 4
+            fixed: false
+            column: Ano_Compro
+    lifecycleCallbacks: {  }

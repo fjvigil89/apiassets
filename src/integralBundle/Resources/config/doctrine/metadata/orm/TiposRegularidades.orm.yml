@@ -1,0 +1,55 @@
+TiposRegularidades:
+    type: entity
+    table: Tipos_Regularidades
+    id:
+        idTipoAnalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Id_Tipo_Analisis
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoAnalisis:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Tipo_Analisis
+        documento:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Documento
+        regSubcta:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Reg_SubCta
+        regAnalisis:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Reg_Analisis
+        regSubanalisis:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Reg_SubAnalisis
+        regEpigrafe:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Reg_Epigrafe
+        regPartida:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Reg_Partida
+        esdeMc:
+            type: boolean
+            nullable: false
+            column: EsDe_MC
+    lifecycleCallbacks: {  }

@@ -1,0 +1,63 @@
+EstadoAllcuentas:
+    type: entity
+    table: Estado_ALLCuentas
+    id:
+        descConcepto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            id: true
+            column: Desc_Concepto
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCuenta:
+            type: string
+            nullable: true
+            length: 22
+            fixed: false
+            column: Id_Cuenta
+        fecha:
+            type: datetime
+            nullable: true
+            column: Fecha
+        transaccion:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Transaccion
+        numero:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: Numero
+        debe:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Debe
+        haber:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Haber
+        saldo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Saldo
+        nota:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: Nota
+        contador1:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Contador1
+    lifecycleCallbacks: {  }

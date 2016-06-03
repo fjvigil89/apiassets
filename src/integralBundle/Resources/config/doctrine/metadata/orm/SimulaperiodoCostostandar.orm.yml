@@ -1,0 +1,20 @@
+SimulaperiodoCostostandar:
+    type: entity
+    table: SimulaPeriodo_CostoStandar
+    id:
+        idPeriodo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Id_Periodo
+            generator:
+                strategy: IDENTITY
+    fields:
+        unidadesporprecio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: UnidadesporPrecio
+    lifecycleCallbacks: {  }

@@ -1,0 +1,63 @@
+CrmPedidos:
+    type: entity
+    table: CRM_Pedidos
+    id:
+        contadorPe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador_Pe
+            generator:
+                strategy: IDENTITY
+    fields:
+        idPedido:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Pedido
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoPedido:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Pedido
+        fechaPedido:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Pedido
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMC
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+    lifecycleCallbacks: {  }

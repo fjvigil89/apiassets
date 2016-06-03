@@ -1,0 +1,52 @@
+ServiciosActividad:
+    type: entity
+    table: Servicios_Actividad
+    id:
+        idServicio:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Servicio
+        idActividad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Actividad
+    fields:
+        descActividad:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Actividad
+        costomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMB
+        costomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMC
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+        horasplan:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: HorasPlan
+    lifecycleCallbacks: {  }

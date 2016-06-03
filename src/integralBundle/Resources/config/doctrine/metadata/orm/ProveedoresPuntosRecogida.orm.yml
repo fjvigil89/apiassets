@@ -1,0 +1,29 @@
+ProveedoresPuntosRecogida:
+    type: entity
+    table: Proveedores_Puntos_Recogida
+    id:
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Proveedor
+        idPuntoRecogida:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Punto_Recogida
+    fields:
+        descPuntoRecogida:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Punto_Recogida
+    lifecycleCallbacks: {  }

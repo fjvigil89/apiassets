@@ -1,0 +1,102 @@
+ImportFacturadetalle:
+    type: entity
+    table: Import_FacturaDetalle
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        referencia:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Referencia
+        idFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Factura
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoFactura:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Factura
+        codigo:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Codigo
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: UM_Almacen
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMC
+        costomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: CostoMB
+        costomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: CostoMC
+        enalmacen:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: EnAlmacen
+        productoOservicio:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Producto_oServicio
+    lifecycleCallbacks: {  }

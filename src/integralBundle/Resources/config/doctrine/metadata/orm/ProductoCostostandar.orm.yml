@@ -1,0 +1,121 @@
+ProductoCostostandar:
+    type: entity
+    table: Producto_CostoStandar
+    id:
+        idPeriodo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Id_Periodo
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+    fields:
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        umProducto:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Um_Producto
+        costofjmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFJMB
+        costompmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMPMB
+        costoemmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoEMMB
+        costodpmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoDPMB
+        costostandarmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoStandarMB
+        costofjmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFJMC
+        costompmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMPMC
+        costoemmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoEMMC
+        costodpmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoDPMC
+        costostandarmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoStandarMC
+        unidadesporprecio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: UnidadesporPrecio
+        gastofjmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoFJMB
+        gastovrmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoVRMB
+        gastofjmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoFJMC
+        gastovrmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoVRMC
+    lifecycleCallbacks: {  }

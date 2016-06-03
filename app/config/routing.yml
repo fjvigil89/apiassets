@@ -1,6 +1,11 @@
+
+integral:
+    resource: "@integralBundle/Resources/config/routing.yml"
+    prefix:   /
+
 web_service:
     resource: "@webServiceBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /rh
 
 api:
     resource: "."

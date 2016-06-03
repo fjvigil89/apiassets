@@ -1,0 +1,43 @@
+ActivoFijoCierreMes:
+    type: entity
+    table: Activo_Fijo_Cierre_Mes
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        fechaCierre:
+            type: datetime
+            nullable: false
+            column: Fecha_Cierre
+        idComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Comprobante
+        mesComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Comprobante
+        anoComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Comprobante
+        agrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Agrupacion
+    lifecycleCallbacks: {  }

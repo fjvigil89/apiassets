@@ -1,0 +1,64 @@
+ClientePuntosEntrega:
+    type: entity
+    table: Cliente_Puntos_Entrega
+    id:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cliente
+        idPuntoEntrega:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Punto_Entrega
+    fields:
+        descPuntoEntrega:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Punto_Entrega
+        idComercial:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Comercial
+        descComercial:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Comercial
+        direccionPto:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Direccion_Pto
+        idCobrador:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Cobrador
+        descCobrador:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cobrador
+    lifecycleCallbacks: {  }

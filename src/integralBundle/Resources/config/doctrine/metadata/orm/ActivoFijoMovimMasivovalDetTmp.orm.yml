@@ -1,0 +1,150 @@
+ActivoFijoMovimMasivovalDetTmp:
+    type: entity
+    table: Activo_Fijo_Movim_MasivoVal_Det_Tmp
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idMovval:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_MovVal
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoMovval:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Ano_MovVal
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_ActivoFijo
+        idRotulo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Rotulo
+        descActivofijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_ActivoFijo
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Ccosto
+        idArearesp:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: ID_AreaResp
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Empleado
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Clasificacion
+        idSubclasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Subclasificacion
+        idEspecificacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Especificacion
+        cnmb:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: CNMB
+        valorInicialold:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_InicialOld
+        valorInicialnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_InicialNew
+        valorInicialmcold:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_InicialMCOld
+        valorInicialmcnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_InicialMCNew
+        valorResidualold:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_ResidualOld
+        valorResidualnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_ResidualNew
+        valorResidualmcold:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_ResidualMCOld
+        valorResidualmcnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_ResidualMCNew
+        depreciacionAcumuladaold:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Depreciacion_AcumuladaOld
+        depreciacionAcumuladanew:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Depreciacion_AcumuladaNew
+        depreciacionAcumuladamcold:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Depreciacion_AcumuladaMCOld
+        depreciacionAcumuladamcnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Depreciacion_AcumuladaMCNew
+    lifecycleCallbacks: {  }

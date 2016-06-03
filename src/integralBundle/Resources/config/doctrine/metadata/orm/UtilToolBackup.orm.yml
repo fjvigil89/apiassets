@@ -1,0 +1,58 @@
+UtilToolBackup:
+    type: entity
+    table: Util_Tool_Backup
+    id:
+        idUh:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_UH
+            generator:
+                strategy: IDENTITY
+    fields:
+        descUh:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_UH
+        idClasifUh:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Clasif_UH
+        fechaAlta:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Alta
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0'
+            column: Cantidad
+        valorInicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Inicial
+        activo:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Activo
+        valorInicialmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_InicialMC
+    lifecycleCallbacks: {  }

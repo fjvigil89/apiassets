@@ -1,0 +1,74 @@
+DetallesActivosFijosRecibidos:
+    type: entity
+    table: Detalles_Activos_Fijos_Recibidos
+    indexes:
+        IX_Detalles_Activos_Fijos_Recibidos_1:
+            columns:
+                - Id_ActivoFijo
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        items:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Items
+        idRecepcion:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Recepcion
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoRecepcion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Recepcion
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        idLote:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: Id_Lote
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_ActivoFijo
+        descActivofijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_ActivoFijo
+        cantidad:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Cantidad
+        enAlmacen:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: En_Almacen
+    lifecycleCallbacks: {  }

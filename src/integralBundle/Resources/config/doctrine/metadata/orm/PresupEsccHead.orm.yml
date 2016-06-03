@@ -1,0 +1,59 @@
+PresupEsccHead:
+    type: entity
+    table: Presup_ESCC_Head
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: TODAS
+            id: true
+            column: Id_Agrupacion
+        variante:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: '0'
+            id: true
+            column: Variante
+    fields:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+        estadoInsert:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado_Insert
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+    lifecycleCallbacks: {  }

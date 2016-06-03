@@ -1,0 +1,179 @@
+FormatoTur19:
+    type: entity
+    table: Formato_Tur19
+    id:
+        fila:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Fila
+            generator:
+                strategy: IDENTITY
+    fields:
+        ordenListado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Listado
+        ctambI:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CtaMB_I
+        ctambF:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CtaMB_F
+        ctamcI:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CtaMC_I
+        ctamcF:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CtaMC_F
+        descripcion:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Descripcion
+        operacionmb:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: OperacionMB
+        operacionmc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: OperacionMC
+        filaIniciomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_InicioMB
+        filaFinalmb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_FinalMB
+        filaIniciomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_InicioMC
+        filaFinalmc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_FinalMC
+        tipoValor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Tipo_Valor
+        filaPorciento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Porciento
+        descripcionAlterna:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion_Alterna
+        columnTouse:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '2'
+            column: Column_ToUse
+        saldombIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: SaldoMB_INI
+        saldombPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: SaldoMB_PER
+        saldoanombIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: SaldoAnoMB_INI
+        saldoanombPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: SaldoAnoMB_Per
+        saldomcIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: SaldoMC_INI
+        saldomcPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: SaldoMC_PER
+        saldoanomcIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: SaldoAnoMC_INI
+        saldoanomcPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: SaldoAnoMC_Per
+        imprimir:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Imprimir
+        otros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros
+    lifecycleCallbacks: {  }

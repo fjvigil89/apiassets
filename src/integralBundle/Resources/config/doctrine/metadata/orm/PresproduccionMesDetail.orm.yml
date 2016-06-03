@@ -1,0 +1,68 @@
+PresproduccionMesDetail:
+    type: entity
+    table: PresProduccion_Mes_Detail
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Ano
+        mes:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            id: true
+            column: Mes
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+    fields:
+        s01:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: S01
+        s02:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: S02
+        s03:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: S03
+        s04:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: S04
+        s05:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: S05
+        s06:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: S06
+        total:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Total
+    lifecycleCallbacks: {  }

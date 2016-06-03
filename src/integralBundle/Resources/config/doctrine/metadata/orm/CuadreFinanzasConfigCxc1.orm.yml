@@ -1,0 +1,108 @@
+CuadreFinanzasConfigCxc1:
+    type: entity
+    table: Cuadre_Finanzas_Config_CxC1
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoDoc:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Tipo_Doc
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        deMb:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: De_MB
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: 'No'
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        posicAlmacen:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Posic_Almacen
+        posicOrganismo:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Posic_Organismo
+        posicCliente:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Posic_Cliente
+        calcular:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Calcular
+    lifecycleCallbacks: {  }

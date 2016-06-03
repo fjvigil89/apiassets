@@ -1,0 +1,92 @@
+ClasificacionProducto:
+    type: entity
+    table: Clasificacion_producto
+    id:
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            id: true
+            column: Id_Clasificacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        clasificacion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: '*** No definida ***'
+            column: Clasificacion
+        cuentamn:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: CuentaMN
+        subctamn:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: SubCtaMN
+        subctrlmn:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: SubCtrlMN
+        analisismn:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: AnalisisMN
+        objcostomn:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: ObjCostoMN
+        cuentamlc:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: CuentaMLC
+        subctamlc:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: SubCtaMLC
+        subctrlmlc:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: SubCtrlMLC
+        analisismlc:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: AnalisisMLC
+        objcostomlc:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: ObjCostoMLC
+    lifecycleCallbacks: {  }

@@ -1,0 +1,97 @@
+CatalogoContrato:
+    type: entity
+    table: Catalogo_Contrato
+    id:
+        nocontrato:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            id: true
+            column: NoContrato
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        activo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Activo
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        descProveedor:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Proveedor
+        descripcion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Descripcion
+        fechafin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaFin
+        clasificacion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Clasificacion
+        valor:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Valor
+        valormc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ValorMC
+        saldoIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Ini
+        saldoInimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_IniMC
+    lifecycleCallbacks: {  }

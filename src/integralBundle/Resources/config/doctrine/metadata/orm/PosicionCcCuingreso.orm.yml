@@ -1,0 +1,21 @@
+PosicionCcCuingreso:
+    type: entity
+    table: Posicion_CC_CuIngreso
+    id:
+        ctaIngreso:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Cta_Ingreso
+            generator:
+                strategy: IDENTITY
+    fields:
+        centroCosto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Centro_Costo
+    lifecycleCallbacks: {  }

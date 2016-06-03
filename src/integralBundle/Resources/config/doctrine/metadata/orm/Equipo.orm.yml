@@ -1,0 +1,29 @@
+Equipo:
+    type: entity
+    table: Equipo
+    id:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cliente
+        idEquipo:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '** No defido **'
+            id: true
+            column: Id_Equipo
+    fields:
+        descEquipo:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Desc_Equipo
+    lifecycleCallbacks: {  }

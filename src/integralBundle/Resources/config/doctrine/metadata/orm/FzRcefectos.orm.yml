@@ -1,0 +1,192 @@
+FzRcefectos:
+    type: entity
+    table: Fz_RCEfectos
+    id:
+        idAgrupacionCalc:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Agrupacion_CALC
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        fechaCheque:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Cheque
+        idDoc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Doc
+        anoDoc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Doc
+        formaPago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Forma_Pago
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Organismo
+        organismo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Organismo
+        sector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Sector
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        fechaMy:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_MY
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        interesLetra:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Interes_Letra
+        impPorpagar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_PorPagar
+        impApagar1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar1
+        impApagar2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar2
+        impApagar3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar3
+        impApagar4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar4
+        impApagar5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar5
+        tipoCobro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Cobro
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        contrato:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Contrato
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        cont1Cobro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cont1_Cobro
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+    lifecycleCallbacks: {  }

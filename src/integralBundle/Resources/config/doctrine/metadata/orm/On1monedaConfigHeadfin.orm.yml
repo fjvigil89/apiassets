@@ -1,0 +1,86 @@
+On1monedaConfigHeadfin:
+    type: entity
+    table: ON_1Moneda_Config_HeadFin
+    id:
+        tipoCalculo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Tipo_Calculo
+            generator:
+                strategy: IDENTITY
+    fields:
+        tasa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tasa
+        irpm:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: IRPM
+        contadorCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Compro
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes_Compro
+        idAgrupacionref:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AgrupacionRef
+        fechaEjecFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Ejec_Fin
+        badConfigFin:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Bad_Config_Fin
+        calculoAgrupadoFin:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Calculo_Agrupado_Fin
+        tasamcAmn:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: TasaMC_aMN
+        aperturaFinanzas:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Apertura_Finanzas
+    lifecycleCallbacks: {  }

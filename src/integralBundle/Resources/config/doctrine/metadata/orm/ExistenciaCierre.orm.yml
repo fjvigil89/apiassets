@@ -1,0 +1,333 @@
+ExistenciaCierre:
+    type: entity
+    table: Existencia_Cierre
+    id:
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Almacen
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        idLote:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: Id_Lote
+        eneroc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: EneroC
+        eneroimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: EneroIMB
+        eneroimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: EneroIMC
+        febreroc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: FebreroC
+        febreroimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: FebreroIMB
+        febreroimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: FebreroIMC
+        marzoc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: MarzoC
+        marzoimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: MarzoIMB
+        marzoimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: MarzoIMC
+        abrilc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: AbrilC
+        abrilimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: AbrilIMB
+        abrilimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: AbrilIMC
+        mayoc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: MayoC
+        mayoimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: MayoIMB
+        mayoimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: MayoIMC
+        junioc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: JunioC
+        junioimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: JunioIMB
+        junioimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: JunioIMC
+        julioc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: JulioC
+        julioimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: JulioIMB
+        julioimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: JulioIMC
+        agostoc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: AgostoC
+        agostoimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: AgostoIMB
+        agostoimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: AgostoIMC
+        septiembrec:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: SeptiembreC
+        septiembreimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: SeptiembreIMB
+        septiembreimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: SeptiembreIMC
+        octubrec:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: OctubreC
+        octubreimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: OctubreIMB
+        octubreimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: OctubreIMC
+        noviembrec:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: NoviembreC
+        noviembreimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: NoviembreIMB
+        noviembreimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: NoviembreIMC
+        diciembrec:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: DiciembreC
+        diciembreimb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: DiciembreIMB
+        diciembreimc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: DiciembreIMC
+        eneroe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: EneroE
+        febreroe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: FebreroE
+        marzoe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: MarzoE
+        abrile:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: AbrilE
+        mayoe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: MayoE
+        junioe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: JunioE
+        julioe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: JulioE
+        agostoe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: AgostoE
+        septiembree:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: SeptiembreE
+        octubree:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: OctubreE
+        noviembree:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: NoviembreE
+        diciembree:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: DiciembreE
+    lifecycleCallbacks: {  }

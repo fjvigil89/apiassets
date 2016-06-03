@@ -1,0 +1,142 @@
+Alquilermov:
+    type: entity
+    table: AlquilerMov
+    uniqueConstraints:
+        IX_AlquilerMov:
+            columns:
+                - Contador
+    id:
+        idAlquilermov:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_AlquilerMov
+        idAlmacenmov:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_AlmacenMov
+        anoAlquilermov:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano_AlquilerMov
+    fields:
+        fechaAlquilermov:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_AlquilerMov
+        idEstado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Estado
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        fechaUltimoCierre:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Ultimo_Cierre
+        contadoralquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorAlquiler
+        idAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Alquiler
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Alquiler
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+        noContrato:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: No_Contrato
+        fechaFinContrato:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Fin_Contrato
+    lifecycleCallbacks: {  }

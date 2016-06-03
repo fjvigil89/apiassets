@@ -1,0 +1,39 @@
+AccesoCr:
+    type: entity
+    table: Acceso_CR
+    id:
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_User
+            generator:
+                strategy: IDENTITY
+    fields:
+        idModulo:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            column: Id_Modulo
+        idOpcion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Opcion
+        descOpcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: Desc_Opcion
+        acceso:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            column: Acceso
+    lifecycleCallbacks: {  }

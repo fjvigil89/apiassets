@@ -1,0 +1,92 @@
+Fzcobros:
+    type: entity
+    table: FzCobros
+    id:
+        idDoc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Doc
+            generator:
+                strategy: IDENTITY
+    fields:
+        anoDoc:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Ano_Doc
+        formaPago:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Forma_Pago
+        idCliente:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Cliente
+        fechaPago:
+            type: datetime
+            nullable: true
+            column: Fecha_Pago
+        idAgrupacion:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Agrupacion
+        tipoMoneda:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Tipo_Moneda
+        impDoc:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Imp_Doc
+        impCobros:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Imp_Cobros
+        impPendiente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Imp_Pendiente
+        impAnticCanc:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Imp_Antic_Canc
+        impAnulado:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Imp_Anulado
+        impCobrovsanticCanc:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Imp_CobroVsAntic_Canc
+        recargo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Recargo
+        descuento:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Descuento
+        contador1:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Contador1
+    lifecycleCallbacks: {  }

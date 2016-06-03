@@ -1,0 +1,455 @@
+<?php
+
+namespace integralBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * CuadreFinanzasConfigCxc1
+ *
+ * @ORM\Table(name="Cuadre_Finanzas_Config_CxC1")
+ * @ORM\Entity
+ */
+class CuadreFinanzasConfigCxc1
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="Contador1", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $contador1;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Tipo_Doc", type="string", length=5, nullable=false)
+     */
+    private $tipoDoc;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Id_Clasificacion", type="string", length=10, nullable=false)
+     */
+    private $idClasificacion;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Id_Almacen", type="string", length=5, nullable=false)
+     */
+    private $idAlmacen;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Cta", type="string", length=20, nullable=false)
+     */
+    private $cta;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="De_MB", type="boolean", nullable=false)
+     */
+    private $deMb;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="SubCta", type="string", length=20, nullable=false)
+     */
+    private $subcta;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Analisis", type="string", length=20, nullable=false)
+     */
+    private $analisis;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="SubAnalisis", type="string", length=20, nullable=false)
+     */
+    private $subanalisis;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Epigrafe", type="string", length=20, nullable=false)
+     */
+    private $epigrafe;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Partida", type="string", length=20, nullable=false)
+     */
+    private $partida;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Posic_Almacen", type="string", length=12, nullable=false)
+     */
+    private $posicAlmacen;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Posic_Organismo", type="string", length=12, nullable=false)
+     */
+    private $posicOrganismo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Posic_Cliente", type="string", length=12, nullable=false)
+     */
+    private $posicCliente;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="Calcular", type="boolean", nullable=false)
+     */
+    private $calcular;
+
+
+
+    /**
+     * Get contador1
+     *
+     * @return integer 
+     */
+    public function getContador1()
+    {
+        return $this->contador1;
+    }
+
+    /**
+     * Set tipoDoc
+     *
+     * @param string $tipoDoc
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setTipoDoc($tipoDoc)
+    {
+        $this->tipoDoc = $tipoDoc;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoDoc
+     *
+     * @return string 
+     */
+    public function getTipoDoc()
+    {
+        return $this->tipoDoc;
+    }
+
+    /**
+     * Set idClasificacion
+     *
+     * @param string $idClasificacion
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setIdClasificacion($idClasificacion)
+    {
+        $this->idClasificacion = $idClasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get idClasificacion
+     *
+     * @return string 
+     */
+    public function getIdClasificacion()
+    {
+        return $this->idClasificacion;
+    }
+
+    /**
+     * Set idAlmacen
+     *
+     * @param string $idAlmacen
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setIdAlmacen($idAlmacen)
+    {
+        $this->idAlmacen = $idAlmacen;
+
+        return $this;
+    }
+
+    /**
+     * Get idAlmacen
+     *
+     * @return string 
+     */
+    public function getIdAlmacen()
+    {
+        return $this->idAlmacen;
+    }
+
+    /**
+     * Set cta
+     *
+     * @param string $cta
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setCta($cta)
+    {
+        $this->cta = $cta;
+
+        return $this;
+    }
+
+    /**
+     * Get cta
+     *
+     * @return string 
+     */
+    public function getCta()
+    {
+        return $this->cta;
+    }
+
+    /**
+     * Set deMb
+     *
+     * @param boolean $deMb
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setDeMb($deMb)
+    {
+        $this->deMb = $deMb;
+
+        return $this;
+    }
+
+    /**
+     * Get deMb
+     *
+     * @return boolean 
+     */
+    public function getDeMb()
+    {
+        return $this->deMb;
+    }
+
+    /**
+     * Set subcta
+     *
+     * @param string $subcta
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setSubcta($subcta)
+    {
+        $this->subcta = $subcta;
+
+        return $this;
+    }
+
+    /**
+     * Get subcta
+     *
+     * @return string 
+     */
+    public function getSubcta()
+    {
+        return $this->subcta;
+    }
+
+    /**
+     * Set analisis
+     *
+     * @param string $analisis
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setAnalisis($analisis)
+    {
+        $this->analisis = $analisis;
+
+        return $this;
+    }
+
+    /**
+     * Get analisis
+     *
+     * @return string 
+     */
+    public function getAnalisis()
+    {
+        return $this->analisis;
+    }
+
+    /**
+     * Set subanalisis
+     *
+     * @param string $subanalisis
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setSubanalisis($subanalisis)
+    {
+        $this->subanalisis = $subanalisis;
+
+        return $this;
+    }
+
+    /**
+     * Get subanalisis
+     *
+     * @return string 
+     */
+    public function getSubanalisis()
+    {
+        return $this->subanalisis;
+    }
+
+    /**
+     * Set epigrafe
+     *
+     * @param string $epigrafe
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setEpigrafe($epigrafe)
+    {
+        $this->epigrafe = $epigrafe;
+
+        return $this;
+    }
+
+    /**
+     * Get epigrafe
+     *
+     * @return string 
+     */
+    public function getEpigrafe()
+    {
+        return $this->epigrafe;
+    }
+
+    /**
+     * Set partida
+     *
+     * @param string $partida
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setPartida($partida)
+    {
+        $this->partida = $partida;
+
+        return $this;
+    }
+
+    /**
+     * Get partida
+     *
+     * @return string 
+     */
+    public function getPartida()
+    {
+        return $this->partida;
+    }
+
+    /**
+     * Set posicAlmacen
+     *
+     * @param string $posicAlmacen
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setPosicAlmacen($posicAlmacen)
+    {
+        $this->posicAlmacen = $posicAlmacen;
+
+        return $this;
+    }
+
+    /**
+     * Get posicAlmacen
+     *
+     * @return string 
+     */
+    public function getPosicAlmacen()
+    {
+        return $this->posicAlmacen;
+    }
+
+    /**
+     * Set posicOrganismo
+     *
+     * @param string $posicOrganismo
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setPosicOrganismo($posicOrganismo)
+    {
+        $this->posicOrganismo = $posicOrganismo;
+
+        return $this;
+    }
+
+    /**
+     * Get posicOrganismo
+     *
+     * @return string 
+     */
+    public function getPosicOrganismo()
+    {
+        return $this->posicOrganismo;
+    }
+
+    /**
+     * Set posicCliente
+     *
+     * @param string $posicCliente
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setPosicCliente($posicCliente)
+    {
+        $this->posicCliente = $posicCliente;
+
+        return $this;
+    }
+
+    /**
+     * Get posicCliente
+     *
+     * @return string 
+     */
+    public function getPosicCliente()
+    {
+        return $this->posicCliente;
+    }
+
+    /**
+     * Set calcular
+     *
+     * @param boolean $calcular
+     * @return CuadreFinanzasConfigCxc1
+     */
+    public function setCalcular($calcular)
+    {
+        $this->calcular = $calcular;
+
+        return $this;
+    }
+
+    /**
+     * Get calcular
+     *
+     * @return boolean 
+     */
+    public function getCalcular()
+    {
+        return $this->calcular;
+    }
+}

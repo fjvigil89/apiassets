@@ -1,0 +1,144 @@
+DetalleOrdencompra:
+    type: entity
+    table: Detalle_OrdenCompra
+    indexes:
+        IX_Detalle_OrdenCompra_1:
+            columns:
+                - Contador
+        IX_Detalle_OrdenCompra:
+            columns:
+                - Id_Almacen
+                - Id_Producto
+    id:
+        idOrdencompra:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_OrdenCompra
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoOrdencompra:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_OrdenCompra
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        idProdproveedor:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Id_ProdProveedor
+        nombreProdproveedor:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nombre_ProdProveedor
+        umProveedor:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Proveedor
+        cantidadOrdenada:
+            type: decimal
+            nullable: false
+            precision: 13
+            scale: 4
+            default: '0'
+            column: Cantidad_Ordenada
+        cantidadRecibida:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: Cantidad_Recibida
+        precioCostoproveedor:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000000'
+            column: Precio_CostoProveedor
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        precioCostoproveedormn:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.0000000'
+            column: Precio_CostoProveedorMn
+        importemn:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMN
+        cerrada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrada
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Items
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        resto:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: Resto
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        cerrado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado
+        fechaEntrega:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Entrega
+    lifecycleCallbacks: {  }

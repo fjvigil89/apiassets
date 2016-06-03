@@ -1,0 +1,63 @@
+PrprocesoCierre:
+    type: entity
+    table: PrProceso_Cierre
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        fechaIni:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Ini
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Fin
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        anoCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        mesCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        confirmado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Confirmado
+        contadorAccess:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CONTADOR_ACCESS
+        cierreJaguey:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cierre_Jaguey
+    lifecycleCallbacks: {  }

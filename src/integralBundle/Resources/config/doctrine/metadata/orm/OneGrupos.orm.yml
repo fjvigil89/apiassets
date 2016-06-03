@@ -1,0 +1,23 @@
+OneGrupos:
+    type: entity
+    table: ONE_Grupos
+    id:
+        idGrupo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Grupo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Descripcion
+    lifecycleCallbacks: {  }

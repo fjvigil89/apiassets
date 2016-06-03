@@ -1,0 +1,28 @@
+Sysobjssysx:
+    type: entity
+    table: SysObjsSysx
+    id:
+        contador9:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador9
+            generator:
+                strategy: IDENTITY
+    fields:
+        xTmp:
+            type: string
+            nullable: false
+            length: 600
+            fixed: false
+            default: ''
+            column: _x_Tmp
+        u:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: _U
+    lifecycleCallbacks: {  }

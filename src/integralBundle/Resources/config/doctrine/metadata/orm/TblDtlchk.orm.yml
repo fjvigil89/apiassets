@@ -1,0 +1,67 @@
+TblDtlchk:
+    type: entity
+    table: TBL_DTLCHK
+    id:
+        dcBankcod:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Dc_BankCod
+        dcCtacod:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            id: true
+            column: Dc_CtaCod
+    fields:
+        dcCtadesc:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Dc_CtaDesc
+        dcCtatyp:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Dc_CtaTyp
+        dcChkseq:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dc_ChkSeq
+        dcCtabalance:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dc_CtaBalance
+        chequeFolio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cheque_Folio
+        grupoListar:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Grupo_Listar
+        saldoIniMp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Ini_MP
+    lifecycleCallbacks: {  }

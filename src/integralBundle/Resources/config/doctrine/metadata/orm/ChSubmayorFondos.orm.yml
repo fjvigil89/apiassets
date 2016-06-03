@@ -1,0 +1,79 @@
+ChSubmayorFondos:
+    type: entity
+    table: CH_SubMayor_Fondos
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idFondo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        transaccion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Transaccion
+        operacion:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: D
+            column: Operacion
+        docReferencia:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: Doc_Referencia
+        debe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Debe
+        haber:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Haber
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Saldo
+        idCliente:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Cliente
+    lifecycleCallbacks: {  }

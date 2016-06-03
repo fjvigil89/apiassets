@@ -1,0 +1,102 @@
+AlquilerPrefacturadetalle:
+    type: entity
+    table: Alquiler_PreFacturaDetalle
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        fechaAlquiler:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Alquiler
+        precioVentaumfacturamb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Precio_VentaUmFacturaMB
+        precioVentaumfacturamc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Precio_VentaUmFacturaMC
+        cantidadFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Cantidad_Factura
+        descuentomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: DescuentoMB
+        descuentomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: DescuentoMC
+        recargomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: RecargoMB
+        recargomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: RecargoMC
+        importeMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_MB
+        importeMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_MC
+        tipoFactura:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Factura
+        observaciones:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Observaciones
+    lifecycleCallbacks: {  }

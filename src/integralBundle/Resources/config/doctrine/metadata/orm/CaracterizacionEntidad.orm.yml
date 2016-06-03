@@ -1,0 +1,711 @@
+CaracterizacionEntidad:
+    type: entity
+    table: Caracterizacion_Entidad
+    id:
+        nombreEmpresa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            id: true
+            column: Nombre_Empresa
+            generator:
+                strategy: IDENTITY
+    fields:
+        direccion:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Direccion
+        ciudad:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Ciudad
+        provincia:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Provincia
+        codigoPostal:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Codigo_Postal
+        telefono:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Telefono
+        fax:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Fax
+        organismo:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Organismo
+        codigoEntidad:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Codigo_Entidad
+        conexionConcontabilidadcobros:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadCobros
+        comprobanteCobroConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Cobro_Confirmado
+        conexionConcontabilidadpagos:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadPagos
+        comprobantePagoConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Pago_Confirmado
+        conexionConcontabilidadrecep:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadRecep
+        comprobanteRecepcionConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Recepcion_Confirmado
+        conexionConcontabilidadfactura:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadFactura
+        comprobanteFacturaConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Factura_Confirmado
+        conexionConcontabilidaddevoluc:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadDevoluc
+        comprobanteDevolConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Devol_Confirmado
+        conexionConcontabilidadscosto:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadSCosto
+        comprobanteScostoConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Scosto_Confirmado
+        conexionConcontabilidadajprecio:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadAjPrecio
+        comprobanteAjusteConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Ajuste_Confirmado
+        conexionConcontabilidadafijos:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadAFijos
+        comprobanteActivosConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Activos_Confirmado
+        conexionConcontabilidadutiles:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadUtiles
+        comprobanteUtilesConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Utiles_Confirmado
+        ultimoAnocerrado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ultimo_AnoCerrado
+        ruc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: RUC
+        condicion1:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: Entre
+            column: Condicion1
+        menosde1:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MenosDe1
+        masde1:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '30'
+            column: MasDe1
+        condicion2:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: Entre
+            column: Condicion2
+        menosde2:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '31'
+            column: MenosDe2
+        masde2:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '60'
+            column: MasDe2
+        condicion3:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: Entre
+            column: Condicion3
+        menosde3:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '61'
+            column: MenosDe3
+        masde3:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '90'
+            column: MasDe3
+        condicion4:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: Entre
+            column: Condicion4
+        menosde4:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '91'
+            column: MenosDe4
+        masde4:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '120'
+            column: MasDe4
+        condicion5:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: 'Mas de'
+            column: Condicion5
+        menosde5:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '120'
+            column: MenosDe5
+        masde5:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MasDe5
+        idEmpleadoContador:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado_Contador
+        contador:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Contador
+        correo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Correo
+        espFactura:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Esp_Factura
+        pieFactura:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Pie_Factura
+        pieOferta:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Pie_Oferta
+        tituloFacturasindespachar:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Titulo_FacturaSinDespachar
+        modoEntradadatos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Modo_EntradaDatos
+        inventarioApreciodeventa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Inventario_APrecioDeVenta
+        generaFacturaot:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Genera_FacturaOT
+        generaIrop:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Genera_IrOp
+        recalculaListapreciosrecepciones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recalcula_ListaPreciosRecepciones
+        generaEntradaaf:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Genera_Entradaaf
+        generaEntradaafre:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Genera_Entradaafre
+        depreciarApartirmismomes:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Depreciar_APartirMismoMes
+        generaEntradauh:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Genera_EntradaUH
+        tipoDistribucionOc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '2'
+            column: Tipo_Distribucion_OC
+        licenciaVenta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Licencia_Venta
+        licenciaServicio:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Licencia_Servicio
+        numeroLicencia:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Numero_Licencia
+        cuentaBancaria:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Cuenta_Bancaria
+        cuentaBancariamn:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Cuenta_BancariaMN
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '4'
+            column: Nivel
+        agrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Agrupacion
+        descAgrupacion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Agrupacion
+        idNivel:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Nivel
+        descNivel:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Nivel
+        nivel1:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: 'Nivel 1'
+            column: Nivel1
+        nivel2:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: 'Nivel 2'
+            column: Nivel2
+        nivel3:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: 'Nivel 3'
+            column: Nivel3
+        nivel4:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: 'Nivel 4'
+            column: Nivel4
+        usarMc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_MC
+        monedaBase:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda_Base
+        monedaComple:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda_Comple
+        logo:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: Logo
+        codajusteMerma:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: CodAjuste_Merma
+        idEntradaActivoIr:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Entrada_Activo_IR
+        idClasifEntradaUhSc:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Clasif_Entrada_UH_SC
+        cierreinventariomensual:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: CierreInventarioMensual
+        porcIrenta:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0'
+            column: Porc_IRenta
+        generarOrdencompra:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Generar_OrdenCompra
+        umAnlsventa:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: UM_AnlsVenta
+        logoiso:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: LogoISO
+        idCausasajusteaum:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausasAjusteAum
+        idCausasajustedec:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausasAjusteDec
+        conexionConcontabilidadotrabajo:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadOtrabajo
+        comprobanteOtrabajoConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Otrabajo_Confirmado
+        costostandard:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CostoStandard
+        minmaxEndias:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MinMax_Endias
+        aplicacosto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AplicaCosto
+        recepCiega:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recep_Ciega
+        entidadContabiliza:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Entidad_Contabiliza
+        recValifact:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Rec_ValiFact
+        costostandardsemi:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CostoStandardSemi
+        consigna:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Consigna
+        fld001:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+        fld002:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '180'
+        trabajarconNcf:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: TrabajarCon_NCF
+        ncfLong:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NCF_long
+        genclientes:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: GenClientes
+        genprove:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: GenProve
+        lengencliente:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '4'
+            column: LenGenCliente
+        lengenprove:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '4'
+            column: LenGenProve
+        codecountcliente:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CodeCountCliente
+        codecountprove:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CodeCountProve
+        tipoDistribucionFact:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Distribucion_Fact
+        conexionConcontabilidadnominas:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Conexion_conContabilidadNominas
+        comprobanteNominasConfirmado:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Comprobante_Nominas_Confirmado
+        actividad:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Actividad
+        multiplesBdNominas:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Multiples_BD_Nominas
+        viewreti:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ViewReti
+        umAnlscompra:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: UM_AnlsCompra
+        docUserLogged:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Doc_User_Logged
+        usarWeb:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_WEB
+    lifecycleCallbacks: {  }

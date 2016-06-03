@@ -1,0 +1,52 @@
+ProductosEquivalentes:
+    type: entity
+    table: Productos_Equivalentes
+    indexes:
+        IX_Productos_Equivalentes:
+            columns:
+                - Id_Producto_Destino
+                - Id_Almacen
+                - Producto_Padre
+    id:
+        productoPadre:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Producto_Padre
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Almacen
+        idProductoDestino:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto_Destino
+    fields:
+        nombreProductoDestino:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            column: Nombre_Producto_Destino
+        umDestino:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Um_Destino
+        factorConversion:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '1'
+            column: Factor_Conversion
+    lifecycleCallbacks: {  }

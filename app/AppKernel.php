@@ -23,7 +23,7 @@ class AppKernel extends Kernel
 
             //new AppBundle\AppBundle(),
             new webServiceBundle\webServiceBundle(),
-
+            new integralBundle\integralBundle(),            
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'])) {

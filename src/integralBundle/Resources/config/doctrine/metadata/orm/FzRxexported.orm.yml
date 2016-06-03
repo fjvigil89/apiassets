@@ -1,0 +1,34 @@
+FzRxexported:
+    type: entity
+    table: Fz_RXExported
+    id:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Agrupacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        idModulo:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_Modulo
+        tipoExport:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Export
+        lastUpdate:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Last_Update
+    lifecycleCallbacks: {  }

@@ -1,0 +1,50 @@
+Prorrateo:
+    type: entity
+    table: Prorrateo
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        fecha:
+            type: datetime
+            nullable: false
+            column: Fecha
+        fechaIni:
+            type: datetime
+            nullable: false
+            column: Fecha_Ini
+        fechaFin:
+            type: datetime
+            nullable: false
+            column: Fecha_Fin
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Compro
+        anoCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Ano_Compro
+        mesCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Mes_Compro
+        confirmado:
+            type: boolean
+            nullable: false
+            column: Confirmado
+        contadorAccess:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: CONTADOR_ACCESS
+    lifecycleCallbacks: {  }

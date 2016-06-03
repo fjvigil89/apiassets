@@ -1,0 +1,21 @@
+OneGruposDet:
+    type: entity
+    table: ONE_Grupos_Det
+    id:
+        idGrupo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Grupo
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Agrupacion
+    lifecycleCallbacks: {  }

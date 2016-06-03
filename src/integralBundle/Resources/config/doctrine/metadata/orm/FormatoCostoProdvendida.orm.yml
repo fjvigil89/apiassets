@@ -1,0 +1,92 @@
+FormatoCostoProdvendida:
+    type: entity
+    table: Formato_Costo_ProdVendida
+    id:
+        fila:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Fila
+            generator:
+                strategy: IDENTITY
+    fields:
+        ordenListado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Listado
+        ctaI:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_I
+        ctaF:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_F
+        descripcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion
+        operacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Operacion
+        filaInicio:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Inicio
+        filaFinal:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Final
+        tipoValor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Tipo_Valor
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo
+        filaPorciento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Porciento
+        saldoListado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Listado
+        saldoAimprimir:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_AImprimir
+    lifecycleCallbacks: {  }

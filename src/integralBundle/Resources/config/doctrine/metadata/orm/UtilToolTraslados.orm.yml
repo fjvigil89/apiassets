@@ -1,0 +1,258 @@
+UtilToolTraslados:
+    type: entity
+    table: Util_Tool_Traslados
+    id:
+        idTraslado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_Traslado
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Almacen
+        anoTraslado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano_Traslado
+    fields:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        idUh:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_UH
+        descUh:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_UH
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        idCcostoold:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CcostoOld
+        descCcostoold:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_CcostoOld
+        idArearesponsabilidadold:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResponsabilidadOld
+        descArearesponsabilidadold:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_AreaResponsabilidadOld
+        idEmpleadoold:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_EmpleadoOld
+        descEmpleadoold:
+            type: string
+            nullable: false
+            length: 61
+            fixed: false
+            default: ''
+            column: Desc_EmpleadoOld
+        idCcostonew:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CcostoNew
+        descCcostonew:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_CcostoNew
+        idArearesponsabilidadnew:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResponsabilidadNew
+        descArearesponsabilidadnew:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_AreaResponsabilidadNew
+        idEmpleadonew:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_EmpleadoNew
+        descEmpleadonew:
+            type: string
+            nullable: false
+            length: 61
+            fixed: false
+            default: ''
+            column: Desc_EmpleadoNew
+        fechaTraslado:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Traslado
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        idComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Comprobante
+        anoComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Comprobante
+        mesComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Comprobante
+        cantidadold:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0'
+            column: CantidadOld
+        precioold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PrecioOld
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        preciomcold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PrecioMCOld
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        idClasifTrasladoUh:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Clasif_Traslado_UH
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+        precionew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PrecioNew
+        preciomcnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PrecioMCNew
+        cantidadnew:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0'
+            column: CantidadNew
+        descUhchg:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Desc_UHChg
+        descUhnew:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_UHNew
+    lifecycleCallbacks: {  }

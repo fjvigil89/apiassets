@@ -1,0 +1,98 @@
+UtilToolSalidasDetalles:
+    type: entity
+    table: Util_Tool_Salidas_Detalles
+    indexes:
+        IX_Util_Tool_Salidas_Detalles:
+            columns:
+                - Contador
+    id:
+        anoSalida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano_Salida
+            generator:
+                strategy: IDENTITY
+    fields:
+        idSalida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Salida
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ccosto
+        idArearesponsabilidad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResponsabilidad
+        descArearesponsabilidad:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_AreaResponsabilidad
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        descEmpleado:
+            type: string
+            nullable: false
+            length: 61
+            fixed: false
+            default: ''
+            column: Desc_Empleado
+        cantidad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cantidad
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        valorInicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Inicial
+        valorInicialmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_InicialMC
+    lifecycleCallbacks: {  }

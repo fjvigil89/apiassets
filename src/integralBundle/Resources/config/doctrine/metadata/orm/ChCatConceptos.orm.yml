@@ -1,0 +1,23 @@
+ChCatConceptos:
+    type: entity
+    table: CH_Cat_Conceptos
+    id:
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Concepto
+            generator:
+                strategy: IDENTITY
+    fields:
+        descConcepto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Concepto
+    lifecycleCallbacks: {  }

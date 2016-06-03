@@ -1,0 +1,142 @@
+FormatoEstadoResultadoa:
+    type: entity
+    table: Formato_Estado_ResultadoA
+    id:
+        fila:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Fila
+            generator:
+                strategy: IDENTITY
+    fields:
+        ordenListado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Listado
+        ctambI:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CtaMB_I
+        ctambF:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CtaMB_F
+        ctamcI:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CtaMC_I
+        ctamcF:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CtaMC_F
+        descripcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion
+        operacionmb:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: OperacionMB
+        operacionmc:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: OperacionMC
+        filaIniciomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_InicioMB
+        filaFinalmb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_FinalMB
+        filaIniciomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_InicioMC
+        filaFinalmc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_FinalMC
+        tipoValor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Tipo_Valor
+        filaPorciento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Porciento
+        otros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros
+        saldoIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_INI
+        saldoperMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoPER_MB
+        saldoperMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoPER_MC
+        saldoFin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_FIN
+        naturaleza:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Naturaleza
+    lifecycleCallbacks: {  }

@@ -1,0 +1,22 @@
+ActivoFijoTipos:
+    type: entity
+    table: Activo_Fijo_Tipos
+    id:
+        idTipoactivofijo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            id: true
+            column: Id_TipoActivoFijo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descTipoactivofijo:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_TipoActivoFijo
+    lifecycleCallbacks: {  }

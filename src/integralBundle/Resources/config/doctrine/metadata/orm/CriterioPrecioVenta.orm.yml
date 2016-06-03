@@ -1,0 +1,109 @@
+CriterioPrecioVenta:
+    type: entity
+    table: Criterio_Precio_Venta
+    id:
+        codigo:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            id: true
+            column: Codigo
+            generator:
+                strategy: IDENTITY
+    fields:
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        calcular:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Calcular
+        condicion1:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Condicion1
+        signo1:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: +
+            column: Signo1
+        condicion2:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Condicion2
+        valor1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Valor1
+        signo2:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: +
+            column: Signo2
+        condicion3:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Condicion3
+        valor2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Valor2
+        signo3:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: +
+            column: Signo3
+        condicion4:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Condicion4
+        valor3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Valor3
+        signo4:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: +
+            column: Signo4
+        condicion5:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Condicion5
+        valor4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Valor4
+    lifecycleCallbacks: {  }

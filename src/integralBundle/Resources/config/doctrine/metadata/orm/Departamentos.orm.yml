@@ -1,0 +1,32 @@
+Departamentos:
+    type: entity
+    table: Departamentos
+    uniqueConstraints:
+        PK_Departamentos:
+            columns:
+                - Id_Area
+                - Id_Departamento
+    id:
+        descDepartamento:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            id: true
+            column: Desc_Departamento
+            generator:
+                strategy: IDENTITY
+    fields:
+        idArea:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Area
+        idDepartamento:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Departamento
+    lifecycleCallbacks: {  }

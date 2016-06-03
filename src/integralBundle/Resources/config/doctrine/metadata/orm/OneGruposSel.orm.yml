@@ -1,0 +1,22 @@
+OneGruposSel:
+    type: entity
+    table: ONE_Grupos_Sel
+    id:
+        idGrupo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Grupo
+            generator:
+                strategy: IDENTITY
+    fields:
+        usarallAgrup:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: UsarALL_Agrup
+    lifecycleCallbacks: {  }

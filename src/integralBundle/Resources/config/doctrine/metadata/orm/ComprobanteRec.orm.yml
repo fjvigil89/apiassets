@@ -1,0 +1,127 @@
+ComprobanteRec:
+    type: entity
+    table: Comprobante_Rec
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idRef:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ref
+        tipoComp:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Tipo_Comp
+        hechoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Hecho_Por
+        revisadoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Revisado_Por
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes
+        idComproref:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_ComproRef
+        anoref:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AnoRef
+        mesref:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MesRef
+        idAgrupacionref:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AgrupacionRef
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        claveTipoComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clave_Tipo_Comprobante
+        notas:
+            type: string
+            nullable: false
+            length: 370
+            fixed: false
+            default: ''
+            column: Notas
+    lifecycleCallbacks: {  }

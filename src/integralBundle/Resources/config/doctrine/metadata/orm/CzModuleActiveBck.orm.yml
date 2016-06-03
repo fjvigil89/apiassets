@@ -1,0 +1,91 @@
+CzModuleActiveBck:
+    type: entity
+    table: Cz_Module_Active_Bck
+    id:
+        spid:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: SpId
+            generator:
+                strategy: IDENTITY
+    fields:
+        resultado:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Resultado
+        computer:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Computer
+        loginName:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            column: Login_Name
+        fecha:
+            type: datetime
+            nullable: false
+            column: Fecha
+        nota:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: Nota
+        userAssets:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: User_Assets
+        moduleId:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            column: Module_Id
+        nro:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Nro
+        sec:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Sec
+        computerId:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Computer_Id
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+        rowsIniZz:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Rows_Ini_ZZ
+        spidUpdated:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: SpId_Updated
+        obs:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            column: Obs
+    lifecycleCallbacks: {  }

@@ -1,0 +1,55 @@
+DetallePedidoseguimto:
+    type: entity
+    table: Detalle_PedidoSeguimto
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        actividad:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Actividad
+        responsable:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Responsable
+        fechaPlan:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Plan
+        fechaReal:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Real
+        cumplido:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cumplido
+        cancelado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cancelado
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+    lifecycleCallbacks: {  }

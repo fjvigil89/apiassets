@@ -1,0 +1,23 @@
+Pvxd01vuelo:
+    type: entity
+    table: PVXD_01Vuelo
+    id:
+        idVuelo:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Vuelo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descVuelo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Vuelo
+    lifecycleCallbacks: {  }

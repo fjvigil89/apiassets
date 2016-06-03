@@ -1,0 +1,23 @@
+SubctaExcluirAgJag:
+    type: entity
+    table: SubCta_Excluir_AG_Jag
+    id:
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            id: true
+            column: CTA
+            generator:
+                strategy: IDENTITY
+    fields:
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+    lifecycleCallbacks: {  }

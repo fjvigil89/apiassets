@@ -1,0 +1,47 @@
+DetalleOrdencompradoc:
+    type: entity
+    table: Detalle_OrdenCompraDoc
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Doc
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoDoc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Doc
+        contadordoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorDoc
+        tipodoc:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: TipoDoc
+    lifecycleCallbacks: {  }

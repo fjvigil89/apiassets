@@ -1,0 +1,170 @@
+RegAfcop:
+    type: entity
+    table: Reg_AFCop
+    id:
+        subcontrol:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Subcontrol
+            generator:
+                strategy: IDENTITY
+    fields:
+        especificacionActivo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Especificacion_Activo
+        actividad:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            column: Actividad
+        movimiento:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            column: Movimiento
+        gpoCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Gpo_CCosto
+        operacion:
+            type: boolean
+            nullable: false
+            column: Operacion
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Cta
+        tipoSubcta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Tipo_SubCta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: SubCta
+        tipoAnalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Tipo_Analisis
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Analisis
+        tipoSubanalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Tipo_Subanalisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: SubAnalisis
+        tipoEpigrafe:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Tipo_Epigrafe
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Epigrafe
+        tipoPartida:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Tipo_Partida
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Partida
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Items
+        field1:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Field1
+        op1:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            column: Op1
+        field2:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Field2
+        op2:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            column: Op2
+        field3:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Field3
+        op3:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            column: Op3
+        field4:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Field4
+        op4:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            column: Op4
+        field5:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Field5
+        depreciacMensual:
+            type: boolean
+            nullable: false
+            column: Depreciac_Mensual
+        impAlquilerventa:
+            type: boolean
+            nullable: false
+            column: Imp_AlquilerVenta
+        copiar:
+            type: boolean
+            nullable: false
+            column: Copiar
+    lifecycleCallbacks: {  }

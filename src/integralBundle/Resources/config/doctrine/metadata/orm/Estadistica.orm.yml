@@ -1,0 +1,98 @@
+Estadistica:
+    type: entity
+    table: Estadistica
+    id:
+        clasificacion:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: Clasificacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        movimiento:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Movimiento
+        enero:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Enero
+        febrero:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Febrero
+        marzo:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Marzo
+        abril:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Abril
+        mayo:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Mayo
+        junio:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Junio
+        julio:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Julio
+        agosto:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Agosto
+        septiembre:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Septiembre
+        octubre:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Octubre
+        noviembre:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Noviembre
+        diciembre:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Diciembre
+        orden:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Orden
+    lifecycleCallbacks: {  }

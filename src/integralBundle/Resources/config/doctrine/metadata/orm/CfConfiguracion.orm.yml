@@ -1,0 +1,61 @@
+CfConfiguracion:
+    type: entity
+    table: CF_Configuracion
+    id:
+        numeroConfiguracion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Numero_Configuracion
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+        observaciones:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            column: Observaciones
+        metodoPronostico:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Metodo_Pronostico
+        fechaIni:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_INI
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_FIN
+        idAgrupaciones:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Id_Agrupaciones
+        hechoPor:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Hecho_Por
+        showFilaInrep:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Show_Fila_InRep
+    lifecycleCallbacks: {  }

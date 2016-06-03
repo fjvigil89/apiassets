@@ -1,0 +1,193 @@
+ChCobrosMc:
+    type: entity
+    table: CH_Cobros_MC
+    indexes:
+        ix_CH_cobros_MC_1:
+            columns:
+                - Fecha
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idRecibo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Recibo
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        idReferencia:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Id_Referencia
+        contadorCobro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Cobro
+        idCobro:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: ID_Cobro
+        anoDoc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Doc
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Estado
+        fechaPago:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Pago
+        fechaVence:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Vence
+        formaPago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Forma_Pago
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        tipoCobro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Cobro
+        descCliente:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: Importe
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        dcCtacod:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: DC_CTACOD
+        entregadoPor:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Entregado_Por
+        estadoDepositado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado_Depositado
+        fechaDepositado:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Depositado
+        idFpago:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_FPago
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+        ordenImpresion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Impresion
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        idFondo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo
+    lifecycleCallbacks: {  }

@@ -1,0 +1,146 @@
+ChAtarjetasDet:
+    type: entity
+    table: CH_ATarjetas_Det
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idTarjeta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Tarjeta
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+        tipoMovim:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Movim
+        idFondo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '3'
+            column: Estado
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        descEmpleado:
+            type: string
+            nullable: false
+            length: 65
+            fixed: false
+            default: ''
+            column: Desc_Empleado
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe
+        importeLiquidado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_Liquidado
+        observaciones:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Observaciones
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        contabilizado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contabilizado
+        contabilizadoLiquidado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contabilizado_Liquidado
+        reembolsado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Reembolsado
+    lifecycleCallbacks: {  }

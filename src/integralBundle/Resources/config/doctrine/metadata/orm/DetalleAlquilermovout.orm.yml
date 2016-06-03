@@ -1,0 +1,91 @@
+DetalleAlquilermovout:
+    type: entity
+    table: Detalle_AlquilerMovOut
+    indexes:
+        IX_Detalle_AlquilerMovOut:
+            columns:
+                - Contador
+    id:
+        anoAlquilermov:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano_AlquilerMov
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAlmacenmov:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AlmacenMov
+        idAlquilermov:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_AlquilerMov
+        tipo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo
+        idRotulo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Rotulo
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Activofijo
+        descActivofijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_ActivoFijo
+        fechaDevolucion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Devolucion
+        idEstadoActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado_Activo
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idArearesp:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: ID_AreaResp
+    lifecycleCallbacks: {  }

@@ -1,0 +1,34 @@
+BrigadaEmpleados:
+    type: entity
+    table: Brigada_Empleados
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Id
+            generator:
+                strategy: IDENTITY
+    fields:
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        idBrigada:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Brigada
+        descComercial:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Comercial
+    lifecycleCallbacks: {  }

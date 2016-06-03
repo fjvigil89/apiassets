@@ -1,0 +1,223 @@
+OneFormatoG1c:
+    type: entity
+    table: ONE_Formato_G1C
+    id:
+        fila:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Fila
+            generator:
+                strategy: IDENTITY
+    fields:
+        ordenListado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Listado
+        idElemgasto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_ElemGasto
+        idSubelemgasto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_SubElemGasto
+        descripcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion
+        operacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Operacion
+        filaInicio:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Inicio
+        filaFinal:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Final
+        tipoValor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Tipo_Valor
+        saldoIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_INI
+        saldoPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_PER
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo
+        filaPorciento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Porciento
+        saldoListado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Listado
+        saldoAimprimir:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_AImprimir
+        descripcionAlterna:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion_Alterna
+        columnTouse:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Column_ToUse
+        saldoFin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_FIN
+        saldoxIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoX_INI
+        saldoxPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoX_PER
+        saldoxFin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoX_FIN
+        formula:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: ''
+            column: Formula
+        operadorCondicion:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            default: ''
+            column: Operador_Condicion
+        valorCondicion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Condicion
+        imprimir:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Imprimir
+        planPresup:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Presup
+        realPresup:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Real_Presup
+        planTurquino:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Turquino
+        realTurquino:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Real_Turquino
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+        editable:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Editable
+        field1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: Field1
+        field2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: Field2
+        field3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Field3
+        field4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Field4
+    lifecycleCallbacks: {  }

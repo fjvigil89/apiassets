@@ -1,0 +1,220 @@
+DetalleOrdentrabajo:
+    type: entity
+    table: Detalle_OrdenTrabajo
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idOtrabajo:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Otrabajo
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoOtrabajo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Otrabajo
+        items:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Almacen
+        cantidadEntregada:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Cantidad_Entregada
+        precioCostoumalmacenmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoUmAlmacenMB
+        precioCostoumalmacenmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoUmAlmacenMC
+        importecostoMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteCosto_MB
+        importecostoMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteCosto_MC
+        referencia:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Referencia
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        productoOservicio:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Producto_oServicio
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        etapa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Etapa
+        factura:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Factura
+        contafactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContaFactura
+        facturar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Facturar
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+        itemsvale:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ItemsVale
+        facturado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Facturado
+        idNofacturar:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: Id_nofacturar
+        cerrar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrar
+        refComprobante:
+            type: string
+            nullable: false
+            length: 18
+            fixed: false
+            default: ''
+            column: Ref_Comprobante
+        refComprocancela:
+            type: string
+            nullable: false
+            length: 18
+            fixed: false
+            default: ''
+            column: Ref_ComproCancela
+        fechaCierre:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Cierre
+        fechaCancelacion:
+            type: datetime
+            nullable: true
+            default: '0'
+            column: Fecha_Cancelacion
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        anuladoContabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Anulado_Contabilizado
+        cierreactividad:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: CierreActividad
+        especificacion:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Especificacion
+        actividadcerrada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ActividadCerrada
+    lifecycleCallbacks: {  }

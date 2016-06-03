@@ -1,0 +1,28 @@
+CrmClientesConsec:
+    type: entity
+    table: CRM_Clientes_Consec
+    id:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: '0'
+            id: true
+            column: Id_Cliente
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        consec:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec
+    lifecycleCallbacks: {  }

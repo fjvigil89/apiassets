@@ -1,0 +1,131 @@
+ChFondos:
+    type: entity
+    table: CH_Fondos
+    id:
+        idFondo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Fondo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descFondo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Fondo
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        anticipos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Anticipos
+        pagosMenores:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pagos_Menores
+        cobrosXdepositar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cobros_xDepositar
+        otros:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Otros
+        fondoInicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fondo_Inicial
+        fondoMaximo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fondo_Maximo
+        tipoFondo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Fondo
+        consecXconcepto:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Consec_xConcepto
+        seArquea:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Se_Arquea
+        seReembolsa:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Se_Reembolsa
+        ctaBankCh:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Cta_Bank_CH
+        trace:
+            type: string
+            nullable: false
+            length: 400
+            fixed: false
+            default: ''
+            column: Trace
+        recibePagos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recibe_Pagos
+        consecInicialAnticipos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Inicial_Anticipos
+        consecInicialArqueos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Inicial_Arqueos
+        consecInicialReembolsos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Inicial_Reembolsos
+        consecInicialLiquidaciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Inicial_Liquidaciones
+        consecInicialTarjetas:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Inicial_Tarjetas
+    lifecycleCallbacks: {  }

@@ -1,0 +1,105 @@
+FzRzo3bcomproSal:
+    type: entity
+    table: Fz_RZo3BCompro_Sal
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAgrupacionCalc:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion_CALC
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: subCta
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Descripcion
+        natu:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Natu
+        fechaMy:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_MY
+        debeAnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Debe_Ant
+        haberAnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Haber_Ant
+        saldoAnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Ant
+        debePer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Debe_Per
+        haberPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Haber_Per
+        saldoPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Per
+        posteada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Posteada
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+    lifecycleCallbacks: {  }

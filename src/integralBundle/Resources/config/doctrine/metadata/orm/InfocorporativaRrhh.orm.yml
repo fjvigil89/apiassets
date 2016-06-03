@@ -1,0 +1,105 @@
+InfocorporativaRrhh:
+    type: entity
+    table: InfoCorporativa_RRHH
+    id:
+        id:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            id: true
+            column: Id
+            generator:
+                strategy: IDENTITY
+    fields:
+        codagrupa:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: CodAgrupa
+        desagrupa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: DesAgrupa
+        ano:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Ano
+        mes:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Mes
+        tipoinfo:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: TipoInfo
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        descClasificacion:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Desc_Clasificacion
+        indicador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Indicador1
+        indicador2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Indicador2
+        indicador3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Indicador3
+        indicador4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Indicador4
+        indicador5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Indicador5
+        indicador6:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Indicador6
+        indicador7:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Indicador7
+        indicador8:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Indicador8
+    lifecycleCallbacks: {  }

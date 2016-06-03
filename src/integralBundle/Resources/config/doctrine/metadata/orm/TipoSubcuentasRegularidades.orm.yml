@@ -1,0 +1,38 @@
+TipoSubcuentasRegularidades:
+    type: entity
+    table: Tipo_SubCuentas_Regularidades
+    indexes:
+        Ix1_Tipo_SubCta:
+            columns:
+                - Documento
+    id:
+        idTipoSubcuenta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_Tipo_Subcuenta
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoSubcuenta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Tipo_Subcuenta
+        documento:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Documento
+        esdeMc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: EsDe_MC
+    lifecycleCallbacks: {  }

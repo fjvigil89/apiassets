@@ -1,0 +1,153 @@
+FzRxauProtrosParam:
+    type: entity
+    table: Fz_RxAU_PROTROS_PARAM
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        documento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Documento
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Fin
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        idProveedor:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        descProveedor:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ''
+            column: Desc_Proveedor
+        cPago:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: C_Pago
+        impDoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Doc
+        impCobrado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Cobrado
+        impPorcobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_PorCobrar
+        impAcobrar1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar1
+        impAcobrar2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar2
+        impAcobrar3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar3
+        impAcobrar4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar4
+        impAcobrar5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar5
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ''
+            column: Id_Organismo
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Moneda
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        impVencido:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Vencido
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+    lifecycleCallbacks: {  }

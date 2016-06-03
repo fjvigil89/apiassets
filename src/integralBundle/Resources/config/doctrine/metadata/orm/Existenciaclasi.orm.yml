@@ -1,0 +1,234 @@
+Existenciaclasi:
+    type: entity
+    table: ExistenciaClasi
+    id:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Almacen
+    fields:
+        valoraCosto:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Valora_Costo
+        criterioSalida:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Criterio_Salida
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        existenciaActual:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Existencia_Actual
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMC
+        minimo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Minimo
+        maximo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Maximo
+        lotes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Lotes
+        ptoReorder:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Pto_Reorder
+        componentes:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Componentes
+        ptoSeguridad:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0.0000'
+            column: Pto_Seguridad
+        ventaPromedio:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 4
+            default: '0.0000'
+            column: Venta_Promedio
+        precioCostoserviciomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Precio_CostoServicioMB
+        precioCostoserviciomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Precio_CostoServicioMC
+        impuestomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: ImpuestoMB
+        abcPorimporte:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ABC_PorImporte
+        abcPorimportevalor:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 6
+            default: '0.000000'
+            column: ABC_PorImporteValor
+        abcPorconsumoprom:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ABC_PorConsumoProm
+        abcPorimpconsumoprom:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 6
+            default: '0.000000'
+            column: ABC_PorImpConsumoProm
+        abcPorventaum:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ABC_PorVentaUM
+        abcPorimpventaum:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 6
+            default: '0.000000'
+            column: ABC_PorImpVentaUM
+        abcPorrota:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ABC_PorRota
+        abcPorimprota:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 6
+            default: '0.000000'
+            column: ABC_PorImpRota
+        abcPorimportecostoventa:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: ABC_PorImporteCostoVenta
+        abcPorimportecostoventavalor:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 6
+            default: '0.000000'
+            column: ABC_PorImporteCostoVentaValor
+        empaque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Empaque
+        idElemgasto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_ElemGasto
+        idSubelemgasto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_SubElemGasto
+        idElemgastomc:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_ElemGastoMC
+        idSubelemgastomc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_SubElemGastoMC
+        idClasiinicio:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Id_ClasiInicio
+    lifecycleCallbacks: {  }

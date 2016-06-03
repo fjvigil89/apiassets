@@ -1,0 +1,140 @@
+CrmSolicitudesClientes:
+    type: entity
+    table: CRM_Solicitudes_Clientes
+    id:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cliente
+            generator:
+                strategy: IDENTITY
+    fields:
+        idSolicitud:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Solicitud
+        fechaEntrada:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Entrada
+        idForma:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: Id_Forma
+        idTipo:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: Id_Tipo
+        idSolicitudIni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Solicitud_Ini
+        notaSolicitud:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Nota_Solicitud
+        idContacto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Contacto
+        idEmpleadoRx:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Empleado_Rx
+        idAnswer:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: Id_Answer
+        notaAnswer:
+            type: string
+            nullable: false
+            length: 180
+            fixed: false
+            default: ''
+            column: Nota_Answer
+        idEmpleadoResp:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado_Resp
+        idEmpleadoExec:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado_Exec
+        fechaExec:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Exec
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Fin
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+        fechaFinReal:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Fin_Real
+        anoSolicitudIni:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Solicitud_Ini
+    lifecycleCallbacks: {  }

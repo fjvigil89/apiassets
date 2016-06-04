@@ -2,7 +2,11 @@ services:
 #    web_service.example:
 #        class: webServiceBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
-    assets.EmpleadosRH:         
+    #assets.EmpleadosRH:         
+    #    parent:     "api.resource"
+    #    arguments:  [ "webServiceBundle\\Entity\\EmpleadosGra" ]
+    #    tags:       [ { name: "api.resource" } ]
+    assets.RhCargos:         
         parent:     "api.resource"
-        arguments:  [ "webServiceBundle\\Entity\\EmpleadosGra" ]
+        arguments:  [ "webServiceBundle\\Entity\\RhCargos" ]
         tags:       [ { name: "api.resource" } ]

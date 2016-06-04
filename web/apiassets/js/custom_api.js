@@ -3,7 +3,7 @@ function metodoGet(item)
 		
 		
 		var data;
-		var url='http://apisalud.upr.edu.cu'+item;
+		var url='http://apiassets.upr.edu.cu'+item;
         $.getJSON(url, function (data) {        		        	                         
         	var res =JSON.stringify(data, null, 8);
             $('#browser').val(url);                        
@@ -17,7 +17,7 @@ function metodoGetId(id)
 	{	
 		
 		// Definimos la URL que vamos a solicitar via Ajax
-		var ajax_url = "http://apisalud.lo/app_dev.php/actituds/"+id;
+		var ajax_url = "http://apiassets.lo/app_dev.php/actituds/"+id;
 
 		// Definimos los parámetros que vamos a enviar
 		//var params = "deformidades=valor&tumoraciones=otro_valor";
@@ -40,7 +40,7 @@ function metodoPost()
 	{	
 		
 		// Definimos la URL que vamos a solicitar via Ajax
-		var ajax_url = "http://apisalud.lo/app_dev.php/segmento_gastros";
+		var ajax_url = "http://apiassets.lo/app_dev.php/segmento_gastros";
 
 		// Definimos los parámetros que vamos a enviar
 		//var params = "deformidades=valor&tumoraciones=otro_valor";
@@ -63,7 +63,7 @@ function metodoPost()
 	function MetodoPut(id)
 	{
 		// Definimos la URL que vamos a solicitar via Ajax
-		var ajax_url = "http://apisalud.lo/app_dev.php/abdomens/"+id;
+		var ajax_url = "http://apiassets.lo/app_dev.php/abdomens/"+id;
 
 		// Definimos los parámetros que vamos a enviar
 		//var params = "deformidades=valor&tumoraciones=otro_valor";
@@ -84,7 +84,7 @@ function metodoPost()
 	function MetodoDelete(id)
 	{
 		// Definimos la URL que vamos a solicitar via Ajax
-		var ajax_url = "http://apisalud.lo/app_dev.php/abdomens/"+id;
+		var ajax_url = "http://apiassets.lo/app_dev.php/abdomens/"+id;
 
 		// Creamos un nuevo objeto encargado de la comunicación
 		var ajax_request = new XMLHttpRequest();

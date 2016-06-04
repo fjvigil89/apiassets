@@ -8,28 +8,11 @@ services:
         public:    false
         factory:   [ "@api.operation_factory", "createCollectionOperation" ]
         arguments: [ "@resource.Acceso", "GET" ]
-
-    resource.ActivoFijo:         
-        parent:     "api.resource"
-        arguments:  [ "integralBundle\\Entity\\ActivoFijo" ]
-        tags:       [ { name: "api.resource" } ]
-    resource.CentroCosto:         
-        parent:     "api.resource"
-        arguments:  [ "integralBundle\\Entity\\CentroCosto" ]
-        tags:       [ { name: "api.resource" } ]
-    resource.CentroCostoGrupos:         
-        parent:     "api.resource"
-        arguments:  [ "integralBundle\\Entity\\CentroCostoGrupos" ]
-        tags:       [ { name: "api.resource" } ]
-    resource.Departamentos:         
-        parent:     "api.resource"
-        arguments:  [ "integralBundle\\Entity\\Departamentos" ]
-        tags:       [ { name: "api.resource" } ]
-    resource.EmpleadosGral:         
+    assets.EmpleadosGral:         
         parent:     "api.resource"
         arguments:  [ "integralBundle\\Entity\\EmpleadosGral" ]
         tags:       [ { name: "api.resource" } ]
-    resource.AreasResponsabilidad:         
+    assets.CentroCosto:         
         parent:     "api.resource"
-        arguments:  [ "integralBundle\\Entity\\AreasResponsabilidad" ]
+        arguments:  [ "integralBundle\\Entity\\CentroCosto" ]
         tags:       [ { name: "api.resource" } ]

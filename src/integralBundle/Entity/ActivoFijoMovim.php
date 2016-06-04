@@ -1283,28 +1283,7 @@ class ActivoFijoMovim
         return $this->op;
     }
 
-    /**
-     * Set fechaop
-     *
-     * @param \DateTime $fechaop
-     * @return ActivoFijoMovim
-     */
-    public function setFechaop($fechaop)
-    {
-        $this->fechaop = $fechaop;
-
-        return $this;
-    }
-
-    /**
-     * Get fechaop
-     *
-     * @return \DateTime 
-     */
-    public function getFechaop()
-    {
-        return $this->fechaop;
-    }
+    
 
     /**
      * Set horaop

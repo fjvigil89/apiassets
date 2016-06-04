@@ -1,0 +1,12 @@
+#private {
+        text-align: center;
+    }   
+.rc-a-tryit {
+		cursor: pointer;
+	}
+a {
+	text-decoration: none !important;
+}
+.paypal-button {
+	display: inline !important;
+}

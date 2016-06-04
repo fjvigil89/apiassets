@@ -733,28 +733,7 @@ class FacturasPoractualizar
         return $this->tipoFactura;
     }
 
-    /**
-     * Set tipofactura
-     *
-     * @param integer $tipofactura
-     * @return FacturasPoractualizar
-     */
-    public function setTipofactura($tipofactura)
-    {
-        $this->tipofactura = $tipofactura;
-
-        return $this;
-    }
-
-    /**
-     * Get tipofactura
-     *
-     * @return integer 
-     */
-    public function getTipofactura()
-    {
-        return $this->tipofactura;
-    }
+    
 
     /**
      * Set fechFactura

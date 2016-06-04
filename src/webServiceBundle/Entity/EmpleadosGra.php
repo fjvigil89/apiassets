@@ -6,14 +6,14 @@ use Doctrine\ORM\Mapping as ORM;
 
 
 /**
- * EmpleadosGral
+ * EmpleadosGra
  *
- * @ORM\Table(name="Empleados_Gral", uniqueConstraints={@ORM\UniqueConstraint(name="IX_Empleados_Gral", columns={"Id_Expediente"})})
+ * @ORM\Table(name="Empleados_Grals")
  * @ORM\Entity(repositoryClass="webServiceBundle\Entity\EmpleadosGralRepository")
  * 
  * 
  */
-class EmpleadosGral
+class EmpleadosGra
 {
     /**
      * @var string

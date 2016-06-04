@@ -1,1 +1,28 @@
-Hello {{ name }}!
+{% extends 'integralBundle::layout.html.twig'%}
+
+{% block body%}
+	{% block header %}
+			<div class="jumbotron" id="private">
+				  <h1>Bienvenidos a {{ name }}</h1>  
+				  <p class="lead">Obtener información sobre las entidades de la Base de Datos Assets via API Rest </p>			
+				<div>
+					v1.0
+					<a href="http://intranet.upr.edu.cu/">UPR</a>
+				</div>
+				<a href="http://intranet.upr.edu.cu/">
+					<img src="{{ asset ('apisalud/img/logo.png') }}" alt="github-octocat">
+				</a>
+
+			</div>
+	{%endblock%}
+	
+
+
+
+
+
+
+
+
+{% endblock%}
+

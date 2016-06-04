@@ -15,7 +15,7 @@ class EmpleadosGral
     /**
      * @var string
      *
-     * @ORM\Column(name="Id_Empleado", type="string", length=15, nullable=false)
+     * @ORM\Column(name="Id_Empleado", type="string", length=15, nullable=true)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
@@ -24,105 +24,105 @@ class EmpleadosGral
     /**
      * @var string
      *
-     * @ORM\Column(name="No_CI", type="string", length=15, nullable=false)
+     * @ORM\Column(name="No_CI", type="string", length=15, nullable=true)
      */
     private $noCi;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Nombre", type="string", length=30, nullable=false)
+     * @ORM\Column(name="Nombre", type="string", length=30, nullable=true)
      */
     private $nombre;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Apellidos", type="string", length=30, nullable=false)
+     * @ORM\Column(name="Apellidos", type="string", length=30, nullable=true)
      */
     private $apellidos;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Direccion", type="string", length=255, nullable=false)
+     * @ORM\Column(name="Direccion", type="string", length=255, nullable=true)
      */
     private $direccion;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Ciudad", type="string", length=50, nullable=false)
+     * @ORM\Column(name="Ciudad", type="string", length=50, nullable=true)
      */
     private $ciudad;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Region", type="string", length=50, nullable=false)
+     * @ORM\Column(name="Region", type="string", length=50, nullable=true)
      */
     private $region;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Codigo_Postal", type="string", length=20, nullable=false)
+     * @ORM\Column(name="Codigo_Postal", type="string", length=20, nullable=true)
      */
     private $codigoPostal;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Pais", type="string", length=50, nullable=false)
+     * @ORM\Column(name="Pais", type="string", length=50, nullable=true)
      */
     private $pais;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Exttelef", type="string", length=15, nullable=false)
+     * @ORM\Column(name="Exttelef", type="string", length=15, nullable=true)
      */
     private $exttelef;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Telefono_Particular", type="string", length=15, nullable=false)
+     * @ORM\Column(name="Telefono_Particular", type="string", length=15, nullable=true)
      */
     private $telefonoParticular;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Id_Ccosto", type="string", length=10, nullable=false)
+     * @ORM\Column(name="Id_Ccosto", type="string", length=10, nullable=true)
      */
     private $idCcosto;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="Fecha_Nacimiento", type="datetime", nullable=false)
+     * @ORM\Column(name="Fecha_Nacimiento", type="datetime", nullable=true)
      */
     private $fechaNacimiento;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="Nota", type="string", length=255, nullable=false)
+     * @ORM\Column(name="Nota", type="string", length=255, nullable=true)
      */
     private $nota;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="Baja", type="boolean", nullable=false)
+     * @ORM\Column(name="Baja", type="boolean", nullable=true)
      */
     private $baja;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="Alta", type="boolean", nullable=false)
+     * @ORM\Column(name="Alta", type="boolean", nullable=true)
      */
     private $alta;
 

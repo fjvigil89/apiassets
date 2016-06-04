@@ -87,12 +87,12 @@ doctrine:
                 #auto_mapping: true
                 mappings:
                     webServiceBundle: ~
-                    integralBundle: ~
+                    #integralBundle: ~
             assets:
                 #auto_mapping: true
                 connection:  assets                                
                 mappings: 
-                    webServiceBundle: ~
+                    #webServiceBundle: ~
                     integralBundle: ~
 
 # Swiftmailer Configuration

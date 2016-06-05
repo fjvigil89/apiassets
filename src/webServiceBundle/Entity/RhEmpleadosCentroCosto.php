@@ -25,7 +25,7 @@ class RhEmpleadosCentroCosto
      * @var string
      *
      * @ORM\Column(name="Id_Ccosto", type="string", length=10, nullable=false)
-     * @ORM\Id
+     *
      * @ORM\GeneratedValue(strategy="NONE")
      */
     private $idCcosto;
@@ -34,7 +34,7 @@ class RhEmpleadosCentroCosto
      * @var string
      *
      * @ORM\Column(name="Id_Obra", type="string", length=10, nullable=false)
-     * @ORM\Id
+     *
      * @ORM\GeneratedValue(strategy="NONE")
      */
     private $idObra;

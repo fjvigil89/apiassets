@@ -25,7 +25,7 @@ class EspecificacionesActivofijo
      * @var string
      *
      * @ORM\Column(name="Desc_Dato", type="string", length=50, nullable=false)
-     * @ORM\Id
+     * 
      * @ORM\GeneratedValue(strategy="NONE")
      */
     private $descDato;

@@ -16,7 +16,7 @@ class RhMunicipios
      * @var string
      *
      * @ORM\Column(name="Id_Provincia", type="string", length=5, nullable=false)
-     * @ORM\Id
+     * 
      * @ORM\GeneratedValue(strategy="NONE")
      */
     private $idProvincia;

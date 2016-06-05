@@ -25,7 +25,7 @@ class BajaActivofijo
      * @var string
      *
      * @ORM\Column(name="Id_Almacen", type="string", length=5, nullable=false)
-     * @ORM\Id
+     * 
      * @ORM\GeneratedValue(strategy="NONE")
      */
     private $idAlmacen;
@@ -34,7 +34,7 @@ class BajaActivofijo
      * @var integer
      *
      * @ORM\Column(name="Ano_Baja", type="integer", nullable=false)
-     * @ORM\Id
+     * 
      * @ORM\GeneratedValue(strategy="NONE")
      */
     private $anoBaja;

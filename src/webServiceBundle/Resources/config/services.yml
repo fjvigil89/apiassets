@@ -6,7 +6,51 @@ services:
     #    parent:     "api.resource"
     #    arguments:  [ "webServiceBundle\\Entity\\EmpleadosGra" ]
     #    tags:       [ { name: "api.resource" } ]
+    assets.EmpleadosGral:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\EmpleadosGra" ]
+        tags:       [ { name: "api.resource" } ]
     assets.RhCargos:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhCargos" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.RhCategoriasDocenteInvest:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhCategoriasDocenteInvest" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.RhCategoriasOcupacionales:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhCategoriasOcupacionales" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.RhEmpleadosCentroCosto:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhEmpleadosCentroCosto" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.RhGradosCientificos:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhGradosCientificos" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.RhMunicipios:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhMunicipios" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.RhNivelesEscolaridad:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhNivelesEscolaridad" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.RhNivelesEscolaridadClasif:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhNivelesEscolaridadClasif" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.RhProfesiones:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhProfesiones" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.RhProfesionesGeneral:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhProfesionesGeneral" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.RhProvincias:         
+        parent:     "api.resource"
+        arguments:  [ "webServiceBundle\\Entity\\RhProvincias" ]
         tags:       [ { name: "api.resource" } ]

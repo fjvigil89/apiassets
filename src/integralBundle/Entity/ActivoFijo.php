@@ -33,7 +33,7 @@ class ActivoFijo
      *
      * @ORM\Column(name="Id_Rotulo", type="string", length=15, nullable=false)
      */
-    private $idRotulo;
+    private $idRotulo; //falta
 
     /**
      * @var string

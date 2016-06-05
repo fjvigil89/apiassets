@@ -11,6 +11,8 @@ services:
     assets.CentroCosto:         
         parent:     "api.resource"
         arguments:  [ "integralBundle\\Entity\\CentroCosto" ]
+        requirements:
+            methods: [GET]
         tags:       [ { name: "api.resource" } ]
     assets.ActivoFijo:         
         parent:     "api.resource"

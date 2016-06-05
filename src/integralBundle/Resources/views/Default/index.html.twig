@@ -7,11 +7,12 @@
 				  <p class="lead">Obtener información sobre las entidades de la Base de Datos Assets via API Rest </p>			
 				<div>
 					v1.0
-					<a href="http://intranet.upr.edu.cu/">UPR</a>
+					<a href="http://intranet.upr.edu.cu/">UPR_BK</a>
 				</div>
-				<a href="http://intranet.upr.edu.cu/">
+				{# <!--a href="http://intranet.upr.edu.cu/">
 					<img src="{{ asset ('apiassets/img/logo.png') }}" alt="github-octocat">
-				</a>
+				</a-->
+				#}
 
 			</div>
 	{%endblock%}
@@ -96,6 +97,10 @@
 	{% endblock%}
 
 	{% block footer %}
+
+		<div class="" id="private">				  
+		  <p class="lead">UPR_BK {{ "now" | date("Y")}}</p>
+		</div>
 		
 	{% endblock%}
 

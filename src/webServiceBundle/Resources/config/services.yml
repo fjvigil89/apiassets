@@ -6,7 +6,7 @@ services:
     #    parent:     "api.resource"
     #    arguments:  [ "webServiceBundle\\Entity\\EmpleadosGra" ]
     #    tags:       [ { name: "api.resource" } ]
-    assets.EmpleadosGral:         
+    assets.EmpleadosGra:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\EmpleadosGra" ]
         tags:       [ { name: "api.resource" } ]

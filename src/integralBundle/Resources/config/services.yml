@@ -66,3 +66,7 @@ services:
         parent:     "api.resource"
         arguments:  [ "integralBundle\\Entity\\ActivoFijoTipos" ]
         tags:       [ { name: "api.resource" } ]
+    assets.CnmbActivofijo:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\CnmbActivofijo" ]
+        tags:       [ { name: "api.resource" } ]

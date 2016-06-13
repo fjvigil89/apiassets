@@ -35,6 +35,7 @@ class DefaultController extends Controller
 			"Clientes",
 			"BajaActivofijos",	
 			"ActivoFijoParametros",
+			"CnmbActivofijo"
 			
 			];
 	$routers= [
@@ -63,6 +64,7 @@ class DefaultController extends Controller
 			"/clientes",
 			"/baja_activofijos",
 			"/activo_fijo_parametros",
+			"/cnmb_activofijos",
 		
 		];
         return $this->render('integralBundle:Default:index.html.twig', array('name' => "API Assets",

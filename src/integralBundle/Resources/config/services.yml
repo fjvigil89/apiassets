@@ -7,14 +7,17 @@ services:
         class:     "Dunglas\ApiBundle\Api\Operation\Operation"
         public:    false
         factory:   [ "@api.operation_factory", "createCollectionOperation" ]
-        arguments: [ "@resource.Acceso", "GET" ]
-    assets.CentroCosto:         
+        arguments: [ "@resource.CentroCosto", "GET" ]
+
+    resource.CentroCosto:         
         parent:     "api.resource"
         arguments:  [ "integralBundle\\Entity\\CentroCosto" ]
-        requirements:
-            methods: [GET]
+        calls:
+            -      method:    "initItemOperations"
+                   arguments: [ [ "@resource.collection_operation.get" ] ]
         tags:       [ { name: "api.resource" } ]
-    assets.ActivoFijo:         
+
+    resource.ActivoFijo:         
         parent:     "api.resource"
         arguments:  [ "integralBundle\\Entity\\ActivoFijo" ]
         tags:       [ { name: "api.resource" } ]

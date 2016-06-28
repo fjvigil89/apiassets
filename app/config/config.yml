@@ -116,7 +116,7 @@ dunglas_api:
         pagination:
             page_parameter_name:       page             # The name of the parameter handling the page number.
             items_per_page:
-                number:                3000               # The default number of items perm page in collections.
+                number:                30               # The default number of items perm page in collections.
                 enable_client_request: true            # Allow the client to change the number of elements by page.
                 parameter_name:        itemsPerPage     # The name of the parameter to change the number of elements by page client side.
 

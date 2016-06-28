@@ -18,8 +18,21 @@
 	{%endblock%}
 	{% block cuerpo%}		
 			<div id="rc-searchers" class="container">
+				<div class="">
+								<h3>Filtrar "Entidades"</h3>
+								<div class="input-group" >
+									<code id="rc-a-get" class="rc-a-tryit rc-a-code">
+											<a class="page-scroll" href="#resultado">
+											http://apiassets.upr.edu.cu/ { ruta_entity } ? { atributo } = { valor }
+											</a>
+
+									</code>					
+								</div>				
+				</div>
+
 
 				<div class="row">
+								
 					  {% for x in entitys %}
 							<div class="col-lg-4">
 								<h3>Get {{x}}</h3>

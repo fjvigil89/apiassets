@@ -5,6 +5,12 @@ parameters:
 
 services:
 
+    resource.ActivoFijo.search_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { idActivofijo: "exact", idRotulo: "exact", idEmpleado: "exact", idCcosto: "exact", cnmb: "exact", idArearesp: "exact", descActivofijo: "partial"  } ]
+
+
+
 # Examples of API resource mapping, learn more at
 # https://github.com/dunglas/DunglasApiBundle
 #    resource.book:

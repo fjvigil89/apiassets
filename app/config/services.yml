@@ -5,11 +5,31 @@ parameters:
 
 services:
 
+    #resource.offer.search_filter:
+    #    parent:    "api.doctrine.orm.search_filter"
+    #    arguments: [ { id: "exact", price: "exact", name: "word_start", alias: "start", description: "partial"  } ]
+
+    resource.EmpleadosGra.search_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { idEmpleado: "exact", idExpediente: "exact", idCcosto: "exact", idTipoContrato: "exact", idCargo: "exact", idCategoria: "exact", idProvincia: "exact", idMunicipio: "exact", idNivelEscolaridad: "exact", idProfesion: "exact", idGradoCientifico: "exact", apellido2: "word_start", apellido1: "word_start", nombre: "word_start", noCi: "exact", direccion: "word_start", ciudad: "word_start", pais: "word_start", baja: "start", alta: "start", nivel: "start", sexo: "start", colorPiel: "start", colorPelo: "start", docente: "start", investigador: "start", imprescindible: "start", militancia: "start", albergado: "start" } ]
+
     resource.ActivoFijo.search_filter:
         parent:    "api.doctrine.orm.search_filter"
         arguments: [ { idActivofijo: "exact", idRotulo: "exact", idEmpleado: "exact", idCcosto: "exact", cnmb: "exact", idArearesp: "exact", descActivofijo: "partial"  } ]
 
+    resource.CentroCosto.search_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { idCcosto: "exact", idAgrupacion: "exact", grupo: "start", descCcosto: "partial"  } ]
 
+    resource.CnmbActivofijo.search_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { cnmb: "exact", tasaDepreciacion: "start", tasaCap: "start", tasaRep: "start", descCnmb: "partial"  } ]
+
+    resource.collection_operation.get:
+        class:     "Dunglas\ApiBundle\Api\Operation\Operation"
+        public:    false
+        factory:   [ "@api.operation_factory", "createCollectionOperation" ]
+        arguments: [ "@resource.CentroCosto", "GET" ]
 
 # Examples of API resource mapping, learn more at
 # https://github.com/dunglas/DunglasApiBundle

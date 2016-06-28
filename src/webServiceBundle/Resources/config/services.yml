@@ -9,7 +9,12 @@ services:
     assets.EmpleadosGra:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\EmpleadosGra" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.EmpleadosGra.search_filter" ] ]
         tags:       [ { name: "api.resource" } ]
+
+
     assets.RhCargos:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhCargos" ]

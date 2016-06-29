@@ -9,6 +9,10 @@ services:
     #    parent:    "api.doctrine.orm.search_filter"
     #    arguments: [ { id: "exact", price: "exact", name: "word_start", alias: "start", description: "partial"  } ]
 
+    resource.AreasResponsabilidad.search_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { idCcosto: "exact", idArearesponsabilidad: "exact", descArearesponsabilidad: "partial" } ]
+
     resource.EmpleadosGra.search_filter:
         parent:    "api.doctrine.orm.search_filter"
         arguments: [ { idEmpleado: "exact", idExpediente: "exact", idCcosto: "exact", idTipoContrato: "exact", idCargo: "exact", idCategoria: "exact", idProvincia: "exact", idMunicipio: "exact", idNivelEscolaridad: "exact", idProfesion: "exact", idGradoCientifico: "exact", apellido2: "word_start", apellido1: "word_start", nombre: "word_start", noCi: "exact", direccion: "word_start", ciudad: "word_start", pais: "word_start", baja: "start", alta: "start", nivel: "start", sexo: "start", colorPiel: "start", colorPelo: "start", docente: "start", investigador: "start", imprescindible: "start", militancia: "start", albergado: "start" } ]

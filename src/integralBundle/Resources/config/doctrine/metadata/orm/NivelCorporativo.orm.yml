@@ -1,0 +1,28 @@
+NivelCorporativo:
+    type: entity
+    table: Nivel_Corporativo
+    id:
+        idCorporativo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Corporativo
+            generator:
+                strategy: IDENTITY
+    fields:
+        corporativo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Corporativo
+        contabilizar:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Contabilizar
+    lifecycleCallbacks: {  }

@@ -1,0 +1,121 @@
+ActivoFijoMovimMasivovalHead:
+    type: entity
+    table: Activo_Fijo_Movim_MasivoVal_Head
+    uniqueConstraints:
+        IX_Activo_Fijo_Movim_MasivoVal_Head:
+            columns:
+                - Contador
+    id:
+        idMovval:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_MovVal
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Almacen
+        anoMovval:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano_MovVal
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        idMovimActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Movim_Activo
+        idCausamov:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausaMov
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        fechaMov:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Mov
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        idComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Comprobante
+        anoComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Comprobante
+        mesComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Comprobante
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: XTrans
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+    lifecycleCallbacks: {  }

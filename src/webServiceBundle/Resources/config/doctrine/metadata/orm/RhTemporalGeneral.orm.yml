@@ -1,0 +1,171 @@
+RhTemporalGeneral:
+    type: entity
+    table: RH_Temporal_General
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+            generator:
+                strategy: IDENTITY
+    fields:
+        netoACobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Neto_a_Cobrar
+        devengado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado
+        deducciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Deducciones
+        devengadoSubsidio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Subsidio
+        devengadoVacaciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Vacaciones
+        salarioAcumuladoMes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado_Mes
+        recargoTotal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Recargo_Total
+        perfeccionamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Perfeccionamiento
+        descuento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Descuento
+        devengadoDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Divisa
+        idoneidadFijo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Fijo
+        idoneidadMovil:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Movil
+        retribucionComplementaria:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Retribucion_Complementaria
+        diasSalario:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_Salario
+        diasSubsidio:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_Subsidio
+        diasVacaciones:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_Vacaciones
+        diasAcumuladoMes:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado_Mes
+        contravalor:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContraValor
+        importems:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMS
+        diasAcumulado:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado
+        salarioAcumulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado
+        importemsEt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMS_ET
+        importemsEe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMS_EE
+        pagoComedor:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pago_Comedor
+        pagoComedorDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pago_Comedor_Divisa
+    lifecycleCallbacks: {  }

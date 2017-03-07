@@ -1,0 +1,98 @@
+On1monedaConfigHead:
+    type: entity
+    table: ON_1Moneda_Config_Head
+    id:
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Tipo_Moneda
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoCalculo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Calculo
+        idCuenta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta
+        descCuenta:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_Cuenta
+        tasa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tasa
+        irpm:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: IRPM
+        contadorCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Compro
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes_Compro
+        idAgrupacionref:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AgrupacionRef
+        fechaCompro:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Compro
+        aperturaContable:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Apertura_Contable
+        aperturaFinUnificacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Apertura_FIN_Unificacion
+        auditoriaOk:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Auditoria_OK
+    lifecycleCallbacks: {  }

@@ -1,0 +1,152 @@
+DetalleAlquiler:
+    type: entity
+    table: Detalle_Alquiler
+    indexes:
+        Idx_Contador:
+            columns:
+                - Contador
+    id:
+        anoAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano_Alquiler
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        idAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Alquiler
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Activofijo
+        idRotulo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Rotulo
+        descActivofijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_ActivoFijo
+        tipo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Estado
+        codum:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: CodUM
+        precioVenta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Precio_Venta
+        precioVentamc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Precio_VentaMC
+        descuentomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: DescuentoMB
+        descuentomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: DescuentoMC
+        recargomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: RecargoMB
+        recargomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: RecargoMC
+        fechaAlquiler:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Alquiler
+        fechaDevolucion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Devolucion
+        marcaDevolucion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca_Devolucion
+        marca:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        items:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: Items
+        facturarServicio:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Facturar_Servicio
+        inToOut:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: In_to_Out
+    lifecycleCallbacks: {  }

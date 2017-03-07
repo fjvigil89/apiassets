@@ -1,0 +1,145 @@
+RhDetallesReporteTarifaHoraria:
+    type: entity
+    table: RH_Detalles_Reporte_Tarifa_Horaria
+    indexes:
+        IX_RH_Detalles_Reporte_Tarifa_Horaria:
+            columns:
+                - Contador
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        horas:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Horas
+        tarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa
+        importeTarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Tarifa
+        porcientoSobrecumplimiento:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Sobrecumplimiento
+        otrosPagos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros_Pagos
+        importeSobrecumplimiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Sobrecumplimiento
+        importeTotal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Total
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        idObra:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Obra
+        idActividad:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Actividad
+        horasOtraTarifa:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Horas_Otra_Tarifa
+        otraTarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otra_Tarifa
+        importeOtraTarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Otra_Tarifa
+    lifecycleCallbacks: {  }

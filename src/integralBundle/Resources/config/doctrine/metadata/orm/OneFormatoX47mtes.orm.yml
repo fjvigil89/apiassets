@@ -1,0 +1,172 @@
+OneFormatoX47mtes:
+    type: entity
+    table: ONE_Formato_x47MTes
+    id:
+        fila:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Fila
+            generator:
+                strategy: IDENTITY
+    fields:
+        ordenListado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Listado
+        ctaElem:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Cta_Elem
+        idElemgasto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_ElemGasto
+        idSubelemgasto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_SubElemGasto
+        descripcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion
+        operacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Operacion
+        filaInicio:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Inicio
+        filaFinal:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Final
+        filaPorciento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Porciento
+        tipoValor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Tipo_Valor
+        formulaSuma:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: ''
+            column: Formula_Suma
+        formulaKtes:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: ''
+            column: Formula_Ktes
+        um:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: UM
+        planAno:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Ano
+        planAnoHfecha:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Ano_hFecha
+        saldoAnoHfecha:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: Saldo_Ano_hFecha
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo
+        imprimir:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Imprimir
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        codigo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Codigo
+        editable:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Editable
+        field1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: Field1
+        field2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0'
+            column: Field2
+        field3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Field3
+        calculos:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Calculos
+    lifecycleCallbacks: {  }

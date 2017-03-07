@@ -1,0 +1,88 @@
+CuadreInventarioConfig:
+    type: entity
+    table: Cuadre_Inventario_Config
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        documento:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: T
+            column: Documento
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: 'No'
+            column: SubCta
+        deMb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: De_MB
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        calcular:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Calcular
+    lifecycleCallbacks: {  }

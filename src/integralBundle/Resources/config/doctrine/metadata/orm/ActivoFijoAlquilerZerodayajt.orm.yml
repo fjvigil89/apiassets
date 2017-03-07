@@ -1,0 +1,72 @@
+ActivoFijoAlquilerZerodayajt:
+    type: entity
+    table: Activo_Fijo_Alquiler_ZeroDayAjt
+    id:
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_ActivoFijo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descActivofijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_ActivoFijo
+        idRotulo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Rotulo
+        tarifaMbmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MBMin
+        tarifaMbmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MBMed
+        tarifaMbmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MBMax
+        tarifaMcmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MCMin
+        tarifaMcmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MCMed
+        tarifaMcmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MCMax
+        tarifaCupmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_CUPMin
+        tarifaCupmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_CUPMed
+        tarifaCupmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_CUPMax
+    lifecycleCallbacks: {  }

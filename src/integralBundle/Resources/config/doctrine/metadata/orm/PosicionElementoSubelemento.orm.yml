@@ -1,0 +1,43 @@
+PosicionElementoSubelemento:
+    type: entity
+    table: Posicion_Elemento_SubElemento
+    indexes:
+        Px_Pos2:
+            columns:
+                - Elemento
+                - Subelemento
+                - Centro_Costo
+    id:
+        ctaGasto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            id: true
+            column: Cta_Gasto
+            generator:
+                strategy: IDENTITY
+    fields:
+        elemento:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Elemento
+        subelemento:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Subelemento
+        centroCosto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Centro_Costo
+    lifecycleCallbacks: {  }

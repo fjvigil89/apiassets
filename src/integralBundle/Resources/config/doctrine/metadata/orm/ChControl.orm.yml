@@ -1,0 +1,99 @@
+ChControl:
+    type: entity
+    table: CH_Control
+    id:
+        idFondo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Fondo
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Mes
+    fields:
+        consec:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec
+        cerrado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado
+        consecIniWasSet:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Ini_Was_Set
+        consecAnticipos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Anticipos
+        consecArqueos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Arqueos
+        consecLiquidaciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Liquidaciones
+        consecReembolsos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Reembolsos
+        consecDepositos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Depositos
+        consecDepositosMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Depositos_MC
+        consecMovimientos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Movimientos
+        consecMovimientosMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Movimientos_MC
+        consecTarjetas:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Tarjetas
+    lifecycleCallbacks: {  }

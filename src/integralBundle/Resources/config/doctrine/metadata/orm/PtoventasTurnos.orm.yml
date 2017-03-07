@@ -1,0 +1,51 @@
+PtoventasTurnos:
+    type: entity
+    table: PtoVentas_Turnos
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Confirmada
+    fields:
+        fechainicial:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaInicial
+        horaInicial:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Hora_Inicial
+        fechafinal:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaFinal
+        horaFinal:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Hora_Final
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+    lifecycleCallbacks: {  }

@@ -1,0 +1,134 @@
+PresproduccionAnualDetail:
+    type: entity
+    table: PresProduccion_Anual_Detail
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Ano
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+    fields:
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Almacen
+        m01:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M01
+        m02:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M02
+        m03:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M03
+        m04:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M04
+        m05:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M05
+        m06:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M06
+        m07:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M07
+        m08:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M08
+        m09:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M09
+        m10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M10
+        m11:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M11
+        m12:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: M12
+        total:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Total
+        precioCostomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Precio_CostoMB
+        precioCostomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Precio_CostoMC
+        unidadesporreceta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: UnidadesporReceta
+        productoSemielaborado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Producto_Semielaborado
+    lifecycleCallbacks: {  }

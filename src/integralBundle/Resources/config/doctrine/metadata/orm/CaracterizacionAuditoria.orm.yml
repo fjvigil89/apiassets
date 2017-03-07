@@ -1,0 +1,52 @@
+CaracterizacionAuditoria:
+    type: entity
+    table: Caracterizacion_Auditoria
+    id:
+        country:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Country
+            generator:
+                strategy: IDENTITY
+    fields:
+        quitarVbXctaInex:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Quitar_VB_xCta_Inex
+        showInstaladOptions:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Show_Instalad_Options
+        def:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: _Def
+        count00:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Count00
+        lUpdt:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: L_Updt
+        lmcl:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: LMCL
+    lifecycleCallbacks: {  }

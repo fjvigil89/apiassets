@@ -1,0 +1,30 @@
+SysfilesDm:
+    type: entity
+    table: SysFiles_dm
+    id:
+        nu:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NU
+            generator:
+                strategy: IDENTITY
+    fields:
+        sys1li:
+            type: string
+            nullable: false
+            length: 250
+            fixed: false
+            column: _SYS_1LI
+        sys2le:
+            type: string
+            nullable: false
+            length: 250
+            fixed: false
+            column: _SYS_2LE
+        dt:
+            type: datetime
+            nullable: false
+            column: _dt
+    lifecycleCallbacks: {  }

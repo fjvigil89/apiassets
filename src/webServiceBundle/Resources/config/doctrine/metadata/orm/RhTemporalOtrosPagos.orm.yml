@@ -1,0 +1,99 @@
+RhTemporalOtrosPagos:
+    type: entity
+    table: RH_Temporal_Otros_Pagos
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        idOtroPago:
+            type: string
+            nullable: false
+            length: 7
+            fixed: false
+            default: ''
+            column: Id_Otro_Pago
+        valorOtroPago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Otro_Pago
+        afectaAusencias:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Ausencias
+        acumulaVacaciones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Acumula_Vacaciones
+        incluirSnc225:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Incluir_SNC_225
+        importeOtroPago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Otro_Pago
+        salarioAcumulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado
+        diasDeducible:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0'
+            column: Dias_Deducible
+        diasLab:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Lab
+        tarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa
+    lifecycleCallbacks: {  }

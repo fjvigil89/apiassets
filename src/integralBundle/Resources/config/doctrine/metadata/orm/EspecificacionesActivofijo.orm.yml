@@ -1,0 +1,28 @@
+EspecificacionesActivofijo:
+    type: entity
+    table: Especificaciones_ActivoFijo
+    id:
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_ActivoFijo
+        descDato:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definido ***'
+            id: true
+            column: Desc_Dato
+    fields:
+        valorDato:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: '*** No definido ***'
+            column: Valor_Dato
+    lifecycleCallbacks: {  }

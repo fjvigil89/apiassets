@@ -1,0 +1,27 @@
+CrmCatClientesPotEstados:
+    type: entity
+    table: CRM_Cat_Clientes_Pot_Estados
+    id:
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: ''
+            id: true
+            column: Estado
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Descripcion
+        activa:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Activa
+    lifecycleCallbacks: {  }

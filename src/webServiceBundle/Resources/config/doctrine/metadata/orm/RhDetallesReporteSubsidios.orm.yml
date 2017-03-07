@@ -1,0 +1,134 @@
+RhDetallesReporteSubsidios:
+    type: entity
+    table: RH_Detalles_Reporte_Subsidios
+    indexes:
+        IX_RH_Detalles_Reporte_Subsidios:
+            columns:
+                - Contador
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        tipo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        idClave:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clave
+        porciento:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento
+        carencia:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Carencia
+        diasNaturales:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 4
+            default: '0.0000'
+            column: Dias_Naturales
+        diasAPagar:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 4
+            default: '0.0000'
+            column: Dias_a_Pagar
+        promedio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Promedio
+        fechaValido:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Valido
+        fechaPago:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Pago
+        fechaResolucion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Resolucion
+        tipoCertificado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Certificado
+        diasFeriadosPeriodo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Feriados_Periodo
+        diasFeriadosAdelantados:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Feriados_Adelantados
+    lifecycleCallbacks: {  }

@@ -1,0 +1,32 @@
+Direccion:
+    type: entity
+    table: Direccion
+    uniqueConstraints:
+        PK_Direccion:
+            columns:
+                - Id_Direccion
+                - Id_Entidad
+    id:
+        idEntidad:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Entidad
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDireccion:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Direccion
+        descDireccion:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Desc_Direccion
+    lifecycleCallbacks: {  }

@@ -1,0 +1,40 @@
+ActivoFijoTiposEntradas:
+    type: entity
+    table: Activo_Fijo_Tipos_Entradas
+    id:
+        idEntradaActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            id: true
+            column: Id_Entrada_Activo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descEntradaActivo:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Entrada_Activo
+        idEstadoActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado_Activo
+        contabiliza:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabiliza
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clasificacion
+    lifecycleCallbacks: {  }

@@ -1,0 +1,207 @@
+CaracterizacionContabilidad:
+    type: entity
+    table: Caracterizacion_Contabilidad
+    id:
+        idEntidad:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Entidad
+            generator:
+                strategy: IDENTITY
+    fields:
+        maxMesesAbiertos:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '2'
+            column: Max_Meses_Abiertos
+        darQuitarVbueno:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Dar_Quitar_VBueno
+        notadocEncomprobante:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: NotaDoc_EnComprobante
+        usaIdFaProveeAlcontabilizarRx:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usa_Id_Fa_Provee_AlContabilizar_Rx
+        usaConduceAlcontabilizarFa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usa_Conduce_AlContabilizar_Fa
+        usaDragDropComproOpened:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usa_Drag_Drop_Compro_Opened
+        usarParametrizadosExtendidos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_Parametrizados_Extendidos
+        usarEfFormatoUni:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_EF_Formato_UNI
+        siglasOrganismo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Siglas_Organismo
+        siglasEntidad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Siglas_Entidad
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Organismo
+        idProvincia:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_Provincia
+        idMunicipio:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_Municipio
+        idSector:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_Sector
+        idRama:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_Rama
+        idSubrama:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_SubRama
+        restarDebeHaber:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Restar_Debe_Haber
+        usarAllcuentasInErEs:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_ALLCuentas_IN_ER_ES
+        forzarCierreAf:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Forzar_Cierre_AF
+        forzarCierreCi:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Forzar_Cierre_CI
+        forzarCierreFm:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Forzar_Cierre_FM
+        forzarCierrePn:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Forzar_Cierre_PN
+        forzarCierreUh:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Forzar_Cierre_UH
+        forzarCierrePi:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Forzar_Cierre_PI
+        forzarCierreTi:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Forzar_Cierre_TI
+        v2set:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: V2Set
+        cierreAnualXmonedas:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cierre_Anual_xMonedas
+        usarCbosDescrCuentas:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_Cbos_Descr_Cuentas
+        ajustarHaber:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Ajustar_Haber
+        generarCuentasAuto:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Generar_Cuentas_Auto
+        suprimirSaldosCero:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Suprimir_Saldos_Cero
+        varianteCorp:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Variante_Corp
+        requiereAutorizPcerrar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Requiere_Autoriz_pCerrar
+        varianteElsele:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Variante_ElSele
+    lifecycleCallbacks: {  }

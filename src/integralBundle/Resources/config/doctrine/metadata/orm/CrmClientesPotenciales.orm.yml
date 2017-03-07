@@ -1,0 +1,156 @@
+CrmClientesPotenciales:
+    type: entity
+    table: CRM_Clientes_Potenciales
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        nombreContacto:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Nombre_Contacto
+        cargoContacto:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Cargo_Contacto
+        direccion:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ''
+            column: Direccion
+        ciudad:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Ciudad
+        pais:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Pais
+        telefono:
+            type: string
+            nullable: false
+            length: 24
+            fixed: false
+            default: ''
+            column: Telefono
+        fax:
+            type: string
+            nullable: false
+            length: 24
+            fixed: false
+            default: ''
+            column: Fax
+        eMail:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: e_mail
+        idMotivo:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: Id_Motivo
+        idAnswer:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: Id_Answer
+        notas:
+            type: string
+            nullable: false
+            length: 180
+            fixed: false
+            default: ''
+            column: Notas
+        idCategoria:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Categoria
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        idEmpleadoMec:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Empleado_Mec
+        idEmplContacto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empl_Contacto
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+    lifecycleCallbacks: {  }

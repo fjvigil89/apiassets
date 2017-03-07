@@ -1,0 +1,120 @@
+DetalleOrdenentrega:
+    type: entity
+    table: Detalle_OrdenEntrega
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idOtrabajo:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Otrabajo
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoOtrabajo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Otrabajo
+        items:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Almacen
+        cantidadEntregada:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '0.000000'
+            column: Cantidad_Entregada
+        precioCostoumalmacenmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoUmAlmacenMB
+        precioCostoumalmacenmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoUmAlmacenMC
+        importecostoMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteCosto_MB
+        importecostoMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteCosto_MC
+        referencia:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Referencia
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        productoOservicio:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Producto_oServicio
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        itemsvale:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ItemsVale
+    lifecycleCallbacks: {  }

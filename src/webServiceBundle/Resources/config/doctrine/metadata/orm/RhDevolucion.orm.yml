@@ -1,0 +1,237 @@
+RhDevolucion:
+    type: entity
+    table: RH_Devolucion
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        idDevolucion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Devolucion
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoDevolucion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Devolucion
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        fechaDevolucion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Devolucion
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Empleado
+        descEmpleado:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: Desc_Empleado
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        idReferencia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Referencia
+        añoReferencia:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Año_Referencia
+        tipoDevolucion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Tipo_Devolucion
+        devuelveOcancela:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Devuelve_oCancela
+        cantidadOvalor:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Cantidad_oValor
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMC
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        marcaConteo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca_Conteo
+        tipoDocumento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Documento
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        impuestoTotal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Impuesto_Total
+        comisionTotal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Comision_Total
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_primario
+        noPrelacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: No_Prelacion
+        impuestoprove:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImpuestoProve
+        impuestoreten:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImpuestoReten
+        iddocpago:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: IddocPago
+        descfp:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: DescFP
+        devolucionNominas:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devolucion_Nominas
+    lifecycleCallbacks: {  }

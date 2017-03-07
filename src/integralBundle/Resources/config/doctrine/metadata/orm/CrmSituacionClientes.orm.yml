@@ -1,0 +1,165 @@
+CrmSituacionClientes:
+    type: entity
+    table: CRM_Situacion_Clientes
+    id:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cliente
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        impFacturado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Facturado
+        impDevuelto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Devuelto
+        impCobrado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Cobrado
+        impPorcobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_PorCobrar
+        impAcobrar1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar1
+        impAcobrar2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar2
+        impAcobrar3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar3
+        impAcobrar4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar4
+        impAcobrar5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar5
+        impFacturado0:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Facturado0
+        impDevuelto0:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Devuelto0
+        impCobrado0:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Cobrado0
+        impPorcobrar0:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_PorCobrar0
+        impAcobrar01:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar01
+        impAcobrar02:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar02
+        impAcobrar03:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar03
+        impAcobrar04:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar04
+        impAcobrar05:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar05
+        impAnticipo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Anticipo
+        impPagado0:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Pagado0
+        impPagado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Pagado
+        fechaUltimaCompra:
+            type: datetime
+            nullable: false
+            default: '1 / 1 / 1900'
+            column: Fecha_Ultima_Compra
+        impComprado0:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Comprado0
+        impComprado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Comprado
+    lifecycleCallbacks: {  }

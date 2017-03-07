@@ -1,0 +1,43 @@
+ProductoOrganismo:
+    type: entity
+    table: Producto_Organismo
+    indexes:
+        IX_Producto_Cliente:
+            columns:
+                - Id_Cliente
+                - Id_Producto
+    id:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Cliente
+    fields:
+        idProddelcliente:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_ProdDelCliente
+        precioVentaumalmacenmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Precio_VentaUMAlmacenMB
+        precioVentaumalmacenmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Precio_VentaUMAlmacenMC
+    lifecycleCallbacks: {  }

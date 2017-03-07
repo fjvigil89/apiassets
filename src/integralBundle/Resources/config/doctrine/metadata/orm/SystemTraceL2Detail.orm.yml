@@ -1,0 +1,47 @@
+SystemTraceL2Detail:
+    type: entity
+    table: System_Trace_L2_Detail
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        masterId:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: MASTER_ID
+        nr:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: NR
+        pc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: PC
+        fieldname:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            column: FieldName
+        oldvalue:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: OldValue
+        newvalue:
+            type: string
+            nullable: true
+            length: 1000
+            fixed: false
+            column: NewValue
+    lifecycleCallbacks: {  }

@@ -1,0 +1,223 @@
+InfocorporativaTaller:
+    type: entity
+    table: InfoCorporativa_Taller
+    id:
+        codagrupa:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: CodAgrupa
+            generator:
+                strategy: IDENTITY
+    fields:
+        desagrupa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: DesAgrupa
+        codalmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: CodAlmacen
+        desalmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: DesAlmacen
+        ano:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        idOtrabajo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Otrabajo
+        fechaApertura:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Apertura
+        fechaCierre:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Cierre
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        idComercial:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Comercial
+        descComercial:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Comercial
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteTotalMC
+        importefacturadomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteFacturadoMB
+        importefacturadomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteFacturadoMC
+        idEstado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Estado
+        descEstado:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Estado
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        descClasificacion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Clasificacion
+        estadia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estadia
+        cantHoras:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 0
+            default: '0'
+            column: Cant_Horas
+        idBrigada:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Brigada
+        descBrigada:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Brigada
+        idEquipo:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Equipo
+        descEquipo:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Desc_Equipo
+        cantDiasEstado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cant_Dias_Estado
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ccosto
+    lifecycleCallbacks: {  }

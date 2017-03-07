@@ -1,0 +1,67 @@
+ChDenominacionesMoneda:
+    type: entity
+    table: CH_Denominaciones_Moneda
+    uniqueConstraints:
+        IX_CH_Cat_Denomin_Money:
+            columns:
+                - Id_Presentacion
+    id:
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Tipo_Moneda
+        ordenPresentacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Orden_Presentacion
+    fields:
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Clasificacion
+        idPresentacion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Presentacion
+        formaPresentacion:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Forma_Presentacion
+        cantidadUnidades:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Cantidad_Unidades
+        factorPresentacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '100'
+            column: Factor_Presentacion
+        decimales:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Decimales
+        mostrar:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Mostrar
+    lifecycleCallbacks: {  }

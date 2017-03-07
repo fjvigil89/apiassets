@@ -1,0 +1,163 @@
+RhDetallesReporteAusencias:
+    type: entity
+    table: RH_Detalles_Reporte_Ausencias
+    indexes:
+        IX_RH_Detalles_Reporte_Ausencias:
+            columns:
+                - Contador
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        idClave:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clave
+        dias:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias
+        porciento:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento
+        aPagarPor:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: A_pagar_por
+        deducible:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Deducible
+        afectaSubsidio:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Subsidio
+        afectaVacaciones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Vacaciones
+        afectaVacacionesImp:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Vacaciones_Imp
+        afectaSnc225:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_SNC_225
+        afectaSnc225Imp:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_SNC_225_Imp
+        afectaEvaluacionTecnicos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Evaluacion_Tecnicos
+        afectaEstimulo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Estimulo
+        prenominaHrs:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Prenomina_Hrs
+        sumaReporteAusencia:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Suma_Reporte_Ausencia
+        afectapromtrabajtot:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AfectaPromTrabajTot
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clasificacion
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+        origen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Origen
+    lifecycleCallbacks: {  }

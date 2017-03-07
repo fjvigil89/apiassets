@@ -1,0 +1,73 @@
+CzModuleActive:
+    type: entity
+    table: Cz_Module_Active
+    id:
+        spid:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '@@spid'
+            id: true
+            column: SpId
+            generator:
+                strategy: IDENTITY
+    fields:
+        computer:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: host_name()
+            column: Computer
+        loginName:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            default: user_name()
+            column: Login_Name
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        nota:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Nota
+        userAssets:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: User_Assets
+        moduleId:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Module_Id
+        nro:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Nro
+        computerId:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: host_id()
+            column: Computer_Id
+        spCreator:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '@@spid'
+            column: Sp_Creator
+    lifecycleCallbacks: {  }

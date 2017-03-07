@@ -1,0 +1,23 @@
+RhEspecialidadGraduado:
+    type: entity
+    table: RH_Especialidad_Graduado
+    id:
+        idEspecialidad:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Especialidad
+            generator:
+                strategy: IDENTITY
+    fields:
+        descEspecialidad:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Especialidad
+    lifecycleCallbacks: {  }

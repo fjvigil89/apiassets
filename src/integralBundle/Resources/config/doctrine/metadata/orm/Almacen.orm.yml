@@ -1,0 +1,269 @@
+Almacen:
+    type: entity
+    table: Almacen
+    id:
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Almacen
+            generator:
+                strategy: IDENTITY
+    fields:
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        direccion:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Direccion
+        valoraCosto:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Valora_Costo
+        criterioSalida:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Criterio_Salida
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        letra:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Letra
+        puntoVenta:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Punto_Venta
+        puntoInventario:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Punto_Inventario
+        almacenEntidad:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Almacen_Entidad
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        cuadreDiario:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Cuadre_Diario
+        fechaCuadre:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Cuadre
+        estadoCuadre:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '2'
+            column: Estado_Cuadre
+        fechaUltimocuadre:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_UltimoCuadre
+        ordenPtoreorder:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Orden_Ptoreorder
+        ordenVale:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Orden_Vale
+        idInsumo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Insumo
+        validarDispo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Validar_Dispo
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        fcierremCuadred:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: FcierreM_CuadreD
+        cierreApertura:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cierre_Apertura
+        nocaja:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NoCaja
+        modelocaja:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ModeloCaja
+        tipocon:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: TipoCon
+        nodetelef:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: NoDetelef
+        txspeed:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TxSpeed
+        txcom:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TxCom
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        descEmpleado:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Empleado
+        factura:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Factura
+        contafac:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContaFac
+        incluirencuadre:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: IncluirenCuadre
+        paracliente:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ParaCliente
+        validaEmpaque:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Valida_Empaque
+        adespacho:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: Adespacho
+        cotizamultiple:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CotizaMultiple
+        ipcajas:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: IpCajas
+        almacenInsumo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Almacen_Insumo
+        contavale:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContaVale
+        vale:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Vale
+    lifecycleCallbacks: {  }

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="apiApp">
+    <head>
+
+        {% block analitic %}
+           <!-- Piwik -->
+            <script type="text/javascript">
+              var _paq = _paq || [];
+              _paq.push(['trackPageView']);
+              _paq.push(['enableLinkTracking']);
+              (function() {
+                var u="//stats1.upr.edu.cu/";
+                _paq.push(['setTrackerUrl', u+'piwik.php']);
+                _paq.push(['setSiteId', 15]);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+              })();
+            </script>
+            <noscript><p><img src="//stats1.upr.edu.cu/piwik.php?idsite=15" style="border:0;" alt="" /></p></noscript>
+            <!-- End Piwik Code -->
+
+        {% endblock%}
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>{% block title %}API Assets|| Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        
+       
+
+        <script src="{{ asset('bootstrap/js/jquery.js')}}"></script>
+        <script src="{{ asset('bootstrap/js/jquery.min.js') }}"></script>  
+        <script src="{{ asset('bootstrap/js/bootstrap.js') }}"></script>
+        <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+
+        <!-- angular-->
+                  
+        
+        <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap-theme.css') }}">
+        <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap-theme.min.css') }}">
+        <script type='text/javascript' src='http://webservice.lo/app_dev.php/' ></script>
+       
+          <link rel="stylesheet" href="{{ asset('apiassets/css/custom_api.css') }}">
+        <script src="{{ asset('apiassets/js/custom_api.js') }}"></script>
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        
+        {% block javascripts %}
+        {% endblock %}
+    </body>
+</html>

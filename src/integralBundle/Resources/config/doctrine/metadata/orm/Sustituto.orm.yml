@@ -1,0 +1,32 @@
+Sustituto:
+    type: entity
+    table: Sustituto
+    id:
+        idProductopadre:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_ProductoPadre
+        idProductosustituto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_ProductoSustituto
+    fields:
+        descProductosustituto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_ProductoSustituto
+        umSustituto:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Um_Sustituto
+    lifecycleCallbacks: {  }

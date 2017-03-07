@@ -1,0 +1,44 @@
+BrigadasPlanreal:
+    type: entity
+    table: Brigadas_PlanReal
+    id:
+        idBrigada:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Brigada
+        año:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Año
+        mes:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Mes
+    fields:
+        planimportemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: PlanImporteMB
+        planimportemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: PlanImporteMC
+        planhoras:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: PlanHoras
+    lifecycleCallbacks: {  }

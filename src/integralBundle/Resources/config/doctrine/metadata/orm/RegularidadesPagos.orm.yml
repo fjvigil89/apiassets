@@ -1,0 +1,159 @@
+RegularidadesPagos:
+    type: entity
+    table: Regularidades_Pagos
+    indexes:
+        Pk_Reg_Pagos:
+            columns:
+                - items
+        Ix1_Reg_Pagos:
+            columns:
+                - Tipo_Doc
+                - Forma_Pago
+                - Id_clasif_Rx
+                - Moneda
+    id:
+        subcontrol:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Subcontrol
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoDoc:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Tipo_Doc
+        formaPago:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Forma_Pago
+        idClasifRx:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: '0'
+            column: Id_clasif_Rx
+        moneda:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Moneda
+        operacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Operacion
+        cta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta
+        tipoSubcta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_SubCta
+        subcta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: SubCta
+        tipoAnalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Analisis
+        analisis:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Analisis
+        tipoSubanalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Subanalisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        tipoEpigrafe:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Epigrafe
+        epigrafe:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Epigrafe
+        tipoPartida:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Partida
+        partida:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Partida
+        afecta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Afecta
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+        copiar:
+            type: boolean
+            nullable: false
+            default: '100'
+            column: Copiar
+        porciento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PORCIENTO
+        idClasifRxNew:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_clasif_Rx_NEW
+    lifecycleCallbacks: {  }

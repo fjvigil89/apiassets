@@ -1,0 +1,106 @@
+PaseAlZun:
+    type: entity
+    table: Pase_al_Zun
+    id:
+        comprobant:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: COMPROBANT
+            generator:
+                strategy: IDENTITY
+    fields:
+        empresa:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: EMPRESA
+        cuenta:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: CUENTA
+        ctoGto:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: CTO_GTO
+        doc:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: DOC
+        concepto:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: CONCEPTO
+        fecVal:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FEC_VAL
+        descrip:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: DESCRIP
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IMPORTE
+        debito:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: DEBITO
+        codFc:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: COD_FC
+        fecCon:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FEC_CON
+        libro:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: L
+            column: LIBRO
+        tasa:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 0
+            default: '1.00'
+            column: TASA
+        moneda:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: CUC
+            column: MONEDA
+    lifecycleCallbacks: {  }

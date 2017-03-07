@@ -1,0 +1,72 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+
+    #resource.offer.search_filter:
+    #    parent:    "api.doctrine.orm.search_filter"
+    #    arguments: [ { id: "exact", price: "exact", name: "word_start", alias: "start", description: "partial"  } ]
+
+    resource.CategoriasDocenteInvest.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { descCategoriaDi: "partial", idCategoriaDi: "exact", identificacionDi: "partial", anosDi: "exact", clasificacionDi: "partial" } ]
+
+    resource.Cargo.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { descCargo: "partial", idCategoria: "exact", descCategoria: "partial", idSubcategoria: "exact", descSubcategoria: "partial", clasificacion: "partial", funcionario: "exact", ejecutivo: "exact", salarioBasico: "exact", plus: "exact", salarioCargo: "exact", estimulo: "word_start", antiguedad: "word_start" } ]
+
+    resource.AreasResponsabilidad.search_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { idCcosto: "exact", idArearesponsabilidad: "exact", descArearesponsabilidad: "partial" } ]
+
+    resource.EmpleadosGra.search_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { idEmpleado: "exact", idExpediente: "exact", idCcosto: "exact", idTipoContrato: "exact", idCargo: "exact", idCategoria: "exact", idProvincia: "exact", idMunicipio: "exact", idNivelEscolaridad: "exact", idProfesion: "exact", idGradoCientifico: "exact", apellido2: "word_start", apellido1: "word_start", nombre: "word_start", noCi: "exact", direccion: "word_start", ciudad: "word_start", pais: "word_start", baja: "start", alta: "start", nivel: "start", sexo: "start", colorPiel: "start", colorPelo: "start", docente: "start", investigador: "start", imprescindible: "start", militancia: "start", albergado: "start" } ]
+
+    resource.ActivoFijo.search_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { idActivofijo: "exact", idRotulo: "partial", idEmpleado: "exact", idCcosto: "exact", cnmb: "exact", idArearesp: "exact", descActivofijo: "partial"  } ]
+
+    resource.CentroCosto.search_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { idCcosto: "exact", idAgrupacion: "exact", grupo: "start", descCcosto: "partial"  } ]
+
+    resource.CnmbActivofijo.search_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { cnmb: "exact", tasaDepreciacion: "start", tasaCap: "start", tasaRep: "start", descCnmb: "partial"  } ]
+
+    resource.collection_operation.get:
+        class:     "Dunglas\ApiBundle\Api\Operation\Operation"
+        public:    false
+        factory:   [ "@api.operation_factory", "createCollectionOperation" ]
+        arguments: [ "@resource.CentroCosto", "GET" ]
+
+# Examples of API resource mapping, learn more at
+# https://github.com/dunglas/DunglasApiBundle
+#    resource.book:
+#        parent:    "api.resource"
+#        arguments: [ "AppBundle\\Entity\\Book" ]
+#        tags:      [ { name: "api.resource" } ]
+
+#    resource.person:
+#        parent:    "api.resource"
+#        arguments: [ "AppBundle\\Entity\\Person" ]
+#        tags:      [ { name: "api.resource" } ]
+
+#    resource.organization:
+#        parent:    "api.resource"
+#        arguments: [ "AppBundle\\Entity\\Organization" ]
+#        calls:
+#            -      [ "initFilters", [ [ "@resource.organization.filter" ] ] ]
+#        tags:      [ { name: "api.resource" } ]
+
+#    resource.organization.filter:
+#        parent:    "api.doctrine.orm.search_filter"
+#        arguments: [ { "name": "exact", "url": "partial" } ]
+
+# A typical service
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]

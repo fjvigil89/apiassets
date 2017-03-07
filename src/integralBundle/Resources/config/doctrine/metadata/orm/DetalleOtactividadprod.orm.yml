@@ -1,0 +1,90 @@
+DetalleOtactividadprod:
+    type: entity
+    table: Detalle_OtActividadProd
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idActividad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Actividad
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umProducto:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Producto
+        cantidad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Cantidad
+        existencia:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Existencia
+        costofijomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFijoMB
+        costofijomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFijoMC
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ImporteMC
+        items:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        etapa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Etapa
+    lifecycleCallbacks: {  }

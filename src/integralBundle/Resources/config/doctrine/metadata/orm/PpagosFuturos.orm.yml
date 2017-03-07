@@ -1,0 +1,134 @@
+PpagosFuturos:
+    type: entity
+    table: PPagos_Futuros
+    uniqueConstraints:
+        IX1_PPagos_Futuros:
+            columns:
+                - Contador1
+                - Contador1_Pago
+    id:
+        contadorRx:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador_Rx
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDoc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: ID_Doc
+        anoDoc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Doc
+        idFormapago:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_FormaPago
+        idConcepto:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        tipoCobro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Cobro
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        fechaPago:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Pago
+        fechaCheque:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Cheque
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Moneda
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        importeCobro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Cobro
+        pagoVsanticipo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pago_vsAnticipo
+        anticipoPreassets:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Anticipo_Preassets
+        marca:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca
+        nota:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: ''
+            column: Nota
+        contador1Pago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador1_Pago
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+    lifecycleCallbacks: {  }

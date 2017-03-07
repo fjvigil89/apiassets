@@ -1,0 +1,50 @@
+Zerodayconfig:
+    type: entity
+    table: ZeroDayConfig
+    id:
+        fechaOperacion:
+            type: datetime
+            nullable: false
+            id: true
+            column: Fecha_Operacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        tc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: TC
+        irpm:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: IRPM
+        cup:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: CUP
+        afIdMovimActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            column: AF_Id_Movim_Activo
+        afIdCausamov:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: AF_Id_CausaMov
+        afNotaMov:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            column: AF_Nota_Mov
+        zeroday:
+            type: boolean
+            nullable: false
+            column: ZeroDay
+    lifecycleCallbacks: {  }

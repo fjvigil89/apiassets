@@ -1,0 +1,14 @@
+PresupuestoVentasheadservi:
+    type: entity
+    table: Presupuesto_VentasHeadServi
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano
+            generator:
+                strategy: IDENTITY
+    lifecycleCallbacks: {  }

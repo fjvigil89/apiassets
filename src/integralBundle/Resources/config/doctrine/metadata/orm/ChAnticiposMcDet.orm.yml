@@ -1,0 +1,139 @@
+ChAnticiposMcDet:
+    type: entity
+    table: CH_Anticipos_MC_Det
+    indexes:
+        IX_AnticiposMC1_Det:
+            columns:
+                - Estado
+                - Id_Anticipo
+                - Fecha
+                - Id_Empleado
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAnticipo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Anticipo
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        descEmpleado:
+            type: string
+            nullable: false
+            length: 65
+            fixed: false
+            default: ''
+            column: Desc_Empleado
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe
+        importeGastado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_Gastado
+        importeDevuelto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_Devuelto
+        importeExtraEntregado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_Extra_Entregado
+        observaciones:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Observaciones
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        idComproLiq:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro_Liq
+        mesComproLiq:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro_Liq
+        anoComproLiq:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro_Liq
+        fechaLiquidacion:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Liquidacion
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+    lifecycleCallbacks: {  }

@@ -1,0 +1,97 @@
+Tablascomm:
+    type: entity
+    table: Tablascomm
+    id:
+        codigo:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            id: true
+            column: Codigo
+            generator:
+                strategy: IDENTITY
+    fields:
+        clasificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: n/a
+            column: Clasificacion
+        descripcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: n/a
+            column: Descripcion
+        enviar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Enviar
+        recibir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recibir
+        confirmado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Confirmado
+        sinconfirmar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Sinconfirmar
+        fechaenvio:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fechaenvio
+        fecharecibo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaRecibo
+        recibido:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recibido
+        fichero:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: n/a
+            column: Fichero
+        ficherodetalle:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: n/a
+            column: FicheroDetalle
+        rinner:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: n/a
+            column: Rinner
+        rwhere:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: n/a
+            column: Rwhere
+        rescribir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Rescribir
+    lifecycleCallbacks: {  }

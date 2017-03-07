@@ -1,0 +1,23 @@
+ErroresRecibo:
+    type: entity
+    table: Errores_Recibo
+    id:
+        refer:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            id: true
+            column: Refer
+            generator:
+                strategy: IDENTITY
+    fields:
+        error:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Error
+    lifecycleCallbacks: {  }

@@ -1,0 +1,104 @@
+RecepcionCambiosClasif:
+    type: entity
+    table: Recepcion_Cambios_Clasif
+    indexes:
+        Ix1_Rx_Cambios_Clasif:
+            columns:
+                - Contador_Rx
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        contadorRx:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Rx
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        idClasifRxIni:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Rx_Ini
+        idClasifRxFin:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Rx_Fin
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        observaciones:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Observaciones
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        contadorCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Compro
+        preAssets:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pre_Assets
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+    lifecycleCallbacks: {  }

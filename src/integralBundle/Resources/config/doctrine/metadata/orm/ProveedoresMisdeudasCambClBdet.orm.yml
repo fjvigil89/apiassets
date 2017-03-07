@@ -1,0 +1,149 @@
+ProveedoresMisdeudasCambClBdet:
+    type: entity
+    table: Proveedores_MisDeudas_Camb_Cl_BDet
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Doc
+        anoDoc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Doc
+        contadorDeu:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Deu
+        idDeuda:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Deuda
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        descProveedor:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Proveedor
+        idClasifRxIni:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Rx_Ini
+        idClasifRxFin:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Rx_Fin
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        notas:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Notas
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        contadorCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Compro
+        preAssets:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Pre_Assets
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        aContabilizar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: A_Contabilizar
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        importeMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_MC
+    lifecycleCallbacks: {  }

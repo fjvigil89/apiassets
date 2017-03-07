@@ -1,0 +1,41 @@
+ServiciosProgramados:
+    type: entity
+    table: Servicios_Programados
+    id:
+        idServicio:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Servicio
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Descripcion
+        costomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMB
+        costomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMC
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+    lifecycleCallbacks: {  }

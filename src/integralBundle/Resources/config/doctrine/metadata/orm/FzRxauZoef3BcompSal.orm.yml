@@ -1,0 +1,140 @@
+FzRxauZoef3BcompSal:
+    type: entity
+    table: Fz_RxAU_ZoEF3_BComp_Sal
+    id:
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            id: true
+            column: IdSync
+            generator:
+                strategy: IDENTITY
+    fields:
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Fin
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Descripcion
+        natu:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Natu
+        debeAcum:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Debe_Acum
+        haberAcum:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Haber_Acum
+        saldoAcum:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Acum
+        debeAnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Debe_Ant
+        haberAnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Haber_Ant
+        saldoAnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Ant
+        debePer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Debe_Per
+        haberPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Haber_Per
+        saldoPer:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Per
+        saldoIniAno:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_INI_ANO
+    lifecycleCallbacks: {  }

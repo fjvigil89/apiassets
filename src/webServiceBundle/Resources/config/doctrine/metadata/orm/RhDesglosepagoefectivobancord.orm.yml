@@ -1,0 +1,112 @@
+RhDesglosepagoefectivobancord:
+    type: entity
+    table: RH_DesglosePagoEfectivoBancoRD
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+            generator:
+                strategy: IDENTITY
+    fields:
+        acobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ACobrar
+        acobrardesglosado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ACobrarDesglosado
+        cantbilletes100:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantBilletes100
+        cantbilletes50:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantBilletes50
+        cantbilletes20:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantBilletes20
+        cantbilletes10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantBilletes10
+        cantbilletes5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantBilletes5
+        cantbilletes3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantBilletes3
+        cantbilletes1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantBilletes1
+        cantmonedas5o3pesos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantMonedas5o3Pesos
+        cantmonedas1peso:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantMonedas1Peso
+        cantmonedas50o20centavos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantMonedas50o20Centavos
+        cantmonedas25o5centavos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantMonedas25o5Centavos
+        cantmonedas10o2centavos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantMonedas10o2Centavos
+        cantmonedas5o1centavo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantMonedas5o1Centavo
+        cantmonedas1centavo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantMonedas1Centavo
+    lifecycleCallbacks: {  }

@@ -1,0 +1,158 @@
+CosteoPecConfig:
+    type: entity
+    table: Costeo_Pec_Config
+    id:
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            id: true
+            column: Cta
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCuenta:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        incluir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Incluir
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+        idCuentaCredito:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta_Credito
+        ctaCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: CTA_Credito
+        subctaCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta_Credito
+        analisisCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis_Credito
+        subanalisisCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis_Credito
+        epigrafeCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe_Credito
+        partidaCredito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida_Credito
+        descCuentaCredito:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta_Credito
+        idCuentaDebito:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta_Debito
+        ctaDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: CTA_Debito
+        subctaDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta_Debito
+        analisisDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis_Debito
+        subanalisisDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis_Debito
+        epigrafeDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe_Debito
+        partidaDebito:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida_Debito
+        descCuentaDebito:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta_Debito
+        deMb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: De_MB
+    lifecycleCallbacks: {  }

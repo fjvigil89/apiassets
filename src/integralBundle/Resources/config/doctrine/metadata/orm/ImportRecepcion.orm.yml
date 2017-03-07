@@ -1,0 +1,304 @@
+ImportRecepcion:
+    type: entity
+    table: Import_Recepcion
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        referencia:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Referencia
+        idRecepcion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Recepcion
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoRecepcion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Recepcion
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        idFacturaproveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_FacturaProveedor
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        descProveedor:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Proveedor
+        idComercial:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Comercial
+        descComercial:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Comercial
+        credito:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Credito
+        fechaProveedor:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Proveedor
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMC
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        tasaCambio:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: Tasa_Cambio
+        aplicaplazocobro:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AplicaPlazoCobro
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        idClasirecep:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_ClasiRecep
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        dias1:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias1
+        importe1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe1
+        dias2:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias2
+        importe2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe2
+        dias3:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias3
+        importe3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe3
+        dias4:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias4
+        importe4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe4
+        dias5:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias5
+        importe5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe5
+        dias6:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias6
+        importe6:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe6
+        dias7:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias7
+        importe7:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe7
+        dias8:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias8
+        importe8:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe8
+        dias9:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias9
+        importe9:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe9
+        encredito:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Encredito
+        enfecha:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: EnFecha
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        contrato:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Contrato
+        idEmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Emb
+    lifecycleCallbacks: {  }

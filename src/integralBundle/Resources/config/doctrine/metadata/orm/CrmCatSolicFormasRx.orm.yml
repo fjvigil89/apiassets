@@ -1,0 +1,28 @@
+CrmCatSolicFormasRx:
+    type: entity
+    table: CRM_Cat_Solic_Formas_Rx
+    id:
+        idForma:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Forma
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Descripcion
+        activa:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Activa
+    lifecycleCallbacks: {  }

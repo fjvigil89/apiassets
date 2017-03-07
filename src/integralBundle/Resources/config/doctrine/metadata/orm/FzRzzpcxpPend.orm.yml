@@ -1,0 +1,165 @@
+FzRzzpcxpPend:
+    type: entity
+    table: Fz_RzzPCxP_Pend
+    id:
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            id: true
+            column: IdSync
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        fechaMy:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_MY
+        idRecepcion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Recepcion
+        anoRecepcion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Recepcion
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        fechaDespacho:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Despacho
+        idFacturaproveedor:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Id_FacturaProveedor
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        descProveedor:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Proveedor
+        impFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Factura
+        impPagado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Pagado
+        impPorpagar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_PorPagar
+        impApagar1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar1
+        impApagar2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar2
+        impApagar3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar3
+        impApagar4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar4
+        impApagar5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar5
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Organismo
+        organismo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Organismo
+        sector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Sector
+        idClasifRx:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Rx
+        deudaDir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Deuda_DIR
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+    lifecycleCallbacks: {  }

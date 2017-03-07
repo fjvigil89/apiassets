@@ -1,0 +1,26 @@
+FormatosParam:
+    type: entity
+    table: Formatos_Param
+    id:
+        tipoEf:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Tipo_EF
+            generator:
+                strategy: IDENTITY
+    fields:
+        numeroFormato:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Numero_Formato
+        nombreFormato:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: Nombre_Formato
+    lifecycleCallbacks: {  }

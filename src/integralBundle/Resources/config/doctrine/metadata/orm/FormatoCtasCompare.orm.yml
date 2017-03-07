@@ -1,0 +1,80 @@
+FormatoCtasCompare:
+    type: entity
+    table: Formato_Ctas_Compare
+    id:
+        ctaI:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            id: true
+            column: Cta_I
+            generator:
+                strategy: IDENTITY
+    fields:
+        fila:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila
+        ordenListado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Listado
+        descI:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_I
+        ctaF:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_F
+        descF:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_F
+        saldoCtaI:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Cta_I
+        saldoCtaF:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Cta_F
+        operacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Operacion
+        filaInicio:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Inicio
+        filaFinal:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Final
+    lifecycleCallbacks: {  }

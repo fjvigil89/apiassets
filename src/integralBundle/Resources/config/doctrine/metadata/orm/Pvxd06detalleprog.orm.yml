@@ -1,0 +1,32 @@
+Pvxd06detalleprog:
+    type: entity
+    table: PVXD_06DetalleProg
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        clase:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clase
+        ida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ida
+        regreso:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Regreso
+    lifecycleCallbacks: {  }

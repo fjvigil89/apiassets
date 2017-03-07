@@ -1,0 +1,126 @@
+CfConfiguracionDet:
+    type: entity
+    table: CF_Configuracion_Det
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        numeroConfiguracion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Numero_Configuracion
+        fila:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Fila
+        idItem:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Id_Item
+        descItem:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: Desc_Item
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        relacionadoCon:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: Relacionado_Con
+        idRelacion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Relacion
+        ctaSumar:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: S
+            column: Cta_Sumar
+        soloDocsConfirmados:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: SOLO_Docs_Confirmados
+        filaIni:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Ini
+        filaFin:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Fin
+        valor:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Valor
+        coeficiente:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Coeficiente
+        ordenImpresion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Orden_Impresion
+        efecto:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Efecto
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+        valorCalculado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Calculado
+        notas:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Notas
+    lifecycleCallbacks: {  }

@@ -1,0 +1,33 @@
+EstadisticaVentasProductoAno:
+    type: entity
+    table: Estadistica_Ventas_Producto_Ano
+    id:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_producto
+            generator:
+                strategy: IDENTITY
+    fields:
+        ventasAno1:
+            type: decimal
+            nullable: true
+            precision: 18
+            scale: 0
+            column: Ventas_ano_1
+        ventasAno2:
+            type: decimal
+            nullable: true
+            precision: 18
+            scale: 0
+            column: Ventas_ano_2
+        ventasAno3:
+            type: decimal
+            nullable: true
+            precision: 18
+            scale: 0
+            column: Ventas_ano_3
+    lifecycleCallbacks: {  }

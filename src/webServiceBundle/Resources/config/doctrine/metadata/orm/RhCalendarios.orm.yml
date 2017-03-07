@@ -1,0 +1,230 @@
+RhCalendarios:
+    type: entity
+    table: RH_Calendarios
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            id: true
+            column: Mes
+        calendario:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Calendario
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        feriadosmes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: FeriadosMes
+        feriados1raq:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Feriados1raQ
+        feriados2daq:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Feriados2daQ
+        diasfondojornaleros1q:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DiasFondoJornaleros1Q
+        diasfondojornaleros2q:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DiasFondoJornaleros2Q
+        domingos:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Domingos
+        d1:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D1
+        d2:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D2
+        d3:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D3
+        d4:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D4
+        d5:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D5
+        d6:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D6
+        d7:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D7
+        d8:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D8
+        d9:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D9
+        d10:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D10
+        d11:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D11
+        d12:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D12
+        d13:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D13
+        d14:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D14
+        d15:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D15
+        d16:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D16
+        d17:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D17
+        d18:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D18
+        d19:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D19
+        d20:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D20
+        d21:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D21
+        d22:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D22
+        d23:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D23
+        d24:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D24
+        d25:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D25
+        d26:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D26
+        d27:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D27
+        d28:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D28
+        d29:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D29
+        d30:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D30
+        d31:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: D31
+        diascomedor:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DiasComedor
+    lifecycleCallbacks: {  }

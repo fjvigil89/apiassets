@@ -1,0 +1,151 @@
+PresupEsccDet:
+    type: entity
+    table: Presup_ESCC_Det
+    indexes:
+        IX_Presup_ESCC_Det_1:
+            columns:
+                - Id_ElemGasto
+                - Id_SubElemGasto
+                - Id_CCosto
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: TODAS
+            column: Id_Agrupacion
+        variante:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: '0'
+            column: Variante
+        idElemgasto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_ElemGasto
+        idSubelemgasto:
+            type: string
+            nullable: false
+            length: 26
+            fixed: false
+            default: ''
+            column: Id_SubElemGasto
+        descSubelemgasto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_SubElemGasto
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        planEnero:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Enero
+        planFebrero:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Febrero
+        planMarzo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Marzo
+        planAbril:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Abril
+        planMayo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Mayo
+        planJunio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Junio
+        planJulio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Julio
+        planAgosto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Agosto
+        planSeptiembre:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Septiembre
+        planOctubre:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Octubre
+        planNoviembre:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Noviembre
+        planDiciembre:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Diciembre
+        borrar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Borrar
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+    lifecycleCallbacks: {  }

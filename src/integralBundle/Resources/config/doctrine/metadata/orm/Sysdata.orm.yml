@@ -1,0 +1,22 @@
+Sysdata:
+    type: entity
+    table: Sysdata
+    id:
+        name:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: _name
+            generator:
+                strategy: IDENTITY
+    fields:
+        sqlCode:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: _sql_Code
+    lifecycleCallbacks: {  }

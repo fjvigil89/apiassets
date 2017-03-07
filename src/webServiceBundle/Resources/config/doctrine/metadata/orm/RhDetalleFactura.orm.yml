@@ -1,0 +1,519 @@
+RhDetalleFactura:
+    type: entity
+    table: RH_Detalle_Factura
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Factura
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoFactura:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Factura
+        items:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        idLote:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: Id_Lote
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: UNO
+            column: Um_Almacen
+        umFactura:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: UNO
+            column: Um_Factura
+        factorConversion:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '1'
+            column: factor_Conversion
+        precioVentaumalmacenmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Precio_VentaUmAlmacenMB
+        precioVentaumalmacenmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Precio_VentaUmAlmacenMC
+        precioVentaumfacturamb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Precio_VentaUmFacturaMB
+        precioVentaumfacturamc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Precio_VentaUmFacturaMC
+        precioVentatotalmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Precio_VentaTotalMB
+        precioVentatotalmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Precio_VentaTotalMC
+        existencia:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Existencia
+        disponibilidad:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Disponibilidad
+        cantidadFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Cantidad_Factura
+        cantidadAlmacen:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Cantidad_Almacen
+        reservadas:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Reservadas
+        descuentomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: DescuentoMB
+        descuentomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: DescuentoMC
+        recargomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: RecargoMB
+        recargomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: RecargoMC
+        tiporecargomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoRecargoMB
+        tiporecargomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: TipoRecargoMC
+        tipodescuentomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoDescuentoMB
+        tipodescuentomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: TipoDescuentoMC
+        arancelmb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: ArancelMB
+        arancelmc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: ArancelMC
+        importeMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_MB
+        importeMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_MC
+        importeMfact:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe_MFact
+        impuesto:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Impuesto
+        importeImpuesto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe_Impuesto
+        tipoFactura:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Factura
+        noSerie:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: No_Serie
+        condicionesPago:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Condiciones_Pago
+        cantidadDevuelta:
+            type: decimal
+            nullable: false
+            precision: 13
+            scale: 4
+            default: '0.00'
+            column: Cantidad_Devuelta
+        productoOservicioC:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Producto_OServicio_c
+        arancelario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Arancelario
+        precioCostoumalmacenmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoUmAlmacenMB
+        precioCostoumalmacenmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoUmAlmacenMC
+        importeCostomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_CostoMB
+        importeCostomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_CostoMC
+        precioVentaOriginal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Precio_Venta_Original
+        observaciones:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Observaciones
+        paquete:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '1'
+            column: Paquete
+        bultos:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0'
+            column: Bultos
+        comision:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Comision
+        importeComision:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe_Comision
+        itemscomp:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ItemsComp
+        importeDevueltomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_DevueltoMB
+        importeDevueltomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_DevueltoMC
+        importeRecargomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_RecargoMB
+        importeRecargomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_RecargoMC
+        importeDesctomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_DesctoMB
+        importeDesctomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_DesctoMC
+        importeArancelmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_ArancelMB
+        importeArancelmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_ArancelMC
+        precioRecargomb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Precio_RecargoMB
+        precioRecargomc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Precio_RecargoMC
+        precioDesctomb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Precio_DesctoMB
+        precioDesctomc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Precio_DesctoMC
+        precioArancelmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Precio_ArancelMB
+        precioArancelmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Precio_ArancelMC
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Item
+        lotesm:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: LoteSM
+        pesobruto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PesoBruto
+        pesoneto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PesoNeto
+        oferta:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Oferta
+        irconsigna:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: IRConsigna
+        contairconsigna:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContaIRConsigna
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ccosto
+        idDestino:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Destino
+        idActividad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Actividad
+    lifecycleCallbacks: {  }

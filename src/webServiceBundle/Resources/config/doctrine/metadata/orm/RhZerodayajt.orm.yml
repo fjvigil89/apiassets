@@ -1,0 +1,57 @@
+RhZerodayajt:
+    type: entity
+    table: RH_ZeroDayAjt
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Expediente
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Nombre
+        apellido1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Apellido_1
+        apellido2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Apellido_2
+        valorDivisa:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_Divisa
+        valorDivisaCup:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Valor_Divisa_CUP
+        pagoComedorCuc:
+            type: boolean
+            nullable: false
+            column: Pago_Comedor_CUC
+        pagoComedorTarifa:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Pago_Comedor_Tarifa
+        pagoComedorTarifaCup:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Pago_Comedor_Tarifa_CUP
+    lifecycleCallbacks: {  }

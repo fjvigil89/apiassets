@@ -1,0 +1,82 @@
+ChArqueosMcDet:
+    type: entity
+    table: CH_Arqueos_MC_Det
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idArqueo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Arqueo
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Clasificacion
+        ordenPresentacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Orden_Presentacion
+        idPresentacion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Presentacion
+        formaPresentacion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Forma_Presentacion
+        cantidad:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cantidad
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+        fila:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila
+        ordenImpresion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Impresion
+    lifecycleCallbacks: {  }

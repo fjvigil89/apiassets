@@ -1,0 +1,44 @@
+FzcoanticCanc:
+    type: entity
+    table: FzCoAntic_Canc
+    indexes:
+        CobrAnCancT21:
+            columns:
+                - Id_Doc
+                - Ano_Doc
+                - Forma_Pago
+                - Id_Cliente
+    id:
+        impAnticCanc:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Imp_Antic_Canc
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDoc:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Doc
+        anoDoc:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Ano_Doc
+        formaPago:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Forma_Pago
+        idCliente:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Cliente
+    lifecycleCallbacks: {  }

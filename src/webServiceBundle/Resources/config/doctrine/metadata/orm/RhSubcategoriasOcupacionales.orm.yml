@@ -1,0 +1,36 @@
+RhSubcategoriasOcupacionales:
+    type: entity
+    table: RH_Subcategorias_Ocupacionales
+    id:
+        idCategoria:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Categoria
+        idSubcategoria:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Subcategoria
+    fields:
+        descSubcategoria:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Subcategoria
+        identificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Identificacion
+    lifecycleCallbacks: {  }

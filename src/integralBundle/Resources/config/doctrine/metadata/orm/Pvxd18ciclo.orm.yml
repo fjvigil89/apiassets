@@ -1,0 +1,43 @@
+Pvxd18ciclo:
+    type: entity
+    table: PVXD_18Ciclo
+    id:
+        idCiclo:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            id: true
+            column: Id_Ciclo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCiclo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ciclo
+        clase:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clase
+        fechaInicio:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Inicio
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Fin
+        activo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Activo
+    lifecycleCallbacks: {  }

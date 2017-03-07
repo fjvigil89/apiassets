@@ -1,0 +1,325 @@
+ValeSalida:
+    type: entity
+    table: Vale_Salida
+    indexes:
+        IX_Vale_Salida_1:
+            columns:
+                - Fecha_Confirmacion
+                - Id_Almacen
+    uniqueConstraints:
+        IX_Vale_Salida:
+            columns:
+                - Contador
+    id:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Confirmada
+        idValesalida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_ValeSalida
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Almacen
+        anoValesalida:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano_ValeSalida
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        fechaValesalida:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_ValeSalida
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        nombre:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Nombre
+        referencia:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Referencia
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ccosto
+        idArearesponsabilidad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResponsabilidad
+        destino:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Destino
+        idInsumo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Insumo
+        idAlmacendestino:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_AlmacenDestino
+        refOtrabajo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Ref_OTrabajo
+        idDocref:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_DocRef
+        anoDocref:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_DocRef
+        recepContador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Recep_Contador
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMC
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        horaSal:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Hora_Sal
+        chofer:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Chofer
+        choferci:
+            type: string
+            nullable: false
+            length: 11
+            fixed: false
+            default: ''
+            column: ChoferCI
+        despachadoPor:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Despachado_Por
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        marcaConteo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca_Conteo
+        marcaAlertas:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca_Alertas
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        descAlmacend:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_AlmacenD
+        descArearesponsabilidad:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_AreaResponsabilidad
+        idAlmdocref:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AlmDocRef
+        importeDevueltomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_DevueltoMB
+        importeDevueltomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_DevueltoMC
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        cantArt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cant_Art
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_primario
+        noPrelacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: No_Prelacion
+        noremision:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: NoRemision
+        dmtot:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: DmToT
+        ultimaRemi:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Ultima_Remi
+        etapa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Etapa
+    lifecycleCallbacks: {  }

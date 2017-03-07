@@ -1,0 +1,30 @@
+Pvxd22normasdias:
+    type: entity
+    table: PVXD_22NormasDias
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        dia:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dia
+        horasalida:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: HoraSalida
+        horaarribo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: HoraArribo
+    lifecycleCallbacks: {  }

@@ -1,0 +1,77 @@
+CrmAbcComprasMc:
+    type: entity
+    table: CRM_ABC_Compras_MC
+    indexes:
+        Clu_CRM_ABC_Compras_MC:
+            columns:
+                - Facturado_Ano
+        IX1_CRM_ABC_Compras_MC:
+            columns:
+                - Contador1
+    id:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cliente
+            generator:
+                strategy: IDENTITY
+    fields:
+        clasificacion:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Clasificacion
+        numero:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Numero
+        porcCliente:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Porc_Cliente
+        facturadoAno:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Facturado_Ano
+        porcFacturado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Porc_Facturado
+        facturadoAcum:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Facturado_Acum
+        porcAcum:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Porc_Acum
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+        facturadoAnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Facturado_Ant
+    lifecycleCallbacks: {  }

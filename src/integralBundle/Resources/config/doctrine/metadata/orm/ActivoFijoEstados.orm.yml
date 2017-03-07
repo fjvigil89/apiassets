@@ -1,0 +1,27 @@
+ActivoFijoEstados:
+    type: entity
+    table: Activo_Fijo_Estados
+    id:
+        idEstadoActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            id: true
+            column: Id_Estado_Activo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descEstadoActivo:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Estado_Activo
+        disponible:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Disponible
+    lifecycleCallbacks: {  }

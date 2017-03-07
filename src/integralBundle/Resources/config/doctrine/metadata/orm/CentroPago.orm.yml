@@ -1,0 +1,30 @@
+CentroPago:
+    type: entity
+    table: Centro_Pago
+    id:
+        idCpago:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cpago
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCpago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cpago
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Organismo
+    lifecycleCallbacks: {  }

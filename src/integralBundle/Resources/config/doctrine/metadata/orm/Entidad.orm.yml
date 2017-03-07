@@ -1,0 +1,32 @@
+Entidad:
+    type: entity
+    table: Entidad
+    uniqueConstraints:
+        PK_Entidad:
+            columns:
+                - Id_Compania
+                - Id_Entidad
+    id:
+        descEntidad:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            id: true
+            column: Desc_Entidad
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCompania:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Id_Compania
+        idEntidad:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Id_Entidad
+    lifecycleCallbacks: {  }

@@ -1,0 +1,64 @@
+Resumen:
+    type: entity
+    table: Resumen
+    id:
+        idProducto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Producto
+            generator:
+                strategy: IDENTITY
+    fields:
+        cantidad:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Cantidad
+        importeInicio:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Importe_Inicio
+        cantidadEntrada:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Cantidad_Entrada
+        importeEntrada:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Importe_Entrada
+        importeSalida:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Importe_Salida
+        cantidadSalida:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Cantidad_Salida
+        importeMermas:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Importe_Mermas
+        cantidadMermas:
+            type: decimal
+            nullable: true
+            precision: 14
+            scale: 4
+            column: Cantidad_Mermas
+        precio:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Precio
+    lifecycleCallbacks: {  }

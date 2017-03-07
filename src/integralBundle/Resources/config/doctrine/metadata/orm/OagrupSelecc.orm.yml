@@ -1,0 +1,41 @@
+OagrupSelecc:
+    type: entity
+    table: OAgrup_Selecc
+    id:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Agrupacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        agrupacion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Agrupacion
+        incluir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Incluir
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        uspId:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Usp_Id
+    lifecycleCallbacks: {  }

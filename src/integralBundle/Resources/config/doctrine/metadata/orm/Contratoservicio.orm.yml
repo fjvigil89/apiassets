@@ -1,0 +1,138 @@
+Contratoservicio:
+    type: entity
+    table: ContratoServicio
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        fechaemision:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaEmision
+        nocontrato:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: NoContrato
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        enporciento:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: EnPorciento
+        generarFactura:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Generar_Factura
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMC
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes
+        anno:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Anno
+        nota:
+            type: string
+            nullable: false
+            length: 500
+            fixed: false
+            default: ''
+            column: Nota
+        facturado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Facturado
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        generarConfirmada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Generar_Confirmada
+        periodo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Periodo
+        clasifCreditoFactura:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: clasif_credito_factura
+    lifecycleCallbacks: {  }

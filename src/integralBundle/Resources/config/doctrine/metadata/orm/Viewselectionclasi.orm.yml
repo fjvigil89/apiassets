@@ -1,0 +1,92 @@
+Viewselectionclasi:
+    type: entity
+    table: ViewSelectionClasi
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: UM_Almacen
+        priorizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Priorizado
+        idClave:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Clave
+        indiceRp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Indice_RP
+        tasaCambio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Tasa_cambio
+        precioOriginal:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: Precio_Original
+        precioCalculado:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: Precio_Calculado
+        precioOriginalmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00'
+            column: Precio_OriginalMC
+        tcIrpm:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '2'
+            column: Tc_Irpm
+        formula:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: N/D
+            column: Formula
+    lifecycleCallbacks: {  }

@@ -1,0 +1,37 @@
+Moneda2:
+    type: entity
+    table: Moneda2
+    id:
+        descMoneda:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: '*** No definida ***'
+            id: true
+            column: Desc_Moneda
+            generator:
+                strategy: IDENTITY
+    fields:
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        tasaCambio:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: Tasa_Cambio
+        tasaCambioub:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: Tasa_CambioUB
+    lifecycleCallbacks: {  }

@@ -1,0 +1,38 @@
+TipoPartidaRegularidades:
+    type: entity
+    table: Tipo_Partida_Regularidades
+    indexes:
+        Ix1_Tipo_Part:
+            columns:
+                - Documento
+    id:
+        idTipoPartida:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_Tipo_Partida
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoPartida:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Tipo_Partida
+        documento:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Documento
+        esdeMc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: EsDe_MC
+    lifecycleCallbacks: {  }

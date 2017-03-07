@@ -1,0 +1,38 @@
+RhMsgrupostrabajadores:
+    type: entity
+    table: RH_MSGruposTrabajadores
+    id:
+        mscodgrupo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: MSCodGrupo
+            generator:
+                strategy: IDENTITY
+    fields:
+        msdescgrupo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: MSDescGrupo
+        mspagocoeficiente:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MSPagoCoeficiente
+        mspagoantiguedad:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MSPagoAntiguedad
+        mspagoturno:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MSPagoTurno
+    lifecycleCallbacks: {  }

@@ -1,0 +1,203 @@
+RhEstadisticas:
+    type: entity
+    table: RH_ESTADISTICAS
+    id:
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Empleado
+            generator:
+                strategy: IDENTITY
+    fields:
+        idExpediente:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Expediente
+        noCi:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: No_CI
+        nombre:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Nombre
+        apellido1:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Apellido_1
+        apellido2:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Apellido_2
+        idTipoContrato:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: Id_Tipo_Contrato
+        descTipoContrato:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: Desc_Tipo_Contrato
+        idCategoria:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Categoria
+        descCategoria:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: Desc_Categoria
+        sexo:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: Sexo
+        colorPiel:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Color_Piel
+        idProvincia:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Provincia
+        descProvincia:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Desc_Provincia
+        idMunicipio:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Municipio
+        descMunicipio:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Desc_Municipio
+        idNivelEscolaridad:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: Id_Nivel_Escolaridad
+        descNivelEscolaridad:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Desc_Nivel_Escolaridad
+        idCategoriaDi:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Categoria_DI
+        descCategoriaDi:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Desc_Categoria_DI
+        docente:
+            type: boolean
+            nullable: true
+            column: Docente
+        investigador:
+            type: boolean
+            nullable: true
+            column: Investigador
+        idGradoCientifico:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Grado_Cientifico
+        descGradoCientifico:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Desc_Grado_Cientifico
+        salarioBasico:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Salario_Basico
+        estimulo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Estimulo
+        porcientoEstimulo:
+            type: decimal
+            nullable: true
+            precision: 5
+            scale: 2
+            column: Porciento_Estimulo
+        antiguedad:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Antiguedad
+        plus:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Plus
+        otros:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Otros
+        idCargo:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Id_Cargo
+        descCargo:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+            column: Desc_Cargo
+        fechaCargo:
+            type: datetime
+            nullable: true
+            column: Fecha_Cargo
+        alta:
+            type: boolean
+            nullable: true
+            column: Alta
+        baja:
+            type: boolean
+            nullable: true
+            column: Baja
+    lifecycleCallbacks: {  }

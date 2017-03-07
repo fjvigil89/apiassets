@@ -1,0 +1,65 @@
+RhHistoricoOtrosPagos:
+    type: entity
+    table: RH_Historico_Otros_Pagos
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        idOtroPago:
+            type: string
+            nullable: false
+            length: 7
+            fixed: false
+            default: ''
+            column: Id_Otro_Pago
+        valorOtroPago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Otro_Pago
+        importeOtroPago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Otro_Pago
+        salarioAcumulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado
+    lifecycleCallbacks: {  }

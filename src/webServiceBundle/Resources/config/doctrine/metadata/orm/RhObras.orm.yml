@@ -1,0 +1,23 @@
+RhObras:
+    type: entity
+    table: RH_Obras
+    id:
+        idObra:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Obra
+            generator:
+                strategy: IDENTITY
+    fields:
+        descObra:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Obra
+    lifecycleCallbacks: {  }

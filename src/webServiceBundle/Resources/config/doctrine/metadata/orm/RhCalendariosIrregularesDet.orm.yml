@@ -1,0 +1,51 @@
+RhCalendariosIrregularesDet:
+    type: entity
+    table: RH_Calendarios_Irregulares_Det
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            id: true
+            column: Mes
+        idJornada:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Jornada
+        inidia:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: IniDia
+    fields:
+        inihora:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: IniHora
+        findia:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: FinDia
+        finhora:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FinHora
+    lifecycleCallbacks: {  }

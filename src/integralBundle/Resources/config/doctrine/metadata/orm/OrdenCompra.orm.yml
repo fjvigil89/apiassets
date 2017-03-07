@@ -1,0 +1,233 @@
+OrdenCompra:
+    type: entity
+    table: Orden_Compra
+    uniqueConstraints:
+        IX_Orden_Compra:
+            columns:
+                - Contador
+    id:
+        anoOrdencompra:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano_OrdenCompra
+            generator:
+                strategy: IDENTITY
+    fields:
+        idOrdencompra:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_OrdenCompra
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        descProveedor:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Proveedor
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        descEmpleado:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Empleado
+        fechaPedido:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Pedido
+        prometidoParafecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Prometido_ParaFecha
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        entregarA:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Entregar_A
+        nota:
+            type: string
+            nullable: false
+            length: 500
+            fixed: false
+            default: ''
+            column: Nota
+        terminosEntrega:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Terminos_Entrega
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        importemn:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMn
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        cerrada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrada
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        tasaCambio:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: Tasa_Cambio
+        prefijooc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: PrefijoOC
+        contadoroc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorOC
+        fechaDespacho:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Despacho
+        condicionespago:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: CondicionesPago
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Op
+        aplicaplazocobro:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AplicaPlazoCobro
+        enporciento:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: EnPorciento
+        credito:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Credito
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_primario
+        impuestoprove:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImpuestoProve
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ccosto
+        aprobada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Aprobada
+        genAuto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Gen_Auto
+    lifecycleCallbacks: {  }

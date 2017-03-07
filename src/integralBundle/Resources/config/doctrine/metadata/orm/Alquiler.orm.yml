@@ -1,0 +1,154 @@
+Alquiler:
+    type: entity
+    table: Alquiler
+    uniqueConstraints:
+        IX_Alquiler:
+            columns:
+                - Contador
+    id:
+        idAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_Alquiler
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Almacen
+        anoAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano_Alquiler
+    fields:
+        idEstado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Id_Estado
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        fechaAlquiler:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Alquiler
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        atte:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Atte
+        idTipoAlquiler:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Tipo_Alquiler
+        noContrato:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: No_Contrato
+        fechaFirmaContrato:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Firma_Contrato
+        fechaIniContrato:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Ini_Contrato
+        fechaFinContrato:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Fin_Contrato
+        fechaCierre:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Cierre
+        bandera:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: Bandera
+        idAlmacenFactura:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen_Factura
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        credito:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Credito
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+    lifecycleCallbacks: {  }

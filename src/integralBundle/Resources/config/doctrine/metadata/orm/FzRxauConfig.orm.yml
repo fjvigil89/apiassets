@@ -1,0 +1,26 @@
+FzRxauConfig:
+    type: entity
+    table: Fz_RxAU_Config
+    id:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Agrupacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        fechaIni:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Ini
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Fin
+    lifecycleCallbacks: {  }

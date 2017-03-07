@@ -1,0 +1,20 @@
+OneConfig:
+    type: entity
+    table: ONE_Config
+    id:
+        modoEntrada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Modo_Entrada
+            generator:
+                strategy: IDENTITY
+    fields:
+        usarPlanElemSubelemGasto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Usar_Plan_Elem_SubElem_Gasto
+    lifecycleCallbacks: {  }

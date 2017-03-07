@@ -1,0 +1,41 @@
+RhMsantiguedad:
+    type: entity
+    table: RH_MSAntiguedad
+    id:
+        codigo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Codigo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Descripcion
+        limiteinferior:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: LimiteInferior
+        limitesuperior:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: LimiteSuperior
+        porciento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Porciento
+    lifecycleCallbacks: {  }

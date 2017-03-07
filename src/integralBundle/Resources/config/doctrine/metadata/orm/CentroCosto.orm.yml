@@ -1,0 +1,36 @@
+CentroCosto:
+    type: entity
+    table: Centro_Costo
+    id:
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Ccosto
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ccosto
+        grupo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Grupo
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+    lifecycleCallbacks: {  }

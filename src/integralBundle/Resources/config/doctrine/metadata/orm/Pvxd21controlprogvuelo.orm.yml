@@ -1,0 +1,26 @@
+Pvxd21controlprogvuelo:
+    type: entity
+    table: PVXD_21ControlProgVuelo
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Ano
+            generator:
+                strategy: IDENTITY
+    fields:
+        soliretorno:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: SoliRetorno
+        progvuelo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: ProgVuelo
+    lifecycleCallbacks: {  }

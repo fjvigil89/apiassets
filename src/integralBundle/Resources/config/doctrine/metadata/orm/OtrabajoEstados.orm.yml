@@ -1,0 +1,27 @@
+OtrabajoEstados:
+    type: entity
+    table: Otrabajo_Estados
+    id:
+        idEstado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Estado
+            generator:
+                strategy: IDENTITY
+    fields:
+        descEstado:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Desc_Estado
+        tiempom:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TiempoM
+    lifecycleCallbacks: {  }

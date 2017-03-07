@@ -1,0 +1,23 @@
+RhGrpsendrec:
+    type: entity
+    table: RH_GrpSendRec
+    id:
+        idGrpsendrec:
+            type: string
+            nullable: false
+            length: 7
+            fixed: false
+            default: ''
+            id: true
+            column: Id_GrpSendRec
+            generator:
+                strategy: IDENTITY
+    fields:
+        descGrpsendrec:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_GrpSendRec
+    lifecycleCallbacks: {  }

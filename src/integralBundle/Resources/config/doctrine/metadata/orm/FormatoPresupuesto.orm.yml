@@ -1,0 +1,154 @@
+FormatoPresupuesto:
+    type: entity
+    table: Formato_Presupuesto
+    id:
+        fila:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Fila
+            generator:
+                strategy: IDENTITY
+    fields:
+        ordenListado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Listado
+        ctaI:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_I
+        ctaF:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_F
+        descripcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion
+        operacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Operacion
+        filaInicio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Inicio
+        filaFinal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Final
+        tipoValor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Tipo_Valor
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo
+        filaPorciento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila_Porciento
+        saldoListado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Listado
+        saldoAimprimir:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_AImprimir
+        saldoListadoAcum:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: Saldo_Listado_Acum
+        saldoAimprimirAcum:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: Saldo_AImprimir_Acum
+        realMes:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: Real_Mes
+        realAcum:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: Real_Acum
+        planMes:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: Plan_Mes
+        planAcum:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: Plan_Acum
+        porcientoMes:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: Porciento_Mes
+        porcientoAcum:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: Porciento_Acum
+        formula:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: ''
+            column: Formula
+        formulaKtes:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+            default: ''
+            column: Formula_Ktes
+    lifecycleCallbacks: {  }

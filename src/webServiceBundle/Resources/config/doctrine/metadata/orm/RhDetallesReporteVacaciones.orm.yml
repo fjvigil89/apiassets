@@ -1,0 +1,154 @@
+RhDetallesReporteVacaciones:
+    type: entity
+    table: RH_Detalles_Reporte_Vacaciones
+    indexes:
+        IX_RH_Detalles_Reporte_Vacaciones:
+            columns:
+                - Contador
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            id: true
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+    fields:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: Item
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        diasAcumulado:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Acumulado
+        salarioAcumulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Acumulado
+        diasSolicitadosPeriodo:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Solicitados_Periodo
+        diasSolicitadosAdelantados:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Solicitados_Adelantados
+        diasSolicitados:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Solicitados
+        diasPagadosPeriodo:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Pagados_Periodo
+        diasPagadosAdelantados:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Pagados_Adelantados
+        diasPagados:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Dias_Pagados
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        liquidacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Liquidacion
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+        origen:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Origen
+        diasFeriadosPeriodo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Feriados_Periodo
+        diasFeriadosAdelantados:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Feriados_Adelantados
+    lifecycleCallbacks: {  }

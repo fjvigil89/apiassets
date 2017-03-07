@@ -1,0 +1,127 @@
+DetallePreordenlabor:
+    type: entity
+    table: Detalle_PreOrdenLabor
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idOtrabajo:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Otrabajo
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoOtrabajo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Otrabajo
+        fechaInicio:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Inicio
+        horaInicio:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Hora_Inicio
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Fin
+        horaFin:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Hora_Fin
+        actividad:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Actividad
+        observaciones:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Observaciones
+        cantidadHoras:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Cantidad_Horas
+        empleado:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Empleado
+        cerrado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        descProd:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Prod
+        cerrar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrar
+        idActividad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Actividad
+        horasplan:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: HorasPlan
+        etapa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Etapa
+        items:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+    lifecycleCallbacks: {  }

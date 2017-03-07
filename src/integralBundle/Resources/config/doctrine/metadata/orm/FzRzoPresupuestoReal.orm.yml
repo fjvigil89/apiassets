@@ -1,0 +1,63 @@
+FzRzoPresupuestoReal:
+    type: entity
+    table: Fz_RZo_Presupuesto_Real
+    id:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Agrupacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        planIngreso:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Ingreso
+        planGastos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Gastos
+        realIngresos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Real_Ingresos
+        realGastos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Real_Gastos
+        anno:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Anno
+        mes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Moneda
+    lifecycleCallbacks: {  }

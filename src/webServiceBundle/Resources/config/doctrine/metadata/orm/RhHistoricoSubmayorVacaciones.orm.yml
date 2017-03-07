@@ -1,0 +1,113 @@
+RhHistoricoSubmayorVacaciones:
+    type: entity
+    table: RH_Historico_Submayor_Vacaciones
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            id: true
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            id: true
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+    fields:
+        saldoinicialdias:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: SaldoInicialDias
+        saldoinicialimporte:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoInicialImporte
+        devengadodias:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: DevengadoDias
+        devengadoimporte:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DevengadoImporte
+        vacacionesdias:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: VacacionesDias
+        vacacionesimporte:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: VacacionesImporte
+        acumvacacionesdias:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: AcumVacacionesDias
+        acumvacacionesimporte:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AcumVacacionesImporte
+        ajustedias:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: AjusteDias
+        ajusteimporte:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AjusteImporte
+        saldodias:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: SaldoDias
+        saldoimporte:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoImporte
+    lifecycleCallbacks: {  }

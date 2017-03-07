@@ -1,0 +1,86 @@
+TconciliacionBank:
+    type: entity
+    table: TConciliacion_Bank
+    indexes:
+        Ix_Conc_Bank:
+            columns:
+                - Id_Compro
+                - Ano
+                - Mes
+    id:
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            id: true
+            column: Fecha
+            generator:
+                strategy: IDENTITY
+    fields:
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        idDoc:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Doc
+        debe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEBE
+        haber:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HABER
+        transito:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Transito
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        fechaConciliacion:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Conciliacion
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        computerName:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Computer_Name
+    lifecycleCallbacks: {  }

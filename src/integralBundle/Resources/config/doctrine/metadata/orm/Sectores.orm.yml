@@ -1,0 +1,14 @@
+Sectores:
+    type: entity
+    table: Sectores
+    id:
+        sector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: Sector
+            generator:
+                strategy: IDENTITY
+    lifecycleCallbacks: {  }

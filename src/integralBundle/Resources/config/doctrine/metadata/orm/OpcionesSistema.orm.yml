@@ -1,0 +1,26 @@
+OpcionesSistema:
+    type: entity
+    table: Opciones_Sistema
+    id:
+        idModulo:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            id: true
+            column: Id_Modulo
+        idOpcion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Opcion
+    fields:
+        descOpcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: Desc_Opcion
+    lifecycleCallbacks: {  }

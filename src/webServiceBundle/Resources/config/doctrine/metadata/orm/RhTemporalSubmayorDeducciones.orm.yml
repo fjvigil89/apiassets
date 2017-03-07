@@ -1,0 +1,114 @@
+RhTemporalSubmayorDeducciones:
+    type: entity
+    table: RH_Temporal_Submayor_Deducciones
+    id:
+        idExpedienteDeduccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente_Deduccion
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        idDeduccion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Deduccion
+        restasaldo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: RestaSaldo
+        cuota:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cuota
+        ajuste:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ajuste
+        saldoinicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoInicial
+        saldofinal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoFinal
+        deduccionesporsalario:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeduccionesPorSalario
+        deduccionesporvacaciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeduccionesPorVacaciones
+        deduccionesporsubsidios:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeduccionesPorSubsidios
+        deduccionesporestipendio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeduccionesporEstipendio
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+    lifecycleCallbacks: {  }

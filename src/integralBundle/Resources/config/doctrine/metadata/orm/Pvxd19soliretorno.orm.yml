@@ -1,0 +1,111 @@
+Pvxd19soliretorno:
+    type: entity
+    table: PVXD_19SoliRetorno
+    indexes:
+        IX_PVXD_19SoliRetorno:
+            columns:
+                - Contador
+    id:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Confirmada
+        idSolimerca:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SoliMerca
+        anoSolimerca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano_SoliMerca
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        fechaSolimerca:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_SoliMerca
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMC
+        nota:
+            type: string
+            nullable: false
+            length: 500
+            fixed: false
+            default: ''
+            column: Nota
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        contadorprog:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorProg
+        idVuelo:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Id_Vuelo
+        idRuta:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Id_Ruta
+        idZona:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Id_Zona
+        idEquipo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Equipo
+    lifecycleCallbacks: {  }

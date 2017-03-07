@@ -1,0 +1,76 @@
+ServiciosActividadComponentes:
+    type: entity
+    table: Servicios_Actividad_Componentes
+    id:
+        idServicio:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Servicio
+        idActividad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Actividad
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+    fields:
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umProducto:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Producto
+        cantidad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Cantidad
+        costofijomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFijoMB
+        costofijomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFijoMC
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ImporteMC
+        productoOservicio:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Producto_oServicio
+    lifecycleCallbacks: {  }

@@ -1,0 +1,81 @@
+PresproduccionSemanaDetail:
+    type: entity
+    table: PresProduccion_Semana_Detail
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Ano
+        mes:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            id: true
+            column: Mes
+        sem:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            id: true
+            column: Sem
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+    fields:
+        d01:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: D01
+        d02:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: D02
+        d03:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: D03
+        d04:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: D04
+        d05:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: D05
+        d06:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: D06
+        d07:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: D07
+        total:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Total
+    lifecycleCallbacks: {  }

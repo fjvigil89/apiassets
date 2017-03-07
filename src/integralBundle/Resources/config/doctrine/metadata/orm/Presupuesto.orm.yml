@@ -1,0 +1,144 @@
+Presupuesto:
+    type: entity
+    table: Presupuesto
+    indexes:
+        Clu_Ano_Varian_Presup:
+            columns:
+                - Ano
+                - Variante
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano
+        idCuenta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta
+        descCuenta:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta
+        planEnero:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Enero
+        planFebrero:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Febrero
+        planMarzo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Marzo
+        planAbril:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Abril
+        planMayo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Mayo
+        planJunio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Junio
+        planJulio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Julio
+        planAgosto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Agosto
+        planSeptiembre:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Septiembre
+        planOctubre:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Octubre
+        planNoviembre:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Noviembre
+        planDiciembre:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Diciembre
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+        variante:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: '0'
+            column: Variante
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: TODAS
+            column: Id_Agrupacion
+    lifecycleCallbacks: {  }

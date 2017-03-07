@@ -1,0 +1,136 @@
+FzRzolcomproRes:
+    type: entity
+    table: Fz_RZoLCompro_Res
+    id:
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            id: true
+            column: Cta
+            generator:
+                strategy: IDENTITY
+    fields:
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        clasificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Clasificacion
+        natu:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Natu
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        debe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Debe
+        haber:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Haber
+        idDoc:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Doc
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        claveTipoComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clave_Tipo_Comprobante
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+    lifecycleCallbacks: {  }

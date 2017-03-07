@@ -1,0 +1,46 @@
+RhPlantillaPlazas:
+    type: entity
+    table: RH_Plantilla_Plazas
+    id:
+        plaza:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Plaza
+            generator:
+                strategy: IDENTITY
+    fields:
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+        idCargo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Cargo
+        vacante:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Vacante
+        orden:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden
+    lifecycleCallbacks: {  }

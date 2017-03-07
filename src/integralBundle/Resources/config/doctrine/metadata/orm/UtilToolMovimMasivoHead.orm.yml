@@ -1,0 +1,226 @@
+UtilToolMovimMasivoHead:
+    type: entity
+    table: Util_Tool_Movim_Masivo_Head
+    uniqueConstraints:
+        IX_Util_Tool_Movim_Masivo_Head:
+            columns:
+                - Contador
+    id:
+        idMov:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_Mov
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Almacen
+        anoMov:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano_Mov
+    fields:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        idClasifTrasladoUh:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Clasif_Traslado_UH
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        idClasifUh:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Clasif_UH
+        descClasifUh:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Clasif_UH
+        idUh:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_UH
+        descUh:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_UH
+        idCcostoold:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CcostoOld
+        descCcostoold:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_CcostoOld
+        idArearesponsabilidadold:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResponsabilidadOld
+        descArearesponsabilidadold:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_AreaResponsabilidadOld
+        idEmpleadoold:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_EmpleadoOld
+        descEmpleadoold:
+            type: string
+            nullable: false
+            length: 61
+            fixed: false
+            default: ''
+            column: Desc_EmpleadoOld
+        idCcostonew:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CcostoNew
+        descCcostonew:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_CcostoNew
+        idArearesponsabilidadnew:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResponsabilidadNew
+        descArearesponsabilidadnew:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_AreaResponsabilidadNew
+        idEmpleadonew:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_EmpleadoNew
+        descEmpleadonew:
+            type: string
+            nullable: false
+            length: 61
+            fixed: false
+            default: ''
+            column: Desc_EmpleadoNew
+        fechaMov:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Mov
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        idComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Comprobante
+        anoComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Comprobante
+        mesComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Comprobante
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+    lifecycleCallbacks: {  }

@@ -1,0 +1,121 @@
+ControlInventario:
+    type: entity
+    table: Control_Inventario
+    id:
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Almacen
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Ano
+    fields:
+        ajuste:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Ajuste
+        salida:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Salida
+        devolucion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Devolucion
+        factura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Factura
+        recepcion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Recepcion
+        oferta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Oferta
+        compra:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Compra
+        mesCerrado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Cerrado
+        facturazona:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Facturazona
+        ordenTrabajo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Orden_Trabajo
+        ordenProduccion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Orden_Produccion
+        porcionamiento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Porcionamiento
+        ordenEntrega:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Orden_Entrega
+        preOrden:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Pre_Orden
+        cumplisolicitud:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: CumpliSolicitud
+        ticketventa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: TicketVenta
+        hojaconteo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: HojaConteo
+    lifecycleCallbacks: {  }

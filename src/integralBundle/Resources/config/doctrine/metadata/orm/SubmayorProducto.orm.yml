@@ -1,0 +1,181 @@
+SubmayorProducto:
+    type: entity
+    table: Submayor_Producto
+    indexes:
+        IX_Submayor_Producto_1:
+            columns:
+                - Fecha
+                - Id_Almacen
+    id:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        idLote:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: Id_Lote
+        fecha:
+            type: datetime
+            nullable: false
+            column: Fecha
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            column: Id_Clasificacion
+        tipoDocumto:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            column: Tipo_Documto
+        idDocumto:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Documto
+        anoDocumto:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Documto
+        referencia:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: Referencia
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            column: Cantidad
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ImporteMC
+        saldoCantidad:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            column: Saldo_Cantidad
+        saldoImportemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Saldo_ImporteMB
+        saldoImportemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Saldo_ImporteMC
+        costomb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: CostoMB
+        costomc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: CostoMC
+        costofinalmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: CostoFinalMB
+        costofinalmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: CostoFinalMC
+        entidad:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: Entidad
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        existEnAlmacen:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Exist_en_Almacen
+        noPrelacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: No_Prelacion
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Almacen
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_primario
+        empaque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Empaque
+        saldoEmpaque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Saldo_Empaque
+        consecutivo:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: Consecutivo
+    lifecycleCallbacks: {  }

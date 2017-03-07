@@ -1,0 +1,36 @@
+RhUbicacionDefensa:
+    type: entity
+    table: RH_Ubicacion_Defensa
+    id:
+        idUbicacionDefensa:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Ubicacion_Defensa
+            generator:
+                strategy: IDENTITY
+    fields:
+        descUbicacionDefensa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ubicacion_Defensa
+        siglas:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Siglas
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clasificacion
+    lifecycleCallbacks: {  }

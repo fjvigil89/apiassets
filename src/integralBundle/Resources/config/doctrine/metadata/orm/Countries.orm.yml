@@ -1,0 +1,27 @@
+Countries:
+    type: entity
+    table: Countries
+    id:
+        codcountry:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: CodCountry
+            generator:
+                strategy: IDENTITY
+    fields:
+        desccountry:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: DescCountry
+        nacionfavorecida:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: NacionFavorecida
+    lifecycleCallbacks: {  }

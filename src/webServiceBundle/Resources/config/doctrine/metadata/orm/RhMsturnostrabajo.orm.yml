@@ -1,0 +1,28 @@
+RhMsturnostrabajo:
+    type: entity
+    table: RH_MSTurnosTrabajo
+    id:
+        codturno:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            id: true
+            column: CodTurno
+            generator:
+                strategy: IDENTITY
+    fields:
+        descturno:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: DescTurno
+        cuantia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cuantia
+    lifecycleCallbacks: {  }

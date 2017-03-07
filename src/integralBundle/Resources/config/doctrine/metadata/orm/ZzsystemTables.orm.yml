@@ -1,0 +1,30 @@
+ZzsystemTables:
+    type: entity
+    table: ZZSystem_Tables
+    id:
+        contador9:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador9
+            generator:
+                strategy: IDENTITY
+    fields:
+        mtable:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: mTable
+        limpiar:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: LIMPIAR
+        revisadaIndices:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Revisada_Indices
+    lifecycleCallbacks: {  }

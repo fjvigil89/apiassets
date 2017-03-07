@@ -1,0 +1,36 @@
+RhCausasAltas:
+    type: entity
+    table: RH_Causas_Altas
+    id:
+        idCausaalta:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_CausaAlta
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCausaalta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_CausaAlta
+        descRpt:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Desc_Rpt
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Clasificacion
+    lifecycleCallbacks: {  }

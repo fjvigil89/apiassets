@@ -1,0 +1,180 @@
+CuentasDistribuyen:
+    type: entity
+    table: Cuentas_Distribuyen
+    indexes:
+        Pk_Cuentas_Distribuyen:
+            columns:
+                - CTA
+                - SubCta
+                - Analisis
+                - SubAnalisis
+                - Epigrafe
+                - Partida
+    uniqueConstraints:
+        IX_Distrib_UNIQUE:
+            columns:
+                - Tipo_Moneda
+                - Id_Cuenta
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCuenta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: CTA
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        descCuenta:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        idCuentaTrasp:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta_Trasp
+        ctaTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: CTA_Trasp
+        subctaTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta_Trasp
+        analisisTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis_Trasp
+        subanalisisTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis_Trasp
+        epigrafeTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe_Trasp
+        partidaTrasp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida_Trasp
+        descCuentaTrasp:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta_Trasp
+        confirmado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Confirmado
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '3'
+            column: Tipo_Moneda
+        baseCalculo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Base_Calculo
+        valorFijo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Valor_Fijo
+    lifecycleCallbacks: {  }

@@ -1,0 +1,168 @@
+ActivoFijoParametros:
+    type: entity
+    table: Activo_Fijo_Parametros
+    id:
+        idTipoactivofijo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Id_TipoActivoFijo
+            generator:
+                strategy: IDENTITY
+    fields:
+        idEntradaActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Entrada_Activo
+        idSalidaActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Salida_Activo
+        idMovimActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Movim_Activo
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        idSubclasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Subclasificacion
+        codEspecActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Cod_Espec_ActivoFijo
+        idStateRent:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_State_Rent
+        idStateSale:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_State_Sale
+        idMovimSc:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Movim_SC
+        idStateAlmacen:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_State_Almacen
+        automcode:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: AutomCode
+        lenautomcode:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '6'
+            column: LenAutomCode
+        automcodecount:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AutomCodeCount
+        idStateRentDevol:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_State_Rent_Devol
+        idMovimDv:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Movim_DV
+        oneRentinvoice:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: One_RentInvoice
+        idEntradaActivoOpen:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Entrada_Activo_Open
+        openingClose:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Opening_Close
+        afListas:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: AF_Listas
+        ccostoUserAccess:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: CCosto_User_Access
+        rentDateCloseUpdt:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Rent_Date_Close_Updt
+        rentDayLastSum:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Rent_Day_Last_Sum
+        idStateReturn:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_State_Return
+    lifecycleCallbacks: {  }

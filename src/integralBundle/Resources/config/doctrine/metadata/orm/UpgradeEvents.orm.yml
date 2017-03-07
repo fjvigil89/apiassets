@@ -1,0 +1,20 @@
+UpgradeEvents:
+    type: entity
+    table: Upgrade_Events
+    id:
+        eventField:
+            type: string
+            nullable: false
+            length: 300
+            fixed: false
+            id: true
+            column: Event_Field
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Contador
+    lifecycleCallbacks: {  }

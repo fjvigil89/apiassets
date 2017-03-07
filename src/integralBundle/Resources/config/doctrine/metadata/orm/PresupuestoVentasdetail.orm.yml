@@ -1,0 +1,262 @@
+PresupuestoVentasdetail:
+    type: entity
+    table: Presupuesto_VentasDetail
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Ano
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Agrupacion
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+    fields:
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        eneuf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: EneUF
+        enemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: EneMB
+        enemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: EneMC
+        febuf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: FebUF
+        febmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: FebMB
+        febmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: FebMC
+        maruf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: MarUF
+        marmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: MarMB
+        marmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: MarMC
+        abruf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: AbrUF
+        abrmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: AbrMB
+        abrmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: AbrMC
+        mayuf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: MayUF
+        maymb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: MayMB
+        maymc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: MayMC
+        junuf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: JunUF
+        junmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: JunMB
+        junmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: JunMC
+        juluf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: JulUF
+        julmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: JulMB
+        julmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: JulMC
+        agouf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: AgoUF
+        agomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: AgoMB
+        agomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: AgoMC
+        sepuf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: SepUF
+        sepmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: SepMB
+        sepmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: SepMC
+        octuf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: OctUF
+        octmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: OctMB
+        octmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: OctMC
+        novuf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: NovUF
+        novmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: NovMB
+        novmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: NovMC
+        dicuf:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: DicUF
+        dicmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: DicMB
+        dicmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: DicMC
+    lifecycleCallbacks: {  }

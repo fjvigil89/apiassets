@@ -1,0 +1,85 @@
+Costeo:
+    type: entity
+    table: Costeo
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDocreferencia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_DocReferencia
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        fechaIni:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Ini
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Fin
+        observaciones:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Observaciones
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+    lifecycleCallbacks: {  }

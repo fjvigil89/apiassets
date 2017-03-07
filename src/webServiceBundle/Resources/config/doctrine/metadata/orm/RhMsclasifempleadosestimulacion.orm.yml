@@ -1,0 +1,37 @@
+RhMsclasifempleadosestimulacion:
+    type: entity
+    table: RH_MSClasifEmpleadosEstimulacion
+    id:
+        codmsclasifemplestim:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: CodMSClasifEmplEstim
+            generator:
+                strategy: IDENTITY
+    fields:
+        descmsclasifemplestim:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: DescMSClasifEmplEstim
+        porcientocumplimiento:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: PorcientoCumplimiento
+        porcientosobrecumplimiento:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: PorcientoSobrecumplimiento
+    lifecycleCallbacks: {  }

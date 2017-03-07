@@ -1,0 +1,47 @@
+RhCategoriasOcupacionales:
+    type: entity
+    table: RH_Categorias_Ocupacionales
+    id:
+        idCategoria:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Categoria
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCategoria:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Desc_Categoria
+        identificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Identificacion
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Clasificacion
+        cucpromindex:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '15'
+            column: CUCPromIndex
+        limSalarioEstimular:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Lim_Salario_Estimular
+    lifecycleCallbacks: {  }

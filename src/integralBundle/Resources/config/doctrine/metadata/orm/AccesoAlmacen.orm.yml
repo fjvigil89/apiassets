@@ -1,0 +1,29 @@
+AccesoAlmacen:
+    type: entity
+    table: Acceso_Almacen
+    id:
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_User
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Almacen
+    fields:
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+    lifecycleCallbacks: {  }

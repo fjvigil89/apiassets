@@ -1,0 +1,76 @@
+DetalleContratoservicio:
+    type: entity
+    table: Detalle_ContratoServicio
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        plazos:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plazos
+        porcientomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: PorcientoMB
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMB
+        saldomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: SaldoMB
+        porcientomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: PorcientoMC
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMC
+        saldomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: SaldoMC
+        facturado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Facturado
+        factura:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Factura
+        contafactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContaFactura
+    lifecycleCallbacks: {  }

@@ -1,0 +1,20 @@
+PresproduccionAnualHead:
+    type: entity
+    table: PresProduccion_Anual_Head
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Ano
+            generator:
+                strategy: IDENTITY
+    fields:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+    lifecycleCallbacks: {  }

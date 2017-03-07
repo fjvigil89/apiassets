@@ -1,0 +1,44 @@
+SysfilesDml:
+    type: entity
+    table: SysFiles_dml
+    id:
+        vUpdt:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: oh3367.+log-18335Jnew0034maPbnkig
+            id: true
+            column: V_Updt
+            generator:
+                strategy: IDENTITY
+    fields:
+        wUpdt:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: To82.+Exp-18@38Jnev0032maPbp
+            column: W_Updt
+        xUpdt:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: 'ho94.*/65@38JnevHxpssaPbp'
+            column: X_Updt
+        yUpdt:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: 'Px31mV*/64@98JnevHx10Hxbp'
+            column: Y_Updt
+        zUpdt:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: 'QW33NV*/67@90JnbvHEX0Hbnme'
+            column: Z_Updt
+    lifecycleCallbacks: {  }

@@ -1,0 +1,201 @@
+OneFormatoVarG1c:
+    type: entity
+    table: ONE_Formato_Var_G1C
+    id:
+        numeroFormato:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Numero_Formato
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoEf:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Tipo_EF
+        entidad:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: ENTIDAD
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 500
+            fixed: false
+            default: ''
+            column: ID_ORGANISMO
+        sub:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: SUB
+        idEntidad:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: ID_ENTIDAD
+        division:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: DIVISION
+        clase:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CLASE
+        provincia:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Provincia
+        municipio:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: MUNICIPIO
+        hechoPor:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Hecho_Por
+        nameContador:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Name_Contador
+        nameDirector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Name_Director
+        capOficial1:
+            type: string
+            nullable: false
+            length: 55
+            fixed: false
+            default: ''
+            column: Cap_Oficial1
+        capOficial2:
+            type: string
+            nullable: false
+            length: 55
+            fixed: false
+            default: ''
+            column: Cap_Oficial2
+        capOficial3:
+            type: string
+            nullable: false
+            length: 55
+            fixed: false
+            default: ''
+            column: Cap_Oficial3
+        capOficial4:
+            type: string
+            nullable: false
+            length: 55
+            fixed: false
+            default: ''
+            column: Cap_Oficial4
+        capOficial5:
+            type: string
+            nullable: false
+            length: 55
+            fixed: false
+            default: ''
+            column: Cap_Oficial5
+        showColsIniAno:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Show_Cols_Ini_Ano
+        showColsIniPer:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Show_Cols_Ini_Per
+        showColsMovPer:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Show_Cols_Mov_Per
+        showColsVarAno:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Show_Cols_Var_Ano
+        showColsSalAct:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Show_Cols_Sal_Act
+        cap1TIni:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap1_T_Ini
+        cap2SmcIni:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap2_SMC_INI
+        modelo:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Modelo
+        codigo:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Codigo
+        um1:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: UM1
+        um2:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: UM2
+    lifecycleCallbacks: {  }

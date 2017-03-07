@@ -1,0 +1,98 @@
+FzRzo5balSaldos:
+    type: entity
+    table: Fz_RZo5Bal_Saldos
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAgrupacionCalc:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion_CALC
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: subCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Descripcion
+        fechaMy:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_MY
+        saldoParcial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo_Parcial
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Saldo
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+    lifecycleCallbacks: {  }

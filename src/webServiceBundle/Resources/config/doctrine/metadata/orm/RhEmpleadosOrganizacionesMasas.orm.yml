@@ -1,0 +1,29 @@
+RhEmpleadosOrganizacionesMasas:
+    type: entity
+    table: RH_Empleados_Organizaciones_Masas
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+        idOrgmasa:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_OrgMasa
+    fields:
+        descOrgmasa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_OrgMasa
+    lifecycleCallbacks: {  }

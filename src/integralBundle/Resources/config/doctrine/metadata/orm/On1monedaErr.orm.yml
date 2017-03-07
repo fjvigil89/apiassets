@@ -1,0 +1,15 @@
+On1monedaErr:
+    type: entity
+    table: ON_1Moneda_Err
+    id:
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            id: true
+            column: Descripcion
+            generator:
+                strategy: IDENTITY
+    lifecycleCallbacks: {  }

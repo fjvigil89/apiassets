@@ -1,0 +1,52 @@
+DetalleConsumoefectivo:
+    type: entity
+    table: Detalle_ConsumoEfectivo
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        referencia:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Referencia
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '0.000000'
+            column: Cantidad
+        cantidadajustada:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '0.000000'
+            column: CantidadAjustada
+        descProd:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Prod
+        contaop:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContaOp
+    lifecycleCallbacks: {  }

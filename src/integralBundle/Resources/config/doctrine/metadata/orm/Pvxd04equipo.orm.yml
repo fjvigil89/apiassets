@@ -1,0 +1,23 @@
+Pvxd04equipo:
+    type: entity
+    table: PVXD_04Equipo
+    id:
+        idEquipo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Equipo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descEquipo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Equipo
+    lifecycleCallbacks: {  }

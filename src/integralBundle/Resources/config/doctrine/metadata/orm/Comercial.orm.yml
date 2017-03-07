@@ -1,0 +1,26 @@
+Comercial:
+    type: entity
+    table: Comercial
+    id:
+        idComercial:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Id_Comercial
+            generator:
+                strategy: IDENTITY
+    fields:
+        descComercial:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            column: Desc_Comercial
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Empleado
+    lifecycleCallbacks: {  }

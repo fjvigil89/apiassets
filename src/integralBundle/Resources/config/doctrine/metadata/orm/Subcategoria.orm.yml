@@ -1,0 +1,40 @@
+Subcategoria:
+    type: entity
+    table: SubCategoria
+    id:
+        idSubcategoria:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_SubCategoria
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: Nombre
+        descripcion:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Descripcion
+        ilustracion:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: Ilustracion
+        vip:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: VIP
+    lifecycleCallbacks: {  }

@@ -1,0 +1,755 @@
+EmpleadosGral:
+    type: entity
+    table: Empleados_Gral
+    uniqueConstraints:
+        IX_Empleados_Gral:
+            columns:
+                - Id_Expediente
+    id:
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Empleado
+            generator:
+                strategy: IDENTITY
+    fields:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        noCi:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: No_CI
+        nombre:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Nombre
+        apellido1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Apellido_1
+        direccion:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Direccion
+        ciudad:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Ciudad
+        region:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Region
+        codigoPostal:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Codigo_Postal
+        pais:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Pais
+        exttelef:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Exttelef
+        telefonoParticular:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Telefono_Particular
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+        fechaNacimiento:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Nacimiento
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idTipoContrato:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Tipo_Contrato
+        regimenSalarial:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Regimen_Salarial
+        tarifaHorariaConReporte:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Tarifa_Horaria_con_Reporte
+        calendario:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Calendario
+        descontarsabado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: DescontarSabado
+        baja:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Baja
+        alta:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Alta
+        idCargo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Cargo
+        idCategoria:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Categoria
+        ngrupo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NGrupo
+        fechaCargo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Cargo
+        asignacionPorCargo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Asignacion_por_Cargo
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion
+        plaza:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plaza
+        idCausaalta:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausaAlta
+        idFundamentacionalta:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_FundamentacionAlta
+        idCausabaja:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausaBaja
+        fechaBaja:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Baja
+        diasDescontarAlta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Descontar_Alta
+        diasDescontarMov:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Descontar_Mov
+        diasDescontarBaja:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Descontar_Baja
+        saya:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Saya
+        pantalon:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Pantalon
+        camisa:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Camisa
+        zapato:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Zapato
+        sexo:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: M
+            column: Sexo
+        colorPiel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Color_Piel
+        colorPelo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Color_Pelo
+        estatura:
+            type: decimal
+            nullable: false
+            precision: 7
+            scale: 2
+            default: '0.00'
+            column: Estatura
+        nombreMadre:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Nombre_Madre
+        nombrePadre:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Nombre_Padre
+        idProvincia:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Provincia
+        idMunicipio:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Municipio
+        idNivelEscolaridad:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Nivel_Escolaridad
+        idProfesion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Profesion
+        fechaContratacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Contratacion
+        fechaTerminacionContrato:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Terminacion_Contrato
+        docente:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Docente
+        investigador:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Investigador
+        idCategoriaDi:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Categoria_DI
+        anoiniciodocencia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AnoInicioDocencia
+        anointerruptodocencia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AnoInterruptoDocencia
+        numeroRadicacionPlaza:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Numero_Radicacion_Plaza
+        idUbicacionDefensa:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Ubicacion_Defensa
+        especificacionDefensa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Especificacion_Defensa
+        imprescindible:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Imprescindible
+        fechamilitar:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaMilitar
+        oc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OC
+        militancia:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Militancia
+        requisitoidiomatico:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: RequisitoIdiomatico
+        requisitotecnico:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: RequisitoTecnico
+        idObra:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Obra
+        tipoVacuna:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Vacuna
+        fechaVacuna:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Vacuna
+        notaVacuna:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Nota_Vacuna
+        nivelCp:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel_CP
+        idDireccionCp:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion_CP
+        idCargoCp:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Cargo_CP
+        idCategoriaCp:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Categoria_CP
+        ngrupoCp:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NGrupo_CP
+        fechaCargoCp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Cargo_CP
+        asignacionPorCargoCp:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Asignacion_por_Cargo_CP
+        idGrpevaluativo:
+            type: string
+            nullable: false
+            length: 7
+            fixed: false
+            default: ''
+            column: Id_GrpEvaluativo
+        idGrpsendrec:
+            type: string
+            nullable: false
+            length: 7
+            fixed: false
+            default: ''
+            column: Id_GrpSendRec
+        cuadroreserva:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CuadroReserva
+        clasifcuadros:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ClasifCuadros
+        situacionreserva:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SituacionReserva
+        nivelReserva:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel_Reserva
+        idDireccionReserva:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion_Reserva
+        idCargoReserva:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Cargo_Reserva
+        anosservicio:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AnosServicio
+        antiguedaddispensa:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AntiguedadDispensa
+        situacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Situacion
+        idActividad:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Actividad
+        albergado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Albergado
+        cubiculo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Cubiculo
+        modulouniforme:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: ModuloUniforme
+        fechasector:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaSector
+        fechadireccion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaDireccion
+        misionCivil:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Mision_Civil
+        misionMilitar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Mision_Militar
+        ayudaTecnica:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Ayuda_Tecnica
+        microbrigada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Microbrigada
+        dobleExpediente:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Doble_Expediente
+        disposicioncargo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: DisposicionCargo
+        prestacionServicio:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Prestacion_Servicio
+        fechaPrestacionServicio:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Prestacion_Servicio
+        mision:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mision
+        foto:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: Foto
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        idSubcategoria:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Subcategoria
+        idCategoriaIt:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Categoria_IT
+        idJornada:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Jornada
+        idTarjetaReloj:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Tarjeta_Reloj
+        tarjetaRelojOn:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Tarjeta_Reloj_On
+        designacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Designacion
+        diasDecLey91:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_Dec_Ley_91
+        diasDecLey91Saldo:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Dias_Dec_Ley_91_Saldo
+        horarioRegular:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Horario_Regular
+        apellido2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Apellido_2
+        idGradoCientifico:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Grado_Cientifico
+        fechaCategoriaDocente:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Categoria_Docente
+    lifecycleCallbacks: {  }

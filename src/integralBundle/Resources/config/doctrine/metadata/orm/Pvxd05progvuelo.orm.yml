@@ -1,0 +1,133 @@
+Pvxd05progvuelo:
+    type: entity
+    table: PVXD_05ProgVuelo
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        hora:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Hora
+        fechad:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaD
+        horad:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: HoraD
+        idVuelo:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Id_Vuelo
+        descVuelo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Vuelo
+        idRuta:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Id_Ruta
+        descRuta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ruta
+        idZona:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Id_Zona
+        descZona:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Zona
+        idEquipo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Equipo
+        descEquipo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Equipo
+        nota:
+            type: string
+            nullable: false
+            length: 500
+            fixed: false
+            default: ''
+            column: Nota
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        idSolimerca:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_SoliMerca
+        anoSolimerca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_SoliMerca
+        contadorsoli:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorSoli
+    lifecycleCallbacks: {  }

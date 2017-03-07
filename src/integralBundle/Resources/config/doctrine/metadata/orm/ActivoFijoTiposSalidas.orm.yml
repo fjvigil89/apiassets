@@ -1,0 +1,45 @@
+ActivoFijoTiposSalidas:
+    type: entity
+    table: Activo_Fijo_Tipos_Salidas
+    id:
+        idSalidaActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            id: true
+            column: Id_Salida_Activo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descSalidaActivo:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Salida_Activo
+        idEstadoActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado_Activo
+        depreciar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Depreciar
+        contabiliza:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabiliza
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clasificacion
+    lifecycleCallbacks: {  }

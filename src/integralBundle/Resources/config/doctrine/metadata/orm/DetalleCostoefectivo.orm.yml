@@ -1,0 +1,118 @@
+DetalleCostoefectivo:
+    type: entity
+    table: Detalle_CostoEfectivo
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umProducto:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Producto
+        costoefmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoEFMB
+        costoefmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoEFMC
+        costofjmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFJMB
+        costompmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMPMB
+        costoemmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoEMMB
+        costodpmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoDPMB
+        gastofjmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoFJMB
+        gastovrmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoVRMB
+        costofjmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoFJMC
+        costompmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoMPMC
+        costoemmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoEMMC
+        costodpmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: CostoDPMC
+        gastofjmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoFJMC
+        gastovrmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: GastoVRMC
+    lifecycleCallbacks: {  }

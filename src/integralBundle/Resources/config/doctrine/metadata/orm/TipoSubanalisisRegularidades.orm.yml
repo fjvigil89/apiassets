@@ -1,0 +1,38 @@
+TipoSubanalisisRegularidades:
+    type: entity
+    table: Tipo_SubAnalisis_Regularidades
+    indexes:
+        Ix1_Tipo_SubAna:
+            columns:
+                - Documento
+    id:
+        idTipoSubanalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_Tipo_SubAnalisis
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoSubanalisis:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Tipo_SubAnalisis
+        documento:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Documento
+        esdeMc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: EsDe_MC
+    lifecycleCallbacks: {  }

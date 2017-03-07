@@ -1,0 +1,50 @@
+FzCons:
+    type: entity
+    table: Fz_Cons
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+        dcCtacod:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            id: true
+            column: DC_CTACOD
+    fields:
+        consecCobros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Cobros
+        consecCobrosDir:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Cobros_Dir
+        consecPagos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Pagos
+        consecPagosDir:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '-1'
+            column: Consec_Pagos_Dir
+        cerrado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado
+    lifecycleCallbacks: {  }

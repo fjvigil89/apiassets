@@ -1,0 +1,168 @@
+RhDetallesReporteReintegros:
+    type: entity
+    table: RH_Detalles_Reporte_Reintegros
+    indexes:
+        IX_RH_Detalles_Reporte_Reintegros:
+            columns:
+                - Contador
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        tipoNomina:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Nomina
+        tipoReintegro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Reintegro
+        anonomina:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: AnoNomina
+        mesnomina:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: MesNomina
+        tipoPagonomina:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_PagoNomina
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        cantidadReintegrar:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Cantidad_Reintegrar
+        salarioReintegrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Reintegrar
+        fechanomina:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaNomina
+        cantidadNomina:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: Cantidad_Nomina
+        devengadoNomina:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Devengado_Nomina
+        cuentaPorCobrar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cuenta_por_Cobrar
+        presupuestoEstado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Presupuesto_Estado
+        presupuestoEstadoTmp:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Presupuesto_Estado_Tmp
+        tarjeta:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Tarjeta
+        horasExtras:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 4
+            default: '0.0000'
+            column: Horas_Extras
+        anoFactura:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Factura
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        idFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Factura
+        devolucionConfirmada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Devolucion_Confirmada
+    lifecycleCallbacks: {  }

@@ -1,0 +1,23 @@
+RhFundamentacionAltas:
+    type: entity
+    table: RH_Fundamentacion_Altas
+    id:
+        idFundamentacionalta:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_FundamentacionAlta
+            generator:
+                strategy: IDENTITY
+    fields:
+        descFundamentacionalta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_FundamentacionAlta
+    lifecycleCallbacks: {  }

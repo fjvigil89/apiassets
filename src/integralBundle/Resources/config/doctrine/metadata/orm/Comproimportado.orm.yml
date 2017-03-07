@@ -1,0 +1,40 @@
+Comproimportado:
+    type: entity
+    table: ComproImportado
+    id:
+        compfecha:
+            type: datetime
+            nullable: false
+            id: true
+            column: CompFecha
+            generator:
+                strategy: IDENTITY
+    fields:
+        compnumero:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: CompNumero
+        compano:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: CompAno
+        compmes:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: CompMes
+        compsubsi:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+            column: CompSubsi
+        compdescripcion:
+            type: string
+            nullable: true
+            length: 35
+            fixed: false
+            column: CompDescripcion
+    lifecycleCallbacks: {  }

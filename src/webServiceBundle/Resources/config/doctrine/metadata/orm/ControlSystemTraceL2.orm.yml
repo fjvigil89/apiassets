@@ -1,0 +1,27 @@
+ControlSystemTraceL2:
+    type: entity
+    table: Control_System_Trace_L2
+    uniqueConstraints:
+        IX_Control_System_Trace_L2:
+            columns:
+                - fld002
+    id:
+        fld001:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        fld002:
+            type: blob
+            nullable: false
+            length: null
+            fixed: false
+        fld003:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '63'
+    lifecycleCallbacks: {  }

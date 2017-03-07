@@ -1,0 +1,66 @@
+ActivoFijoServiciosZerodayajt:
+    type: entity
+    table: Activo_Fijo_Servicios_ZeroDayAjt
+    id:
+        idServicio:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Servicio
+            generator:
+                strategy: IDENTITY
+    fields:
+        descServicio:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: Desc_Servicio
+        tarifaMbmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MBMin
+        tarifaMbmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MBMed
+        tarifaMbmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MBMax
+        tarifaMcmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MCMin
+        tarifaMcmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MCMed
+        tarifaMcmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_MCMax
+        tarifaCupmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_CUPMin
+        tarifaCupmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_CUPMed
+        tarifaCupmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Tarifa_CUPMax
+    lifecycleCallbacks: {  }

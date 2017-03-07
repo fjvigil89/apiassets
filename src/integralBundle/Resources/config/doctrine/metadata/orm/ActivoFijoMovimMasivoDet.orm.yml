@@ -1,0 +1,188 @@
+ActivoFijoMovimMasivoDet:
+    type: entity
+    table: Activo_Fijo_Movim_Masivo_Det
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_ActivoFijo
+        idRotulo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Rotulo
+        descActivofijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_ActivoFijo
+        idCcostoold:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CcostoOld
+        idArearespold:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: ID_AreaRespOld
+        idEmpleadoold:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_EmpleadoOld
+        idClasificacionold:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_ClasificacionOld
+        idSubclasificacionold:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_SubclasificacionOld
+        idMov:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Mov
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoMov:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Mov
+        valorInicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Valor_Inicial
+        valorInicialmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Valor_InicialMC
+        valorResidual:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Valor_Residual
+        valorResidualmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Valor_ResidualMC
+        depreciacionAcumulada:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Depreciacion_Acumulada
+        depreciacionAcumuladamc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Depreciacion_AcumuladaMC
+        idCcostonew:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CcostoNew
+        idArearespnew:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: ID_AreaRespNew
+        idEmpleadonew:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_EmpleadoNew
+        idClasificacionnew:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_ClasificacionNew
+        idSubclasificacionnew:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_SubclasificacionNew
+        idEspecificacionold:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_EspecificacionOld
+        idEspecificacionnew:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_EspecificacionNew
+        cnmbold:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CNMBOld
+        cnmbnew:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CNMBNew
+    lifecycleCallbacks: {  }

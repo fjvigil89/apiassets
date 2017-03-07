@@ -1,0 +1,30 @@
+Fztables:
+    type: entity
+    table: FzTables
+    id:
+        header:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            id: true
+            column: Header
+            generator:
+                strategy: IDENTITY
+    fields:
+        detail:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Detail
+        keyField:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Key_Field
+    lifecycleCallbacks: {  }

@@ -1,0 +1,122 @@
+FzpaPresupuesto:
+    type: entity
+    table: FzPa_Presupuesto
+    indexes:
+        PresupPa_Ano:
+            columns:
+                - Ano
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        descConcepto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Concepto
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Pago
+        plan01:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan01
+        plan02:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan02
+        plan03:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan03
+        plan04:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan04
+        plan05:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan05
+        plan06:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan06
+        plan07:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan07
+        plan08:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan08
+        plan09:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan09
+        plan10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan10
+        plan11:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan11
+        plan12:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan12
+        formaEjec:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Forma_Ejec
+    lifecycleCallbacks: {  }

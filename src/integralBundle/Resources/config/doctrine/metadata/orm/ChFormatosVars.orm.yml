@@ -1,0 +1,244 @@
+ChFormatosVars:
+    type: entity
+    table: CH_Formatos_Vars
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoFormato:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: Anticipos
+            column: Tipo_Formato
+        numeroFormato:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Numero_Formato
+        modelo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Modelo: SNC-1-1.1 '
+            column: Modelo
+        repTitulo:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: 'Anticipo y Liquidación de Gastos de Viaje'
+            column: Rep_Titulo
+        mainTitulo1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Empresa de Demostración S.A.'
+            column: Main_Titulo1
+        mainTitulo2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Telef.:  44/88-16      Fax: 132-32-34'
+            column: Main_Titulo2
+        subtitulo1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Nombre y Apellidos: '
+            column: SubTitulo1
+        subtitulo2:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: 'Centro de Costo: '
+            column: SubTitulo2
+        subtitulo3:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Labor que Realiza: '
+            column: SubTitulo3
+        subtitulo4:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Anticipo Número:  '
+            column: SubTitulo4
+        subtitulo5:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Concepto: '
+            column: SubTitulo5
+        subtitulo6:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'De Reserva '
+            column: SubTitulo6
+        titFecha:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: 'Fecha:'
+            column: Tit_Fecha
+        titDia:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: Dia
+            column: Tit_Dia
+        titMes:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: Mes
+            column: Tit_Mes
+        titAno:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: Año
+            column: Tit_Ano
+        titCol1:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: 'Columna 1'
+            column: Tit_Col1
+        titCol2:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: 'Columna 2'
+            column: Tit_Col2
+        titCol3:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: 'Columna 3'
+            column: Tit_Col3
+        titCol4:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: 'Columna 4'
+            column: Tit_Col4
+        titCol5:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: 'Columna 5'
+            column: Tit_Col5
+        footer1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Entregado Por'
+            column: Footer1
+        footer2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Recibido Por'
+            column: Footer2
+        footer3:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Aprobado Por'
+            column: Footer3
+        footer4:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Footer4
+        footer5:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Footer5
+        footer6:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Footer6 Reserva'
+            column: Footer6
+        footer7:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Footer7 Reserva'
+            column: Footer7
+        footer8:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Footer8 Reserva'
+            column: Footer8
+        footer9:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Footer9 Reserva'
+            column: Footer9
+        certificamos1:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: 'Certificamos que los datos contenidos en la presente'
+            column: Certificamos1
+        certificamos2:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: 'se  corresponden  con  las  anotaciones contables de'
+            column: Certificamos2
+        certificamos3YtitFecha:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: 'acuerdo con lo establecido.     Emisión:'
+            column: Certificamos3_yTit_Fecha
+    lifecycleCallbacks: {  }

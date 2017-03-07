@@ -1,0 +1,84 @@
+FzRxentablas:
+    type: entity
+    table: Fz_RXEnTablas
+    id:
+        clasificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: n/a
+            id: true
+            column: Clasificacion
+        tipo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Tipo
+    fields:
+        codigo:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: Codigo
+        descripcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: n/a
+            column: Descripcion
+        enviar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Enviar
+        recibir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recibir
+        fechaenvio:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fechaenvio
+        fecharecibo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: FechaRecibo
+        recibido:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recibido
+        fichero:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: n/a
+            column: Fichero
+        msg:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: ''
+            column: Msg
+        confirmado1:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Confirmado1
+        sinconfirmar1:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Sinconfirmar1
+    lifecycleCallbacks: {  }

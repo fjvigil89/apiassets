@@ -1,0 +1,75 @@
+PlazosCobro:
+    type: entity
+    table: Plazos_Cobro
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoDocum:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            column: Tipo_Docum
+        dias:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Dias
+        porcientomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: PorcientoMB
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMB
+        saldomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: SaldoMB
+        porcientomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: PorcientoMC
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMC
+        saldomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: SaldoMC
+        importemo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMO
+        saldomo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoMO
+    lifecycleCallbacks: {  }

@@ -1,0 +1,86 @@
+UtilToolDetalles:
+    type: entity
+    table: Util_Tool_Detalles
+    id:
+        idUh:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_UH
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Ccosto
+        idArearesponsabilidad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_AreaResponsabilidad
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Empleado
+        valorInicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Valor_Inicial
+        valorInicialmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Valor_InicialMC
+    fields:
+        descCcosto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Ccosto
+        descArearesponsabilidad:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_AreaResponsabilidad
+        descEmpleado:
+            type: string
+            nullable: false
+            length: 61
+            fixed: false
+            default: ''
+            column: Desc_Empleado
+        cantidad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cantidad
+        cantidadConteo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cantidad_Conteo
+        marca:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Marca
+    lifecycleCallbacks: {  }

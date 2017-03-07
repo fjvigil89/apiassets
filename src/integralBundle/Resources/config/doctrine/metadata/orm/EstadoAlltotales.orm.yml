@@ -1,0 +1,46 @@
+EstadoAlltotales:
+    type: entity
+    table: Estado_ALLTotales
+    id:
+        descCuenta:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            id: true
+            column: Desc_Cuenta
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCuenta:
+            type: string
+            nullable: true
+            length: 22
+            fixed: false
+            column: Id_Cuenta
+        saldoIni:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Saldo_Ini
+        totDebe:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Tot_Debe
+        totHaber:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Tot_Haber
+        saldoFin:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Saldo_Fin
+        contador1:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Contador1
+    lifecycleCallbacks: {  }

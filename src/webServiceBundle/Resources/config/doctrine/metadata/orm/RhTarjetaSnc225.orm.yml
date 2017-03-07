@@ -1,0 +1,261 @@
+RhTarjetaSnc225:
+    type: entity
+    table: RH_Tarjeta_SNC225
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+    fields:
+        ened:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: EneD
+        enei:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EneI
+        enec:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: EneC
+        febd:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: FebD
+        febi:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: FebI
+        febc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: FebC
+        mard:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: MarD
+        mari:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MarI
+        marc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: MarC
+        abrd:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: AbrD
+        abri:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AbrI
+        abrc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: AbrC
+        mayd:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: MayD
+        mayi:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MayI
+        mayc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: MayC
+        jund:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: JunD
+        juni:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: JunI
+        junc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: JunC
+        juld:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: JulD
+        juli:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: JulI
+        julc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: JulC
+        agod:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: AgoD
+        agoi:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AgoI
+        agoc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: AgoC
+        sepd:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: SepD
+        sepi:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SepI
+        sepc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: SepC
+        octd:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: OctD
+        octi:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: OctI
+        octc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: OctC
+        novd:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: NovD
+        novi:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NovI
+        novc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: NovC
+        dicd:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: DicD
+        dici:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DicI
+        dicc:
+            type: string
+            nullable: false
+            length: 23
+            fixed: false
+            default: ''
+            column: DicC
+    lifecycleCallbacks: {  }

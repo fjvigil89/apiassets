@@ -1,0 +1,16 @@
+
+integral:
+    resource: "@integralBundle/Resources/config/routing.yml"
+    prefix:   /
+
+web_service:
+    resource: "@webServiceBundle/Resources/config/routing.yml"
+    prefix:   /rh
+
+api:
+    resource: "."
+    type:     "api"
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   "/doc"

@@ -1,0 +1,104 @@
+ActivoFijoServicios:
+    type: entity
+    table: Activo_Fijo_Servicios
+    id:
+        idServicio:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Servicio
+            generator:
+                strategy: IDENTITY
+    fields:
+        descServicio:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_Servicio
+        idEspecificacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion
+        codum:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: CodUM
+        tarifaMbdflt:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tarifa_MBDflt
+        tarifaMbmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MBMin
+        tarifaMbmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MBMed
+        tarifaMbmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MBMax
+        tarifaMcdflt:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tarifa_MCDflt
+        tarifaMcmin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MCMin
+        tarifaMcmed:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MCMed
+        tarifaMcmax:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tarifa_MCMax
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        idSubclasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Subclasificacion
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+    lifecycleCallbacks: {  }

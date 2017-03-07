@@ -1,0 +1,36 @@
+SubclasificacionContable:
+    type: entity
+    table: Subclasificacion_Contable
+    id:
+        clasificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            id: true
+            column: Clasificacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        subclasificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Subclasificacion
+        especificacion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Especificacion
+        orden:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden
+    lifecycleCallbacks: {  }

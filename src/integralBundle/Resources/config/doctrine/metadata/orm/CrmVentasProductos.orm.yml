@@ -1,0 +1,78 @@
+CrmVentasProductos:
+    type: entity
+    table: CRM_Ventas_Productos
+    id:
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cliente
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCategoria:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Categoria
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        facAnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fac_Ant
+        facAct:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fac_Act
+        facAntmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fac_AntMC
+        facActmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fac_ActMC
+        cosFacAnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cos_Fac_Ant
+        cosFacAct:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cos_Fac_Act
+        cosFacAntmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cos_Fac_AntMC
+        cosFacActmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cos_Fac_ActMC
+    lifecycleCallbacks: {  }

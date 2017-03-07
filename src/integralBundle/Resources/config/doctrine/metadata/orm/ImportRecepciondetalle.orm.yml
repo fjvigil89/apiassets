@@ -1,0 +1,90 @@
+ImportRecepciondetalle:
+    type: entity
+    table: Import_RecepcionDetalle
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        referencia:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Referencia
+        idRecepcion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Recepcion
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoRecepcion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Recepcion
+        codigo:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Codigo
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: UM_Almacen
+        importetotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMB
+        importetotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteTotalMC
+        enalmacen:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: EnAlmacen
+        productoOservicio:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Producto_oServicio
+    lifecycleCallbacks: {  }

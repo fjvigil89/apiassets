@@ -1,0 +1,299 @@
+Parametrosinv:
+    type: entity
+    table: ParametrosInv
+    id:
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_User
+            generator:
+                strategy: IDENTITY
+    fields:
+        facFrmprint:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fac_FrmPrint
+        facCanart:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Fac_CanArt
+        facPrintcompo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Fac_PrintCompo
+        valeFrmprint:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Vale_FrmPrint
+        facRetroceso:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fac_Retroceso
+        facExcluirsine:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Fac_ExcluirSinE
+        facCampos:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Fac_Campos
+        recFrmprint:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Rec_FrmPrint
+        recCampos:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Rec_Campos
+        recRetroceso:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Rec_Retroceso
+        valeRetroceso:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Vale_Retroceso
+        valeCampos:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Vale_Campos
+        valeCanart:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Vale_CanArt
+        devFrmprint:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dev_FrmPrint
+        devPrintcompo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Dev_PrintCompo
+        recCheckprecio:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Rec_CheckPrecio
+        facAduana:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Fac_Aduana
+        facPathaduana:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Fac_PathAduana
+        otFrmprint:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: OT_FrmPrint
+        facPage:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Fac_Page
+        otDatostec:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OT_DatosTec
+        ofFrmprint:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: OF_FrmPrint
+        ocFrmprint:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: OC_FrmPrint
+        otReal:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OT_Real
+        otCausanof:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: OT_CausaNoF
+        facCobro:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Fac_Cobro
+        recValifact:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Rec_ValiFact
+        facFrmimpor:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fac_FrmImpor
+        recNota:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Rec_Nota
+        recPrecf:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Rec_PrecF
+        prodTipoimport:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Prod_TipoImport
+        prodPathfile:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Prod_PathFile
+        facpvCampos:
+            type: string
+            nullable: false
+            length: 16
+            fixed: false
+            default: ''
+            column: FacPv_Campos
+        facpvFrmprint:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: FacPv_FrmPrint
+        facpvRetroceso:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: FacPv_Retroceso
+        pathExport:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Path_Export
+        smRetroceso:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SM_Retroceso
+        facpvIdformap:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: FacPv_IdFormaP
+        facpvDescformap:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: FacPv_DescFormaP
+        facpvIdconcep:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: FacPv_IdConcep
+        facpvEfectivo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FacPv_Efectivo
+        facpvTecla:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FacPv_Tecla
+        ordPrintcompo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Ord_PrintCompo
+        facRepetir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Fac_Repetir
+        recPago:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Rec_Pago
+        marcacerrar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: MarcaCerrar
+        nosgestman:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: NoSgestMan
+        cotizamultiple:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CotizaMultiple
+        cotiCampos:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Coti_Campos
+    lifecycleCallbacks: {  }

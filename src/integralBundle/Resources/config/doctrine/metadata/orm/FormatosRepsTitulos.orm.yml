@@ -1,0 +1,51 @@
+FormatosRepsTitulos:
+    type: entity
+    table: Formatos_Reps_Titulos
+    id:
+        reporte:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Reporte
+            generator:
+                strategy: IDENTITY
+    fields:
+        tit1:
+            type: string
+            nullable: false
+            length: 220
+            fixed: false
+            default: ''
+            column: Tit1
+        tit2:
+            type: string
+            nullable: false
+            length: 220
+            fixed: false
+            default: ''
+            column: Tit2
+        tit3:
+            type: string
+            nullable: false
+            length: 220
+            fixed: false
+            default: ''
+            column: Tit3
+        tit4:
+            type: string
+            nullable: false
+            length: 220
+            fixed: false
+            default: ''
+            column: Tit4
+        tit5:
+            type: string
+            nullable: false
+            length: 220
+            fixed: false
+            default: ''
+            column: Tit5
+    lifecycleCallbacks: {  }

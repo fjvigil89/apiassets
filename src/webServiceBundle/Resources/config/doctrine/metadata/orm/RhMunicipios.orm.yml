@@ -1,0 +1,29 @@
+RhMunicipios:
+    type: entity
+    table: RH_Municipios
+    id:
+        idProvincia:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Provincia
+        idMunicipio:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Municipio
+    fields:
+        descMunicipio:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Municipio
+    lifecycleCallbacks: {  }

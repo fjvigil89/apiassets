@@ -1,0 +1,88 @@
+ChConceptos:
+    type: entity
+    table: CH_Conceptos
+    id:
+        idFondo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Fondo
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Concepto
+    fields:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+        descConcepto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Concepto
+        entradaAlfondo:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Entrada_AlFondo
+        consecInicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Inicial
+        ctaBankFin:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Cta_Bank_Fin
+        ctaBankCh:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: '0'
+            column: Cta_Bank_CH
+        consecInicialAnticipos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Inicial_Anticipos
+        consecInicialArqueos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Inicial_Arqueos
+        consecInicialReembolsos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Inicial_Reembolsos
+        consecInicialLiquidaciones:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec_Inicial_Liquidaciones
+        reembolsable:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Reembolsable
+    lifecycleCallbacks: {  }

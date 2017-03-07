@@ -1,0 +1,123 @@
+DetallesActivosFijosAlquiler:
+    type: entity
+    table: Detalles_Activos_Fijos_Alquiler
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        items:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        idRecepcion:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Recepcion
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoRecepcion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Recepcion
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_Producto
+        facturado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Facturado
+        contadorAlquiler:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Alquiler
+        precioVentamb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Precio_VentaMB
+        precioVentamc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Precio_VentaMC
+        recargomb:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: RecargoMB
+        recargomc:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: RecargoMC
+        tiporecargomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoRecargoMB
+        tiporecargomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: TipoRecargoMC
+        precioVentatotalmb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Precio_VentaTotalMB
+        precioVentatotalmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Precio_VentaTotalMC
+        importeDevueltomb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_DevueltoMB
+        importeDevueltomc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: Importe_DevueltoMC
+    lifecycleCallbacks: {  }

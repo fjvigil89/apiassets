@@ -1,0 +1,231 @@
+Categoria:
+    type: entity
+    table: Categoria
+    id:
+        idCategoria:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: Id_Categoria
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Nombre
+        descripcion:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Descripcion
+        ilustracion:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: Ilustracion
+        recargomb:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 2
+            default: '0.00'
+            column: RecargoMB
+        descuentomb:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 2
+            default: '0.00'
+            column: DescuentoMB
+        recargomc:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 2
+            default: '0.00'
+            column: RecargoMC
+        descuentomc:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 2
+            default: '0.00'
+            column: DescuentoMC
+        tiporecargomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoRecargoMB
+        tiporecargomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: TipoRecargoMC
+        tipodescuentomb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoDescuentoMB
+        tipodescuentomc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: TipoDescuentoMC
+        impuesto:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Impuesto
+        comision:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Comision
+        preciovenmbl1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMBL1
+        preciovenmbl2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMBL2
+        preciovenmbl3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMBL3
+        preciovenmbl4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMBL4
+        preciovenmbl5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMBL5
+        preciovenmbl6:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMBL6
+        preciovenmbl7:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMBL7
+        preciovenmbl8:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMBL8
+        preciovenmbl9:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMBL9
+        preciovenmbl10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMBL10
+        preciovenmcl1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMCL1
+        preciovenmcl2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMCL2
+        preciovenmcl3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMCL3
+        preciovenmcl4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMCL4
+        preciovenmcl5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMCL5
+        preciovenmcl6:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMCL6
+        preciovenmcl7:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMCL7
+        preciovenmcl8:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMCL8
+        preciovenmcl9:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMCL9
+        preciovenmcl10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: PrecioVenMCL10
+        tiporecargol:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoRecargoL
+        vip:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: VIP
+    lifecycleCallbacks: {  }

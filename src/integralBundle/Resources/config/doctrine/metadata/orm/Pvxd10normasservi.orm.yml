@@ -1,0 +1,41 @@
+Pvxd10normasservi:
+    type: entity
+    table: PVXD_10NormasServi
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idProductohijo:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_ProductoHijo
+        descProductohijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_ProductoHijo
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0.0000'
+            column: Cantidad
+        umProductohijo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_ProductoHijo
+    lifecycleCallbacks: {  }

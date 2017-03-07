@@ -1,0 +1,71 @@
+FzRxexportPerCerrados:
+    type: entity
+    table: Fz_RxExport_Per_Cerrados
+    id:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Agrupacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes
+        cerradoContabilidad:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado_Contabilidad
+        cerradoFinanzas:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado_Finanzas
+        cerradoInventario:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado_Inventario
+        cerradoAfijos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado_AFijos
+        cerradoUtiles:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado_Utiles
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel
+        idNivel:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Nivel
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+    lifecycleCallbacks: {  }

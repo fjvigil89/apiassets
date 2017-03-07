@@ -1,0 +1,183 @@
+ClientesSusdeudasBck:
+    type: entity
+    table: Clientes_SusDeudas_Bck
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        fecha:
+            type: datetime
+            nullable: false
+            column: Fecha
+        tipoDeudor:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Tipo_Deudor
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Desc_Cliente
+        idDocreferencia:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_DocReferencia
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Importe
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Estado
+        observaciones:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            column: Observaciones
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Compro
+        idComproAnulado:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Compro_Anulado
+        mesAnul:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Mes_Anul
+        anoAnulado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Anulado
+        idConcepto:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            column: Id_Concepto
+        idClasifFa:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: Id_Clasif_Fa
+        contadorCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador_Compro
+        contadorComproCanc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador_Compro_Canc
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        fechaVence:
+            type: datetime
+            nullable: false
+            column: Fecha_Vence
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Tipo_Moneda
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            column: Fecha_Op
+        aplicaplazocobro:
+            type: boolean
+            nullable: false
+            column: AplicaPlazoCobro
+        enporciento:
+            type: boolean
+            nullable: false
+            column: EnPorciento
+        importeMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Importe_MC
+        fechaCancelacion:
+            type: datetime
+            nullable: false
+            column: Fecha_Cancelacion
+        xtrans:
+            type: boolean
+            nullable: false
+            column: Xtrans
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Doc_Primario
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Moneda
+        tasaCambio:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            column: Tasa_Cambio
+        importeMoneda:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Importe_Moneda
+        cobrador:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cobrador
+    lifecycleCallbacks: {  }

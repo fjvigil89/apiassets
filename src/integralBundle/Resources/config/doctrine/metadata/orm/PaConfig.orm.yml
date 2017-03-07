@@ -1,0 +1,35 @@
+PaConfig:
+    type: entity
+    table: Pa_Config
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        userId1:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: User_Id1
+        documento:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: Cobro
+            column: Documento
+        configCols:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: '11111111111111111111111111111111111111'
+            column: Config_Cols
+    lifecycleCallbacks: {  }

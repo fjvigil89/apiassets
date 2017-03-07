@@ -1,0 +1,22 @@
+ActivoFijoClasifMovim:
+    type: entity
+    table: Activo_Fijo_Clasif_Movim
+    id:
+        idClasifmov:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_ClasifMov
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClasifmov:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_ClasifMov
+    lifecycleCallbacks: {  }

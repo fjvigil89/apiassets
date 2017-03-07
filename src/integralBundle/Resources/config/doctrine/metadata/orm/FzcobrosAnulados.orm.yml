@@ -1,0 +1,44 @@
+FzcobrosAnulados:
+    type: entity
+    table: FzCobros_Anulados
+    indexes:
+        CobrosAN21:
+            columns:
+                - Id_Doc
+                - Ano_Doc
+                - Forma_Pago
+                - Id_Cliente
+    id:
+        idDoc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_Doc
+            generator:
+                strategy: IDENTITY
+    fields:
+        anoDoc:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: Ano_Doc
+        formaPago:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Forma_Pago
+        idCliente:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Id_Cliente
+        impAnulado:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Imp_Anulado
+    lifecycleCallbacks: {  }

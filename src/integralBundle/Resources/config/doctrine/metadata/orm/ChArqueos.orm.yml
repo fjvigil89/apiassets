@@ -1,0 +1,170 @@
+ChArqueos:
+    type: entity
+    table: CH_Arqueos
+    indexes:
+        Ix_Arqueo_Fecha:
+            columns:
+                - Fecha
+                - Id_Arqueo
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idArqueo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Arqueo
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idReferencia:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Id_Referencia
+        observaciones:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Observaciones
+        idFondo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo
+        impReal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Real
+        impEsperado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Esperado
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        mesCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        anoCompro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        cajero:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cajero
+        hechoPor:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Hecho_Por
+        aprobadoPor:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Aprobado_Por
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        idConceptokk:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Conceptokk
+        fechaConfirmacionkk:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacionkk
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+        idFondoDif:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo_Dif
+        contabilizado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contabilizado
+    lifecycleCallbacks: {  }

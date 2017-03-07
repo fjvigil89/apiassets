@@ -1,0 +1,502 @@
+FormatoTursVars:
+    type: entity
+    table: Formato_Turs_Vars
+    id:
+        numeroFormato:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Numero_Formato
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombreEmpresa:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: Nombre_Empresa
+        direccion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: Direccion
+        telefono:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Telefono
+        fax:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Fax
+        eMail:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: E_Mail
+        repTitulo:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            column: Rep_Titulo
+        capFechaDesde:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Fecha_Desde
+        capFechaHasta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Fecha_Hasta
+        captionForm:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            column: Caption_Form
+        captionCol1:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_Col1
+        captionCol2:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_Col2
+        captionCol3:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_Col3
+        captionContador:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_Contador
+        captionDirector:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_Director
+        capEntidad:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Cap_Entidad
+        capNamecontador:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: Cap_NameContador
+        capNamedirector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: Cap_NameDirector
+        capOficial1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Oficial1
+        capOficial2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Oficial2
+        capOficial3:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Oficial3
+        capOficial4:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Oficial4
+        capOficial5:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Oficial5
+        nombreEmpresaal:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: Nombre_EmpresaAL
+        direccional:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: DireccionAL
+        telefonoal:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: TelefonoAL
+        faxal:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: FaxAL
+        eMailal:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: E_MailAL
+        repTituloal:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            column: Rep_TituloAL
+        capFechaDesdeal:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Fecha_DesdeAL
+        capFechaHastaal:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Fecha_HastaAL
+        captionFormal:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            column: Caption_FormAL
+        captionCol1al:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_Col1AL
+        captionCol2al:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_Col2AL
+        captionCol3al:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_Col3AL
+        captionContadoral:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_ContadorAL
+        captionDirectoral:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_DirectorAL
+        capEntidadal:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Cap_EntidadAL
+        capNamecontadoral:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: Cap_NameContadorAL
+        capNamedirectoral:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: Cap_NameDirectorAL
+        capOficial1al:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Oficial1AL
+        capOficial2al:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Oficial2AL
+        capOficial3al:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Oficial3AL
+        capOficial4al:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Oficial4AL
+        capOficial5al:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Oficial5AL
+        capCalculoExtendido1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Calculo_Extendido1
+        capCalculoExtendido2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Calculo_Extendido2
+        capCalculoExtendido3:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Calculo_Extendido3
+        capCalculoExtendido1al:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Calculo_Extendido1AL
+        capCalculoExtendido2al:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Calculo_Extendido2AL
+        capCalculoExtendido3al:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Cap_Calculo_Extendido3AL
+        captionColsalinik:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_ColSalIniK
+        captionColsalfink:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_ColSalFinK
+        captionColsalinialk:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_ColSalIniALK
+        captionColsalfinalk:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Caption_ColSalFinALK
+        showColsIniAno:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Show_Cols_Ini_Ano
+        showColsIniPer:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Show_Cols_Ini_Per
+        showColsMovPer:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Show_Cols_Mov_Per
+        showColsVarAno:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Show_Cols_Var_Ano
+        showColsSalAct:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Show_Cols_Sal_Act
+        tipoEf:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Tipo_EF
+        cap1TIni:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap1_T_Ini
+        cap2SmcIni:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap2_SMC_INI
+        cap3SmbIni:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap3_SMB_INI
+        cap4TAnoIni:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap4_T_Ano_Ini
+        cap5SanomcIni:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap5_SAnoMC_INI
+        cap6SanombIni:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap6_SAnoMB_INI
+        cap7StPer:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap7_ST_Per
+        cap8SmcPer:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap8_SMC_Per
+        cap9SmbPer:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap9_SMB_Per
+        cap10StAct:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap10_ST_Act
+        cap11SmcAct:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap11_SMC_Act
+        cap12SmbAct:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap12_SMB_Act
+        cap13StVari:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap13_ST_Vari
+        cap14SmbVari:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap14_SMB_Vari
+        cap15SmbVari:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Cap15_SMB_Vari
+        modelo:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Modelo
+        codigo:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Codigo
+        um1:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: UM1
+        um2:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: UM2
+    lifecycleCallbacks: {  }

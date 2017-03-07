@@ -1,0 +1,37 @@
+CzModuleLc:
+    type: entity
+    table: Cz_Module_Lc
+    id:
+        ml:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            id: true
+            column: ML
+            generator:
+                strategy: IDENTITY
+    fields:
+        nl:
+            type: blob
+            nullable: false
+            length: null
+            fixed: false
+            default: '0'
+            column: NL
+        fkey:
+            type: blob
+            nullable: false
+            length: null
+            fixed: false
+            default: '0'
+            column: Fkey
+        cn:
+            type: blob
+            nullable: false
+            length: null
+            fixed: false
+            default: '0'
+            column: CN
+    lifecycleCallbacks: {  }

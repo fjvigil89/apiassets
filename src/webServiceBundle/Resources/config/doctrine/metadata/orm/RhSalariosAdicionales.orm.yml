@@ -1,0 +1,42 @@
+RhSalariosAdicionales:
+    type: entity
+    table: RH_Salarios_Adicionales
+    id:
+        idTipoParticipacion:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Tipo_Participacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        descTipoParticipacion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Tipo_Participacion
+        idoneidadFijo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Fijo
+        idoneidadMovil:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_Movil
+        retribucionComplementaria:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Retribucion_Complementaria
+    lifecycleCallbacks: {  }

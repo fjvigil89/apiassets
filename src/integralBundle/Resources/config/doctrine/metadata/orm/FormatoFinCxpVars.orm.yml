@@ -1,0 +1,186 @@
+FormatoFinCxpVars:
+    type: entity
+    table: Formato_Fin_CxP_Vars
+    indexes:
+        Clu_Tipo_Fo_Nro_CxP:
+            columns:
+                - Tipo_Formato
+                - Numero_Formato
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoFormato:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: 'CxP Pend.'
+            column: Tipo_Formato
+        numeroFormato:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Numero_Formato
+        repTitulo:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: 'Cuentas por Pagar a Corto Plazo y Desglose por Edades'
+            column: Rep_Titulo
+        mainTitulo1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'EMPRESTUR S.A. ARENTUR VA'
+            column: Main_Titulo1
+        mainTitulo2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'SUCURSAL ARENTUR VARADERO'
+            column: Main_Titulo2
+        subtitulo1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '135 Cuentas por Pagarr a Corto Plazo'
+            column: SubTitulo1
+        subtitulo2:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: 'DESGLOSE POR EDADES'
+            column: SubTitulo2
+        subtitulo3:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: EDE-51
+            column: SubTitulo3
+        titFecha:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: 'Fecha:'
+            column: Tit_Fecha
+        titDia:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: Dia
+            column: Tit_Dia
+        titMes:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: Mes
+            column: Tit_Mes
+        titAno:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: Año
+            column: Tit_Ano
+        footer1:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'NOMBRE:'
+            column: Footer1
+        footer2:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'CARGO:'
+            column: Footer2
+        footer3:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'FIRMA:'
+            column: Footer3
+        footer4:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '   HECHO POR:'
+            column: Footer4
+        footer5:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Ineido Pérez Figueroa'
+            column: Footer5
+        footer6:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'VICE DIRECTOR ECONOMICO'
+            column: Footer6
+        footer7:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '   APROBADO POR:'
+            column: Footer7
+        footer8:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: 'Luis Pérez González'
+            column: Footer8
+        footer9:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '      DIRECTOR'
+            column: Footer9
+        certificamos1:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: 'Certificamos que los datos contenidos en la presente'
+            column: Certificamos1
+        certificamos2:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: 'se  corresponden  con  las  anotaciones contables de'
+            column: Certificamos2
+        certificamos3YtitFecha:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: 'acuerdo con lo establecido.     Emisión:'
+            column: Certificamos3_yTit_Fecha
+    lifecycleCallbacks: {  }

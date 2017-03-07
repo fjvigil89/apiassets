@@ -1,0 +1,77 @@
+OnControlContabilidad:
+    type: entity
+    table: ON_Control_Contabilidad
+    id:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano
+            generator:
+                strategy: IDENTITY
+    fields:
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes
+        consec:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consec
+        cerrado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado
+        af:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AF
+        ci:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CI
+        fm:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: FM
+        pn:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PN
+        uh:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: UH
+        pi:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PI
+        ti:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: TI
+        cerradobck:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CerradoBck
+        dd:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: DD
+    lifecycleCallbacks: {  }

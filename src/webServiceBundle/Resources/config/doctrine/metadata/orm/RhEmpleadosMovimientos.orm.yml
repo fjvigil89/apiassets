@@ -1,0 +1,560 @@
+RhEmpleadosMovimientos:
+    type: entity
+    table: RH_Empleados_Movimientos
+    id:
+        nomovimiento:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: NoMovimiento
+            generator:
+                strategy: IDENTITY
+    fields:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        empleado:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Empleado
+        idCausamov:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CausaMov
+        idTipoContratoold:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Tipo_ContratoOld
+        idTipoContratonew:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Tipo_ContratoNew
+        regimenSalarialold:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Regimen_SalarialOld
+        regimenSalarialnew:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Regimen_SalarialNew
+        tarifaHorariaConReporteold:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Tarifa_Horaria_con_ReporteOld
+        tarifaHorariaConReportenew:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Tarifa_Horaria_con_ReporteNew
+        nivelold:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NivelOld
+        nivelnew:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NivelNew
+        idDireccionold:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_DireccionOld
+        idDireccionnew:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_DireccionNew
+        idCcostoold:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCostoOld
+        idCcostonew:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCostoNew
+        idCargoold:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CargoOld
+        idCargonew:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_CargoNew
+        plazaold:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PlazaOld
+        plazanew:
+            type: bigint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PlazaNew
+        calendarioold:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CalendarioOld
+        calendarionew:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CalendarioNew
+        diasLaborablesold:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_LaborablesOld
+        diasLaborablesnew:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_LaborablesNew
+        asignacionPorCargoold:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Asignacion_por_CargoOld
+        asignacionPorCargonew:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Asignacion_por_CargoNew
+        salarioBasicoold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_BasicoOld
+        salarioBasiconew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_BasicoNew
+        estimuloold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EstimuloOld
+        estimulonew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EstimuloNew
+        porcientoEstimuloold:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_EstimuloOld
+        porcientoEstimulonew:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_EstimuloNew
+        antiguedadold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AntiguedadOld
+        antiguedadnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AntiguedadNew
+        otrosold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: OtrosOld
+        otrosnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: OtrosNew
+        plusold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PlusOld
+        plusnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PlusNew
+        salarioPorCargoold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_por_CargoOld
+        salarioPorCargonew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_por_CargoNew
+        porcientoPerfeccionamientoold:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_PerfeccionamientoOld
+        porcientoPerfeccionamientonew:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_PerfeccionamientoNew
+        valorDivisaold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_DivisaOld
+        valorDivisanew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_DivisaNew
+        porcientoPagoDivisaold:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Pago_DivisaOld
+        porcientoPagoDivisanew:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_Pago_DivisaNew
+        estimulacionold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EstimulacionOld
+        estimulacionnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EstimulacionNew
+        porcientoEstimulacionold:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_EstimulacionOld
+        porcientoEstimulacionnew:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento_EstimulacionNew
+        albergamientoold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AlbergamientoOld
+        albergamientonew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AlbergamientoNew
+        otrasretribucionesold:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: OtrasRetribucionesOld
+        otrasretribucionesnew:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: OtrasRetribucionesNew
+        horarioirregularold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HorarioIrregularOld
+        horarioirregularnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HorarioIrregularNew
+        otrasClaold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otras_CLAOld
+        otrasClanew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otras_CLANew
+        coeficenteEmpresaEmpleadoraold:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 2
+            default: '0.00'
+            column: Coeficente_Empresa_EmpleadoraOld
+        coeficenteEmpresaEmpleadoranew:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 2
+            default: '0.00'
+            column: Coeficente_Empresa_EmpleadoraNew
+        ieterritorialold:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: IETerritorialOld
+        ieterritorialnew:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: IETerritorialNew
+        etsectorold:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: ETSectorOld
+        etsectornew:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: ETSectorNew
+        idTipoParticipacionold:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Tipo_ParticipacionOld
+        idTipoParticipacionnew:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Tipo_ParticipacionNew
+        idoneidadFijoold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_FijoOld
+        idoneidadFijonew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_FijoNew
+        idoneidadMovilold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_MovilOld
+        idoneidadMovilnew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Idoneidad_MovilNew
+        retribucionComplementariaold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Retribucion_ComplementariaOld
+        retribucionComplementarianew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Retribucion_ComplementariaNew
+        fechaCargoold:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_CargoOld
+        fechaCargonew:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_CargoNew
+        estado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        salarioDivisaold:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_DivisaOld
+        salarioDivisanew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_DivisaNew
+        nivelNominaold:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel_NominaOld
+        nivelNominanew:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            column: Nivel_NominaNew
+        idDireccionNominaold:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion_NominaOld
+        idDireccionNominanew:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Direccion_NominaNew
+        ngrupoold:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NGrupoOld
+        ngruponew:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NGrupoNew
+        fechaContratacionold:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_ContratacionOld
+        fechaContratacionnew:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_ContratacionNew
+        fechaEfectivo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Efectivo
+    lifecycleCallbacks: {  }

@@ -1,0 +1,22 @@
+ClasificacionAlquiler:
+    type: entity
+    table: Clasificacion_Alquiler
+    id:
+        idClasifrent:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_ClasifRent
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClasifrent:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_ClasifRent
+    lifecycleCallbacks: {  }

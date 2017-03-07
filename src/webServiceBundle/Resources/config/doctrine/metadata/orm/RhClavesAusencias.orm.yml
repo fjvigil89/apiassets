@@ -1,0 +1,117 @@
+RhClavesAusencias:
+    type: entity
+    table: RH_Claves_Ausencias
+    id:
+        idClave:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Clave
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClave:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Clave
+        deducible:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Deducible
+        porciento:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: Porciento
+        aPagarPor:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: A_pagar_por
+        afectaSubsidio:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Subsidio
+        afectaVacaciones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Vacaciones
+        afectaVacacionesImp:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Vacaciones_Imp
+        afectaSnc225:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_SNC_225
+        afectaSnc225Imp:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_SNC_225_Imp
+        afectaEvaluacionTecnicos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Evaluacion_Tecnicos
+        afectaEstimulo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Estimulo
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clasificacion
+        sumaReporteAusencia:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Suma_Reporte_Ausencia
+        idClaveExterna:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clave_Externa
+        descClaveExterna:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Desc_Clave_Externa
+        afectapromtrabajtot:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AfectaPromTrabajTot
+        codfondodetiempo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CodFondodeTiempo
+        prenominaHrs:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Prenomina_Hrs
+    lifecycleCallbacks: {  }

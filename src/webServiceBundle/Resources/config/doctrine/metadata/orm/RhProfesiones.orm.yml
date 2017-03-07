@@ -1,0 +1,30 @@
+RhProfesiones:
+    type: entity
+    table: RH_Profesiones
+    id:
+        idProfesion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Profesion
+            generator:
+                strategy: IDENTITY
+    fields:
+        descProfesion:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ''
+            column: Desc_Profesion
+        idEspecialidad:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Especialidad
+    lifecycleCallbacks: {  }

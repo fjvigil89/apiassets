@@ -1,0 +1,50 @@
+RhOtrosPagos:
+    type: entity
+    table: RH_Otros_Pagos
+    id:
+        idOtroPago:
+            type: string
+            nullable: false
+            length: 7
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Otro_Pago
+            generator:
+                strategy: IDENTITY
+    fields:
+        descOtroPago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Otro_Pago
+        valorOtroPago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Otro_Pago
+        afectaAusencias:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Afecta_Ausencias
+        acumulaVacaciones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Acumula_Vacaciones
+        incluirSnc225:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Incluir_SNC_225
+        grupo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Grupo
+    lifecycleCallbacks: {  }

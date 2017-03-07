@@ -1,0 +1,27 @@
+UtilToolClasifTraslados:
+    type: entity
+    table: Util_Tool_Clasif_Traslados
+    id:
+        idClasifTrasladoUh:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            id: true
+            column: Id_Clasif_Traslado_UH
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClasifTrasladoUh:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Clasif_Traslado_UH
+        contabiliza:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabiliza
+    lifecycleCallbacks: {  }

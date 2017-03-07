@@ -1,0 +1,75 @@
+ListaPrecio:
+    type: entity
+    table: Lista_Precio
+    id:
+        lista:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            id: true
+            column: Lista
+            generator:
+                strategy: IDENTITY
+    fields:
+        condicionmb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CondicionMB
+        signomb:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: '1'
+            column: SignoMB
+        tipoValormb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_ValorMB
+        valormb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ValorMB
+        calcularmb:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CalcularMB
+        condicionmc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CondicionMC
+        signomc:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: '1'
+            column: SignoMC
+        tipoValormc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_ValorMC
+        valormc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ValorMC
+        calcularmc:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CalcularMC
+    lifecycleCallbacks: {  }

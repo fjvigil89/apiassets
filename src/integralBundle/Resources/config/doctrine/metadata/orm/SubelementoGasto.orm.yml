@@ -1,0 +1,37 @@
+SubelementoGasto:
+    type: entity
+    table: Subelemento_Gasto
+    id:
+        idElemgasto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_ElemGasto
+            generator:
+                strategy: IDENTITY
+    fields:
+        idSubelemgasto:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_SubElemGasto
+        descSubelemento:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Subelemento
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+    lifecycleCallbacks: {  }

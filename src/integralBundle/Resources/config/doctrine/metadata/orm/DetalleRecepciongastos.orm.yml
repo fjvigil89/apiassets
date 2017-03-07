@@ -1,0 +1,68 @@
+DetalleRecepciongastos:
+    type: entity
+    table: Detalle_RecepcionGastos
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoGasto:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: GP
+            column: Tipo_Gasto
+        tipoMoneda:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: MB
+            column: Tipo_Moneda
+        descGasto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Gasto
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMB
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        tasaCambio:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: Tasa_Cambio
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        tipoprorrateo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoProrrateo
+    lifecycleCallbacks: {  }

@@ -1,0 +1,263 @@
+EntradaActivofijo:
+    type: entity
+    table: Entrada_ActivoFijo
+    indexes:
+        IX_Entrada_ActivoFijo:
+            columns:
+                - Id_ActivoFijo
+    id:
+        idEntrada:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: ID_Entrada
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Almacen
+        anoEntrada:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            id: true
+            column: Ano_Entrada
+    fields:
+        confirmada:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Confirmada
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_ActivoFijo
+        descActivofijo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Desc_ActivoFijo
+        idRotulo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Rotulo
+        idTipoactivofijo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_TipoActivoFijo
+        valorInicial:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Inicial
+        valorInicialmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_InicialMC
+        tasaDepreciacion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa_Depreciacion
+        tipoEntrada:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Tipo_Entrada
+        fechaAlta:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Alta
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion
+        idSubclasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Subclasificacion
+        idEspecificacion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto
+        idArearesp:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: ID_AreaResp
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        fechaConfirmacion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Confirmacion
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        idComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Comprobante
+        anoComprobante:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Comprobante
+        mesComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Comprobante
+        cnmb:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: CNMB
+        cantidad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        referencia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        idAlmacenref:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AlmacenRef
+        anoReferencia:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Referencia
+        depreciacionAcumulada:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Depreciacion_Acumulada
+        depreciacionAcumuladamc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Depreciacion_AcumuladaMC
+        valorResidual:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_Residual
+        valorResidualmc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Valor_ResidualMC
+        numeroSerie:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Numero_Serie
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        xtrans:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Xtrans
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        fechaOp:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Op
+        docPrimario:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Doc_Primario
+    lifecycleCallbacks: {  }

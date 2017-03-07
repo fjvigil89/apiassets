@@ -1,0 +1,52 @@
+PorContabilizar:
+    type: entity
+    table: Por_Contabilizar
+    id:
+        fecha:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            id: true
+            column: Fecha
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDoc:
+            type: string
+            nullable: false
+            length: 18
+            fixed: false
+            default: ''
+            column: Id_Doc
+        tipoDoc:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Tipo_Doc
+        formaPago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Forma_Pago
+        contabilizado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabilizado
+        idDocref:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_DocRef
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+    lifecycleCallbacks: {  }

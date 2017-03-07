@@ -1,0 +1,28 @@
+RhProvincias:
+    type: entity
+    table: RH_Provincias
+    id:
+        idProvincia:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Provincia
+            generator:
+                strategy: IDENTITY
+    fields:
+        descProvincia:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Provincia
+        repmovpendular:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: RepMovPendular
+    lifecycleCallbacks: {  }

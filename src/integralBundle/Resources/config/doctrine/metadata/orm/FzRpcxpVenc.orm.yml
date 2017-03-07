@@ -1,0 +1,201 @@
+FzRpcxpVenc:
+    type: entity
+    table: Fz_RPCxP_Venc
+    id:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Agrupacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        idRecepcion:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '0'
+            column: Id_Recepcion
+        anoRecepcion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Recepcion
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        fechaProveedor:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Proveedor
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        descProveedor:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Proveedor
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Organismo
+        organismo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Organismo
+        fechaMy:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_MY
+        impFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Factura
+        impCobro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Cobro
+        impDevuelto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Devuelto
+        impPorcobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_PorCobrar
+        impVencido:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Vencido
+        impAcobrar1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar1
+        impAcobrar2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar2
+        impAcobrar3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar3
+        impAcobrar4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar4
+        impAcobrar5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar5
+        contadorRx:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Rx
+        idClasifRx:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Rx
+        idFacturaproveedor:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Id_FacturaProveedor
+        idRecepcionInt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Recepcion_Int
+        deudaDir:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Deuda_DIR
+        sector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Sector
+        rxPreassets:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Rx_PreAssets
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+    lifecycleCallbacks: {  }

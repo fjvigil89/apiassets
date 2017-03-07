@@ -1,0 +1,22 @@
+ClasificacionNoFacturar:
+    type: entity
+    table: Clasificacion_No_Facturar
+    id:
+        codigo:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            id: true
+            column: Codigo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Descripcion
+    lifecycleCallbacks: {  }

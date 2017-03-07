@@ -1,0 +1,47 @@
+Acceso:
+    type: entity
+    table: Acceso
+    id:
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_User
+        idModulo:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            id: true
+            column: Id_Modulo
+        idOpcion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Opcion
+        sqlbdName:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            id: true
+            column: SQLBD_Name
+    fields:
+        descOpcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: Desc_Opcion
+        acceso:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            column: Acceso
+    lifecycleCallbacks: {  }

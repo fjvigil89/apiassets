@@ -1,0 +1,123 @@
+On1monDocsFin:
+    type: entity
+    table: ON_1MON_DOCS_FIN
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        docum:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: ''
+            column: DOCUM
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        idClasifFa:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Fa
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        anoDoc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Doc
+        importeMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_MB
+        importeMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_MC
+        importemcEnmn:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImporteMC_enMN
+        importeNew:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_NEW
+        coef:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: COEF
+        tasaCambio:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '0'
+            column: Tasa_Cambio
+        importeMoneda:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe_Moneda
+        formaPago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Forma_Pago
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Moneda
+        deudaDir:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Deuda_DIR
+        contadorDoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Doc
+    lifecycleCallbacks: {  }

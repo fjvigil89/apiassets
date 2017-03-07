@@ -1,0 +1,82 @@
+services:
+#    integral.example:
+#        class: integralBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+
+    resource.CentroCosto:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\CentroCosto" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.CentroCosto.search_filter" ] ]
+        tags:       [ { name: "api.resource" } ]
+
+    resource.ActivoFijo:
+        parent:    "api.resource"
+        arguments:  [ "integralBundle\\Entity\\ActivoFijo" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.ActivoFijo.search_filter" ] ]
+        tags:      [ { name: "api.resource" } ]
+
+    assets.SubclasificacionActivofijo:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\SubclasificacionActivofijo" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.ClasificacionActivofijo:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\ClasificacionActivofijo" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.ActivoFijoTipos:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\ActivoFijoTipos" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.EspecificacionActivofijo:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\EspecificacionActivofijo" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.EspecificacionesActivofijo:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\EspecificacionesActivofijo" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.Empleado:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\Empleado" ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.AreasResponsabilidad:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\AreasResponsabilidad" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.AreasResponsabilidad.search_filter" ] ]
+        tags:       [ { name: "api.resource" } ]
+
+    assets.ActivoFijoEstados:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\ActivoFijoEstados" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.Cliente:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\Cliente" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.BajaActivofijo:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\BajaActivofijo" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.ActivoFijoParametros:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\ActivoFijoParametros" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.ActivoFijoTipos:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\ActivoFijoTipos" ]
+        tags:       [ { name: "api.resource" } ]
+    assets.CnmbActivofijo:         
+        parent:     "api.resource"
+        arguments:  [ "integralBundle\\Entity\\CnmbActivofijo" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.CnmbActivofijo.search_filter" ] ]
+        tags:       [ { name: "api.resource" } ]

@@ -1,0 +1,74 @@
+CuentasCierre:
+    type: entity
+    table: Cuentas_Cierre
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        fecha:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha
+        fechaIni:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Ini
+        fechaFin:
+            type: datetime
+            nullable: false
+            default: '0'
+            column: Fecha_Fin
+        ctaCierra:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_Cierra
+        ctaRecibe:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_Recibe
+        idCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Compro
+        anoCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Compro
+        mesCompro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Mes_Compro
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        claveTipoComprobante:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Clave_Tipo_Comprobante
+    lifecycleCallbacks: {  }

@@ -1,0 +1,1111 @@
+Depreciacionmensual:
+    type: entity
+    table: DepreciacionMensual
+    id:
+        ano:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Ano
+        idActivofijo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_ActivoFijo
+    fields:
+        valorini1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni1
+        tasa1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa1
+        deprecacum1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum1
+        deprecmes1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes1
+        valorini2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni2
+        tasa2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa2
+        deprecacum2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum2
+        deprecmes2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes2
+        valorini3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni3
+        tasa3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa3
+        deprecacum3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum3
+        deprecmes3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes3
+        valorini4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni4
+        tasa4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa4
+        deprecacum4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum4
+        deprecmes4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes4
+        valorini5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni5
+        tasa5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa5
+        deprecacum5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum5
+        deprecmes5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes5
+        valorini6:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni6
+        tasa6:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa6
+        deprecacum6:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum6
+        deprecmes6:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes6
+        valorini7:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni7
+        tasa7:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa7
+        deprecacum7:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum7
+        deprecmes7:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes7
+        valorini8:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni8
+        tasa8:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa8
+        deprecacum8:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum8
+        deprecmes8:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes8
+        valorini9:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni9
+        tasa9:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa9
+        deprecacum9:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum9
+        deprecmes9:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes9
+        valorini10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni10
+        tasa10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa10
+        deprecacum10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum10
+        deprecmes10:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes10
+        valorini11:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni11
+        tasa11:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa11
+        deprecacum11:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum11
+        deprecmes11:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes11
+        valorini12:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni12
+        tasa12:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tasa12
+        deprecacum12:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum12
+        deprecmes12:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes12
+        valorini1mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni1MC
+        deprecacum1mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum1MC
+        deprecmes1mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes1MC
+        valorini2mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni2MC
+        deprecacum2mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum2MC
+        deprecmes2mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes2MC
+        valorini3mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni3MC
+        deprecacum3mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum3MC
+        deprecmes3mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes3MC
+        valorini4mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni4MC
+        deprecacum4mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum4MC
+        deprecmes4mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes4MC
+        valorini5mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni5MC
+        deprecacum5mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum5MC
+        deprecmes5mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes5MC
+        valorini6mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni6MC
+        deprecacum6mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum6MC
+        deprecmes6mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes6MC
+        valorini7mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni7MC
+        deprecacum7mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum7MC
+        deprecmes7mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes7MC
+        valorini8mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni8MC
+        deprecacum8mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum8MC
+        deprecmes8mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes8MC
+        valorini9mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni9MC
+        deprecacum9mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum9MC
+        deprecmes9mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes9MC
+        valorini10mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni10MC
+        deprecacum10mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum10MC
+        deprecmes10mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes10MC
+        valorini11mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni11MC
+        deprecacum11mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum11MC
+        deprecmes11mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes11MC
+        valorini12mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni12MC
+        deprecacum12mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecAcum12MC
+        deprecmes12mc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DeprecMes12MC
+        idEstado1:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado1
+        idEstado2:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado2
+        idEstado3:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado3
+        idEstado4:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado4
+        idEstado5:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado5
+        idEstado6:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado6
+        idEstado7:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado7
+        idEstado8:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado8
+        idEstado9:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado9
+        idEstado10:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado10
+        idEstado11:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado11
+        idEstado12:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado12
+        idAgrup1:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup1
+        idCcosto1:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto1
+        idArearesp1:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp1
+        idEmpleado1:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado1
+        idAgrup2:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup2
+        idCcosto2:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto2
+        idArearesp2:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp2
+        idEmpleado2:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado2
+        idAgrup3:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup3
+        idCcosto3:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto3
+        idArearesp3:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp3
+        idEmpleado3:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado3
+        idAgrup4:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup4
+        idCcosto4:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto4
+        idArearesp4:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp4
+        idEmpleado4:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado4
+        idAgrup5:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup5
+        idCcosto5:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto5
+        idArearesp5:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp5
+        idEmpleado5:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado5
+        idAgrup6:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup6
+        idCcosto6:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto6
+        idArearesp6:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp6
+        idEmpleado6:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado6
+        idAgrup7:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup7
+        idCcosto7:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto7
+        idArearesp7:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp7
+        idEmpleado7:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado7
+        idAgrup8:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup8
+        idCcosto8:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto8
+        idArearesp8:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp8
+        idEmpleado8:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado8
+        idAgrup9:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup9
+        idCcosto9:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto9
+        idArearesp9:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp9
+        idEmpleado9:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado9
+        idAgrup10:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup10
+        idCcosto10:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto10
+        idArearesp10:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp10
+        idEmpleado10:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado10
+        idAgrup11:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup11
+        idCcosto11:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto11
+        idArearesp11:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp11
+        idEmpleado11:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado11
+        idAgrup12:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrup12
+        idCcosto12:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Ccosto12
+        idArearesp12:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_AreaResp12
+        idEmpleado12:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Empleado12
+        idClasificacion1:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion1
+        idEspecificacion1:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion1
+        idClasificacion2:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion2
+        idEspecificacion2:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion2
+        idClasificacion3:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion3
+        idEspecificacion3:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion3
+        idClasificacion4:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion4
+        idEspecificacion4:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion4
+        idClasificacion5:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion5
+        idEspecificacion5:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion5
+        idClasificacion6:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion6
+        idEspecificacion6:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion6
+        idClasificacion7:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion7
+        idEspecificacion7:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion7
+        idClasificacion8:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion8
+        idEspecificacion8:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion8
+        idClasificacion9:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion9
+        idEspecificacion9:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion9
+        idClasificacion10:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion10
+        idEspecificacion10:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion10
+        idClasificacion11:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion11
+        idEspecificacion11:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion11
+        idClasificacion12:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Clasificacion12
+        idEspecificacion12:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Especificacion12
+    lifecycleCallbacks: {  }

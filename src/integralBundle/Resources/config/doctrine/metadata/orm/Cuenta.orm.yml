@@ -1,0 +1,239 @@
+Cuenta:
+    type: entity
+    table: Cuenta
+    indexes:
+        PK_Cuenta:
+            columns:
+                - CTA
+                - SubCta
+                - Analisis
+                - SubAnalisis
+                - Epigrafe
+                - Partida
+        XI_IdCuenta:
+            columns:
+                - Id_Cuenta
+        XI4_Cont_Cuenta:
+            columns:
+                - Clasificacion
+                - SubClasific
+        XI5_Cuenta:
+            columns:
+                - Ultimo_Nivel
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCuenta:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ''
+            column: Id_Cuenta
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: CTA
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        descCuenta:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta
+        nivel:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Nivel
+        clasificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Clasificacion
+        tipo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: TIPO
+        ultimoNivel:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Ultimo_Nivel
+        identificador:
+            type: boolean
+            nullable: false
+            default: '0'
+        subclasific:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: SubClasific
+        presupuesto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Presupuesto
+        codCuentaExterno:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cod_Cuenta_Externo
+        nombreIngles:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nombre_Ingles
+        saldo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        naturaleza:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Naturaleza
+        banco:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Banco
+        descontinuada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Descontinuada
+        cuentaDemb:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Cuenta_deMB
+        ctaCorp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: CTA_Corp
+        subctaCorp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta_Corp
+        analisisCorp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis_Corp
+        subanalisisCorp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis_Corp
+        epigrafeCorp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe_Corp
+        partidaCorp:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida_Corp
+        reguladora:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Reguladora
+        incluirenAgastos:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: IncluirEn_AGastos
+        enviarAbierta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Enviar_Abierta
+        activCuenta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Activ_Cuenta
+    lifecycleCallbacks: {  }

@@ -1,0 +1,143 @@
+FzRzzpefectos:
+    type: entity
+    table: Fz_RzzPEfectos
+    id:
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            id: true
+            column: IdSync
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAgrupacionCalc:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion_CALC
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion
+        fechaMy:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_MY
+        idProveedor:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Proveedor
+        descProveedor:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Proveedor
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Organismo
+        organismo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Organismo
+        sector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Sector
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Importe
+        impPorpagar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_PorPagar
+        impApagar1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar1
+        impApagar2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar2
+        impApagar3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar3
+        impApagar4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar4
+        impApagar5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_APagar5
+        tipoCobro:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Cobro
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        idCcosto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_CCosto
+    lifecycleCallbacks: {  }

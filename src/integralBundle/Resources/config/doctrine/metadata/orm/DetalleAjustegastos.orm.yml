@@ -1,0 +1,48 @@
+DetalleAjustegastos:
+    type: entity
+    table: Detalle_AjusteGastos
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoMoneda:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: MB
+            column: Tipo_Moneda
+        descGasto:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Gasto
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteMB
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        tasaCambio:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 6
+            default: '1'
+            column: Tasa_Cambio
+    lifecycleCallbacks: {  }

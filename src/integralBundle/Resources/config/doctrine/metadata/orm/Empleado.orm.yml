@@ -1,0 +1,255 @@
+Empleado:
+    type: entity
+    table: Empleado
+    id:
+        idComercial:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Comercial
+            generator:
+                strategy: IDENTITY
+    fields:
+        descComercial:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Desc_Comercial
+        ci:
+            type: string
+            nullable: false
+            length: 11
+            fixed: false
+            default: ''
+            column: CI
+        exttelef:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Exttelef
+        idEmpleado:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: N/D
+            column: Id_Empleado
+        vendedor:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Vendedor
+        comprador:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Comprador
+        chofer:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Chofer
+        depalmacen:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: DepAlmacen
+        autoajustes:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AutoAjustes
+        autoscosto:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AutoScosto
+        autooproduccion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AutoOproduccion
+        autodevolucion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AutoDevolucion
+        otrabajo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Otrabajo
+        assetsuser:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AssetsUser
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        contrasena:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Contrasena
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+        mainmenutoolbarvisible:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: MainMenuToolbarVisible
+        ctlpopmenuhighlightstyle:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ctlPopMenuHighlightStyle
+        bckbitmapstyle:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: BckBitMapStyle
+        customcolorfontstyle:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CustomColorFontStyle
+        xpstyle:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: XPStyle
+        bckbitmap:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: BckBitMap
+        cobrador:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cobrador
+        relacionConchc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Relacion_ConCHC
+        relacionConcha:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Relacion_ConCHA
+        flujoCaja:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Flujo_Caja
+        personalcuadros:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PersonalCuadros
+        personalgenerales:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PersonalGenerales
+        personalplantilla:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PersonalPlantilla
+        personalsalarios:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PersonalSalarios
+        personalccostos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PersonalCCostos
+        personaldeducciones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PersonalDeducciones
+        personalorganizaciones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PersonalOrganizaciones
+        personalcapacitacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PersonalCapacitacion
+        personalidiomas:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PersonalIdiomas
+        personalotrosdatos:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: PersonalOtrosDatos
+        eMail:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: E_mail
+        celular:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Celular
+        cuentaChat:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cuenta_Chat
+        icopremiumstyle:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: IcoPremiumStyle
+        emplMin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '3'
+            column: Empl_Min
+        recibeNotificaciones:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Recibe_Notificaciones
+    lifecycleCallbacks: {  }

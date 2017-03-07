@@ -1,0 +1,26 @@
+FzRxexportErr:
+    type: entity
+    table: Fz_RxExport_ERR
+    id:
+        expNum:
+            type: smallint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Exp_Num
+            generator:
+                strategy: IDENTITY
+    fields:
+        expName:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Exp_Name
+        error1:
+            type: string
+            nullable: false
+            length: 220
+            fixed: false
+            column: Error1
+    lifecycleCallbacks: {  }

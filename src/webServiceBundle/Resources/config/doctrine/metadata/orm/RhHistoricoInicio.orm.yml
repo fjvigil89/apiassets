@@ -1,0 +1,37 @@
+RhHistoricoInicio:
+    type: entity
+    table: RH_Historico_Inicio
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        cerrado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado
+    lifecycleCallbacks: {  }

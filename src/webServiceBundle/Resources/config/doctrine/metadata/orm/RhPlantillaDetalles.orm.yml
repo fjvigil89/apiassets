@@ -1,0 +1,60 @@
+RhPlantillaDetalles:
+    type: entity
+    table: RH_Plantilla_Detalles
+    id:
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '5'
+            id: true
+            column: Nivel
+        idDireccion:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Direccion
+        idCargo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cargo
+    fields:
+        descCargo:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Desc_Cargo
+        propuesta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Propuesta
+        aprobadas:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Aprobadas
+        exceso:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Exceso
+        cantidadplazasanterior:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CantidadPlazasAnterior
+    lifecycleCallbacks: {  }

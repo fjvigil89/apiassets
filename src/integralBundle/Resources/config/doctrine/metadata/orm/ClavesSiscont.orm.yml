@@ -1,0 +1,30 @@
+ClavesSiscont:
+    type: entity
+    table: Claves_Siscont
+    id:
+        codassets:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            id: true
+            column: CodAssets
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClave:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Clave
+        codsisconts:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: CodSisconts
+    lifecycleCallbacks: {  }

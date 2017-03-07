@@ -1,0 +1,42 @@
+Parametroscom:
+    type: entity
+    table: ParametrosCom
+    id:
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: Id_User
+            generator:
+                strategy: IDENTITY
+    fields:
+        pathEnvio:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Path_Envio
+        pathRecibo:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Path_Recibo
+        nivel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel
+        codnivel:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: CodNivel
+    lifecycleCallbacks: {  }

@@ -1,0 +1,37 @@
+ProductoCodigobarra:
+    type: entity
+    table: Producto_CodigoBarra
+    indexes:
+        IX_Producto_CodigoBarra:
+            columns:
+                - Codigo_Barra
+    id:
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: Id_Producto
+        codigoBarra:
+            type: string
+            nullable: false
+            length: 13
+            fixed: false
+            default: ''
+            id: true
+            column: Codigo_Barra
+    fields:
+        descripcionCorta:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Descripcion_Corta
+        gencodbarra:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: GenCodBarra
+    lifecycleCallbacks: {  }

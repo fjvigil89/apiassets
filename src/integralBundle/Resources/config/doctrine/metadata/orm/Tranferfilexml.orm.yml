@@ -1,0 +1,123 @@
+Tranferfilexml:
+    type: entity
+    table: TranferFileXml
+    id:
+        idSpid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Id_SPID
+            generator:
+                strategy: IDENTITY
+    fields:
+        codagrupa:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: CodAgrupa
+        desagrupa:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: DesAgrupa
+        codalmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: CodAlmacen
+        desalmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: DesAlmacen
+        tipoinfo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoInfo
+        codcliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: CodCliente
+        descliente:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: DesCliente
+        codproducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: CodProducto
+        desproducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: DesProducto
+        umproducto:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: UmProducto
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.0000'
+            column: Cantidad
+        importemb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ImporteMB
+        importemc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.0000'
+            column: ImporteMC
+        consumoPromedio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consumo_Promedio
+        existenciaMinimo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: Existencia_Minimo
+        existenciaMaximo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0'
+            column: Existencia_Maximo
+    lifecycleCallbacks: {  }

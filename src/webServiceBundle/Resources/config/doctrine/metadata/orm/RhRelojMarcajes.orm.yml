@@ -1,0 +1,39 @@
+RhRelojMarcajes:
+    type: entity
+    table: RH_Reloj_Marcajes
+    id:
+        idTarjetaReloj:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Tarjeta_Reloj
+            generator:
+                strategy: IDENTITY
+    fields:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: Item
+        nodo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Nodo
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        fechaHoraLectura:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Hora_Lectura
+    lifecycleCallbacks: {  }

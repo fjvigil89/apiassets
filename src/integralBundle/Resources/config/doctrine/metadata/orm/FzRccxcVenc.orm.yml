@@ -1,0 +1,236 @@
+FzRccxcVenc:
+    type: entity
+    table: Fz_RCCxC_Venc
+    id:
+        idAgrupacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Agrupacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador
+        idFacturaInt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Factura_Int
+        idFactura:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Factura
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        anoFactura:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ano_Factura
+        fechaDespacho:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Despacho
+        fechaFinal:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Final
+        fechaActual:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Actual
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        fechaMy:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_MY
+        impFactura:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Factura
+        impCobro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Cobro
+        impVencido:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Vencido
+        impDevuelto:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_Devuelto
+        impPorcobrar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_PorCobrar
+        impAcobrar1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar1
+        impAcobrar2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar2
+        impAcobrar3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar3
+        impAcobrar4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar4
+        impAcobrar5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Imp_ACobrar5
+        idOrganismo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Organismo
+        conduce:
+            type: string
+            nullable: false
+            length: 22
+            fixed: false
+            default: ''
+            column: Conduce
+        contadorFa:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador_Fa
+        deudaDir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Deuda_DIR
+        cPago:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: C_Pago
+        descCpago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cpago
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        faPreassets:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Fa_PreAssets
+        cont1Cobro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cont1_Cobro
+        contrato:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Contrato
+        organismo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Organismo
+        sector:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Sector
+        descAlmacen:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Almacen
+        credito:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Credito
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            column: IdSync
+    lifecycleCallbacks: {  }

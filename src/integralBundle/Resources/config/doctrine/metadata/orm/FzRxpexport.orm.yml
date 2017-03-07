@@ -1,0 +1,83 @@
+FzRxpexport:
+    type: entity
+    table: Fz_RXPExport
+    id:
+        agrupIni:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Agrup_Ini
+            generator:
+                strategy: IDENTITY
+    fields:
+        agrupFin:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Agrup_Fin
+        fechaEjecucion:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Ejecucion
+        anoExportado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano_Exportado
+        mesExportado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes_Exportado
+        exportadoInv:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Exportado_Inv
+        exportadoFin:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Exportado_Fin
+        exportadoContab:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Exportado_Contab
+        cerradoInv:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado_Inv
+        cerradoFin:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado_Fin
+        cerradoContab:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Cerrado_Contab
+        nivelAgrupini:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel_AgrupIni
+        idnivelAgrupini:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: IdNivel_AgrupIni
+    lifecycleCallbacks: {  }

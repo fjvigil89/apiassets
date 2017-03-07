@@ -1,0 +1,21 @@
+ReportsPagos:
+    type: entity
+    table: Reports_Pagos
+    id:
+        reportname:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            id: true
+            column: ReportName
+            generator:
+                strategy: IDENTITY
+    fields:
+        reportfile:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: ReportFile
+    lifecycleCallbacks: {  }

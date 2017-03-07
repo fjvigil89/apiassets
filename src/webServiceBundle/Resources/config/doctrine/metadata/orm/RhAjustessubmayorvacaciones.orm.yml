@@ -1,0 +1,107 @@
+RhAjustessubmayorvacaciones:
+    type: entity
+    table: RH_AjustesSubmayorVacaciones
+    id:
+        item:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: Item
+            generator:
+                strategy: IDENTITY
+    fields:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        mes:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(month,getdate())'
+            column: Mes
+        tipoPago:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Pago
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Expediente
+        nombre:
+            type: string
+            nullable: false
+            length: 152
+            fixed: false
+            default: ''
+            column: Nombre
+        saldodias:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: SaldoDias
+        saldoimporte:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoImporte
+        ajustedias:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 4
+            default: '0.0000'
+            column: AjusteDias
+        ajusteimporte:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AjusteImporte
+        observaciones:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Observaciones
+        procesarajuste:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ProcesarAjuste
+        procesado:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Procesado
+        saldopuntos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SaldoPuntos
+        ajustepuntos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AjustePuntos
+    lifecycleCallbacks: {  }

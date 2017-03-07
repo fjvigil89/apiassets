@@ -1,0 +1,227 @@
+DetalleHojaconteo:
+    type: entity
+    table: Detalle_HojaConteo
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAjuste:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Id_Ajuste
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoAjuste:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_Ajuste
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Items
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: Id_Producto
+        idLote:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: '1'
+            column: Id_Lote
+        descProducto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Desc_Producto
+        umAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Um_Almacen
+        cantidadAjuste:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 6
+            default: '0.000000'
+            column: Cantidad_Ajuste
+        saldoExistencia:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Saldo_Existencia
+        seccion:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Seccion
+        estante:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Estante
+        casilla:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Casilla
+        conteo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Conteo
+        fechaConteo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Conteo
+        precioCostoumalmacenmb:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoUmAlmacenMB
+        precioCostoumalmacenmc:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 8
+            default: '0.00000000'
+            column: Precio_CostoUmAlmacenMC
+        importeaMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteA_MB
+        importedMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteD_MB
+        importeaMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteA_MC
+        importedMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteD_MC
+        importecostoMb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteCosto_MB
+        importecostoMc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: ImporteCosto_MC
+        nota:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Nota
+        empaque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Empaque
+        segundoConteo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Segundo_Conteo
+        segundafechaConteo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: SegundaFecha_Conteo
+        tercerConteo:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.000000'
+            column: Tercer_Conteo
+        tercerfechaConteo:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: TercerFecha_Conteo
+        segundoEmpaque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Segundo_Empaque
+        tercerEmpaque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Tercer_Empaque
+        saldoEmpaque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Saldo_Empaque
+        cantidadEmpaque:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Cantidad_Empaque
+        factorempaque:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 4
+            default: '0'
+            column: FactorEmpaque
+    lifecycleCallbacks: {  }

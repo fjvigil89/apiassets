@@ -1,0 +1,29 @@
+RhDeducciones:
+    type: entity
+    table: RH_Deducciones
+    id:
+        idDeduccion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Deduccion
+            generator:
+                strategy: IDENTITY
+    fields:
+        descDeduccion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Deduccion
+        grupo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Grupo
+    lifecycleCallbacks: {  }

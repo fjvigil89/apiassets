@@ -1,0 +1,167 @@
+RegularidadesFactura:
+    type: entity
+    table: Regularidades_Factura
+    indexes:
+        Ix1_Reg_Fa:
+            columns:
+                - Clasif_Cont_Prod
+                - Id_Almacen
+                - Tipo_Doc
+                - Id_Clasif_Factura
+    uniqueConstraints:
+        Pk_Reg_Fa:
+            columns:
+                - Items
+    id:
+        subcontrol:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Subcontrol
+            generator:
+                strategy: IDENTITY
+    fields:
+        clasifContProd:
+            type: string
+            nullable: false
+            length: 12
+            fixed: false
+            default: ''
+            column: Clasif_Cont_Prod
+        idClasifFactura:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_Factura
+        tipoDoc:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Tipo_Doc
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Almacen
+        operacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Operacion
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Cta
+        tipoSubcta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_SubCta
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        tipoAnalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Analisis
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        tipoSubanalisis:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Subanalisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        tipoEpigrafe:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Epigrafe
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        tipoPartida:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Tipo_Partida
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        afecta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Afecta
+        items:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Items
+        copiar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Copiar
+        modificaClasifFa:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Modifica_Clasif_Fa
+        porciento:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '100'
+            column: PORCIENTO
+        idClasifFacturanew:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Clasif_FacturaNEW
+    lifecycleCallbacks: {  }

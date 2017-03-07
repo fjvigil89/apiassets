@@ -1,0 +1,365 @@
+<?php
+
+namespace integralBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * CuadreFinanzasConfigCxp2
+ *
+ * @ORM\Table(name="Cuadre_Finanzas_Config_CxP2")
+ * @ORM\Entity
+ */
+class CuadreFinanzasConfigCxp2
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="Contador1", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $contador1;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Tipo_Doc", type="string", length=5, nullable=false)
+     */
+    private $tipoDoc;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Id_Clasificacion", type="string", length=10, nullable=false)
+     */
+    private $idClasificacion;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Id_Almacen", type="string", length=5, nullable=false)
+     */
+    private $idAlmacen;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Cta", type="string", length=20, nullable=false)
+     */
+    private $cta;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="SubCta", type="string", length=20, nullable=false)
+     */
+    private $subcta;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="De_MB", type="boolean", nullable=false)
+     */
+    private $deMb;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Analisis", type="string", length=20, nullable=false)
+     */
+    private $analisis;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="SubAnalisis", type="string", length=20, nullable=false)
+     */
+    private $subanalisis;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Epigrafe", type="string", length=20, nullable=false)
+     */
+    private $epigrafe;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Partida", type="string", length=20, nullable=false)
+     */
+    private $partida;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="Calcular", type="boolean", nullable=false)
+     */
+    private $calcular;
+
+
+
+    /**
+     * Get contador1
+     *
+     * @return integer 
+     */
+    public function getContador1()
+    {
+        return $this->contador1;
+    }
+
+    /**
+     * Set tipoDoc
+     *
+     * @param string $tipoDoc
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setTipoDoc($tipoDoc)
+    {
+        $this->tipoDoc = $tipoDoc;
+
+        return $this;
+    }
+
+    /**
+     * Get tipoDoc
+     *
+     * @return string 
+     */
+    public function getTipoDoc()
+    {
+        return $this->tipoDoc;
+    }
+
+    /**
+     * Set idClasificacion
+     *
+     * @param string $idClasificacion
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setIdClasificacion($idClasificacion)
+    {
+        $this->idClasificacion = $idClasificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get idClasificacion
+     *
+     * @return string 
+     */
+    public function getIdClasificacion()
+    {
+        return $this->idClasificacion;
+    }
+
+    /**
+     * Set idAlmacen
+     *
+     * @param string $idAlmacen
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setIdAlmacen($idAlmacen)
+    {
+        $this->idAlmacen = $idAlmacen;
+
+        return $this;
+    }
+
+    /**
+     * Get idAlmacen
+     *
+     * @return string 
+     */
+    public function getIdAlmacen()
+    {
+        return $this->idAlmacen;
+    }
+
+    /**
+     * Set cta
+     *
+     * @param string $cta
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setCta($cta)
+    {
+        $this->cta = $cta;
+
+        return $this;
+    }
+
+    /**
+     * Get cta
+     *
+     * @return string 
+     */
+    public function getCta()
+    {
+        return $this->cta;
+    }
+
+    /**
+     * Set subcta
+     *
+     * @param string $subcta
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setSubcta($subcta)
+    {
+        $this->subcta = $subcta;
+
+        return $this;
+    }
+
+    /**
+     * Get subcta
+     *
+     * @return string 
+     */
+    public function getSubcta()
+    {
+        return $this->subcta;
+    }
+
+    /**
+     * Set deMb
+     *
+     * @param boolean $deMb
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setDeMb($deMb)
+    {
+        $this->deMb = $deMb;
+
+        return $this;
+    }
+
+    /**
+     * Get deMb
+     *
+     * @return boolean 
+     */
+    public function getDeMb()
+    {
+        return $this->deMb;
+    }
+
+    /**
+     * Set analisis
+     *
+     * @param string $analisis
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setAnalisis($analisis)
+    {
+        $this->analisis = $analisis;
+
+        return $this;
+    }
+
+    /**
+     * Get analisis
+     *
+     * @return string 
+     */
+    public function getAnalisis()
+    {
+        return $this->analisis;
+    }
+
+    /**
+     * Set subanalisis
+     *
+     * @param string $subanalisis
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setSubanalisis($subanalisis)
+    {
+        $this->subanalisis = $subanalisis;
+
+        return $this;
+    }
+
+    /**
+     * Get subanalisis
+     *
+     * @return string 
+     */
+    public function getSubanalisis()
+    {
+        return $this->subanalisis;
+    }
+
+    /**
+     * Set epigrafe
+     *
+     * @param string $epigrafe
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setEpigrafe($epigrafe)
+    {
+        $this->epigrafe = $epigrafe;
+
+        return $this;
+    }
+
+    /**
+     * Get epigrafe
+     *
+     * @return string 
+     */
+    public function getEpigrafe()
+    {
+        return $this->epigrafe;
+    }
+
+    /**
+     * Set partida
+     *
+     * @param string $partida
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setPartida($partida)
+    {
+        $this->partida = $partida;
+
+        return $this;
+    }
+
+    /**
+     * Get partida
+     *
+     * @return string 
+     */
+    public function getPartida()
+    {
+        return $this->partida;
+    }
+
+    /**
+     * Set calcular
+     *
+     * @param boolean $calcular
+     * @return CuadreFinanzasConfigCxp2
+     */
+    public function setCalcular($calcular)
+    {
+        $this->calcular = $calcular;
+
+        return $this;
+    }
+
+    /**
+     * Get calcular
+     *
+     * @return boolean 
+     */
+    public function getCalcular()
+    {
+        return $this->calcular;
+    }
+}

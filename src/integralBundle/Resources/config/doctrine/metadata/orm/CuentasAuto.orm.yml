@@ -1,0 +1,132 @@
+CuentasAuto:
+    type: entity
+    table: Cuentas_Auto
+    indexes:
+        Clu_Cuenta_Auto:
+            columns:
+                - CTA
+                - SubCta
+                - Analisis
+                - SubAnalisis
+                - Epigrafe
+                - Partida
+                - Copiar
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCuenta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta
+        cta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: CTA
+        subcta:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubCta
+        analisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Analisis
+        subanalisis:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: SubAnalisis
+        epigrafe:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Epigrafe
+        partida:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Partida
+        descCuenta:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Desc_Cuenta
+        nivel:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Nivel
+        clasificacion:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Clasificacion
+        subclasific:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: SubClasific
+        ultimoNivel:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: ''
+            column: Ultimo_Nivel
+        identificador:
+            type: boolean
+            nullable: false
+            default: '0'
+        naturaleza:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Naturaleza
+        banco:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Banco
+        deMb:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: De_MB
+        copiar:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Copiar
+    lifecycleCallbacks: {  }

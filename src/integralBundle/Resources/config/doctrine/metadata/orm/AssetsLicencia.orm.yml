@@ -1,0 +1,293 @@
+AssetsLicencia:
+    type: entity
+    table: Assets_Licencia
+    id:
+        fechaVenceLicencia:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            id: true
+            column: Fecha_Vence_Licencia
+            generator:
+                strategy: IDENTITY
+    fields:
+        ct:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CT
+        ctPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CT_PCA
+        ctPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CT_PCC
+        fz:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: FZ
+        fzPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: FZ_PCA
+        fzPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: FZ_PCC
+        rh:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: RH
+        rhPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: RH_PCA
+        rhPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: RH_PCC
+        af:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AF
+        afPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AF_PCA
+        afPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AF_PCC
+        uh:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UH
+        uhPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UH_PCA
+        uhPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UH_PCC
+        iv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IV
+        ivPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IV_PCA
+        ivPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IV_PCC
+        pv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PV
+        pvPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PV_PCA
+        pvPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PV_PCC
+        cm:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CM
+        cmPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CM_PCA
+        cmPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CM_PCC
+        ad:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AD
+        adPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AD_PCA
+        adPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AD_PCC
+        cr:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CR
+        crPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CR_PCA
+        crPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CR_PCC
+        mc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MC
+        mcPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MC_PCA
+        mcPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MC_PCC
+        q7ds5e6nx9:
+            type: text
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: Q7DS5E6NX9
+        jj9qmnlkjo:
+            type: text
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: JJ9QMNLKJO
+        u2u8obs71g:
+            type: text
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: U2U8OBS71G
+        w7jsfjfbeq:
+            type: text
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: W7JSFJFBEQ
+        ht5wep5st2:
+            type: text
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: HT5WEP5ST2
+        fuslel75no:
+            type: text
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: FUSLEL75NO
+        c8e1s366xg:
+            type: text
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: C8E1S366XG
+        n00hwxc0nf:
+            type: text
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: N00HWXC0NF
+        ksixpgy932:
+            type: text
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: KSIXPGY932
+        km:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: KM
+        kmPca:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: KM_PCA
+        kmPcc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: KM_PCC
+    lifecycleCallbacks: {  }

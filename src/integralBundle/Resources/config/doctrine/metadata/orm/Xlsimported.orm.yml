@@ -1,0 +1,73 @@
+Xlsimported:
+    type: entity
+    table: XLSImported
+    id:
+        f1:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: F1
+            generator:
+                strategy: IDENTITY
+    fields:
+        f2:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: F2
+        f3:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: F3
+        f4:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: F4
+        f5:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: F5
+        f6:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: F6
+        f7:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: F7
+        f8:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: F8
+        f9:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: F9
+        f10:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: F10
+        f11:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: F11
+        f12:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: F12
+    lifecycleCallbacks: {  }

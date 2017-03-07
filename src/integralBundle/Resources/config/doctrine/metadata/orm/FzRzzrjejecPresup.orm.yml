@@ -1,0 +1,57 @@
+FzRzzrjejecPresup:
+    type: entity
+    table: Fz_RZzrJEjec_Presup
+    id:
+        idsync:
+            type: uniqueidentifier
+            nullable: false
+            default: newid()
+            id: true
+            column: IdSync
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAgrupacionCalc:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Agrupacion_CALC
+        fechaMy:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_MY
+        idCuenta:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Id_Cuenta
+        planMes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Mes
+        realMes:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Real_Mes
+        planAcum:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plan_Acum
+        realAcum:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Real_Acum
+    lifecycleCallbacks: {  }

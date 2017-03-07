@@ -1,0 +1,41 @@
+RhCausasBajas:
+    type: entity
+    table: RH_Causas_Bajas
+    id:
+        idCausabaja:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_CausaBaja
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCausabaja:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_CausaBaja
+        descRpt:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Desc_Rpt
+        fluctuacion:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Fluctuacion
+        clasificacion:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Clasificacion
+    lifecycleCallbacks: {  }

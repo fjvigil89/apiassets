@@ -1,0 +1,28 @@
+RhClavesImpuntualidades:
+    type: entity
+    table: RH_Claves_Impuntualidades
+    id:
+        idClave:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Clave
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClave:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Clave
+        justificada:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Justificada
+    lifecycleCallbacks: {  }

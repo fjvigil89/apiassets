@@ -1,0 +1,85 @@
+On1monedaConfigFin:
+    type: entity
+    table: ON_1Moneda_Config_FIN
+    id:
+        fila:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Fila
+            generator:
+                strategy: IDENTITY
+    fields:
+        aplicarA:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Aplicar_a
+        moneda:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Moneda
+        descripcion:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            default: ''
+            column: Descripcion
+        formaPago:
+            type: string
+            nullable: false
+            length: 55
+            fixed: false
+            default: ''
+            column: Forma_Pago
+        tipoCalculo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Calculo
+        coeficiente:
+            type: decimal
+            nullable: false
+            precision: 17
+            scale: 7
+            default: '1.0'
+            column: Coeficiente
+        irpm:
+            type: decimal
+            nullable: false
+            precision: 17
+            scale: 7
+            default: '1.0'
+            column: IRPM
+        tipoMoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: Tipo_Moneda
+        ctaF:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Cta_F
+        incluir:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Incluir
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Contador1
+    lifecycleCallbacks: {  }

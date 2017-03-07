@@ -1,0 +1,63 @@
+CobroTicketventa:
+    type: entity
+    table: Cobro_TicketVenta
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        idFormapago:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_FormaPago
+        descFormapago:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_FormaPago
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe
+        idDoc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: ID_Doc
+        efectivoPventa:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Efectivo_PVenta
+        anticipo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Anticipo
+        importeOriginal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe_Original
+        contadorc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ContadorC
+    lifecycleCallbacks: {  }

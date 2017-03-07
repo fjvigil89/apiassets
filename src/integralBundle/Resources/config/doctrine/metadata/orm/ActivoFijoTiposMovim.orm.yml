@@ -1,0 +1,107 @@
+ActivoFijoTiposMovim:
+    type: entity
+    table: Activo_Fijo_Tipos_Movim
+    id:
+        idMovimActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            id: true
+            column: Id_Movim_Activo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descMovActivo:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Mov_Activo
+        idEstadoActivo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Estado_Activo
+        contabiliza:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Contabiliza
+        rotuloModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Rotulo_Modif
+        valoriniModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ValorIni_Modif
+        deprecacumModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: DeprecAcum_Modif
+        valorresModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ValorRes_Modif
+        ctrcostoModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CtrCosto_Modif
+        arearespModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: AreaResp_Modif
+        responsModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Respons_Modif
+        idClasifmov:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_ClasifMov
+        cnmbModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: CNMB_Modif
+        valoriniTipoajuste:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValorIni_TipoAjuste
+        appVentaBaja:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: App_Venta_Baja
+        clasificModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Clasific_Modif
+        especifModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Especif_Modif
+        descripcModif:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Descripc_Modif
+    lifecycleCallbacks: {  }

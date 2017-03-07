@@ -1,0 +1,22 @@
+ProductoDestinoscat:
+    type: entity
+    table: Producto_DestinosCat
+    id:
+        coddestino:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodDestino
+            generator:
+                strategy: IDENTITY
+    fields:
+        descdestino:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: DescDestino
+    lifecycleCallbacks: {  }

@@ -1,0 +1,35 @@
+ClasificacionFichacosto:
+    type: entity
+    table: Clasificacion_FichaCosto
+    id:
+        idClasificacion:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: Id_Clasificacion
+            generator:
+                strategy: IDENTITY
+    fields:
+        descClasificacion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: '*** No definida ***'
+            column: Desc_Clasificacion
+        tipoprorrateo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoProrrateo
+        titulo:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Titulo
+    lifecycleCallbacks: {  }

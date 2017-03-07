@@ -1,0 +1,67 @@
+Registroprecio:
+    type: entity
+    table: RegistroPrecio
+    id:
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Contador
+            generator:
+                strategy: IDENTITY
+    fields:
+        fecha:
+            type: datetime
+            nullable: false
+            column: Fecha
+        idUser:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_User
+        costo:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Costo
+        seleccion:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Seleccion
+        valor1:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Valor1
+        valor2:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Valor2
+        formulamb:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: FormulaMB
+        formulamc:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: FormulaMC
+    lifecycleCallbacks: {  }

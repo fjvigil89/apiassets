@@ -1,0 +1,141 @@
+CrmCaracterizacion:
+    type: entity
+    table: CRM_Caracterizacion
+    id:
+        lupdCurrentSit:
+            type: datetime
+            nullable: false
+            default: (1)/(1))/(1900
+            id: true
+            column: LUpd_Current_Sit
+            generator:
+                strategy: IDENTITY
+    fields:
+        porcComparar:
+            type: string
+            nullable: false
+            length: 14
+            fixed: false
+            default: ''
+            column: Porc_Comparar
+        porcClientesA:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Porc_Clientes_A
+        porcClientesB:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Porc_Clientes_B
+        strPeriodos:
+            type: string
+            nullable: false
+            length: 150
+            fixed: false
+            default: ''
+            column: Str_Periodos
+        condicion1:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: Entre
+            column: Condicion1
+        menosde1:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MenosDe1
+        masde1:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '30'
+            column: MasDe1
+        condicion2:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: Entre
+            column: Condicion2
+        menosde2:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '31'
+            column: MenosDe2
+        masde2:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '60'
+            column: MasDe2
+        condicion3:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: Entre
+            column: Condicion3
+        menosde3:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '61'
+            column: MenosDe3
+        masde3:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '90'
+            column: MasDe3
+        condicion4:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: Entre
+            column: Condicion4
+        menosde4:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '91'
+            column: MenosDe4
+        masde4:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '120'
+            column: MasDe4
+        condicion5:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: 'Mas de'
+            column: Condicion5
+        menosde5:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '121'
+            column: MenosDe5
+        masde5:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MasDe5
+        diasAlerta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Dias_Alerta
+    lifecycleCallbacks: {  }

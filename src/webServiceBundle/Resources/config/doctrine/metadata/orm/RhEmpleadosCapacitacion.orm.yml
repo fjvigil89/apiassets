@@ -1,0 +1,34 @@
+RhEmpleadosCapacitacion:
+    type: entity
+    table: RH_Empleados_Capacitacion
+    id:
+        idExpediente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Expediente
+        idCurso:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Curso
+    fields:
+        descCurso:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            default: ''
+            column: Desc_Curso
+        fechaCurso:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Curso
+    lifecycleCallbacks: {  }

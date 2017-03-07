@@ -1,0 +1,203 @@
+RhCargos:
+    type: entity
+    table: RH_Cargos
+    id:
+        idCargo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            id: true
+            column: Id_Cargo
+            generator:
+                strategy: IDENTITY
+    fields:
+        descCargo:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+            column: Desc_Cargo
+        rgrupo:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: RGrupo
+        ngrupo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: '0'
+            column: NGrupo
+        idCategoria:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Categoria
+        descCategoria:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: Desc_Categoria
+        idSubcategoria:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_Subcategoria
+        descSubcategoria:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Subcategoria
+        resolucion:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Resolucion
+        clasificacion:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            default: 'N'
+            column: Clasificacion
+        porcientoSimultaneidad:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.00'
+            column: Porciento_Simultaneidad
+        funcionario:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Funcionario
+        ejecutivo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Ejecutivo
+        apoyo:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Apoyo
+        reportflag:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: ReportFlag
+        coeficienteMultioficio:
+            type: decimal
+            nullable: false
+            precision: 19
+            scale: 6
+            default: '0.00'
+            column: Coeficiente_Multioficio
+        coeficenteEmpresaEmpleadora:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 2
+            default: '0.00'
+            column: Coeficente_Empresa_Empleadora
+        mscodgrupo:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: MSCodGrupo
+        salarioBasico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Basico
+        plus:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Plus
+        salarioCargo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Salario_Cargo
+        estimulo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estimulo
+        otros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otros
+        antiguedad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Antiguedad
+        ieterritorial:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: IETerritorial
+        etsector:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: ETSector
+        otrasretribuciones:
+            type: decimal
+            nullable: false
+            precision: 8
+            scale: 2
+            default: '0.00'
+            column: OtrasRetribuciones
+        horarioirregular:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: HorarioIrregular
+        otrasCla:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Otras_CLA
+        idClasifP2:
+            type: string
+            nullable: false
+            length: 3
+            fixed: false
+            default: ''
+            column: Id_Clasif_P2
+    lifecycleCallbacks: {  }

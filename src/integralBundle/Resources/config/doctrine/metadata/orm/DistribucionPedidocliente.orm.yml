@@ -1,0 +1,101 @@
+DistribucionPedidocliente:
+    type: entity
+    table: Distribucion_PedidoCliente
+    indexes:
+        IX_Distribucion_PedidoCliente:
+            columns:
+                - Contador
+    id:
+        idOrdencompra:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Id_OrdenCompra
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAlmacen:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: Id_Almacen
+        anoOrdencompra:
+            type: smallint
+            nullable: false
+            unsigned: false
+            column: Ano_OrdenCompra
+        idCliente:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Id_Cliente
+        descCliente:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: Desc_Cliente
+        idProducto:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Id_Producto
+        cantidadPedida:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0'
+            column: Cantidad_Pedida
+        cantidadAFacturar:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0'
+            column: Cantidad_a_Facturar
+        cantidadFacturada:
+            type: decimal
+            nullable: false
+            precision: 14
+            scale: 4
+            default: '0'
+            column: Cantidad_Facturada
+        generarOrden:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Generar_Orden
+        referencia:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: ''
+            column: Referencia
+        generarVale:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: Generar_Vale
+        idAlmavale:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Id_AlmaVale
+        contador:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Contador
+    lifecycleCallbacks: {  }

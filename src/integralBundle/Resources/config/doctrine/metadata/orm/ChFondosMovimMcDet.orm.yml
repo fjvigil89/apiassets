@@ -1,0 +1,93 @@
+ChFondosMovimMcDet:
+    type: entity
+    table: CH_Fondos_Movim_MC_Det
+    id:
+        contador1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: Contador1
+            generator:
+                strategy: IDENTITY
+    fields:
+        idDoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Id_Doc
+        ano:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: 'datepart(year,getdate())'
+            column: Ano
+        idFondo:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Fondo
+        idConcepto:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: Id_Concepto
+        entradaAlfondo:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: Entrada_AlFondo
+        importe:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0.00'
+            column: Importe
+        nota:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: Nota
+        item:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: Item
+        fila:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Fila
+        ordenImpresion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Orden_Impresion
+        reembolsado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Reembolsado
+        estadoDepositado:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado_Depositado
+        fechaDepositado:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+            column: Fecha_Depositado
+    lifecycleCallbacks: {  }

@@ -102,3 +102,7 @@ services:
 #        parent:    "api.doctrine.orm.search_filter"
 #        arguments: [ { "name": "exact", "url": "partial" } ]
 
+# A typical service
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]

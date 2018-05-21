@@ -9,6 +9,50 @@ services:
     #    parent:    "api.doctrine.orm.search_filter"
     #    arguments: [ { id: "exact", price: "exact", name: "word_start", alias: "start", description: "partial"  } ]
 
+    resource.RhProfesionesGeneral.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { idEspecialidad: "exact", descEspecialidad: "partial" } ]
+
+    resource.RhProvincias.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { idProvincia: "exact", repmovpendular: "exact", descProvincia: "partial" } ]
+
+    resource.RhMunicipios.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { idProvincia: "exact", idMunicipio: "exact", descMunicipio: "partial" } ]
+
+    resource.RhEmpleadosCentroCosto.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { idExpediente: "exact", idCcosto: "exact", descCcosto: "partial", idObra: "exact", porcientoFondoTiempo: "exact" } ]
+
+    resource.RhCategoriasOcupacionales.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { descCategoria: "partial", idCategoria: "exact", clasificacion: "partial", identificacion: "exact", limSalarioEstimular: "partial" } ]
+
+    resource.RhNivelesEscolaridadClasif.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { descNivelEscolaridadClasif: "partial", idNivelEscolaridadClasif: "exact" } ]
+
+    resource.RhNivelesEscolaridad.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { descNivelEscolaridad: "partial", idNivelEscolaridad: "exact", nivel: "exact", idNivelEscolaridadClasif: "exact", siglas: "exact" } ]
+
+    resource.RhProfesiones.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { descProfesion: "partial", idProfesion: "exact", idEspecialidad: "exact"} ]
+
+    resource.RhGradosCientificos.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { descGradoCientifico: "partial", idGradoCientifico: "exact", identificacion: "exact"} ]
+
+    resource.RhCategoriasDocenteInvest.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { descCategoriaDi: "partial", idCategoriaDi: "exact", identificacionDi: "partial", anosDi: "exact", clasificacionDi: "partial" } ]
+
+    resource.RhCargos.search_filter:
+        parent:    "api.doctrine.orm.search_filter"        
+        arguments: [ { descCargo: "partial", idCategoria: "exact", descCategoria: "partial", idSubcategoria: "exact", descSubcategoria: "partial", clasificacion: "partial", funcionario: "exact", ejecutivo: "exact", salarioBasico: "exact", plus: "exact", salarioCargo: "exact", estimulo: "word_start",antiguedad: "word_start" } ]
+
     resource.AreasResponsabilidad.search_filter:
         parent:    "api.doctrine.orm.search_filter"
         arguments: [ { idCcosto: "exact", idArearesponsabilidad: "exact", descArearesponsabilidad: "partial" } ]

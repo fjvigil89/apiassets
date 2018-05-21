@@ -18,44 +18,81 @@ services:
     assets.RhCargos:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhCargos" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhCargos.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]
+
     assets.RhCategoriasDocenteInvest:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhCategoriasDocenteInvest" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhCategoriasDocenteInvest.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]
+
     assets.RhCategoriasOcupacionales:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhCategoriasOcupacionales" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhCategoriasOcupacionales.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]
     assets.RhEmpleadosCentroCosto:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhEmpleadosCentroCosto" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhEmpleadosCentroCosto.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]
     assets.RhGradosCientificos:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhGradosCientificos" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhGradosCientificos.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]
+
     assets.RhMunicipios:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhMunicipios" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhMunicipios.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]
     assets.RhNivelesEscolaridad:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhNivelesEscolaridad" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhNivelesEscolaridad.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]
     assets.RhNivelesEscolaridadClasif:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhNivelesEscolaridadClasif" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhNivelesEscolaridadClasif.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]
     assets.RhProfesiones:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhProfesiones" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhProfesiones.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]
+
     assets.RhProfesionesGeneral:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhProfesionesGeneral" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhProfesionesGeneral.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]
     assets.RhProvincias:         
         parent:     "api.resource"
         arguments:  [ "webServiceBundle\\Entity\\RhProvincias" ]
+        calls:
+            -      method:    "initFilters"
+                   arguments: [ [ "@resource.RhProvincias.search_filter" ] ]        
         tags:       [ { name: "api.resource" } ]

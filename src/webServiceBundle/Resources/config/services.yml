@@ -11,7 +11,7 @@ services:
         arguments:  [ "webServiceBundle\\Entity\\EmpleadosGra" ]
         calls:
             -      method:    "initFilters"
-                   arguments: [ [ "@resource.EmpleadosGra.search_filter" ] ]
+                   arguments: [ [ "@resource.EmpleadosGra.search_filter", "@resource.EmpleadosGra.date_filter" ] ]
         tags:       [ { name: "api.resource" } ]
 
 

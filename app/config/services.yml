@@ -60,6 +60,10 @@ services:
     resource.EmpleadosGra.search_filter:
         parent:    "api.doctrine.orm.search_filter"
         arguments: [ { idEmpleado: "exact", idExpediente: "exact", idCcosto: "exact", idTipoContrato: "exact", idCargo: "exact", idCategoria: "exact", idProvincia: "exact", idMunicipio: "exact", idNivelEscolaridad: "exact", idProfesion: "exact", idGradoCientifico: "exact", apellido2: "word_start", apellido1: "word_start", nombre: "word_start", noCi: "exact", direccion: "word_start", ciudad: "word_start", pais: "word_start", baja: "start", alta: "start", nivel: "start", sexo: "start", colorPiel: "start", colorPelo: "start", docente: "start", investigador: "start", imprescindible: "start", militancia: "start", albergado: "start" } ]
+    
+    resource.EmpleadosGra.date_filter:
+        parent:    "api.doctrine.orm.search_filter"
+        arguments: [ { fechaCargo: partial, fechaNacimiento: partial, fechaBaja: partial, fechaContratacion: partial, fechaTerminacionContrato: partial, fechaCategoriaDocente: partial } ]
 
     resource.ActivoFijo.search_filter:
         parent:    "api.doctrine.orm.search_filter"

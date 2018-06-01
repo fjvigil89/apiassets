@@ -63,7 +63,7 @@ services:
     
     resource.EmpleadosGra.date_filter:
         parent:    "api.doctrine.orm.search_filter"
-        arguments: [ { fechaCargo: partial, fechaNacimiento: partial, fechaBaja: partial, fechaContratacion: partial, fechaTerminacionContrato: partial, fechaCategoriaDocente: partial } ]
+        arguments: [ { fechaCargo: ~, fechaNacimiento: ~, fechaBaja: ~, fechaContratacion: ~, fechaTerminacionContrato: ~, fechaCategoriaDocente: ~ } ]
 
     resource.ActivoFijo.search_filter:
         parent:    "api.doctrine.orm.search_filter"

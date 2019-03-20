@@ -14,6 +14,8 @@ syntax:
 
 deploy_environment:
   stage: deploy
+  tags:
+   - apiassets
   script:
    - echo "${CI_COMMIT_REF_NAME}"
    - tools/deploy-git.sh $CI_COMMIT_REF_NAME

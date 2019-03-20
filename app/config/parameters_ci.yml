@@ -2,14 +2,14 @@ parameters:
     database_driver: pdo_sqlsrv
     database_host: assets
     database_port: '1433'
-    database_name: A_ULTIMATE_RH_2018
+    database_name: A_ULTIMATE_RH_2019
     database_user: api
     database_password: lostall*api.2k19
 
     database_driver2: pdo_sqlsrv
     database_host2: assets
     database_port2: '1433'
-    database_name2: A_ULTIMATE_INT_2018
+    database_name2: A_ULTIMATE_INT_2019
     database_user2: api
     database_password2: lostall*api.2k19
 

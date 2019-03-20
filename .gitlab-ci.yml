@@ -4,6 +4,14 @@ stages:
   - deploy
   - composer
 
+
+syntax:
+  tags:
+    - deploy
+  stage: deploy
+  tags: 
+    - apiassets
+
 deploy_environment:
   stage: deploy
   script:

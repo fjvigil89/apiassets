@@ -5,12 +5,12 @@ stages:
   - composer
 
 
-syntax:
-  tags:
-    - deploy
-  stage: deploy
-  tags: 
-    - apiassets
+    #syntax:  
+    #tags:
+    #- deploy
+    #stage: deploy
+    #tags: 
+    #- apiassets
 
 deploy_environment:
   stage: deploy
